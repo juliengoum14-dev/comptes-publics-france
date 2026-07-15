@@ -13,15 +13,12 @@
  *   → Sinon, il copie un template avec documentation.
  */
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
-import { join, dirname, basename } from 'node:path';
+import { writeFileSync, mkdirSync, readdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
 
-const RAW = (...p) => join(import.meta.dirname, '..', 'data', 'raw', ...p);
 const OUT = (...p) => join(import.meta.dirname, '..', 'data', 'processed', ...p);
 
-const XLSX_AVAILABLE = (() => {
-  try { return !!require('xlsx'); } catch { return false; }
-})();
+const XLSX_AVAILABLE = false;
 
 const OUTPUT_META = {
   generated_at: new Date().toISOString(),
@@ -192,52 +189,10 @@ const EXTRA_STEPS = [
 
 // ── FONCTIONS UTILITAIRES ────────────────────────────────────────────────────
 
-function readJSON(path) {
-  try {
-    return JSON.parse(readFileSync(path, 'utf-8'));
-  } catch (err) {
-    console.warn(`  ⚠️  Impossible de lire ${path}: ${err.message}`);
-    return null;
-  }
-}
-
 function writeJSON(path, data) {
   mkdirSync(dirname(path), { recursive: true });
   writeFileSync(path, JSON.stringify(data, null, 2), 'utf-8');
   console.log(`  ✓ Écrit ${path}`);
-}
-
-function findEurostatData(dimension, code) {
-  // Helper: cherche une valeur dans la structure SDMX Eurostat
-  return (data) => {
-    // À implémenter selon la structure exacte du fichier
-    return {};
-  };
-}
-
-// ── TRAITEMENTS SPÉCIFIQUES ───────────────────────────────────────────────────
-
-function processSynthese(rawPath) {
-  const data = readJSON(rawPath);
-  if (!data) return null;
-
-  // Extraction basique des valeurs disponibles
-  // NOTE: Transformation complexe réalisée initialement par data-agent
-  return {
-    meta: {
-      source: basename(rawPath),
-      generated_by: 'scripts/process-data.mjs',
-      note: 'Extraction partielle — utiliser le fichier existant pour les données complètes',
-    },
-    extraction_note: 'Cette étape nécessite de parser la structure SDMX Eurostat (gov_10a_main.json). '
-      + 'Le data-agent initial a extrait les séries manuellement via analyse exploratoire.',
-  };
-}
-
-function processBudgetEtat() {
-  // Enrichissement via API ODATA
-  console.log('  Pour enrichir budget-etat.json, exécuter : node scripts/fetch-budget-etat.mjs');
-  return null;
 }
 
 // ── PIPELINE PRINCIPAL ────────────────────────────────────────────────────────

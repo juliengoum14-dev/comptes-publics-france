@@ -23,7 +23,6 @@ const PROCESSED_FILE = join(ROOT, 'data', 'processed', 'budget-etat.json');
 const API_BASE = 'https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets';
 const PLF_DEPENSES_2025 = `${API_BASE}/plf25-depenses-2025-du-bg-et-des-ba-selon-nomenclatures-destination-et-nature/records`;
 const PLF_RECETTES_2025 = `${API_BASE}/plf25-recettes-fiscales-2025-du-bg-et-des-ba-selon-nomenclature-destination/records`;
-const CATALOG_URL = `${API_BASE}`;
 
 const LIMIT = 100; // 100 records par page
 const MAX_RECORDS = 2500; // maximum total
