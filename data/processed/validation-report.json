@@ -4,7 +4,7 @@
     "outil": "data-agent validation-consolidation"
   },
   "fichiers": {
-    "recettes-etat.json": {
+    "recettes-apu.json": {
       "taille_kb": 19.9,
       "source": "INSEE, Eurostat",
       "nb_series": 7,
@@ -13,7 +13,7 @@
         2025
       ]
     },
-    "depenses-ministeres.json": {
+    "depenses-apu.json": {
       "taille_kb": 23.4,
       "source": "Eurostat, PLF",
       "nb_series": 8,

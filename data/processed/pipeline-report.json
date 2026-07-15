@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "generated_at": "2026-07-15T16:53:04.259Z",
+    "generator": "scripts/process-data.mjs",
+    "note": "Fichier regénéré par le pipeline de processing",
+    "previous_data_preserved": false
+  },
+  "xlsx_available": false,
+  "steps_documented": 10,
+  "steps_automated": 6,
+  "existing_processed": [
+    "apu-depenses.json",
+    "arbre-nature.json",
+    "budget-etat.json",
+    "depenses-apu.json",
+    "hierarchie-nature.json",
+    "nature-par-secteur.json",
+    "pipeline-report.json",
+    "recettes-apu.json",
+    "series-longues.json",
+    "synthese.json",
+    "validation-report.json"
+  ],
+  "commandes": {
+    "fetch_budget": "node scripts/fetch-budget-etat.mjs",
+    "refresh_all": "npm run refresh-data",
+    "install_xlsx": "npm install xlsx"
+  }
+}

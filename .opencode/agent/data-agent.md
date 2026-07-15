@@ -71,8 +71,8 @@ Une fois les téléchargements terminés, lance les sous-agents de production.
 
 | # | Sous-agent | Produit | Dépend de |
 |---|---|---|---|
-| 1 | `process-recettes` | `data/processed/recettes-etat.json` | `fetch-plf-recettes` |
-| 2 | `process-depenses` | `data/processed/depenses-ministeres.json` | `fetch-plf-depenses` |
+| 1 | `process-recettes` | `data/processed/recettes-apu.json` | `fetch-plf-recettes` |
+| 2 | `process-depenses` | `data/processed/depenses-apu.json` | `fetch-plf-depenses` |
 | 3 | `process-apu` | `data/processed/apu-depenses.json` | `fetch-insee-apu` |
 | 4 | `process-synthese` | `data/processed/synthese.json` | Tous les précédents |
 | 5 | `process-series` | `data/processed/series-longues.json` | `fetch-insee-series` + `fetch-dette` |
@@ -135,8 +135,8 @@ python3 -c "import pandas as pd; df = pd.read_csv('data/raw/fichier.csv'); print
   "sub_agents_failed": 0,
   "files_downloaded": ["data/raw/..."],
   "files_produced": [
-    "data/processed/recettes-etat.json",
-    "data/processed/depenses-ministeres.json",
+    "data/processed/recettes-apu.json",
+    "data/processed/depenses-apu.json",
     "data/processed/apu-depenses.json",
     "data/processed/synthese.json",
     "data/processed/series-longues.json"

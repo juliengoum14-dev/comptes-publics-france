@@ -1,20 +1,13 @@
 import { getAllData } from "@/lib/data";
+import { formatMd } from "@/lib/format";
 import SummaryCards from "@/components/SummaryCards";
 import TimeSeriesChart from "@/components/TimeSeriesChart";
 import ApuBreakdown from "@/components/ApuBreakdown";
 import DrillDownChart from "@/components/DrillDownChart";
-
-const formatMd = (v: number | null | undefined) =>
-  v != null
-    ? new Intl.NumberFormat("fr-FR", {
-        style: "decimal",
-        maximumFractionDigits: 1,
-        minimumFractionDigits: 1,
-      }).format(v) + " Md€"
-    : "N/D";
+import RevenueBreakdown from "@/components/RevenueBreakdown";
 
 export default function Home() {
-  const { synthese, apu, series, budgetEtat, arbreNature, natureParSecteur } = getAllData();
+  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur } = getAllData();
 
   const etat2025 = budgetEtat.synthese_etat["2025"];
 
@@ -122,6 +115,18 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Détail des recettes de l'État */}
+        <section className="mb-8 mt-12">
+          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+            Détail des recettes de l&apos;État (2025)
+          </h2>
+          <RevenueBreakdown
+            categories={recettes.recettes_par_categorie}
+            annee={2025}
+            title="Recettes fiscales et sociales"
+          />
         </section>
 
         <footer className="mt-12 pt-6 border-t border-gray-200 text-center text-xs text-gray-400">

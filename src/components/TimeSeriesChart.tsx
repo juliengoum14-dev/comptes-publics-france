@@ -11,6 +11,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useMemo } from "react";
+import { formatTooltip } from "@/lib/format";
 
 interface SeriesMap {
   [name: string]: { code: string; unite: string; donnees: Record<string, number> };
@@ -60,12 +61,10 @@ export default function TimeSeriesChart({
           />
           <YAxis tick={{ fontSize: 12 }} width={70} />
           <Tooltip
-            formatter={(value) =>
-              new Intl.NumberFormat("fr-FR", {
-                style: "decimal",
-                maximumFractionDigits: 1,
-              }).format(Number(value)) + " Md€"
-            }
+            formatter={(value, name) => {
+              const s = series[String(name)];
+              return formatTooltip(Number(value), s?.unite);
+            }}
           />
           <Legend />
           {selected.map((name, i) => {

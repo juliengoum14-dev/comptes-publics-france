@@ -40,12 +40,7 @@ const SECTOR_COLORS: Record<string, string> = {
   S1314: "#c4b5fd",
 };
 
-const fmt = (v: number) =>
-  new Intl.NumberFormat("fr-FR", {
-    style: "decimal",
-    maximumFractionDigits: 1,
-    minimumFractionDigits: 1,
-  }).format(v);
+import { formatNumber as fmt } from "@/lib/format";
 
 interface DrillDownChartProps {
   tree: TreeNode;
@@ -242,9 +237,11 @@ export default function DrillDownChart({
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {sectorBreakdown.map((s) => {
+              const totalEntry = sectorBreakdown.find((e) => e.secteur === "S13");
+              const totalMontant = totalEntry?.montant ?? 0;
               const pct =
-                sectorBreakdown[0].montant > 0
-                  ? ((s.montant / sectorBreakdown[0].montant) * 100).toFixed(1)
+                totalMontant > 0
+                  ? ((s.montant / totalMontant) * 100).toFixed(1)
                   : "0";
               return (
                 <div

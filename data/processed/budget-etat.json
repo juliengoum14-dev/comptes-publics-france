@@ -8,19 +8,43 @@
       "Le solde budgétaire de l'État (-124,7 Md€) diffère du solde APU (-152,5 Md€) car ce dernier inclut Sécurité sociale et Collectivités locales",
       "Recettes nettes du budget général = 311,35 Md€ (hors recettes fiscales brutales, prélèvements sur recettes, remboursements)",
       "PDE (Périmètre des Dépenses de l'État) = agrégat des dépenses les plus pilotables"
-    ]
+    ],
+    "last_fetched": "2026-07-15T16:52:46.768Z",
+    "fetched_by": "scripts/fetch-budget-etat.mjs",
+    "api_base": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets",
+    "odata_endpoints": {
+      "catalog": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets",
+      "plf_depenses_2025": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/plf25-depenses-2025-du-bg-et-des-ba-selon-nomenclatures-destination-et-nature/records",
+      "smb_search": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets?q=smb+situation+mensuelle+budget&limit=5"
+    },
+    "enrichissement": {
+      "statut": "API OK — données catalog disponibles",
+      "raw_sources_disponibles": {
+        "catalog": true,
+        "catalog_full": true,
+        "plf_recent": true,
+        "smb": true
+      }
+    },
+    "odata_datasets": {
+      "plf_depenses_2025": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/plf25-depenses-2025-du-bg-et-des-ba-selon-nomenclatures-destination-et-nature/records",
+      "plf_recettes_2025": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/plf25-recettes-fiscales-2025-du-bg-et-des-ba-selon-nomenclature-destination/records"
+    },
+    "api_status": "OK"
   },
-  "annees_disponibles": [2020, 2021, 2022, 2023, 2024, 2025],
+  "annees_disponibles": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
   "synthese_etat": {
-    "2025": {
-      "recettes_nettes_bg_meur": 311.35,
-      "depenses_pde_meur": null,
-      "solde_budgetaire_meur": -124.7,
-      "solde_apuc_meur": -128.0,
-      "solde_apu_meur": -152.5,
-      "amélioration_vs_lfg_meur": 7.4,
-      "amélioration_vs_lfi_meur": 14.3,
-      "amélioration_vs_2024_meur": 31.6
+    "2023": {
+      "solde_budgetaire_meur": null,
+      "solde_apu_meur": -151.9
     },
     "2024": {
       "recettes_nettes_bg_meur": null,
@@ -28,9 +52,15 @@
       "solde_budgetaire_meur": -156.3,
       "solde_apu_meur": -169.1
     },
-    "2023": {
-      "solde_budgetaire_meur": null,
-      "solde_apu_meur": -151.9
+    "2025": {
+      "recettes_nettes_bg_meur": 311.35,
+      "depenses_pde_meur": null,
+      "solde_budgetaire_meur": -124.7,
+      "solde_apuc_meur": -128,
+      "solde_apu_meur": -152.5,
+      "amélioration_vs_lfg_meur": 7.4,
+      "amélioration_vs_lfi_meur": 14.3,
+      "amélioration_vs_2024_meur": 31.6
     }
   },
   "recettes_fiscales_etat": [
@@ -61,45 +91,3900 @@
     {
       "categorie": "CDHR (très hauts revenus)",
       "montant_meur_2025": null,
-      "variation_vs_lfg_meur": -1.0,
+      "variation_vs_lfg_meur": -1,
       "note": "-1 Md€ vs prévision : optimisation fiscale fin 2024 liée à l'adoption tardive du PLF"
     }
   ],
   "depenses_par_mission": [
     {
-      "mission": "Enseignement scolaire",
-      "programmes": [
-        "Enseignement public du 1er degré",
-        "Enseignement public du 2nd degré",
-        "Vie scolaire"
-      ],
-      "note": "Données PLF incomplètes dans le catalogue data.economie.gouv.fr"
+      "mission": "TOTAL PLF 2025",
+      "code_mission": "TOTAL",
+      "unite": "Md€",
+      "ae_mds": 847.57,
+      "cp_mds": 823.05,
+      "programmes": []
     },
     {
-      "mission": "Défense",
+      "mission": "Remboursements et dégrèvements",
+      "code_mission": "RD",
+      "type_mission": "BG",
+      "ae_mds": 147.14,
+      "cp_mds": 147.14,
       "programmes": [
-        "Préparation et conduite des opérations",
-        "Soutien des forces"
+        {
+          "numero": 200,
+          "programme": "Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)",
+          "ae_mds": 142.74,
+          "cp_mds": 142.74,
+          "actions": 3
+        },
+        {
+          "numero": 201,
+          "programme": "Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)",
+          "ae_mds": 4.4,
+          "cp_mds": 4.4,
+          "actions": 4
+        }
       ]
     },
     {
-      "mission": "Sécurité",
+      "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+      "code_mission": "ZC",
+      "type_mission": "CCF",
+      "ae_mds": 134.09,
+      "cp_mds": 134.09,
       "programmes": [
-        "Police nationale",
-        "Gendarmerie nationale",
-        "Sécurité civile"
+        {
+          "numero": 833,
+          "programme": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+          "ae_mds": 134.09,
+          "cp_mds": 134.09,
+          "actions": 4
+        },
+        {
+          "numero": 832,
+          "programme": "Avances aux collectivités et établissements publics, à la Nouvelle-Calédonie et aux collectivités régies par l’article 74 de la Constitution",
+          "ae_mds": 0.01,
+          "cp_mds": 0.01,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Défense",
+      "code_mission": "DA",
+      "type_mission": "BG",
+      "ae_mds": 93.58,
+      "cp_mds": 60,
+      "programmes": [
+        {
+          "numero": 146,
+          "programme": "Équipement des forces",
+          "ae_mds": 51.37,
+          "cp_mds": 18.69,
+          "actions": 6
+        },
+        {
+          "numero": 212,
+          "programme": "Soutien de la politique de la défense",
+          "ae_mds": 24.77,
+          "cp_mds": 24.92,
+          "actions": 24
+        },
+        {
+          "numero": 178,
+          "programme": "Préparation et emploi des forces",
+          "ae_mds": 15.27,
+          "cp_mds": 14.32,
+          "actions": 7
+        },
+        {
+          "numero": 144,
+          "programme": "Environnement et prospective de la politique de défense",
+          "ae_mds": 2.17,
+          "cp_mds": 2.08,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Enseignement scolaire",
+      "code_mission": "EC",
+      "type_mission": "BG",
+      "ae_mds": 88.83,
+      "cp_mds": 88.82,
+      "programmes": [
+        {
+          "numero": 141,
+          "programme": "Enseignement scolaire public du second degré",
+          "ae_mds": 39.52,
+          "cp_mds": 39.52,
+          "actions": 13
+        },
+        {
+          "numero": 140,
+          "programme": "Enseignement scolaire public du premier degré",
+          "ae_mds": 27.49,
+          "cp_mds": 27.49,
+          "actions": 7
+        },
+        {
+          "numero": 139,
+          "programme": "Enseignement privé du premier et du second degrés",
+          "ae_mds": 8.94,
+          "cp_mds": 8.94,
+          "actions": 12
+        },
+        {
+          "numero": 230,
+          "programme": "Vie de l'élève",
+          "ae_mds": 8.14,
+          "cp_mds": 8.15,
+          "actions": 7
+        },
+        {
+          "numero": 214,
+          "programme": "Soutien de la politique de l'éducation nationale",
+          "ae_mds": 3,
+          "cp_mds": 2.98,
+          "actions": 11
+        },
+        {
+          "numero": 143,
+          "programme": "Enseignement technique agricole",
+          "ae_mds": 1.73,
+          "cp_mds": 1.73,
+          "actions": 5
+        }
+      ]
+    },
+    {
+      "mission": "Pensions",
+      "code_mission": "YD",
+      "type_mission": "CAS",
+      "ae_mds": 68.48,
+      "cp_mds": 68.48,
+      "programmes": [
+        {
+          "numero": 741,
+          "programme": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+          "ae_mds": 65.14,
+          "cp_mds": 65.14,
+          "actions": 3
+        },
+        {
+          "numero": 742,
+          "programme": "Ouvriers des établissements industriels de l'État",
+          "ae_mds": 2.09,
+          "cp_mds": 2.09,
+          "actions": 4
+        },
+        {
+          "numero": 743,
+          "programme": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+          "ae_mds": 1.25,
+          "cp_mds": 1.25,
+          "actions": 7
+        }
+      ]
+    },
+    {
+      "mission": "Engagements financiers de l'État",
+      "code_mission": "EB",
+      "type_mission": "BG",
+      "ae_mds": 56,
+      "cp_mds": 61.34,
+      "programmes": [
+        {
+          "numero": 117,
+          "programme": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+          "ae_mds": 54.21,
+          "cp_mds": 54.21,
+          "actions": 2
+        },
+        {
+          "numero": 114,
+          "programme": "Appels en garantie de l'État (crédits évaluatifs)",
+          "ae_mds": 0.99,
+          "cp_mds": 0.99,
+          "actions": 5
+        },
+        {
+          "numero": 355,
+          "programme": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+          "ae_mds": 0.69,
+          "cp_mds": 0.69,
+          "actions": 1
+        },
+        {
+          "numero": 145,
+          "programme": "Épargne",
+          "ae_mds": 0.12,
+          "cp_mds": 0.12,
+          "actions": 2
+        },
+        {
+          "numero": 344,
+          "programme": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+          "ae_mds": 0,
+          "cp_mds": 0.18,
+          "actions": 1
+        },
+        {
+          "numero": 369,
+          "programme": "Amortissement de la dette de l'État liée à la covid-19",
+          "ae_mds": 0,
+          "cp_mds": 5.15,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Recherche et enseignement supérieur",
+      "code_mission": "RA",
+      "type_mission": "BG",
+      "ae_mds": 31.7,
+      "cp_mds": 31.29,
+      "programmes": [
+        {
+          "numero": 150,
+          "programme": "Formations supérieures et recherche universitaire",
+          "ae_mds": 15.22,
+          "cp_mds": 15.28,
+          "actions": 9
+        },
+        {
+          "numero": 172,
+          "programme": "Recherches scientifiques et technologiques pluridisciplinaires",
+          "ae_mds": 8.7,
+          "cp_mds": 8.26,
+          "actions": 11
+        },
+        {
+          "numero": 231,
+          "programme": "Vie étudiante",
+          "ae_mds": 3.28,
+          "cp_mds": 3.25,
+          "actions": 4
+        },
+        {
+          "numero": 193,
+          "programme": "Recherche spatiale",
+          "ae_mds": 1.92,
+          "cp_mds": 1.92,
+          "actions": 7
+        },
+        {
+          "numero": 190,
+          "programme": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+          "ae_mds": 1.64,
+          "cp_mds": 1.63,
+          "actions": 7
+        },
+        {
+          "numero": 142,
+          "programme": "Enseignement supérieur et recherche agricoles",
+          "ae_mds": 0.43,
+          "cp_mds": 0.43,
+          "actions": 2
+        },
+        {
+          "numero": 192,
+          "programme": "Recherche et enseignement supérieur en matière économique et industrielle",
+          "ae_mds": 0.37,
+          "cp_mds": 0.37,
+          "actions": 3
+        },
+        {
+          "numero": 191,
+          "programme": "Recherche duale (civile et militaire)",
+          "ae_mds": 0.15,
+          "cp_mds": 0.15,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Solidarité, insertion et égalité des chances",
+      "code_mission": "SE",
+      "type_mission": "BG",
+      "ae_mds": 30.38,
+      "cp_mds": 30.37,
+      "programmes": [
+        {
+          "numero": 157,
+          "programme": "Handicap et dépendance",
+          "ae_mds": 16.03,
+          "cp_mds": 16.03,
+          "actions": 2
+        },
+        {
+          "numero": 304,
+          "programme": "Inclusion sociale et protection des personnes",
+          "ae_mds": 14.26,
+          "cp_mds": 14.26,
+          "actions": 9
+        },
+        {
+          "numero": 137,
+          "programme": "Égalité entre les femmes et les hommes",
+          "ae_mds": 0.09,
+          "cp_mds": 0.09,
+          "actions": 4
+        }
+      ]
+    },
+    {
+      "mission": "Sécurités",
+      "code_mission": "SB",
+      "type_mission": "BG",
+      "ae_mds": 26.06,
+      "cp_mds": 25.22,
+      "programmes": [
+        {
+          "numero": 176,
+          "programme": "Police nationale",
+          "ae_mds": 13.75,
+          "cp_mds": 13.37,
+          "actions": 6
+        },
+        {
+          "numero": 152,
+          "programme": "Gendarmerie nationale",
+          "ae_mds": 11.37,
+          "cp_mds": 10.93,
+          "actions": 5
+        },
+        {
+          "numero": 161,
+          "programme": "Sécurité civile",
+          "ae_mds": 0.86,
+          "cp_mds": 0.83,
+          "actions": 4
+        },
+        {
+          "numero": 207,
+          "programme": "Sécurité et éducation routières",
+          "ae_mds": 0.08,
+          "cp_mds": 0.08,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Cohésion des territoires",
+      "code_mission": "VA",
+      "type_mission": "BG",
+      "ae_mds": 23.49,
+      "cp_mds": 23.78,
+      "programmes": [
+        {
+          "numero": 109,
+          "programme": "Aide à l'accès au logement",
+          "ae_mds": 17.02,
+          "cp_mds": 17.02,
+          "actions": 2
+        },
+        {
+          "numero": 177,
+          "programme": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+          "ae_mds": 2.91,
+          "cp_mds": 2.93,
+          "actions": 3
+        },
+        {
+          "numero": 135,
+          "programme": "Urbanisme, territoires et amélioration de l'habitat",
+          "ae_mds": 2.69,
+          "cp_mds": 3,
+          "actions": 6
+        },
+        {
+          "numero": 147,
+          "programme": "Politique de la ville",
+          "ae_mds": 0.55,
+          "cp_mds": 0.55,
+          "actions": 3
+        },
+        {
+          "numero": 112,
+          "programme": "Impulsion et coordination de la politique d'aménagement du territoire",
+          "ae_mds": 0.25,
+          "cp_mds": 0.21,
+          "actions": 4
+        },
+        {
+          "numero": 162,
+          "programme": "Interventions territoriales de l'État",
+          "ae_mds": 0.08,
+          "cp_mds": 0.08,
+          "actions": 7
+        }
+      ]
+    },
+    {
+      "mission": "Écologie, développement et mobilité durables",
+      "code_mission": "TA",
+      "type_mission": "BG",
+      "ae_mds": 21.81,
+      "cp_mds": 20.5,
+      "programmes": [
+        {
+          "numero": 345,
+          "programme": "Service public de l'énergie",
+          "ae_mds": 7.33,
+          "cp_mds": 6.66,
+          "actions": 8
+        },
+        {
+          "numero": 203,
+          "programme": "Infrastructures et services de transports",
+          "ae_mds": 4.98,
+          "cp_mds": 4.48,
+          "actions": 11
+        },
+        {
+          "numero": 217,
+          "programme": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+          "ae_mds": 3.23,
+          "cp_mds": 3.22,
+          "actions": 12
+        },
+        {
+          "numero": 174,
+          "programme": "Énergie, climat et après-mines",
+          "ae_mds": 2.39,
+          "cp_mds": 2.11,
+          "actions": 6
+        },
+        {
+          "numero": 181,
+          "programme": "Prévention des risques",
+          "ae_mds": 1.31,
+          "cp_mds": 1.31,
+          "actions": 6
+        },
+        {
+          "numero": 380,
+          "programme": "Fonds d'accélération de la transition écologique dans les territoires",
+          "ae_mds": 1,
+          "cp_mds": 1.14,
+          "actions": 3
+        },
+        {
+          "numero": 159,
+          "programme": "Expertise, information géographique et météorologie",
+          "ae_mds": 0.52,
+          "cp_mds": 0.52,
+          "actions": 4
+        },
+        {
+          "numero": 113,
+          "programme": "Paysages, eau et biodiversité",
+          "ae_mds": 0.44,
+          "cp_mds": 0.45,
+          "actions": 3
+        },
+        {
+          "numero": 235,
+          "programme": "Sûreté nucléaire et radioprotection",
+          "ae_mds": 0.36,
+          "cp_mds": 0.37,
+          "actions": 2
+        },
+        {
+          "numero": 205,
+          "programme": "Affaires maritimes, pêche et aquaculture",
+          "ae_mds": 0.25,
+          "cp_mds": 0.26,
+          "actions": 7
+        }
+      ]
+    },
+    {
+      "mission": "Travail, emploi et administration des ministères sociaux",
+      "code_mission": "TB",
+      "type_mission": "BG",
+      "ae_mds": 21.48,
+      "cp_mds": 21.63,
+      "programmes": [
+        {
+          "numero": 103,
+          "programme": "Accompagnement des mutations économiques et développement de l'emploi",
+          "ae_mds": 11.72,
+          "cp_mds": 12.32,
+          "actions": 5
+        },
+        {
+          "numero": 102,
+          "programme": "Accès et retour à l'emploi",
+          "ae_mds": 7.77,
+          "cp_mds": 7.21,
+          "actions": 4
+        },
+        {
+          "numero": 155,
+          "programme": "Soutien des ministères sociaux",
+          "ae_mds": 1.94,
+          "cp_mds": 2.02,
+          "actions": 15
+        },
+        {
+          "numero": 111,
+          "programme": "Amélioration de la qualité de l'emploi et des relations du travail",
+          "ae_mds": 0.04,
+          "cp_mds": 0.08,
+          "actions": 3
+        }
       ]
     },
     {
       "mission": "Justice",
+      "code_mission": "JA",
+      "type_mission": "BG",
+      "ae_mds": 11.93,
+      "cp_mds": 12.46,
       "programmes": [
-        "Justice judiciaire",
-        "Administration pénitentiaire"
+        {
+          "numero": 107,
+          "programme": "Administration pénitentiaire",
+          "ae_mds": 4.74,
+          "cp_mds": 5.24,
+          "actions": 3
+        },
+        {
+          "numero": 166,
+          "programme": "Justice judiciaire",
+          "ae_mds": 4.58,
+          "cp_mds": 4.57,
+          "actions": 7
+        },
+        {
+          "numero": 182,
+          "programme": "Protection judiciaire de la jeunesse",
+          "ae_mds": 1.16,
+          "cp_mds": 1.14,
+          "actions": 3
+        },
+        {
+          "numero": 101,
+          "programme": "Accès au droit et à la justice",
+          "ae_mds": 0.8,
+          "cp_mds": 0.8,
+          "actions": 6
+        },
+        {
+          "numero": 310,
+          "programme": "Conduite et pilotage de la politique de la justice",
+          "ae_mds": 0.64,
+          "cp_mds": 0.7,
+          "actions": 7
+        },
+        {
+          "numero": 335,
+          "programme": "Conseil supérieur de la magistrature",
+          "ae_mds": 0,
+          "cp_mds": 0.01,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Gestion des finances publiques",
+      "code_mission": "GA",
+      "type_mission": "BG",
+      "ae_mds": 11.06,
+      "cp_mds": 10.97,
+      "programmes": [
+        {
+          "numero": 156,
+          "programme": "Gestion fiscale et financière de l'État et du secteur public local",
+          "ae_mds": 8.26,
+          "cp_mds": 8.21,
+          "actions": 9
+        },
+        {
+          "numero": 302,
+          "programme": "Facilitation et sécurisation des échanges",
+          "ae_mds": 1.81,
+          "cp_mds": 1.78,
+          "actions": 7
+        },
+        {
+          "numero": 218,
+          "programme": "Conduite et pilotage des politiques économiques et financières",
+          "ae_mds": 1,
+          "cp_mds": 0.98,
+          "actions": 5
+        }
+      ]
+    },
+    {
+      "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+      "code_mission": "ZB",
+      "type_mission": "CCF",
+      "ae_mds": 10.42,
+      "cp_mds": 10.42,
+      "programmes": [
+        {
+          "numero": 821,
+          "programme": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+          "ae_mds": 10,
+          "cp_mds": 10,
+          "actions": 1
+        },
+        {
+          "numero": 823,
+          "programme": "Avances à des organismes distincts de l'État et gérant des services publics",
+          "ae_mds": 0.26,
+          "cp_mds": 0.26,
+          "actions": 1
+        },
+        {
+          "numero": 830,
+          "programme": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+          "ae_mds": 0.07,
+          "cp_mds": 0.07,
+          "actions": 1
+        },
+        {
+          "numero": 824,
+          "programme": "Prêts et avances à des services de l'État",
+          "ae_mds": 0.07,
+          "cp_mds": 0.07,
+          "actions": 1
+        },
+        {
+          "numero": 825,
+          "programme": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+          "ae_mds": 0.02,
+          "cp_mds": 0.02,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Participations financières de l'État",
+      "code_mission": "YC",
+      "type_mission": "CAS",
+      "ae_mds": 9.57,
+      "cp_mds": 9.57,
+      "programmes": [
+        {
+          "numero": 732,
+          "programme": "Désendettement de l'État et d'établissements publics de l'État",
+          "ae_mds": 5.15,
+          "cp_mds": 5.15,
+          "actions": 1
+        },
+        {
+          "numero": 731,
+          "programme": "Opérations en capital intéressant les participations financières de l'État",
+          "ae_mds": 4.42,
+          "cp_mds": 4.42,
+          "actions": 2
+        }
+      ]
+    },
+    {
+      "mission": "Régimes sociaux et de retraite",
+      "code_mission": "RB",
+      "type_mission": "BG",
+      "ae_mds": 6,
+      "cp_mds": 6,
+      "programmes": [
+        {
+          "numero": 198,
+          "programme": "Régimes sociaux et de retraite des transports terrestres",
+          "ae_mds": 4.18,
+          "cp_mds": 4.18,
+          "actions": 3
+        },
+        {
+          "numero": 195,
+          "programme": "Régimes de retraite des mines, de la SEITA, et divers",
+          "ae_mds": 1.03,
+          "cp_mds": 1.03,
+          "actions": 6
+        },
+        {
+          "numero": 197,
+          "programme": "Régimes de retraite et de sécurité sociale des marins",
+          "ae_mds": 0.78,
+          "cp_mds": 0.78,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Aide publique au développement",
+      "code_mission": "AD",
+      "type_mission": "BG",
+      "ae_mds": 5.67,
+      "cp_mds": 5.15,
+      "programmes": [
+        {
+          "numero": 110,
+          "programme": "Aide économique et financière au développement",
+          "ae_mds": 2.52,
+          "cp_mds": 1.72,
+          "actions": 3
+        },
+        {
+          "numero": 209,
+          "programme": "Solidarité à l'égard des pays en développement",
+          "ae_mds": 2.13,
+          "cp_mds": 2.41,
+          "actions": 3
+        },
+        {
+          "numero": 384,
+          "programme": "Fonds de solidarité pour le développement",
+          "ae_mds": 0.74,
+          "cp_mds": 0.74,
+          "actions": 1
+        },
+        {
+          "numero": 365,
+          "programme": "Renforcement des fonds propres de l'Agence française de développement",
+          "ae_mds": 0.14,
+          "cp_mds": 0.14,
+          "actions": 1
+        },
+        {
+          "numero": 370,
+          "programme": "Restitution des « biens mal acquis »",
+          "ae_mds": 0.14,
+          "cp_mds": 0.14,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Administration générale et territoriale de l'État",
+      "code_mission": "AB",
+      "type_mission": "BG",
+      "ae_mds": 4.71,
+      "cp_mds": 4.96,
+      "programmes": [
+        {
+          "numero": 354,
+          "programme": "Administration territoriale de l'État",
+          "ae_mds": 2.75,
+          "cp_mds": 2.67,
+          "actions": 6
+        },
+        {
+          "numero": 216,
+          "programme": "Conduite et pilotage des politiques de l'intérieur",
+          "ae_mds": 1.86,
+          "cp_mds": 2.2,
+          "actions": 10
+        },
+        {
+          "numero": 232,
+          "programme": "Vie politique",
+          "ae_mds": 0.1,
+          "cp_mds": 0.1,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Agriculture, alimentation, forêt et affaires rurales",
+      "code_mission": "AC",
+      "type_mission": "BG",
+      "ae_mds": 4.62,
+      "cp_mds": 4.44,
+      "programmes": [
+        {
+          "numero": 149,
+          "programme": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt",
+          "ae_mds": 2.51,
+          "cp_mds": 2.46,
+          "actions": 8
+        },
+        {
+          "numero": 206,
+          "programme": "Sécurité et qualité sanitaires de l'alimentation",
+          "ae_mds": 0.93,
+          "cp_mds": 0.86,
+          "actions": 8
+        },
+        {
+          "numero": 215,
+          "programme": "Conduite et pilotage des politiques de l'agriculture",
+          "ae_mds": 0.73,
+          "cp_mds": 0.67,
+          "actions": 4
+        },
+        {
+          "numero": 381,
+          "programme": "Allègements du coût du travail en agriculture (TODE-AG)",
+          "ae_mds": 0.45,
+          "cp_mds": 0.45,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Audiovisuel public",
+      "code_mission": "AQ",
+      "type_mission": "BG",
+      "ae_mds": 4.03,
+      "cp_mds": 4.03,
+      "programmes": [
+        {
+          "numero": 372,
+          "programme": "France Télévisions",
+          "ae_mds": 2.55,
+          "cp_mds": 2.55,
+          "actions": 1
+        },
+        {
+          "numero": 374,
+          "programme": "Radio France",
+          "ae_mds": 0.66,
+          "cp_mds": 0.66,
+          "actions": 1
+        },
+        {
+          "numero": 375,
+          "programme": "France Médias Monde",
+          "ae_mds": 0.3,
+          "cp_mds": 0.3,
+          "actions": 1
+        },
+        {
+          "numero": 373,
+          "programme": "ARTE France",
+          "ae_mds": 0.3,
+          "cp_mds": 0.3,
+          "actions": 1
+        },
+        {
+          "numero": 376,
+          "programme": "Institut national de l'audiovisuel",
+          "ae_mds": 0.1,
+          "cp_mds": 0.1,
+          "actions": 1
+        },
+        {
+          "numero": 377,
+          "programme": "TV5 Monde",
+          "ae_mds": 0.08,
+          "cp_mds": 0.08,
+          "actions": 1
+        },
+        {
+          "numero": 383,
+          "programme": "Programme de transformation",
+          "ae_mds": 0.03,
+          "cp_mds": 0.03,
+          "actions": 5
+        }
+      ]
+    },
+    {
+      "mission": "Relations avec les collectivités territoriales",
+      "code_mission": "RC",
+      "type_mission": "BG",
+      "ae_mds": 4.01,
+      "cp_mds": 4.06,
+      "programmes": [
+        {
+          "numero": 119,
+          "programme": "Concours financiers aux collectivités territoriales et à leurs groupements",
+          "ae_mds": 3.8,
+          "cp_mds": 3.75,
+          "actions": 7
+        },
+        {
+          "numero": 122,
+          "programme": "Concours spécifiques et administration",
+          "ae_mds": 0.21,
+          "cp_mds": 0.31,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Culture",
+      "code_mission": "CB",
+      "type_mission": "BG",
+      "ae_mds": 3.93,
+      "cp_mds": 3.92,
+      "programmes": [
+        {
+          "numero": 175,
+          "programme": "Patrimoines",
+          "ae_mds": 1.14,
+          "cp_mds": 1.2,
+          "actions": 6
+        },
+        {
+          "numero": 131,
+          "programme": "Création",
+          "ae_mds": 1.07,
+          "cp_mds": 1.04,
+          "actions": 3
+        },
+        {
+          "numero": 224,
+          "programme": "Soutien aux politiques du ministère de la culture",
+          "ae_mds": 0.87,
+          "cp_mds": 0.87,
+          "actions": 2
+        },
+        {
+          "numero": 361,
+          "programme": "Transmission des savoirs et démocratisation de la culture",
+          "ae_mds": 0.86,
+          "cp_mds": 0.81,
+          "actions": 4
+        }
+      ]
+    },
+    {
+      "mission": "Économie",
+      "code_mission": "DB",
+      "type_mission": "BG",
+      "ae_mds": 3.65,
+      "cp_mds": 3.88,
+      "programmes": [
+        {
+          "numero": 134,
+          "programme": "Développement des entreprises et régulations",
+          "ae_mds": 2.43,
+          "cp_mds": 2.46,
+          "actions": 8
+        },
+        {
+          "numero": 305,
+          "programme": "Stratégies économiques",
+          "ae_mds": 0.7,
+          "cp_mds": 0.71,
+          "actions": 3
+        },
+        {
+          "numero": 220,
+          "programme": "Statistiques et études économiques",
+          "ae_mds": 0.47,
+          "cp_mds": 0.47,
+          "actions": 4
+        },
+        {
+          "numero": 343,
+          "programme": "Plan France Très haut débit",
+          "ae_mds": 0.05,
+          "cp_mds": 0.25,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Action extérieure de l'État",
+      "code_mission": "AA",
+      "type_mission": "BG",
+      "ae_mds": 3.53,
+      "cp_mds": 3.53,
+      "programmes": [
+        {
+          "numero": 105,
+          "programme": "Action de la France en Europe et dans le monde",
+          "ae_mds": 2.7,
+          "cp_mds": 2.7,
+          "actions": 10
+        },
+        {
+          "numero": 185,
+          "programme": "Diplomatie culturelle et d'influence",
+          "ae_mds": 0.68,
+          "cp_mds": 0.68,
+          "actions": 6
+        },
+        {
+          "numero": 151,
+          "programme": "Français à l'étranger et affaires consulaires",
+          "ae_mds": 0.16,
+          "cp_mds": 0.16,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Outre-mer",
+      "code_mission": "OA",
+      "type_mission": "BG",
+      "ae_mds": 2.78,
+      "cp_mds": 2.56,
+      "programmes": [
+        {
+          "numero": 138,
+          "programme": "Emploi outre-mer",
+          "ae_mds": 1.97,
+          "cp_mds": 1.95,
+          "actions": 4
+        },
+        {
+          "numero": 123,
+          "programme": "Conditions de vie outre-mer",
+          "ae_mds": 0.81,
+          "cp_mds": 0.61,
+          "actions": 8
+        }
+      ]
+    },
+    {
+      "mission": "Contrôle et exploitation aériens",
+      "code_mission": "XC",
+      "type_mission": "BA",
+      "ae_mds": 2.4,
+      "cp_mds": 2.36,
+      "programmes": [
+        {
+          "numero": 613,
+          "programme": "Soutien aux prestations de l'aviation civile",
+          "ae_mds": 1.72,
+          "cp_mds": 1.64,
+          "actions": 4
+        },
+        {
+          "numero": 612,
+          "programme": "Navigation aérienne",
+          "ae_mds": 0.63,
+          "cp_mds": 0.68,
+          "actions": 2
+        },
+        {
+          "numero": 614,
+          "programme": "Transports aériens, surveillance et certification",
+          "ae_mds": 0.05,
+          "cp_mds": 0.05,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Anciens combattants, mémoire et liens avec la Nation",
+      "code_mission": "MB",
+      "type_mission": "BG",
+      "ae_mds": 1.9,
+      "cp_mds": 1.91,
+      "programmes": [
+        {
+          "numero": 169,
+          "programme": "Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation",
+          "ae_mds": 1.82,
+          "cp_mds": 1.82,
+          "actions": 5
+        },
+        {
+          "numero": 158,
+          "programme": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+          "ae_mds": 0.09,
+          "cp_mds": 0.09,
+          "actions": 2
+        }
+      ]
+    },
+    {
+      "mission": "Contrôle de la circulation et du stationnement routiers",
+      "code_mission": "YE",
+      "type_mission": "CAS",
+      "ae_mds": 1.86,
+      "cp_mds": 1.86,
+      "programmes": [
+        {
+          "numero": 754,
+          "programme": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+          "ae_mds": 0.78,
+          "cp_mds": 0.78,
+          "actions": 1
+        },
+        {
+          "numero": 755,
+          "programme": "Désendettement de l'État",
+          "ae_mds": 0.72,
+          "cp_mds": 0.72,
+          "actions": 1
+        },
+        {
+          "numero": 751,
+          "programme": "Structures et dispositifs de sécurité routière",
+          "ae_mds": 0.34,
+          "cp_mds": 0.34,
+          "actions": 4
+        },
+        {
+          "numero": 753,
+          "programme": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+          "ae_mds": 0.03,
+          "cp_mds": 0.03,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Immigration, asile et intégration",
+      "code_mission": "IA",
+      "type_mission": "BG",
+      "ae_mds": 1.73,
+      "cp_mds": 2.05,
+      "programmes": [
+        {
+          "numero": 303,
+          "programme": "Immigration et asile",
+          "ae_mds": 1.36,
+          "cp_mds": 1.68,
+          "actions": 4
+        },
+        {
+          "numero": 104,
+          "programme": "Intégration et accès à la nationalité française",
+          "ae_mds": 0.37,
+          "cp_mds": 0.37,
+          "actions": 4
+        }
+      ]
+    },
+    {
+      "mission": "Santé",
+      "code_mission": "SA",
+      "type_mission": "BG",
+      "ae_mds": 1.65,
+      "cp_mds": 1.64,
+      "programmes": [
+        {
+          "numero": 183,
+          "programme": "Protection maladie",
+          "ae_mds": 1.33,
+          "cp_mds": 1.33,
+          "actions": 2
+        },
+        {
+          "numero": 204,
+          "programme": "Prévention, sécurité sanitaire et offre de soins",
+          "ae_mds": 0.23,
+          "cp_mds": 0.22,
+          "actions": 7
+        },
+        {
+          "numero": 379,
+          "programme": "Reversement à la sécurité sociale des recettes de la Facilité pour la Relance et la Résilience (FRR) européenne au titre du volet « Ségur investissement » du plan national de relance et de résilience (PNRR)",
+          "ae_mds": 0.09,
+          "cp_mds": 0.09,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Sport, jeunesse et vie associative",
+      "code_mission": "SF",
+      "type_mission": "BG",
+      "ae_mds": 1.64,
+      "cp_mds": 1.58,
+      "programmes": [
+        {
+          "numero": 163,
+          "programme": "Jeunesse et vie associative",
+          "ae_mds": 0.94,
+          "cp_mds": 0.94,
+          "actions": 4
+        },
+        {
+          "numero": 219,
+          "programme": "Sport",
+          "ae_mds": 0.69,
+          "cp_mds": 0.59,
+          "actions": 4
+        },
+        {
+          "numero": 350,
+          "programme": "Jeux olympiques et paralympiques 2024",
+          "ae_mds": 0,
+          "cp_mds": 0.05,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Pouvoirs publics",
+      "code_mission": "PB",
+      "type_mission": "BG",
+      "ae_mds": 1.16,
+      "cp_mds": 1.16,
+      "programmes": [
+        {
+          "numero": 511,
+          "programme": "Assemblée nationale",
+          "ae_mds": 0.62,
+          "cp_mds": 0.62,
+          "actions": 1
+        },
+        {
+          "numero": 521,
+          "programme": "Sénat",
+          "ae_mds": 0.36,
+          "cp_mds": 0.36,
+          "actions": 2
+        },
+        {
+          "numero": 501,
+          "programme": "Présidence de la République",
+          "ae_mds": 0.13,
+          "cp_mds": 0.13,
+          "actions": 1
+        },
+        {
+          "numero": 541,
+          "programme": "La Chaîne parlementaire",
+          "ae_mds": 0.04,
+          "cp_mds": 0.04,
+          "actions": 2
+        },
+        {
+          "numero": 531,
+          "programme": "Conseil constitutionnel",
+          "ae_mds": 0.02,
+          "cp_mds": 0.02,
+          "actions": 1
+        },
+        {
+          "numero": 533,
+          "programme": "Cour de justice de la République",
+          "ae_mds": 0,
+          "cp_mds": 0,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Transformation et fonction publiques",
+      "code_mission": "TR",
+      "type_mission": "BG",
+      "ae_mds": 1.08,
+      "cp_mds": 0.8,
+      "programmes": [
+        {
+          "numero": 348,
+          "programme": "Performance et résilience des bâtiments de l'État et de ses opérateurs",
+          "ae_mds": 0.67,
+          "cp_mds": 0.36,
+          "actions": 3
+        },
+        {
+          "numero": 148,
+          "programme": "Fonction publique",
+          "ae_mds": 0.28,
+          "cp_mds": 0.28,
+          "actions": 3
+        },
+        {
+          "numero": 349,
+          "programme": "Transformation publique",
+          "ae_mds": 0.08,
+          "cp_mds": 0.11,
+          "actions": 3
+        },
+        {
+          "numero": 368,
+          "programme": "Conduite et pilotage de la transformation et de la fonction publiques",
+          "ae_mds": 0.05,
+          "cp_mds": 0.05,
+          "actions": 2
+        }
+      ]
+    },
+    {
+      "mission": "Direction de l'action du Gouvernement",
+      "code_mission": "DC",
+      "type_mission": "BG",
+      "ae_mds": 1.06,
+      "cp_mds": 1.07,
+      "programmes": [
+        {
+          "numero": 129,
+          "programme": "Coordination du travail gouvernemental",
+          "ae_mds": 0.91,
+          "cp_mds": 0.92,
+          "actions": 9
+        },
+        {
+          "numero": 308,
+          "programme": "Protection des droits et libertés",
+          "ae_mds": 0.15,
+          "cp_mds": 0.14,
+          "actions": 8
+        }
+      ]
+    },
+    {
+      "mission": "Prêts à des États étrangers",
+      "code_mission": "ZE",
+      "type_mission": "CCF",
+      "ae_mds": 1.06,
+      "cp_mds": 0.97,
+      "programmes": [
+        {
+          "numero": 851,
+          "programme": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+          "ae_mds": 1,
+          "cp_mds": 0.76,
+          "actions": 1
+        },
+        {
+          "numero": 852,
+          "programme": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+          "ae_mds": 0.06,
+          "cp_mds": 0.06,
+          "actions": 1
+        },
+        {
+          "numero": 853,
+          "programme": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+          "ae_mds": 0,
+          "cp_mds": 0.14,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Conseil et contrôle de l'État",
+      "code_mission": "CA",
+      "type_mission": "BG",
+      "ae_mds": 0.82,
+      "cp_mds": 0.9,
+      "programmes": [
+        {
+          "numero": 165,
+          "programme": "Conseil d'État et autres juridictions administratives",
+          "ae_mds": 0.52,
+          "cp_mds": 0.6,
+          "actions": 8
+        },
+        {
+          "numero": 164,
+          "programme": "Cour des comptes et autres juridictions financières",
+          "ae_mds": 0.27,
+          "cp_mds": 0.26,
+          "actions": 8
+        },
+        {
+          "numero": 126,
+          "programme": "Conseil économique, social et environnemental",
+          "ae_mds": 0.03,
+          "cp_mds": 0.03,
+          "actions": 2
+        }
+      ]
+    },
+    {
+      "mission": "Médias, livre et industries culturelles",
+      "code_mission": "MA",
+      "type_mission": "BG",
+      "ae_mds": 0.73,
+      "cp_mds": 0.72,
+      "programmes": [
+        {
+          "numero": 180,
+          "programme": "Presse et médias",
+          "ae_mds": 0.37,
+          "cp_mds": 0.37,
+          "actions": 5
+        },
+        {
+          "numero": 334,
+          "programme": "Livre et industries culturelles",
+          "ae_mds": 0.36,
+          "cp_mds": 0.36,
+          "actions": 2
+        }
+      ]
+    },
+    {
+      "mission": "Crédits non répartis",
+      "code_mission": "PC",
+      "type_mission": "BG",
+      "ae_mds": 0.5,
+      "cp_mds": 0.2,
+      "programmes": [
+        {
+          "numero": 552,
+          "programme": "Dépenses accidentelles et imprévisibles",
+          "ae_mds": 0.43,
+          "cp_mds": 0.13,
+          "actions": 1
+        },
+        {
+          "numero": 551,
+          "programme": "Provision relative aux rémunérations publiques",
+          "ae_mds": 0.07,
+          "cp_mds": 0.07,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+      "code_mission": "YK",
+      "type_mission": "CAS",
+      "ae_mds": 0.36,
+      "cp_mds": 0.36,
+      "programmes": [
+        {
+          "numero": 793,
+          "programme": "Électrification rurale",
+          "ae_mds": 0.36,
+          "cp_mds": 0.36,
+          "actions": 7
+        },
+        {
+          "numero": 794,
+          "programme": "Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+          "ae_mds": 0,
+          "cp_mds": 0,
+          "actions": 5
+        }
+      ]
+    },
+    {
+      "mission": "Gestion du patrimoine immobilier de l'État",
+      "code_mission": "YB",
+      "type_mission": "CAS",
+      "ae_mds": 0.34,
+      "cp_mds": 0.34,
+      "programmes": [
+        {
+          "numero": 723,
+          "programme": "Opérations immobilières et entretien des bâtiments de l'État",
+          "ae_mds": 0.34,
+          "cp_mds": 0.34,
+          "actions": 4
+        }
+      ]
+    },
+    {
+      "mission": "Publications officielles et information administrative",
+      "code_mission": "XJ",
+      "type_mission": "BA",
+      "ae_mds": 0.15,
+      "cp_mds": 0.15,
+      "programmes": [
+        {
+          "numero": 624,
+          "programme": "Pilotage et ressources humaines",
+          "ae_mds": 0.11,
+          "cp_mds": 0.11,
+          "actions": 3
+        },
+        {
+          "numero": 623,
+          "programme": "Édition et diffusion",
+          "ae_mds": 0.04,
+          "cp_mds": 0.04,
+          "actions": 2
+        }
+      ]
+    },
+    {
+      "mission": "Développement agricole et rural",
+      "code_mission": "YF",
+      "type_mission": "CAS",
+      "ae_mds": 0.15,
+      "cp_mds": 0.15,
+      "programmes": [
+        {
+          "numero": 776,
+          "programme": "Recherche appliquée et innovation en agriculture",
+          "ae_mds": 0.08,
+          "cp_mds": 0.08,
+          "actions": 2
+        },
+        {
+          "numero": 775,
+          "programme": "Développement et transfert en agriculture",
+          "ae_mds": 0.07,
+          "cp_mds": 0.07,
+          "actions": 2
+        }
+      ]
+    },
+    {
+      "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+      "code_mission": "ZF",
+      "type_mission": "CCF",
+      "ae_mds": 0.03,
+      "cp_mds": 0.25,
+      "programmes": [
+        {
+          "numero": 862,
+          "programme": "Prêts pour le développement économique et social",
+          "ae_mds": 0.03,
+          "cp_mds": 0.03,
+          "actions": 1
+        },
+        {
+          "numero": 869,
+          "programme": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris-Charles de Gaulle",
+          "ae_mds": 0,
+          "cp_mds": 0.23,
+          "actions": 1
+        },
+        {
+          "numero": 861,
+          "programme": "Prêts et avances pour le logement des agents de l'État",
+          "ae_mds": 0,
+          "cp_mds": 0,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "mission": "Investir pour la France de 2030",
+      "code_mission": "AV",
+      "type_mission": "BG",
+      "ae_mds": 0,
+      "cp_mds": 5.8,
+      "programmes": [
+        {
+          "numero": 421,
+          "programme": "Soutien des progrès de l'enseignement et de la recherche",
+          "ae_mds": 0,
+          "cp_mds": 0.22,
+          "actions": 6
+        },
+        {
+          "numero": 424,
+          "programme": "Financement des investissements stratégiques",
+          "ae_mds": 0,
+          "cp_mds": 4.37,
+          "actions": 6
+        },
+        {
+          "numero": 422,
+          "programme": "Valorisation de la recherche",
+          "ae_mds": 0,
+          "cp_mds": 0.24,
+          "actions": 3
+        },
+        {
+          "numero": 423,
+          "programme": "Accélération de la modernisation des entreprises",
+          "ae_mds": 0,
+          "cp_mds": 0.19,
+          "actions": 4
+        },
+        {
+          "numero": 425,
+          "programme": "Financement structurel des écosystèmes d'innovation",
+          "ae_mds": 0,
+          "cp_mds": 0.78,
+          "actions": 3
+        }
+      ]
+    },
+    {
+      "mission": "Plan de relance",
+      "code_mission": "PR",
+      "type_mission": "BG",
+      "ae_mds": 0,
+      "cp_mds": 0.17,
+      "programmes": [
+        {
+          "numero": 362,
+          "programme": "Écologie",
+          "ae_mds": 0,
+          "cp_mds": 0.1,
+          "actions": 2
+        },
+        {
+          "numero": 363,
+          "programme": "Compétitivité",
+          "ae_mds": 0,
+          "cp_mds": 0.07,
+          "actions": 3
+        }
       ]
     }
   ],
   "comptes_speciaux": {
     "amélioration_solde_2025_meur": 2.5,
     "note": "L'amélioration du solde des comptes spéciaux contribue à la diminution du déficit budgétaire"
+  },
+  "datasets_plf_disponibles": [],
+  "datasets_bruts": [
+    {
+      "dataset_id": "lfi-2012-dotation-ccf-titre-2-et-hors-titre-2-par-programme",
+      "title": "Loi de finances initiale 2012, comptes de concours financiers (CCF) titre 2 et hors titre 2 (H2 et HT2)  par programme (LFI 2012)",
+      "theme": [
+        "BUDGET DE L'ETAT"
+      ],
+      "fields": [
+        {
+          "name": "mission",
+          "type": "text",
+          "label": "Mission"
+        },
+        {
+          "name": "ministere",
+          "type": "text",
+          "label": "Ministère"
+        },
+        {
+          "name": "programme",
+          "type": "text",
+          "label": "Programme"
+        },
+        {
+          "name": "ae_titre_2",
+          "type": "int",
+          "label": "AE Titre 2"
+        },
+        {
+          "name": "ae_autres_titres",
+          "type": "int",
+          "label": "AE Autres titres"
+        },
+        {
+          "name": "total_ae",
+          "type": "int",
+          "label": "Total AE"
+        },
+        {
+          "name": "cp_titre_2",
+          "type": "int",
+          "label": "CP Titre 2"
+        },
+        {
+          "name": "cp_autres_titres",
+          "type": "int",
+          "label": "CP Autres titres"
+        },
+        {
+          "name": "total_cp",
+          "type": "int",
+          "label": "Total CP"
+        }
+      ],
+      "records_url": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/lfi-2012-dotation-ccf-titre-2-et-hors-titre-2-par-programme/records"
+    }
+  ],
+  "sources_api": {
+    "data_economie": {
+      "url": "https://data.economie.gouv.fr/",
+      "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets",
+      "licence": "Licence Ouverte v2.0 (Etalab)"
+    },
+    "budget_gouv": {
+      "url": "https://www.budget.gouv.fr/",
+      "smb": "https://www.budget.gouv.fr/budget-etat/smb"
+    }
+  },
+  "prochaines_etapes": [
+    "Appeler l'API ODATA sur un dataset spécifique (ex: plf25-depenses-2025-du-bg-et-des-ba) pour obtenir les enregistrements mission/programme/AE/CP",
+    "Exemple : fetch https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/plf25-depenses-2025-du-bg-et-des-ba-selon-nomenclatures-destination-et-nature/records?limit=100",
+    "Parser les records pour extraire : mission, programme, AE titre 2, AE hors titre 2, CP titre 2, CP hors titre 2",
+    "Agréger par mission et par programme et comparer avec les chiffres du communiqué de presse",
+    "Ajouter l'exécution SMB (mensuelle) pour le suivi infra-annuel",
+    "Distinguer Budget Général, Budgets Annexes, Comptes Spéciaux (CCF)"
+  ],
+  "plf_2025": {
+    "source": "data.economie.gouv.fr — PLF 2025 dépenses (ODATA)",
+    "unite": "Md€",
+    "total_ae_mds": 847.57,
+    "total_cp_mds": 823.05,
+    "nb_missions": 46,
+    "nb_programmes": 167,
+    "nb_enregistrements": 2415,
+    "missions": [
+      {
+        "code_mission": "RD",
+        "mission": "Remboursements et dégrèvements",
+        "type": "BG",
+        "ae_mds": 147.14,
+        "cp_mds": 147.14,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "ZC",
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "type": "CCF",
+        "ae_mds": 134.09,
+        "cp_mds": 134.09,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "DA",
+        "mission": "Défense",
+        "type": "BG",
+        "ae_mds": 93.58,
+        "cp_mds": 60,
+        "nb_programmes": 4
+      },
+      {
+        "code_mission": "EC",
+        "mission": "Enseignement scolaire",
+        "type": "BG",
+        "ae_mds": 88.83,
+        "cp_mds": 88.82,
+        "nb_programmes": 6
+      },
+      {
+        "code_mission": "YD",
+        "mission": "Pensions",
+        "type": "CAS",
+        "ae_mds": 68.48,
+        "cp_mds": 68.48,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "EB",
+        "mission": "Engagements financiers de l'État",
+        "type": "BG",
+        "ae_mds": 56,
+        "cp_mds": 61.34,
+        "nb_programmes": 6
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "type": "BG",
+        "ae_mds": 31.7,
+        "cp_mds": 31.29,
+        "nb_programmes": 8
+      },
+      {
+        "code_mission": "SE",
+        "mission": "Solidarité, insertion et égalité des chances",
+        "type": "BG",
+        "ae_mds": 30.38,
+        "cp_mds": 30.37,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "SB",
+        "mission": "Sécurités",
+        "type": "BG",
+        "ae_mds": 26.06,
+        "cp_mds": 25.22,
+        "nb_programmes": 4
+      },
+      {
+        "code_mission": "VA",
+        "mission": "Cohésion des territoires",
+        "type": "BG",
+        "ae_mds": 23.49,
+        "cp_mds": 23.78,
+        "nb_programmes": 6
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "type": "BG",
+        "ae_mds": 21.81,
+        "cp_mds": 20.5,
+        "nb_programmes": 10
+      },
+      {
+        "code_mission": "TB",
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "type": "BG",
+        "ae_mds": 21.48,
+        "cp_mds": 21.63,
+        "nb_programmes": 4
+      },
+      {
+        "code_mission": "JA",
+        "mission": "Justice",
+        "type": "BG",
+        "ae_mds": 11.93,
+        "cp_mds": 12.46,
+        "nb_programmes": 6
+      },
+      {
+        "code_mission": "GA",
+        "mission": "Gestion des finances publiques",
+        "type": "BG",
+        "ae_mds": 11.06,
+        "cp_mds": 10.97,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "ZB",
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "type": "CCF",
+        "ae_mds": 10.42,
+        "cp_mds": 10.42,
+        "nb_programmes": 5
+      },
+      {
+        "code_mission": "YC",
+        "mission": "Participations financières de l'État",
+        "type": "CAS",
+        "ae_mds": 9.57,
+        "cp_mds": 9.57,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "RB",
+        "mission": "Régimes sociaux et de retraite",
+        "type": "BG",
+        "ae_mds": 6,
+        "cp_mds": 6,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "AD",
+        "mission": "Aide publique au développement",
+        "type": "BG",
+        "ae_mds": 5.67,
+        "cp_mds": 5.15,
+        "nb_programmes": 5
+      },
+      {
+        "code_mission": "AB",
+        "mission": "Administration générale et territoriale de l'État",
+        "type": "BG",
+        "ae_mds": 4.71,
+        "cp_mds": 4.96,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "AC",
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "type": "BG",
+        "ae_mds": 4.62,
+        "cp_mds": 4.44,
+        "nb_programmes": 4
+      },
+      {
+        "code_mission": "AQ",
+        "mission": "Audiovisuel public",
+        "type": "BG",
+        "ae_mds": 4.03,
+        "cp_mds": 4.03,
+        "nb_programmes": 7
+      },
+      {
+        "code_mission": "RC",
+        "mission": "Relations avec les collectivités territoriales",
+        "type": "BG",
+        "ae_mds": 4.01,
+        "cp_mds": 4.06,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "CB",
+        "mission": "Culture",
+        "type": "BG",
+        "ae_mds": 3.93,
+        "cp_mds": 3.92,
+        "nb_programmes": 4
+      },
+      {
+        "code_mission": "DB",
+        "mission": "Économie",
+        "type": "BG",
+        "ae_mds": 3.65,
+        "cp_mds": 3.88,
+        "nb_programmes": 4
+      },
+      {
+        "code_mission": "AA",
+        "mission": "Action extérieure de l'État",
+        "type": "BG",
+        "ae_mds": 3.53,
+        "cp_mds": 3.53,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "OA",
+        "mission": "Outre-mer",
+        "type": "BG",
+        "ae_mds": 2.78,
+        "cp_mds": 2.56,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "XC",
+        "mission": "Contrôle et exploitation aériens",
+        "type": "BA",
+        "ae_mds": 2.4,
+        "cp_mds": 2.36,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "MB",
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "type": "BG",
+        "ae_mds": 1.9,
+        "cp_mds": 1.91,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "YE",
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "type": "CAS",
+        "ae_mds": 1.86,
+        "cp_mds": 1.86,
+        "nb_programmes": 4
+      },
+      {
+        "code_mission": "IA",
+        "mission": "Immigration, asile et intégration",
+        "type": "BG",
+        "ae_mds": 1.73,
+        "cp_mds": 2.05,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "SA",
+        "mission": "Santé",
+        "type": "BG",
+        "ae_mds": 1.65,
+        "cp_mds": 1.64,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "SF",
+        "mission": "Sport, jeunesse et vie associative",
+        "type": "BG",
+        "ae_mds": 1.64,
+        "cp_mds": 1.58,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "PB",
+        "mission": "Pouvoirs publics",
+        "type": "BG",
+        "ae_mds": 1.16,
+        "cp_mds": 1.16,
+        "nb_programmes": 6
+      },
+      {
+        "code_mission": "TR",
+        "mission": "Transformation et fonction publiques",
+        "type": "BG",
+        "ae_mds": 1.08,
+        "cp_mds": 0.8,
+        "nb_programmes": 4
+      },
+      {
+        "code_mission": "DC",
+        "mission": "Direction de l'action du Gouvernement",
+        "type": "BG",
+        "ae_mds": 1.06,
+        "cp_mds": 1.07,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "ZE",
+        "mission": "Prêts à des États étrangers",
+        "type": "CCF",
+        "ae_mds": 1.06,
+        "cp_mds": 0.97,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "CA",
+        "mission": "Conseil et contrôle de l'État",
+        "type": "BG",
+        "ae_mds": 0.82,
+        "cp_mds": 0.9,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "MA",
+        "mission": "Médias, livre et industries culturelles",
+        "type": "BG",
+        "ae_mds": 0.73,
+        "cp_mds": 0.72,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "PC",
+        "mission": "Crédits non répartis",
+        "type": "BG",
+        "ae_mds": 0.5,
+        "cp_mds": 0.2,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "YK",
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "type": "CAS",
+        "ae_mds": 0.36,
+        "cp_mds": 0.36,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "YB",
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "type": "CAS",
+        "ae_mds": 0.34,
+        "cp_mds": 0.34,
+        "nb_programmes": 1
+      },
+      {
+        "code_mission": "XJ",
+        "mission": "Publications officielles et information administrative",
+        "type": "BA",
+        "ae_mds": 0.15,
+        "cp_mds": 0.15,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "YF",
+        "mission": "Développement agricole et rural",
+        "type": "CAS",
+        "ae_mds": 0.15,
+        "cp_mds": 0.15,
+        "nb_programmes": 2
+      },
+      {
+        "code_mission": "ZF",
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "type": "CCF",
+        "ae_mds": 0.03,
+        "cp_mds": 0.25,
+        "nb_programmes": 3
+      },
+      {
+        "code_mission": "AV",
+        "mission": "Investir pour la France de 2030",
+        "type": "BG",
+        "ae_mds": 0,
+        "cp_mds": 5.8,
+        "nb_programmes": 5
+      },
+      {
+        "code_mission": "PR",
+        "mission": "Plan de relance",
+        "type": "BG",
+        "ae_mds": 0,
+        "cp_mds": 0.17,
+        "nb_programmes": 2
+      }
+    ],
+    "programmes": [
+      {
+        "code_mission": "RD",
+        "mission": "Remboursements et dégrèvements",
+        "numero": 200,
+        "programme": "Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 142.74,
+        "cp_mds": 142.74,
+        "actions": 3
+      },
+      {
+        "code_mission": "ZC",
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "numero": 833,
+        "programme": "Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes",
+        "type_mission": "CCF",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 134.09,
+        "cp_mds": 134.09,
+        "actions": 4
+      },
+      {
+        "code_mission": "YD",
+        "mission": "Pensions",
+        "numero": 741,
+        "programme": "Pensions civiles et militaires de retraite et allocations temporaires d'invalidité",
+        "type_mission": "CAS",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 65.14,
+        "cp_mds": 65.14,
+        "actions": 3
+      },
+      {
+        "code_mission": "EB",
+        "mission": "Engagements financiers de l'État",
+        "numero": 117,
+        "programme": "Charge de la dette et trésorerie de l'État (crédits évaluatifs)",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 54.21,
+        "cp_mds": 54.21,
+        "actions": 2
+      },
+      {
+        "code_mission": "DA",
+        "mission": "Défense",
+        "numero": 146,
+        "programme": "Équipement des forces",
+        "type_mission": "BG",
+        "ministere": "Armées et anciens combattants",
+        "ae_mds": 51.37,
+        "cp_mds": 18.69,
+        "actions": 6
+      },
+      {
+        "code_mission": "EC",
+        "mission": "Enseignement scolaire",
+        "numero": 141,
+        "programme": "Enseignement scolaire public du second degré",
+        "type_mission": "BG",
+        "ministere": "Éducation nationale",
+        "ae_mds": 39.52,
+        "cp_mds": 39.52,
+        "actions": 13
+      },
+      {
+        "code_mission": "EC",
+        "mission": "Enseignement scolaire",
+        "numero": 140,
+        "programme": "Enseignement scolaire public du premier degré",
+        "type_mission": "BG",
+        "ministere": "Éducation nationale",
+        "ae_mds": 27.49,
+        "cp_mds": 27.49,
+        "actions": 7
+      },
+      {
+        "code_mission": "DA",
+        "mission": "Défense",
+        "numero": 212,
+        "programme": "Soutien de la politique de la défense",
+        "type_mission": "BG",
+        "ministere": "Armées et anciens combattants",
+        "ae_mds": 24.77,
+        "cp_mds": 24.92,
+        "actions": 24
+      },
+      {
+        "code_mission": "VA",
+        "mission": "Cohésion des territoires",
+        "numero": 109,
+        "programme": "Aide à l'accès au logement",
+        "type_mission": "BG",
+        "ministere": "Logement et rénovation urbaine",
+        "ae_mds": 17.02,
+        "cp_mds": 17.02,
+        "actions": 2
+      },
+      {
+        "code_mission": "SE",
+        "mission": "Solidarité, insertion et égalité des chances",
+        "numero": 157,
+        "programme": "Handicap et dépendance",
+        "type_mission": "BG",
+        "ministere": "Solidarités, autonomie et égalité entre les femmes et les hommes",
+        "ae_mds": 16.03,
+        "cp_mds": 16.03,
+        "actions": 2
+      },
+      {
+        "code_mission": "DA",
+        "mission": "Défense",
+        "numero": 178,
+        "programme": "Préparation et emploi des forces",
+        "type_mission": "BG",
+        "ministere": "Armées et anciens combattants",
+        "ae_mds": 15.27,
+        "cp_mds": 14.32,
+        "actions": 7
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "numero": 150,
+        "programme": "Formations supérieures et recherche universitaire",
+        "type_mission": "BG",
+        "ministere": "Enseignement supérieur et recherche",
+        "ae_mds": 15.22,
+        "cp_mds": 15.28,
+        "actions": 9
+      },
+      {
+        "code_mission": "SE",
+        "mission": "Solidarité, insertion et égalité des chances",
+        "numero": 304,
+        "programme": "Inclusion sociale et protection des personnes",
+        "type_mission": "BG",
+        "ministere": "Solidarités, autonomie et égalité entre les femmes et les hommes",
+        "ae_mds": 14.26,
+        "cp_mds": 14.26,
+        "actions": 9
+      },
+      {
+        "code_mission": "SB",
+        "mission": "Sécurités",
+        "numero": 176,
+        "programme": "Police nationale",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 13.75,
+        "cp_mds": 13.37,
+        "actions": 6
+      },
+      {
+        "code_mission": "TB",
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "numero": 103,
+        "programme": "Accompagnement des mutations économiques et développement de l'emploi",
+        "type_mission": "BG",
+        "ministere": "Travail et emploi",
+        "ae_mds": 11.72,
+        "cp_mds": 12.32,
+        "actions": 5
+      },
+      {
+        "code_mission": "SB",
+        "mission": "Sécurités",
+        "numero": 152,
+        "programme": "Gendarmerie nationale",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 11.37,
+        "cp_mds": 10.93,
+        "actions": 5
+      },
+      {
+        "code_mission": "ZB",
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "numero": 821,
+        "programme": "Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 10,
+        "cp_mds": 10,
+        "actions": 1
+      },
+      {
+        "code_mission": "EC",
+        "mission": "Enseignement scolaire",
+        "numero": 139,
+        "programme": "Enseignement privé du premier et du second degrés",
+        "type_mission": "BG",
+        "ministere": "Éducation nationale",
+        "ae_mds": 8.94,
+        "cp_mds": 8.94,
+        "actions": 12
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "numero": 172,
+        "programme": "Recherches scientifiques et technologiques pluridisciplinaires",
+        "type_mission": "BG",
+        "ministere": "Enseignement supérieur et recherche",
+        "ae_mds": 8.7,
+        "cp_mds": 8.26,
+        "actions": 11
+      },
+      {
+        "code_mission": "GA",
+        "mission": "Gestion des finances publiques",
+        "numero": 156,
+        "programme": "Gestion fiscale et financière de l'État et du secteur public local",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 8.26,
+        "cp_mds": 8.21,
+        "actions": 9
+      },
+      {
+        "code_mission": "EC",
+        "mission": "Enseignement scolaire",
+        "numero": 230,
+        "programme": "Vie de l'élève",
+        "type_mission": "BG",
+        "ministere": "Éducation nationale",
+        "ae_mds": 8.14,
+        "cp_mds": 8.15,
+        "actions": 7
+      },
+      {
+        "code_mission": "TB",
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "numero": 102,
+        "programme": "Accès et retour à l'emploi",
+        "type_mission": "BG",
+        "ministere": "Travail et emploi",
+        "ae_mds": 7.77,
+        "cp_mds": 7.21,
+        "actions": 4
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 345,
+        "programme": "Service public de l'énergie",
+        "type_mission": "BG",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 7.33,
+        "cp_mds": 6.66,
+        "actions": 8
+      },
+      {
+        "code_mission": "YC",
+        "mission": "Participations financières de l'État",
+        "numero": 732,
+        "programme": "Désendettement de l'État et d'établissements publics de l'État",
+        "type_mission": "CAS",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 5.15,
+        "cp_mds": 5.15,
+        "actions": 1
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 203,
+        "programme": "Infrastructures et services de transports",
+        "type_mission": "BG",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 4.98,
+        "cp_mds": 4.48,
+        "actions": 11
+      },
+      {
+        "code_mission": "JA",
+        "mission": "Justice",
+        "numero": 107,
+        "programme": "Administration pénitentiaire",
+        "type_mission": "BG",
+        "ministere": "Justice",
+        "ae_mds": 4.74,
+        "cp_mds": 5.24,
+        "actions": 3
+      },
+      {
+        "code_mission": "JA",
+        "mission": "Justice",
+        "numero": 166,
+        "programme": "Justice judiciaire",
+        "type_mission": "BG",
+        "ministere": "Justice",
+        "ae_mds": 4.58,
+        "cp_mds": 4.57,
+        "actions": 7
+      },
+      {
+        "code_mission": "YC",
+        "mission": "Participations financières de l'État",
+        "numero": 731,
+        "programme": "Opérations en capital intéressant les participations financières de l'État",
+        "type_mission": "CAS",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 4.42,
+        "cp_mds": 4.42,
+        "actions": 2
+      },
+      {
+        "code_mission": "RD",
+        "mission": "Remboursements et dégrèvements",
+        "numero": 201,
+        "programme": "Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 4.4,
+        "cp_mds": 4.4,
+        "actions": 4
+      },
+      {
+        "code_mission": "RB",
+        "mission": "Régimes sociaux et de retraite",
+        "numero": 198,
+        "programme": "Régimes sociaux et de retraite des transports terrestres",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 4.18,
+        "cp_mds": 4.18,
+        "actions": 3
+      },
+      {
+        "code_mission": "RC",
+        "mission": "Relations avec les collectivités territoriales",
+        "numero": 119,
+        "programme": "Concours financiers aux collectivités territoriales et à leurs groupements",
+        "type_mission": "BG",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 3.8,
+        "cp_mds": 3.75,
+        "actions": 7
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "numero": 231,
+        "programme": "Vie étudiante",
+        "type_mission": "BG",
+        "ministere": "Enseignement supérieur et recherche",
+        "ae_mds": 3.28,
+        "cp_mds": 3.25,
+        "actions": 4
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 217,
+        "programme": "Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+        "type_mission": "BG",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 3.23,
+        "cp_mds": 3.22,
+        "actions": 12
+      },
+      {
+        "code_mission": "EC",
+        "mission": "Enseignement scolaire",
+        "numero": 214,
+        "programme": "Soutien de la politique de l'éducation nationale",
+        "type_mission": "BG",
+        "ministere": "Éducation nationale",
+        "ae_mds": 3,
+        "cp_mds": 2.98,
+        "actions": 11
+      },
+      {
+        "code_mission": "VA",
+        "mission": "Cohésion des territoires",
+        "numero": 177,
+        "programme": "Hébergement, parcours vers le logement et insertion des personnes vulnérables",
+        "type_mission": "BG",
+        "ministere": "Logement et rénovation urbaine",
+        "ae_mds": 2.91,
+        "cp_mds": 2.93,
+        "actions": 3
+      },
+      {
+        "code_mission": "AB",
+        "mission": "Administration générale et territoriale de l'État",
+        "numero": 354,
+        "programme": "Administration territoriale de l'État",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 2.75,
+        "cp_mds": 2.67,
+        "actions": 6
+      },
+      {
+        "code_mission": "AA",
+        "mission": "Action extérieure de l'État",
+        "numero": 105,
+        "programme": "Action de la France en Europe et dans le monde",
+        "type_mission": "BG",
+        "ministere": "Europe et affaires étrangères",
+        "ae_mds": 2.7,
+        "cp_mds": 2.7,
+        "actions": 10
+      },
+      {
+        "code_mission": "VA",
+        "mission": "Cohésion des territoires",
+        "numero": 135,
+        "programme": "Urbanisme, territoires et amélioration de l'habitat",
+        "type_mission": "BG",
+        "ministere": "Logement et rénovation urbaine",
+        "ae_mds": 2.69,
+        "cp_mds": 3,
+        "actions": 6
+      },
+      {
+        "code_mission": "AQ",
+        "mission": "Audiovisuel public",
+        "numero": 372,
+        "programme": "France Télévisions",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 2.55,
+        "cp_mds": 2.55,
+        "actions": 1
+      },
+      {
+        "code_mission": "AD",
+        "mission": "Aide publique au développement",
+        "numero": 110,
+        "programme": "Aide économique et financière au développement",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 2.52,
+        "cp_mds": 1.72,
+        "actions": 3
+      },
+      {
+        "code_mission": "AC",
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "numero": 149,
+        "programme": "Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt",
+        "type_mission": "BG",
+        "ministere": "Agriculture, souveraineté alimentaire et forêt",
+        "ae_mds": 2.51,
+        "cp_mds": 2.46,
+        "actions": 8
+      },
+      {
+        "code_mission": "DB",
+        "mission": "Économie",
+        "numero": 134,
+        "programme": "Développement des entreprises et régulations",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 2.43,
+        "cp_mds": 2.46,
+        "actions": 8
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 174,
+        "programme": "Énergie, climat et après-mines",
+        "type_mission": "BG",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 2.39,
+        "cp_mds": 2.11,
+        "actions": 6
+      },
+      {
+        "code_mission": "DA",
+        "mission": "Défense",
+        "numero": 144,
+        "programme": "Environnement et prospective de la politique de défense",
+        "type_mission": "BG",
+        "ministere": "Armées et anciens combattants",
+        "ae_mds": 2.17,
+        "cp_mds": 2.08,
+        "actions": 3
+      },
+      {
+        "code_mission": "AD",
+        "mission": "Aide publique au développement",
+        "numero": 209,
+        "programme": "Solidarité à l'égard des pays en développement",
+        "type_mission": "BG",
+        "ministere": "Europe et affaires étrangères",
+        "ae_mds": 2.13,
+        "cp_mds": 2.41,
+        "actions": 3
+      },
+      {
+        "code_mission": "YD",
+        "mission": "Pensions",
+        "numero": 742,
+        "programme": "Ouvriers des établissements industriels de l'État",
+        "type_mission": "CAS",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 2.09,
+        "cp_mds": 2.09,
+        "actions": 4
+      },
+      {
+        "code_mission": "OA",
+        "mission": "Outre-mer",
+        "numero": 138,
+        "programme": "Emploi outre-mer",
+        "type_mission": "BG",
+        "ministere": "Outre-Mer",
+        "ae_mds": 1.97,
+        "cp_mds": 1.95,
+        "actions": 4
+      },
+      {
+        "code_mission": "TB",
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "numero": 155,
+        "programme": "Soutien des ministères sociaux",
+        "type_mission": "BG",
+        "ministere": "Travail et emploi",
+        "ae_mds": 1.94,
+        "cp_mds": 2.02,
+        "actions": 15
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "numero": 193,
+        "programme": "Recherche spatiale",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 1.92,
+        "cp_mds": 1.92,
+        "actions": 7
+      },
+      {
+        "code_mission": "AB",
+        "mission": "Administration générale et territoriale de l'État",
+        "numero": 216,
+        "programme": "Conduite et pilotage des politiques de l'intérieur",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 1.86,
+        "cp_mds": 2.2,
+        "actions": 10
+      },
+      {
+        "code_mission": "MB",
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "numero": 169,
+        "programme": "Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation",
+        "type_mission": "BG",
+        "ministere": "Armées et anciens combattants",
+        "ae_mds": 1.82,
+        "cp_mds": 1.82,
+        "actions": 5
+      },
+      {
+        "code_mission": "GA",
+        "mission": "Gestion des finances publiques",
+        "numero": 302,
+        "programme": "Facilitation et sécurisation des échanges",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 1.81,
+        "cp_mds": 1.78,
+        "actions": 7
+      },
+      {
+        "code_mission": "EC",
+        "mission": "Enseignement scolaire",
+        "numero": 143,
+        "programme": "Enseignement technique agricole",
+        "type_mission": "BG",
+        "ministere": "Agriculture, souveraineté alimentaire et forêt",
+        "ae_mds": 1.73,
+        "cp_mds": 1.73,
+        "actions": 5
+      },
+      {
+        "code_mission": "XC",
+        "mission": "Contrôle et exploitation aériens",
+        "numero": 613,
+        "programme": "Soutien aux prestations de l'aviation civile",
+        "type_mission": "BA",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 1.72,
+        "cp_mds": 1.64,
+        "actions": 4
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "numero": 190,
+        "programme": "Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+        "type_mission": "BG",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 1.64,
+        "cp_mds": 1.63,
+        "actions": 7
+      },
+      {
+        "code_mission": "IA",
+        "mission": "Immigration, asile et intégration",
+        "numero": 303,
+        "programme": "Immigration et asile",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 1.36,
+        "cp_mds": 1.68,
+        "actions": 4
+      },
+      {
+        "code_mission": "SA",
+        "mission": "Santé",
+        "numero": 183,
+        "programme": "Protection maladie",
+        "type_mission": "BG",
+        "ministere": "Santé et accès aux soins",
+        "ae_mds": 1.33,
+        "cp_mds": 1.33,
+        "actions": 2
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 181,
+        "programme": "Prévention des risques",
+        "type_mission": "BG",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 1.31,
+        "cp_mds": 1.31,
+        "actions": 6
+      },
+      {
+        "code_mission": "YD",
+        "mission": "Pensions",
+        "numero": 743,
+        "programme": "Pensions militaires d'invalidité et des victimes de guerre et autres pensions",
+        "type_mission": "CAS",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 1.25,
+        "cp_mds": 1.25,
+        "actions": 7
+      },
+      {
+        "code_mission": "JA",
+        "mission": "Justice",
+        "numero": 182,
+        "programme": "Protection judiciaire de la jeunesse",
+        "type_mission": "BG",
+        "ministere": "Justice",
+        "ae_mds": 1.16,
+        "cp_mds": 1.14,
+        "actions": 3
+      },
+      {
+        "code_mission": "CB",
+        "mission": "Culture",
+        "numero": 175,
+        "programme": "Patrimoines",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 1.14,
+        "cp_mds": 1.2,
+        "actions": 6
+      },
+      {
+        "code_mission": "CB",
+        "mission": "Culture",
+        "numero": 131,
+        "programme": "Création",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 1.07,
+        "cp_mds": 1.04,
+        "actions": 3
+      },
+      {
+        "code_mission": "RB",
+        "mission": "Régimes sociaux et de retraite",
+        "numero": 195,
+        "programme": "Régimes de retraite des mines, de la SEITA, et divers",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 1.03,
+        "cp_mds": 1.03,
+        "actions": 6
+      },
+      {
+        "code_mission": "GA",
+        "mission": "Gestion des finances publiques",
+        "numero": 218,
+        "programme": "Conduite et pilotage des politiques économiques et financières",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 1,
+        "cp_mds": 0.98,
+        "actions": 5
+      },
+      {
+        "code_mission": "ZE",
+        "mission": "Prêts à des États étrangers",
+        "numero": 851,
+        "programme": "Prêts du Trésor à des États étrangers en vue de faciliter la vente de biens et de services concourant au développement du commerce extérieur de la France",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 1,
+        "cp_mds": 0.76,
+        "actions": 1
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 380,
+        "programme": "Fonds d'accélération de la transition écologique dans les territoires",
+        "type_mission": "BG",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 1,
+        "cp_mds": 1.14,
+        "actions": 3
+      },
+      {
+        "code_mission": "EB",
+        "mission": "Engagements financiers de l'État",
+        "numero": 114,
+        "programme": "Appels en garantie de l'État (crédits évaluatifs)",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.99,
+        "cp_mds": 0.99,
+        "actions": 5
+      },
+      {
+        "code_mission": "SF",
+        "mission": "Sport, jeunesse et vie associative",
+        "numero": 163,
+        "programme": "Jeunesse et vie associative",
+        "type_mission": "BG",
+        "ministere": "Sports, jeunesse et vie associative",
+        "ae_mds": 0.94,
+        "cp_mds": 0.94,
+        "actions": 4
+      },
+      {
+        "code_mission": "AC",
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "numero": 206,
+        "programme": "Sécurité et qualité sanitaires de l'alimentation",
+        "type_mission": "BG",
+        "ministere": "Agriculture, souveraineté alimentaire et forêt",
+        "ae_mds": 0.93,
+        "cp_mds": 0.86,
+        "actions": 8
+      },
+      {
+        "code_mission": "DC",
+        "mission": "Direction de l'action du Gouvernement",
+        "numero": 129,
+        "programme": "Coordination du travail gouvernemental",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.91,
+        "cp_mds": 0.92,
+        "actions": 9
+      },
+      {
+        "code_mission": "CB",
+        "mission": "Culture",
+        "numero": 224,
+        "programme": "Soutien aux politiques du ministère de la culture",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.87,
+        "cp_mds": 0.87,
+        "actions": 2
+      },
+      {
+        "code_mission": "CB",
+        "mission": "Culture",
+        "numero": 361,
+        "programme": "Transmission des savoirs et démocratisation de la culture",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.86,
+        "cp_mds": 0.81,
+        "actions": 4
+      },
+      {
+        "code_mission": "SB",
+        "mission": "Sécurités",
+        "numero": 161,
+        "programme": "Sécurité civile",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 0.86,
+        "cp_mds": 0.83,
+        "actions": 4
+      },
+      {
+        "code_mission": "OA",
+        "mission": "Outre-mer",
+        "numero": 123,
+        "programme": "Conditions de vie outre-mer",
+        "type_mission": "BG",
+        "ministere": "Outre-Mer",
+        "ae_mds": 0.81,
+        "cp_mds": 0.61,
+        "actions": 8
+      },
+      {
+        "code_mission": "JA",
+        "mission": "Justice",
+        "numero": 101,
+        "programme": "Accès au droit et à la justice",
+        "type_mission": "BG",
+        "ministere": "Justice",
+        "ae_mds": 0.8,
+        "cp_mds": 0.8,
+        "actions": 6
+      },
+      {
+        "code_mission": "YE",
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "numero": 754,
+        "programme": "Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières",
+        "type_mission": "CAS",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 0.78,
+        "cp_mds": 0.78,
+        "actions": 1
+      },
+      {
+        "code_mission": "RB",
+        "mission": "Régimes sociaux et de retraite",
+        "numero": 197,
+        "programme": "Régimes de retraite et de sécurité sociale des marins",
+        "type_mission": "BG",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 0.78,
+        "cp_mds": 0.78,
+        "actions": 1
+      },
+      {
+        "code_mission": "AD",
+        "mission": "Aide publique au développement",
+        "numero": 384,
+        "programme": "Fonds de solidarité pour le développement",
+        "type_mission": "BG",
+        "ministere": "Europe et affaires étrangères",
+        "ae_mds": 0.74,
+        "cp_mds": 0.74,
+        "actions": 1
+      },
+      {
+        "code_mission": "AC",
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "numero": 215,
+        "programme": "Conduite et pilotage des politiques de l'agriculture",
+        "type_mission": "BG",
+        "ministere": "Agriculture, souveraineté alimentaire et forêt",
+        "ae_mds": 0.73,
+        "cp_mds": 0.67,
+        "actions": 4
+      },
+      {
+        "code_mission": "YE",
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "numero": 755,
+        "programme": "Désendettement de l'État",
+        "type_mission": "CAS",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.72,
+        "cp_mds": 0.72,
+        "actions": 1
+      },
+      {
+        "code_mission": "DB",
+        "mission": "Économie",
+        "numero": 305,
+        "programme": "Stratégies économiques",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.7,
+        "cp_mds": 0.71,
+        "actions": 3
+      },
+      {
+        "code_mission": "SF",
+        "mission": "Sport, jeunesse et vie associative",
+        "numero": 219,
+        "programme": "Sport",
+        "type_mission": "BG",
+        "ministere": "Sports, jeunesse et vie associative",
+        "ae_mds": 0.69,
+        "cp_mds": 0.59,
+        "actions": 4
+      },
+      {
+        "code_mission": "EB",
+        "mission": "Engagements financiers de l'État",
+        "numero": 355,
+        "programme": "Charge de la dette de SNCF Réseau reprise par l'État (crédits évaluatifs)",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.69,
+        "cp_mds": 0.69,
+        "actions": 1
+      },
+      {
+        "code_mission": "AA",
+        "mission": "Action extérieure de l'État",
+        "numero": 185,
+        "programme": "Diplomatie culturelle et d'influence",
+        "type_mission": "BG",
+        "ministere": "Europe et affaires étrangères",
+        "ae_mds": 0.68,
+        "cp_mds": 0.68,
+        "actions": 6
+      },
+      {
+        "code_mission": "TR",
+        "mission": "Transformation et fonction publiques",
+        "numero": 348,
+        "programme": "Performance et résilience des bâtiments de l'État et de ses opérateurs",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.67,
+        "cp_mds": 0.36,
+        "actions": 3
+      },
+      {
+        "code_mission": "AQ",
+        "mission": "Audiovisuel public",
+        "numero": 374,
+        "programme": "Radio France",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.66,
+        "cp_mds": 0.66,
+        "actions": 1
+      },
+      {
+        "code_mission": "JA",
+        "mission": "Justice",
+        "numero": 310,
+        "programme": "Conduite et pilotage de la politique de la justice",
+        "type_mission": "BG",
+        "ministere": "Justice",
+        "ae_mds": 0.64,
+        "cp_mds": 0.7,
+        "actions": 7
+      },
+      {
+        "code_mission": "XC",
+        "mission": "Contrôle et exploitation aériens",
+        "numero": 612,
+        "programme": "Navigation aérienne",
+        "type_mission": "BA",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 0.63,
+        "cp_mds": 0.68,
+        "actions": 2
+      },
+      {
+        "code_mission": "PB",
+        "mission": "Pouvoirs publics",
+        "numero": 511,
+        "programme": "Assemblée nationale",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.62,
+        "cp_mds": 0.62,
+        "actions": 1
+      },
+      {
+        "code_mission": "VA",
+        "mission": "Cohésion des territoires",
+        "numero": 147,
+        "programme": "Politique de la ville",
+        "type_mission": "BG",
+        "ministere": "Logement et rénovation urbaine",
+        "ae_mds": 0.55,
+        "cp_mds": 0.55,
+        "actions": 3
+      },
+      {
+        "code_mission": "CA",
+        "mission": "Conseil et contrôle de l'État",
+        "numero": 165,
+        "programme": "Conseil d'État et autres juridictions administratives",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.52,
+        "cp_mds": 0.6,
+        "actions": 8
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 159,
+        "programme": "Expertise, information géographique et météorologie",
+        "type_mission": "BG",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 0.52,
+        "cp_mds": 0.52,
+        "actions": 4
+      },
+      {
+        "code_mission": "DB",
+        "mission": "Économie",
+        "numero": 220,
+        "programme": "Statistiques et études économiques",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.47,
+        "cp_mds": 0.47,
+        "actions": 4
+      },
+      {
+        "code_mission": "AC",
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "numero": 381,
+        "programme": "Allègements du coût du travail en agriculture (TODE-AG)",
+        "type_mission": "BG",
+        "ministere": "Agriculture, souveraineté alimentaire et forêt",
+        "ae_mds": 0.45,
+        "cp_mds": 0.45,
+        "actions": 1
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 113,
+        "programme": "Paysages, eau et biodiversité",
+        "type_mission": "BG",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 0.44,
+        "cp_mds": 0.45,
+        "actions": 3
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "numero": 142,
+        "programme": "Enseignement supérieur et recherche agricoles",
+        "type_mission": "BG",
+        "ministere": "Agriculture, souveraineté alimentaire et forêt",
+        "ae_mds": 0.43,
+        "cp_mds": 0.43,
+        "actions": 2
+      },
+      {
+        "code_mission": "PC",
+        "mission": "Crédits non répartis",
+        "numero": 552,
+        "programme": "Dépenses accidentelles et imprévisibles",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.43,
+        "cp_mds": 0.13,
+        "actions": 1
+      },
+      {
+        "code_mission": "IA",
+        "mission": "Immigration, asile et intégration",
+        "numero": 104,
+        "programme": "Intégration et accès à la nationalité française",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 0.37,
+        "cp_mds": 0.37,
+        "actions": 4
+      },
+      {
+        "code_mission": "MA",
+        "mission": "Médias, livre et industries culturelles",
+        "numero": 180,
+        "programme": "Presse et médias",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.37,
+        "cp_mds": 0.37,
+        "actions": 5
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "numero": 192,
+        "programme": "Recherche et enseignement supérieur en matière économique et industrielle",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.37,
+        "cp_mds": 0.37,
+        "actions": 3
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 235,
+        "programme": "Sûreté nucléaire et radioprotection",
+        "type_mission": "BG",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 0.36,
+        "cp_mds": 0.37,
+        "actions": 2
+      },
+      {
+        "code_mission": "YK",
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "numero": 793,
+        "programme": "Électrification rurale",
+        "type_mission": "CAS",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 0.36,
+        "cp_mds": 0.36,
+        "actions": 7
+      },
+      {
+        "code_mission": "MA",
+        "mission": "Médias, livre et industries culturelles",
+        "numero": 334,
+        "programme": "Livre et industries culturelles",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.36,
+        "cp_mds": 0.36,
+        "actions": 2
+      },
+      {
+        "code_mission": "PB",
+        "mission": "Pouvoirs publics",
+        "numero": 521,
+        "programme": "Sénat",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.36,
+        "cp_mds": 0.36,
+        "actions": 2
+      },
+      {
+        "code_mission": "YB",
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "numero": 723,
+        "programme": "Opérations immobilières et entretien des bâtiments de l'État",
+        "type_mission": "CAS",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.34,
+        "cp_mds": 0.34,
+        "actions": 4
+      },
+      {
+        "code_mission": "YE",
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "numero": 751,
+        "programme": "Structures et dispositifs de sécurité routière",
+        "type_mission": "CAS",
+        "ministere": "Intérieur",
+        "ae_mds": 0.34,
+        "cp_mds": 0.34,
+        "actions": 4
+      },
+      {
+        "code_mission": "AQ",
+        "mission": "Audiovisuel public",
+        "numero": 375,
+        "programme": "France Médias Monde",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.3,
+        "cp_mds": 0.3,
+        "actions": 1
+      },
+      {
+        "code_mission": "AQ",
+        "mission": "Audiovisuel public",
+        "numero": 373,
+        "programme": "ARTE France",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.3,
+        "cp_mds": 0.3,
+        "actions": 1
+      },
+      {
+        "code_mission": "TR",
+        "mission": "Transformation et fonction publiques",
+        "numero": 148,
+        "programme": "Fonction publique",
+        "type_mission": "BG",
+        "ministere": "Fonction publique, simplification et transformation de l'action publique",
+        "ae_mds": 0.28,
+        "cp_mds": 0.28,
+        "actions": 3
+      },
+      {
+        "code_mission": "CA",
+        "mission": "Conseil et contrôle de l'État",
+        "numero": 164,
+        "programme": "Cour des comptes et autres juridictions financières",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.27,
+        "cp_mds": 0.26,
+        "actions": 8
+      },
+      {
+        "code_mission": "ZB",
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "numero": 823,
+        "programme": "Avances à des organismes distincts de l'État et gérant des services publics",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.26,
+        "cp_mds": 0.26,
+        "actions": 1
+      },
+      {
+        "code_mission": "TA",
+        "mission": "Écologie, développement et mobilité durables",
+        "numero": 205,
+        "programme": "Affaires maritimes, pêche et aquaculture",
+        "type_mission": "BG",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 0.25,
+        "cp_mds": 0.26,
+        "actions": 7
+      },
+      {
+        "code_mission": "VA",
+        "mission": "Cohésion des territoires",
+        "numero": 112,
+        "programme": "Impulsion et coordination de la politique d'aménagement du territoire",
+        "type_mission": "BG",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 0.25,
+        "cp_mds": 0.21,
+        "actions": 4
+      },
+      {
+        "code_mission": "SA",
+        "mission": "Santé",
+        "numero": 204,
+        "programme": "Prévention, sécurité sanitaire et offre de soins",
+        "type_mission": "BG",
+        "ministere": "Santé et accès aux soins",
+        "ae_mds": 0.23,
+        "cp_mds": 0.22,
+        "actions": 7
+      },
+      {
+        "code_mission": "RC",
+        "mission": "Relations avec les collectivités territoriales",
+        "numero": 122,
+        "programme": "Concours spécifiques et administration",
+        "type_mission": "BG",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 0.21,
+        "cp_mds": 0.31,
+        "actions": 3
+      },
+      {
+        "code_mission": "AA",
+        "mission": "Action extérieure de l'État",
+        "numero": 151,
+        "programme": "Français à l'étranger et affaires consulaires",
+        "type_mission": "BG",
+        "ministere": "Europe et affaires étrangères",
+        "ae_mds": 0.16,
+        "cp_mds": 0.16,
+        "actions": 3
+      },
+      {
+        "code_mission": "DC",
+        "mission": "Direction de l'action du Gouvernement",
+        "numero": 308,
+        "programme": "Protection des droits et libertés",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.15,
+        "cp_mds": 0.14,
+        "actions": 8
+      },
+      {
+        "code_mission": "RA",
+        "mission": "Recherche et enseignement supérieur",
+        "numero": 191,
+        "programme": "Recherche duale (civile et militaire)",
+        "type_mission": "BG",
+        "ministere": "Armées et anciens combattants",
+        "ae_mds": 0.15,
+        "cp_mds": 0.15,
+        "actions": 3
+      },
+      {
+        "code_mission": "AD",
+        "mission": "Aide publique au développement",
+        "numero": 365,
+        "programme": "Renforcement des fonds propres de l'Agence française de développement",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.14,
+        "cp_mds": 0.14,
+        "actions": 1
+      },
+      {
+        "code_mission": "AD",
+        "mission": "Aide publique au développement",
+        "numero": 370,
+        "programme": "Restitution des « biens mal acquis »",
+        "type_mission": "BG",
+        "ministere": "Europe et affaires étrangères",
+        "ae_mds": 0.14,
+        "cp_mds": 0.14,
+        "actions": 1
+      },
+      {
+        "code_mission": "PB",
+        "mission": "Pouvoirs publics",
+        "numero": 501,
+        "programme": "Présidence de la République",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.13,
+        "cp_mds": 0.13,
+        "actions": 1
+      },
+      {
+        "code_mission": "EB",
+        "mission": "Engagements financiers de l'État",
+        "numero": 145,
+        "programme": "Épargne",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.12,
+        "cp_mds": 0.12,
+        "actions": 2
+      },
+      {
+        "code_mission": "XJ",
+        "mission": "Publications officielles et information administrative",
+        "numero": 624,
+        "programme": "Pilotage et ressources humaines",
+        "type_mission": "BA",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.11,
+        "cp_mds": 0.11,
+        "actions": 3
+      },
+      {
+        "code_mission": "AB",
+        "mission": "Administration générale et territoriale de l'État",
+        "numero": 232,
+        "programme": "Vie politique",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 0.1,
+        "cp_mds": 0.1,
+        "actions": 3
+      },
+      {
+        "code_mission": "AQ",
+        "mission": "Audiovisuel public",
+        "numero": 376,
+        "programme": "Institut national de l'audiovisuel",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.1,
+        "cp_mds": 0.1,
+        "actions": 1
+      },
+      {
+        "code_mission": "SE",
+        "mission": "Solidarité, insertion et égalité des chances",
+        "numero": 137,
+        "programme": "Égalité entre les femmes et les hommes",
+        "type_mission": "BG",
+        "ministere": "Solidarités, autonomie et égalité entre les femmes et les hommes",
+        "ae_mds": 0.09,
+        "cp_mds": 0.09,
+        "actions": 4
+      },
+      {
+        "code_mission": "MB",
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "numero": 158,
+        "programme": "Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.09,
+        "cp_mds": 0.09,
+        "actions": 2
+      },
+      {
+        "code_mission": "SA",
+        "mission": "Santé",
+        "numero": 379,
+        "programme": "Reversement à la sécurité sociale des recettes de la Facilité pour la Relance et la Résilience (FRR) européenne au titre du volet « Ségur investissement » du plan national de relance et de résilience (PNRR)",
+        "type_mission": "BG",
+        "ministere": "Santé et accès aux soins",
+        "ae_mds": 0.09,
+        "cp_mds": 0.09,
+        "actions": 1
+      },
+      {
+        "code_mission": "VA",
+        "mission": "Cohésion des territoires",
+        "numero": 162,
+        "programme": "Interventions territoriales de l'État",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.08,
+        "cp_mds": 0.08,
+        "actions": 7
+      },
+      {
+        "code_mission": "SB",
+        "mission": "Sécurités",
+        "numero": 207,
+        "programme": "Sécurité et éducation routières",
+        "type_mission": "BG",
+        "ministere": "Intérieur",
+        "ae_mds": 0.08,
+        "cp_mds": 0.08,
+        "actions": 3
+      },
+      {
+        "code_mission": "TR",
+        "mission": "Transformation et fonction publiques",
+        "numero": 349,
+        "programme": "Transformation publique",
+        "type_mission": "BG",
+        "ministere": "Fonction publique, simplification et transformation de l'action publique",
+        "ae_mds": 0.08,
+        "cp_mds": 0.11,
+        "actions": 3
+      },
+      {
+        "code_mission": "YF",
+        "mission": "Développement agricole et rural",
+        "numero": 776,
+        "programme": "Recherche appliquée et innovation en agriculture",
+        "type_mission": "CAS",
+        "ministere": "Agriculture, souveraineté alimentaire et forêt",
+        "ae_mds": 0.08,
+        "cp_mds": 0.08,
+        "actions": 2
+      },
+      {
+        "code_mission": "AQ",
+        "mission": "Audiovisuel public",
+        "numero": 377,
+        "programme": "TV5 Monde",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.08,
+        "cp_mds": 0.08,
+        "actions": 1
+      },
+      {
+        "code_mission": "PC",
+        "mission": "Crédits non répartis",
+        "numero": 551,
+        "programme": "Provision relative aux rémunérations publiques",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.07,
+        "cp_mds": 0.07,
+        "actions": 1
+      },
+      {
+        "code_mission": "YF",
+        "mission": "Développement agricole et rural",
+        "numero": 775,
+        "programme": "Développement et transfert en agriculture",
+        "type_mission": "CAS",
+        "ministere": "Agriculture, souveraineté alimentaire et forêt",
+        "ae_mds": 0.07,
+        "cp_mds": 0.07,
+        "actions": 2
+      },
+      {
+        "code_mission": "ZB",
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "numero": 830,
+        "programme": "Prêts à FranceAgriMer au titre des préfinancements de fonds européens",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.07,
+        "cp_mds": 0.07,
+        "actions": 1
+      },
+      {
+        "code_mission": "ZB",
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "numero": 824,
+        "programme": "Prêts et avances à des services de l'État",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.07,
+        "cp_mds": 0.07,
+        "actions": 1
+      },
+      {
+        "code_mission": "ZE",
+        "mission": "Prêts à des États étrangers",
+        "numero": 852,
+        "programme": "Prêts à des États étrangers pour consolidation de dettes envers la France",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.06,
+        "cp_mds": 0.06,
+        "actions": 1
+      },
+      {
+        "code_mission": "XC",
+        "mission": "Contrôle et exploitation aériens",
+        "numero": 614,
+        "programme": "Transports aériens, surveillance et certification",
+        "type_mission": "BA",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 0.05,
+        "cp_mds": 0.05,
+        "actions": 3
+      },
+      {
+        "code_mission": "DB",
+        "mission": "Économie",
+        "numero": 343,
+        "programme": "Plan France Très haut débit",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.05,
+        "cp_mds": 0.25,
+        "actions": 3
+      },
+      {
+        "code_mission": "TR",
+        "mission": "Transformation et fonction publiques",
+        "numero": 368,
+        "programme": "Conduite et pilotage de la transformation et de la fonction publiques",
+        "type_mission": "BG",
+        "ministere": "Fonction publique, simplification et transformation de l'action publique",
+        "ae_mds": 0.05,
+        "cp_mds": 0.05,
+        "actions": 2
+      },
+      {
+        "code_mission": "TB",
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "numero": 111,
+        "programme": "Amélioration de la qualité de l'emploi et des relations du travail",
+        "type_mission": "BG",
+        "ministere": "Travail et emploi",
+        "ae_mds": 0.04,
+        "cp_mds": 0.08,
+        "actions": 3
+      },
+      {
+        "code_mission": "XJ",
+        "mission": "Publications officielles et information administrative",
+        "numero": 623,
+        "programme": "Édition et diffusion",
+        "type_mission": "BA",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.04,
+        "cp_mds": 0.04,
+        "actions": 2
+      },
+      {
+        "code_mission": "PB",
+        "mission": "Pouvoirs publics",
+        "numero": 541,
+        "programme": "La Chaîne parlementaire",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.04,
+        "cp_mds": 0.04,
+        "actions": 2
+      },
+      {
+        "code_mission": "AQ",
+        "mission": "Audiovisuel public",
+        "numero": 383,
+        "programme": "Programme de transformation",
+        "type_mission": "BG",
+        "ministere": "Culture",
+        "ae_mds": 0.03,
+        "cp_mds": 0.03,
+        "actions": 5
+      },
+      {
+        "code_mission": "CA",
+        "mission": "Conseil et contrôle de l'État",
+        "numero": 126,
+        "programme": "Conseil économique, social et environnemental",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0.03,
+        "cp_mds": 0.03,
+        "actions": 2
+      },
+      {
+        "code_mission": "ZF",
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "numero": 862,
+        "programme": "Prêts pour le développement économique et social",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.03,
+        "cp_mds": 0.03,
+        "actions": 1
+      },
+      {
+        "code_mission": "YE",
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "numero": 753,
+        "programme": "Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+        "type_mission": "CAS",
+        "ministere": "Intérieur",
+        "ae_mds": 0.03,
+        "cp_mds": 0.03,
+        "actions": 1
+      },
+      {
+        "code_mission": "ZB",
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "numero": 825,
+        "programme": "Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.02,
+        "cp_mds": 0.02,
+        "actions": 1
+      },
+      {
+        "code_mission": "PB",
+        "mission": "Pouvoirs publics",
+        "numero": 531,
+        "programme": "Conseil constitutionnel",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0.02,
+        "cp_mds": 0.02,
+        "actions": 1
+      },
+      {
+        "code_mission": "ZC",
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "numero": 832,
+        "programme": "Avances aux collectivités et établissements publics, à la Nouvelle-Calédonie et aux collectivités régies par l’article 74 de la Constitution",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0.01,
+        "cp_mds": 0.01,
+        "actions": 1
+      },
+      {
+        "code_mission": "AV",
+        "mission": "Investir pour la France de 2030",
+        "numero": 421,
+        "programme": "Soutien des progrès de l'enseignement et de la recherche",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0,
+        "cp_mds": 0.22,
+        "actions": 6
+      },
+      {
+        "code_mission": "PB",
+        "mission": "Pouvoirs publics",
+        "numero": 533,
+        "programme": "Cour de justice de la République",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0,
+        "cp_mds": 0,
+        "actions": 1
+      },
+      {
+        "code_mission": "AV",
+        "mission": "Investir pour la France de 2030",
+        "numero": 424,
+        "programme": "Financement des investissements stratégiques",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0,
+        "cp_mds": 4.37,
+        "actions": 6
+      },
+      {
+        "code_mission": "AV",
+        "mission": "Investir pour la France de 2030",
+        "numero": 422,
+        "programme": "Valorisation de la recherche",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0,
+        "cp_mds": 0.24,
+        "actions": 3
+      },
+      {
+        "code_mission": "PR",
+        "mission": "Plan de relance",
+        "numero": 362,
+        "programme": "Écologie",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0,
+        "cp_mds": 0.1,
+        "actions": 2
+      },
+      {
+        "code_mission": "AV",
+        "mission": "Investir pour la France de 2030",
+        "numero": 423,
+        "programme": "Accélération de la modernisation des entreprises",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0,
+        "cp_mds": 0.19,
+        "actions": 4
+      },
+      {
+        "code_mission": "YK",
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "numero": 794,
+        "programme": "Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées",
+        "type_mission": "CAS",
+        "ministere": "Transition écologique, énergie, climat et prévention des risques",
+        "ae_mds": 0,
+        "cp_mds": 0,
+        "actions": 5
+      },
+      {
+        "code_mission": "AV",
+        "mission": "Investir pour la France de 2030",
+        "numero": 425,
+        "programme": "Financement structurel des écosystèmes d'innovation",
+        "type_mission": "BG",
+        "ministere": "Services du Premier ministre",
+        "ae_mds": 0,
+        "cp_mds": 0.78,
+        "actions": 3
+      },
+      {
+        "code_mission": "EB",
+        "mission": "Engagements financiers de l'État",
+        "numero": 344,
+        "programme": "Fonds de soutien relatif aux prêts et contrats financiers structurés à risque",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0,
+        "cp_mds": 0.18,
+        "actions": 1
+      },
+      {
+        "code_mission": "ZE",
+        "mission": "Prêts à des États étrangers",
+        "numero": 853,
+        "programme": "Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0,
+        "cp_mds": 0.14,
+        "actions": 1
+      },
+      {
+        "code_mission": "SF",
+        "mission": "Sport, jeunesse et vie associative",
+        "numero": 350,
+        "programme": "Jeux olympiques et paralympiques 2024",
+        "type_mission": "BG",
+        "ministere": "Sports, jeunesse et vie associative",
+        "ae_mds": 0,
+        "cp_mds": 0.05,
+        "actions": 1
+      },
+      {
+        "code_mission": "ZF",
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "numero": 869,
+        "programme": "Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris-Charles de Gaulle",
+        "type_mission": "CCF",
+        "ministere": "Partenariat avec les collectivités territoriales et décentralisation",
+        "ae_mds": 0,
+        "cp_mds": 0.23,
+        "actions": 1
+      },
+      {
+        "code_mission": "EB",
+        "mission": "Engagements financiers de l'État",
+        "numero": 369,
+        "programme": "Amortissement de la dette de l'État liée à la covid-19",
+        "type_mission": "BG",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0,
+        "cp_mds": 5.15,
+        "actions": 1
+      },
+      {
+        "code_mission": "JA",
+        "mission": "Justice",
+        "numero": 335,
+        "programme": "Conseil supérieur de la magistrature",
+        "type_mission": "BG",
+        "ministere": "Justice",
+        "ae_mds": 0,
+        "cp_mds": 0.01,
+        "actions": 1
+      },
+      {
+        "code_mission": "PR",
+        "mission": "Plan de relance",
+        "numero": 363,
+        "programme": "Compétitivité",
+        "type_mission": "BG",
+        "ministere": "Budget et comptes publics",
+        "ae_mds": 0,
+        "cp_mds": 0.07,
+        "actions": 3
+      },
+      {
+        "code_mission": "ZF",
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "numero": 861,
+        "programme": "Prêts et avances pour le logement des agents de l'État",
+        "type_mission": "CCF",
+        "ministere": "Économie, finances et industrie",
+        "ae_mds": 0,
+        "cp_mds": 0,
+        "actions": 1
+      }
+    ]
   }
 }

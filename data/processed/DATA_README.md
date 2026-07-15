@@ -6,8 +6,8 @@
 
 | Fichier | Contenu | Source | Années |
 |---|---|---|---|
-| `recettes-etat.json` | Recettes de l'État/APU par catégorie (TVA, IR, IS, cotisations sociales, etc.) | Eurostat + INSEE | 1995–2025 |
-| `depenses-ministeres.json` | Dépenses APU par nature (prestations, salaires, subventions, FBCF, intérêts) | Eurostat | 1995–2025 |
+| `recettes-apu.json` | Recettes APU par catégorie (TVA, IR, IS, cotisations sociales, etc.) | Eurostat + INSEE | 1995–2025 |
+| `depenses-apu.json` | Dépenses APU par nature (prestations, salaires, subventions, FBCF, intérêts) | Eurostat | 1995–2025 |
 | `apu-depenses.json` | Comptes APU par sous-secteur (S13, S1311, S1313, S1314) | INSEE | 1949–2025 |
 | `series-longues.json` | Séries temporelles (PIB, recettes, dépenses, dette, déficit, en Md€ et % PIB) | Eurostat | 1995–2025 |
 | `synthese.json` | Vue d'ensemble annuelle (recettes, dépenses, solde, dette, % PIB) | Eurostat | 1995–2025 |
@@ -15,12 +15,12 @@
 
 ## Structure
 
-### recettes-etat.json
+### recettes-apu.json
 - `recettes_par_categorie[]`: { categorie, code_sec2010, unite, donnees[{ annee, montant }] }
 - `total_recettes`: agrégat TR (total recettes APU)
 - `annees_couvertes`: [1995, 2025]
 
-### depenses-ministeres.json
+### depenses-apu.json
 - `depenses_par_categorie[]`: { categorie, code_sec2010, unite, donnees[{ annee, montant }] }
 - `total_depenses`: agrégat TE (total dépenses APU)
 - `missions_budgetaires`: structure des missions PLF (à enrichir)

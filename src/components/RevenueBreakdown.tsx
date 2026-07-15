@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useMemo } from "react";
-import type { SerieRecette } from "@/lib/data";
+import type { SerieRecette } from "@/types";
 
 export default function RevenueBreakdown({
   categories,

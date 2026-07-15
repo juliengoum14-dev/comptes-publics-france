@@ -8,9 +8,9 @@
 
 | Phase | Status |
 |-------|--------|
-| P0 — Cartographie des sources | ⬜ Pending |
-| P1 — Sourcing et mise en forme des données | ⬜ Pending |
-| P2 — Dashboard et visualisations | ⬜ Pending |
+| P0 — Cartographie des sources | ✅ Done |
+| P1 — Sourcing et mise en forme des données | ✅ Done |
+| P2 — Dashboard et visualisations | ✅ Done |
 
 ---
 

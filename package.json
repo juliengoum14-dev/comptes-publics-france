@@ -8,6 +8,7 @@
     "build": "bash safe-build.sh next build",
     "start": "next start",
     "lint": "eslint",
+    "refresh-data": "bash scripts/refresh-data.sh",
     "prepare": "husky",
     "test:smoke": "node .opencode/smoke-test.mjs",
     "test:prod": "BASE_URL=${BASE_URL} npx playwright test e2e/prod-smoke.spec.ts"

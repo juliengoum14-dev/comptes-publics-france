@@ -40,7 +40,29 @@ export interface SyntheseFinances {
   source_depenses: string
 }
 
-export interface BudgetEtat {
+export interface SyntheseAnnuelle {
+  recettes: number
+  depenses: number
+  solde: number
+  dette: number
+  pib: number
+  recettes_pct_pib: number
+  depenses_pct_pib: number
+  dette_pct_pib: number
+}
+
+export interface DonneesCles {
+  recettes: number
+  depenses: number
+  solde: number
+  dette: number
+  pib: number
+  recettes_pct_pib: number
+  depenses_pct_pib: number
+  dette_pct_pib: number
+}
+
+export interface BudgetEtatData {
   meta: Record<string, unknown>
   synthese_etat: Record<string, {
     recettes_nettes_bg_meur?: number
@@ -64,4 +86,73 @@ export interface BudgetEtat {
     note?: string
   }[]
   comptes_speciaux: Record<string, unknown>
+}
+
+export interface SerieRecette {
+  categorie: string
+  code_sec2010?: string
+  code?: string
+  unite: string
+  donnees: { annee: number; montant: number }[]
+}
+
+export interface SerieDepense {
+  categorie: string
+  code?: string
+  code_sec2010?: string
+  unite: string
+  donnees: { annee: number; montant: number }[]
+}
+
+export interface MissionBudgetaire {
+  mission: string
+  programmes: { programme: string; montant_meur: number }[]
+}
+
+export interface SyntheseData {
+  meta: Record<string, unknown>
+  synthese_annuelle: Record<string, SyntheseAnnuelle>
+  donnees_cles_2025: DonneesCles
+}
+
+export interface RecettesData {
+  meta: Record<string, unknown>
+  recettes_par_categorie: SerieRecette[]
+  total_recettes: { categorie: string; code_sec2010: string; unite: string; donnees: { annee: number; montant: number }[] }
+}
+
+export interface DepensesData {
+  meta: Record<string, unknown>
+  depenses_par_categorie: SerieDepense[]
+  missions_budgetaires: MissionBudgetaire[]
+  total_depenses: { categorie: string; code_sec2010: string; unite: string; donnees: { annee: number; montant: number }[] }
+}
+
+export interface ApuData {
+  meta: Record<string, unknown>
+  depenses_par_sous_secteur_eurostat: Record<string, { annee: number; total_depenses: number }[]>
+}
+
+export interface SeriesLonguesData {
+  meta: Record<string, unknown>
+  series: Record<string, { code: string; unite: string; donnees: Record<string, number> }>
+}
+
+export interface TreeNode {
+  code: string
+  label: string
+  values?: Record<string, number>
+  children?: TreeNode[]
+}
+
+export interface ArbreNatureData {
+  meta: Record<string, unknown>
+  depenses: TreeNode
+  recettes: TreeNode
+}
+
+export interface NatureParSecteurData {
+  meta: Record<string, unknown>
+  labels: Record<string, string>
+  data: Record<string, Record<string, Record<string, number>>>
 }

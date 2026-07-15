@@ -1,14 +1,5 @@
-import type { DonneesCles } from "@/lib/data";
-
-const formatMd = (v: number) =>
-  new Intl.NumberFormat("fr-FR", {
-    style: "decimal",
-    maximumFractionDigits: 1,
-    minimumFractionDigits: 1,
-  }).format(v) + " Md€";
-
-const formatPct = (v: number) =>
-  v.toFixed(1) + "%";
+import type { DonneesCles } from "@/types";
+import { formatMd, formatPct } from "@/lib/format";
 
 export default function SummaryCards({ data }: { data: DonneesCles }) {
   const cards = [
