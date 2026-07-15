@@ -19,7 +19,7 @@ export function abbreviateSource(s: string): string {
 export default function SourceBadge({ source }: { source: string }) {
   if (!source) return null;
   return (
-    <span className="text-[10px] text-gray-300" title={source}>
+    <span className="text-[11px] text-gray-400 italic" title={source}>
       {abbreviateSource(source)}
     </span>
   );
