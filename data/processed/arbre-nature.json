@@ -155,7 +155,7 @@
                 "children": [
                   {
                     "code": "GF1001",
-                    "label": "Sickness and disability",
+                    "label": "Maladie et invalidité",
                     "values": {
                       "1995": 11.881,
                       "1996": 12.298,
@@ -192,7 +192,7 @@
                   },
                   {
                     "code": "GF1002",
-                    "label": "Old age",
+                    "label": "Vieillesse",
                     "values": {
                       "1995": 54.972,
                       "1996": 56.902,
@@ -229,7 +229,7 @@
                   },
                   {
                     "code": "GF1003",
-                    "label": "Survivors",
+                    "label": "Survivants",
                     "values": {
                       "1995": 5.914,
                       "1996": 6.122,
@@ -266,7 +266,7 @@
                   },
                   {
                     "code": "GF1004",
-                    "label": "Family and children",
+                    "label": "Famille et enfants",
                     "values": {
                       "1995": 9.283,
                       "1996": 9.609,
@@ -303,7 +303,7 @@
                   },
                   {
                     "code": "GF1005",
-                    "label": "Unemployment",
+                    "label": "Chômage",
                     "values": {
                       "1995": 12.421,
                       "1996": 12.857,
@@ -340,7 +340,7 @@
                   },
                   {
                     "code": "GF1006",
-                    "label": "Housing",
+                    "label": "Logement",
                     "values": {
                       "1995": 3.476,
                       "1996": 3.598,
@@ -377,7 +377,7 @@
                   },
                   {
                     "code": "GF1007",
-                    "label": "Social exclusion n.e.c.",
+                    "label": "Exclusion sociale n.c.a.",
                     "values": {
                       "1995": 5.83,
                       "1996": 6.035,
@@ -414,7 +414,7 @@
                   },
                   {
                     "code": "GF1008",
-                    "label": "R&D Social protection",
+                    "label": "R-D Protection sociale",
                     "values": {
                       "2020": 0.0,
                       "2021": 0.0,
@@ -425,7 +425,7 @@
                   },
                   {
                     "code": "GF1009",
-                    "label": "Social protection n.e.c.",
+                    "label": "Protection sociale n.c.a.",
                     "values": {
                       "1995": 0.668,
                       "1996": 0.691,
@@ -501,7 +501,7 @@
                 "children": [
                   {
                     "code": "GF0701",
-                    "label": "Medical products, appliances and equipment",
+                    "label": "Produits, appareils et matériels médicaux",
                     "values": {
                       "1995": 6.539,
                       "1996": 6.769,
@@ -538,7 +538,7 @@
                   },
                   {
                     "code": "GF0702",
-                    "label": "Outpatient services",
+                    "label": "Services ambulatoires",
                     "values": {
                       "1995": 13.396,
                       "1996": 13.867,
@@ -575,7 +575,7 @@
                   },
                   {
                     "code": "GF0703",
-                    "label": "Hospital services",
+                    "label": "Services hospitaliers",
                     "values": {
                       "1995": 15.838,
                       "1996": 16.394,
@@ -612,7 +612,7 @@
                   },
                   {
                     "code": "GF0704",
-                    "label": "Public health services",
+                    "label": "Services de santé publique",
                     "values": {
                       "1995": 2.329,
                       "1996": 2.411,
@@ -649,7 +649,7 @@
                   },
                   {
                     "code": "GF0705",
-                    "label": "R&D Health",
+                    "label": "R-D Santé",
                     "values": {
                       "1995": 1.003,
                       "1996": 1.039,
@@ -686,7 +686,7 @@
                   },
                   {
                     "code": "GF0706",
-                    "label": "Health n.e.c.",
+                    "label": "Santé n.c.a.",
                     "values": {
                       "1995": 0.253,
                       "1996": 0.262,
@@ -762,7 +762,7 @@
                 "children": [
                   {
                     "code": "GF0901",
-                    "label": "Pre-primary and primary education",
+                    "label": "Enseignement pré-primaire et primaire",
                     "values": {
                       "1995": 6.289,
                       "1996": 6.509,
@@ -799,7 +799,7 @@
                   },
                   {
                     "code": "GF0902",
-                    "label": "Secondary education",
+                    "label": "Enseignement secondaire",
                     "values": {
                       "1995": 9.975,
                       "1996": 10.325,
@@ -836,7 +836,7 @@
                   },
                   {
                     "code": "GF0903",
-                    "label": "Post-secondary non-tertiary education",
+                    "label": "Enseignement post-secondaire non supérieur",
                     "values": {
                       "1995": 0.149,
                       "1996": 0.154,
@@ -873,7 +873,7 @@
                   },
                   {
                     "code": "GF0904",
-                    "label": "Tertiary education",
+                    "label": "Enseignement supérieur",
                     "values": {
                       "1995": 1.974,
                       "1996": 2.043,
@@ -910,7 +910,7 @@
                   },
                   {
                     "code": "GF0905",
-                    "label": "Education not definable by level",
+                    "label": "Enseignement non défini par niveau",
                     "values": {
                       "1995": 1.2,
                       "1996": 1.242,
@@ -947,7 +947,7 @@
                   },
                   {
                     "code": "GF0906",
-                    "label": "Subsidiary services to education",
+                    "label": "Services auxiliaires de l'enseignement",
                     "values": {
                       "1995": 2.704,
                       "1996": 2.799,
@@ -984,7 +984,7 @@
                   },
                   {
                     "code": "GF0907",
-                    "label": "R&D Education",
+                    "label": "R-D Éducation",
                     "values": {
                       "1995": 0.001,
                       "1996": 0.001,
@@ -1021,7 +1021,7 @@
                   },
                   {
                     "code": "GF0908",
-                    "label": "Education n.e.c.",
+                    "label": "Éducation n.c.a.",
                     "values": {
                       "1995": 0.111,
                       "1996": 0.115,
@@ -1097,7 +1097,7 @@
                 "children": [
                   {
                     "code": "GF0801",
-                    "label": "Recreational and sporting services",
+                    "label": "Services sportifs et récréatifs",
                     "values": {
                       "1995": 2.43,
                       "1996": 2.515,
@@ -1134,7 +1134,7 @@
                   },
                   {
                     "code": "GF0802",
-                    "label": "Cultural services",
+                    "label": "Services culturels",
                     "values": {
                       "1995": 2.839,
                       "1996": 2.939,
@@ -1171,7 +1171,7 @@
                   },
                   {
                     "code": "GF0803",
-                    "label": "Broadcasting and publishing services",
+                    "label": "Services de radiodiffusion et d'édition",
                     "values": {
                       "1995": 1.124,
                       "1996": 1.163,
@@ -1208,7 +1208,7 @@
                   },
                   {
                     "code": "GF0804",
-                    "label": "Religious and other community services",
+                    "label": "Services religieux et communautaires",
                     "values": {
                       "1995": 0.089,
                       "1996": 0.092,
@@ -1245,7 +1245,7 @@
                   },
                   {
                     "code": "GF0805",
-                    "label": "R&D Recreation, culture and religion",
+                    "label": "R-D Loisirs, culture et culte",
                     "values": {
                       "2020": 0.0,
                       "2021": 0.0,
@@ -1256,7 +1256,7 @@
                   },
                   {
                     "code": "GF0806",
-                    "label": "Recreation, culture and religion n.e.c.",
+                    "label": "Loisirs, culture et culte n.c.a.",
                     "values": {
                       "1995": 0.01,
                       "1996": 0.011,
@@ -1371,7 +1371,7 @@
                 "children": [
                   {
                     "code": "GF0101",
-                    "label": "Executive and legislative organs, financial and fiscal affairs, external affairs",
+                    "label": "Organes exécutifs et législatifs, affaires financières et fiscales, affaires extérieures",
                     "values": {
                       "1995": 12.069,
                       "1996": 12.782,
@@ -1408,7 +1408,7 @@
                   },
                   {
                     "code": "GF0102",
-                    "label": "Foreign economic aid",
+                    "label": "Aide économique extérieure",
                     "values": {
                       "1995": 1.214,
                       "1996": 1.286,
@@ -1445,7 +1445,7 @@
                   },
                   {
                     "code": "GF0103",
-                    "label": "General services",
+                    "label": "Services généraux",
                     "values": {
                       "1995": 12.02,
                       "1996": 12.731,
@@ -1482,7 +1482,7 @@
                   },
                   {
                     "code": "GF0104",
-                    "label": "Basic research",
+                    "label": "Recherche fondamentale",
                     "values": {
                       "1995": 4.505,
                       "1996": 4.771,
@@ -1519,7 +1519,7 @@
                   },
                   {
                     "code": "GF0105",
-                    "label": "R&D General public services",
+                    "label": "R-D Services généraux",
                     "values": {
                       "1995": 0.0,
                       "1996": 0.001,
@@ -1556,7 +1556,7 @@
                   },
                   {
                     "code": "GF0106",
-                    "label": "General public services n.e.c.",
+                    "label": "Services généraux n.c.a.",
                     "values": {
                       "1995": 0.176,
                       "1996": 0.187,
@@ -1593,7 +1593,7 @@
                   },
                   {
                     "code": "GF0107",
-                    "label": "Public debt transactions",
+                    "label": "Opérations liées à la dette publique",
                     "values": {
                       "1995": 9.139,
                       "1996": 9.679,
@@ -1630,7 +1630,7 @@
                   },
                   {
                     "code": "GF0108",
-                    "label": "Transfers of a general character between different levels of government",
+                    "label": "Transferts de caractère général entre administrations",
                     "values": {
                       "1995": 0.0,
                       "1996": 0.0,
@@ -1706,7 +1706,7 @@
                 "children": [
                   {
                     "code": "GF0401",
-                    "label": "General economic, commercial and labour affairs",
+                    "label": "Affaires économiques, commerciales et de l'emploi",
                     "values": {
                       "1995": 12.333,
                       "1996": 13.062,
@@ -1743,7 +1743,7 @@
                   },
                   {
                     "code": "GF0402",
-                    "label": "Agriculture, forestry, fishing and hunting",
+                    "label": "Agriculture, sylviculture, pêche et chasse",
                     "values": {
                       "1995": 1.127,
                       "1996": 1.194,
@@ -1780,7 +1780,7 @@
                   },
                   {
                     "code": "GF0403",
-                    "label": "Fuel and energy",
+                    "label": "Énergie",
                     "values": {
                       "1995": 2.754,
                       "1996": 2.917,
@@ -1817,7 +1817,7 @@
                   },
                   {
                     "code": "GF0404",
-                    "label": "Mining, manufacturing and construction",
+                    "label": "Industries extractives et manufacturières, construction",
                     "values": {
                       "1995": 0.171,
                       "1996": 0.181,
@@ -1854,7 +1854,7 @@
                   },
                   {
                     "code": "GF0405",
-                    "label": "Transport",
+                    "label": "Transports",
                     "values": {
                       "1995": 12.766,
                       "1996": 13.52,
@@ -1891,7 +1891,7 @@
                   },
                   {
                     "code": "GF0406",
-                    "label": "Communication",
+                    "label": "Communications",
                     "values": {
                       "1995": 0.149,
                       "1996": 0.158,
@@ -1928,7 +1928,7 @@
                   },
                   {
                     "code": "GF0407",
-                    "label": "Other industries",
+                    "label": "Autres industries",
                     "values": {
                       "1995": 2.096,
                       "1996": 2.219,
@@ -1965,7 +1965,7 @@
                   },
                   {
                     "code": "GF0408",
-                    "label": "R&D Economic affairs",
+                    "label": "R-D Affaires économiques",
                     "values": {
                       "1995": 4.02,
                       "1996": 4.258,
@@ -2002,7 +2002,7 @@
                   },
                   {
                     "code": "GF0409",
-                    "label": "Economic affairs n.e.c.",
+                    "label": "Affaires économiques n.c.a.",
                     "values": {
                       "1995": 0.46,
                       "1996": 0.487,
@@ -2078,7 +2078,7 @@
                 "children": [
                   {
                     "code": "GF0201",
-                    "label": "Military defence",
+                    "label": "Défense militaire",
                     "values": {
                       "1995": 10.166,
                       "1996": 10.766,
@@ -2115,7 +2115,7 @@
                   },
                   {
                     "code": "GF0202",
-                    "label": "Civil defence",
+                    "label": "Défense civile",
                     "values": {
                       "1995": 0.054,
                       "1996": 0.058,
@@ -2152,7 +2152,7 @@
                   },
                   {
                     "code": "GF0203",
-                    "label": "Foreign military aid",
+                    "label": "Aide militaire extérieure",
                     "values": {
                       "1995": 0.55,
                       "1996": 0.582,
@@ -2189,7 +2189,7 @@
                   },
                   {
                     "code": "GF0204",
-                    "label": "R&D Defence",
+                    "label": "R-D Défense",
                     "values": {
                       "1995": 0.384,
                       "1996": 0.406,
@@ -2226,7 +2226,7 @@
                   },
                   {
                     "code": "GF0205",
-                    "label": "Defence n.e.c.",
+                    "label": "Défense n.c.a.",
                     "values": {
                       "1995": 0.556,
                       "1996": 0.589,
@@ -2302,7 +2302,7 @@
                 "children": [
                   {
                     "code": "GF0301",
-                    "label": "Police services",
+                    "label": "Services de police",
                     "values": {
                       "1995": 6.245,
                       "1996": 6.614,
@@ -2339,7 +2339,7 @@
                   },
                   {
                     "code": "GF0302",
-                    "label": "Fire-protection services",
+                    "label": "Services de protection civile",
                     "values": {
                       "1995": 1.784,
                       "1996": 1.89,
@@ -2376,7 +2376,7 @@
                   },
                   {
                     "code": "GF0303",
-                    "label": "Law courts",
+                    "label": "Tribunaux",
                     "values": {
                       "1995": 1.738,
                       "1996": 1.841,
@@ -2413,7 +2413,7 @@
                   },
                   {
                     "code": "GF0304",
-                    "label": "Prisons",
+                    "label": "Administration pénitentiaire",
                     "values": {
                       "1995": 1.074,
                       "1996": 1.138,
@@ -2450,7 +2450,7 @@
                   },
                   {
                     "code": "GF0305",
-                    "label": "R&D Public order and safety",
+                    "label": "R-D Ordre et sécurité publics",
                     "values": {
                       "1995": 0.003,
                       "1996": 0.003,
@@ -2487,7 +2487,7 @@
                   },
                   {
                     "code": "GF0306",
-                    "label": "Public order and safety n.e.c.",
+                    "label": "Ordre et sécurité publics n.c.a.",
                     "values": {
                       "1995": 0.414,
                       "1996": 0.438,
@@ -2563,7 +2563,7 @@
                 "children": [
                   {
                     "code": "GF0601",
-                    "label": "Housing development",
+                    "label": "Développement du logement",
                     "values": {
                       "1995": 2.787,
                       "1996": 2.952,
@@ -2600,7 +2600,7 @@
                   },
                   {
                     "code": "GF0602",
-                    "label": "Community development",
+                    "label": "Développement des équipements collectifs",
                     "values": {
                       "1995": 4.814,
                       "1996": 5.1,
@@ -2637,7 +2637,7 @@
                   },
                   {
                     "code": "GF0603",
-                    "label": "Water supply",
+                    "label": "Approvisionnement en eau",
                     "values": {
                       "1995": 0.849,
                       "1996": 0.899,
@@ -2674,7 +2674,7 @@
                   },
                   {
                     "code": "GF0604",
-                    "label": "Street lighting",
+                    "label": "Éclairage public",
                     "values": {
                       "1995": 0.505,
                       "1996": 0.535,
@@ -2711,7 +2711,7 @@
                   },
                   {
                     "code": "GF0605",
-                    "label": "R&D Housing and community amenities",
+                    "label": "R-D Logement et équipements collectifs",
                     "values": {
                       "2020": 0.0,
                       "2021": 0.0,
@@ -2722,7 +2722,7 @@
                   },
                   {
                     "code": "GF0606",
-                    "label": "Housing and community amenities n.e.c.",
+                    "label": "Logement et équipements collectifs n.c.a.",
                     "values": {
                       "1995": 0.146,
                       "1996": 0.154,
@@ -2798,7 +2798,7 @@
                 "children": [
                   {
                     "code": "GF0501",
-                    "label": "Waste management",
+                    "label": "Gestion des déchets",
                     "values": {
                       "1995": 3.446,
                       "1996": 3.649,
@@ -2835,7 +2835,7 @@
                   },
                   {
                     "code": "GF0502",
-                    "label": "Waste water management",
+                    "label": "Gestion des eaux usées",
                     "values": {
                       "1995": 1.184,
                       "1996": 1.254,
@@ -2872,7 +2872,7 @@
                   },
                   {
                     "code": "GF0503",
-                    "label": "Pollution abatement",
+                    "label": "Lutte contre la pollution",
                     "values": {
                       "1995": 0.753,
                       "1996": 0.798,
@@ -2909,7 +2909,7 @@
                   },
                   {
                     "code": "GF0504",
-                    "label": "Protection of biodiversity and landscape",
+                    "label": "Protection de la biodiversité et des paysages",
                     "values": {
                       "1995": 0.505,
                       "1996": 0.535,
@@ -2946,7 +2946,7 @@
                   },
                   {
                     "code": "GF0505",
-                    "label": "R&D Environmental protection",
+                    "label": "R-D Protection de l'environnement",
                     "values": {
                       "1995": 0.216,
                       "1996": 0.228,
@@ -2983,7 +2983,7 @@
                   },
                   {
                     "code": "GF0506",
-                    "label": "Environmental protection n.e.c.",
+                    "label": "Protection de l'environnement n.c.a.",
                     "values": {
                       "1995": 0.439,
                       "1996": 0.465,
