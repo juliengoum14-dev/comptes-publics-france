@@ -28,93 +28,6 @@ export default function Home() {
           </p>
         </header>
 
-        {/* Deux périmètres côte à côte */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-700 mb-4">
-            Solde 2025 — Comparaison État vs APU
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="rounded-xl border border-blue-200 bg-blue-50 p-5">
-              <p className="text-xs text-blue-600 font-bold uppercase tracking-wide">
-                Budget de l&apos;État (comptabilité budgétaire)
-              </p>
-              <p className="text-lg font-bold text-blue-800 mt-2">
-                Solde : {formatMd(etat2025.solde_budgetaire_meur)}
-              </p>
-              <p className="text-sm text-blue-600 mt-1">
-                Recettes nettes BG : {formatMd(etat2025.recettes_nettes_bg_meur)}
-              </p>
-              <p className="text-xs text-blue-500 mt-3">
-                Source : economie.gouv.fr (30 janv. 2026) — Communiqué de presse solde budgétaire
-              </p>
-              <div className="mt-2 text-xs text-blue-500 space-y-1">
-                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_2024_meur)} vs 2024</p>
-                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_lfg_meur)} vs prévision LFG</p>
-                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_lfi_meur)} vs LFI 2025</p>
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-purple-200 bg-purple-50 p-5">
-              <p className="text-xs text-purple-600 font-bold uppercase tracking-wide">
-                APU (Administrations Publiques — comptabilité nationale)
-              </p>
-              <p className="text-lg font-bold text-purple-800 mt-2">
-                Solde : {formatMd(synthese.donnees_cles_2025.solde)}
-              </p>
-              <p className="text-sm text-purple-600 mt-1">
-                Recettes APU : {formatMd(synthese.donnees_cles_2025.recettes)} | Dépenses : {formatMd(synthese.donnees_cles_2025.depenses)}
-              </p>
-              <p className="text-xs text-purple-500 mt-3">
-                Source : INSEE (comptes nationaux base 2020) + Eurostat
-              </p>
-              <div className="mt-2 text-xs text-purple-500 space-y-1">
-                <p>Périmètre : État (APUC) + Sécurité sociale (ASSO) + Collectivités (APUL)</p>
-                <p>Norme SEC 2010 — données APU consolidées</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Recettes fiscales État 2025 */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-700 mb-4">
-            Recettes fiscales de l&apos;État — Exécution 2025
-          </h2>
-          <div className="rounded-xl border border-gray-200 bg-white p-5">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-3 px-2 font-medium text-gray-500">Catégorie</th>
-                    <th className="text-right py-3 px-2 font-medium text-gray-500">Écart vs LFG</th>
-                    <th className="text-left py-3 px-2 font-medium text-gray-500">Note</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {budgetEtat.recettes_fiscales_etat.map((r) => (
-                    <tr key={r.categorie} className="border-b border-gray-100">
-                      <td className="py-3 px-2 font-medium text-gray-800">{r.categorie}</td>
-                      <td className={`py-3 px-2 text-right font-mono ${
-                        r.variation_vs_lfg_meur == null ? "text-gray-400" :
-                        r.variation_vs_lfg_meur > 0 ? "text-green-600" :
-                        r.variation_vs_lfg_meur < 0 ? "text-red-600" : "text-gray-600"
-                      }`}>
-                        {r.variation_vs_lfg_meur != null
-                          ? (r.variation_vs_lfg_meur > 0 ? "+" : "") + r.variation_vs_lfg_meur + " Md€"
-                          : "—"}
-                      </td>
-                      <td className="py-3 px-2 text-gray-500 text-xs">{r.note}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs text-gray-400 mt-3">
-              Source : Communiqué de presse economie.gouv.fr — Solde budgétaire de l&apos;État 2025 (30 janv. 2026)
-            </p>
-          </div>
-        </section>
-
         {/* APU Summary Cards + Evolution */}
         <h2 className="text-xl font-semibold text-gray-700 mb-4 mt-8">
           Vue d&apos;ensemble APU
@@ -163,6 +76,53 @@ export default function Home() {
             title="Taux de prélèvement et dépense publique (% PIB)"
           />
         </div>
+
+        {/* Deux périmètres côte à côte */}
+        <section className="mb-8 mt-12">
+          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+            Solde 2025 — Comparaison État vs APU
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="rounded-xl border border-blue-200 bg-blue-50 p-5">
+              <p className="text-xs text-blue-600 font-bold uppercase tracking-wide">
+                Budget de l&apos;État (comptabilité budgétaire)
+              </p>
+              <p className="text-lg font-bold text-blue-800 mt-2">
+                Solde : {formatMd(etat2025.solde_budgetaire_meur)}
+              </p>
+              <p className="text-sm text-blue-600 mt-1">
+                Recettes nettes BG : {formatMd(etat2025.recettes_nettes_bg_meur)}
+              </p>
+              <p className="text-xs text-blue-500 mt-3">
+                Source : economie.gouv.fr (30 janv. 2026) — Communiqué de presse solde budgétaire
+              </p>
+              <div className="mt-2 text-xs text-blue-500 space-y-1">
+                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_2024_meur)} vs 2024</p>
+                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_lfg_meur)} vs prévision LFG</p>
+                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_lfi_meur)} vs LFI 2025</p>
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-purple-200 bg-purple-50 p-5">
+              <p className="text-xs text-purple-600 font-bold uppercase tracking-wide">
+                APU (Administrations Publiques — comptabilité nationale)
+              </p>
+              <p className="text-lg font-bold text-purple-800 mt-2">
+                Solde : {formatMd(synthese.donnees_cles_2025.solde)}
+              </p>
+              <p className="text-sm text-purple-600 mt-1">
+                Recettes APU : {formatMd(synthese.donnees_cles_2025.recettes)} | Dépenses : {formatMd(synthese.donnees_cles_2025.depenses)}
+              </p>
+              <p className="text-xs text-purple-500 mt-3">
+                Source : INSEE (comptes nationaux base 2020) + Eurostat
+              </p>
+              <div className="mt-2 text-xs text-purple-500 space-y-1">
+                <p>Périmètre : État (APUC) + Sécurité sociale (ASSO) + Collectivités (APUL)</p>
+                <p>Norme SEC 2010 — données APU consolidées</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <footer className="mt-12 pt-6 border-t border-gray-200 text-center text-xs text-gray-400">
           <p>Sources : INSEE, Eurostat, Direction du Budget, data.economie.gouv.fr, economie.gouv.fr</p>
