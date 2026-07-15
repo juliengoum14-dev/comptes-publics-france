@@ -45,18 +45,7 @@ export default function SourceTooltip({
       </div>
       <div className="mt-2 pt-1.5 border-t border-gray-100 text-[11px] text-gray-400 space-y-0.5">
         <p>Source : {info.source}</p>
-        {info.url && (
-          <p>
-            <a
-              href={info.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-700 underline"
-            >
-              📎 Document source
-            </a>
-          </p>
-        )}
+        {info.url && <p className="truncate">📎 {info.url}</p>}
         {info.methodology && <p>📐 {info.methodology}</p>}
       </div>
     </div>

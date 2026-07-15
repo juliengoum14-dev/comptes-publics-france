@@ -21,12 +21,26 @@ export function abbreviateSource(s: string): string {
 export default function SourceBadge({ source }: { source: string }) {
   if (!source) return null;
   const info = getSourceInfo(source);
-  const tooltip = [info.source, info.url && `📎 ${info.url}`, info.methodology && `📐 ${info.methodology}`]
+  const tooltip = [info.source, info.methodology && `📐 ${info.methodology}`]
     .filter(Boolean)
     .join("\n");
+  const content = abbreviateSource(source);
+  if (info.url) {
+    return (
+      <a
+        href={info.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[11px] text-gray-400 italic hover:text-blue-500 no-underline hover:underline cursor-pointer"
+        title={tooltip}
+      >
+        {content}
+      </a>
+    );
+  }
   return (
     <span className="text-[11px] text-gray-400 italic" title={tooltip}>
-      {abbreviateSource(source)}
+      {content}
     </span>
   );
 }
