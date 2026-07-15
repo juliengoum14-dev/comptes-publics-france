@@ -41,7 +41,7 @@ const SECTOR_COLORS: Record<string, string> = {
 };
 
 import { formatNumber as fmt } from "@/lib/format";
-import SourceBadge from "./SourceBadge";
+import SourceBadge, { abbreviateSource } from "./SourceBadge";
 
 interface DrillDownChartProps {
   tree: TreeNode;
@@ -194,7 +194,7 @@ export default function DrillDownChart({
                 const payload = (entry as { payload?: { montant?: number } })?.payload;
                 const pct = total > 0 && payload?.montant != null
                   ? ((payload.montant / total) * 100).toFixed(1) : "0";
-                return `${fmt(v)} Md€ (${pct}%)`;
+                return `${fmt(v)} Md€ (${pct}%) ${abbreviateSource(source ?? "")}`;
               }}
             />
             <Bar
@@ -282,7 +282,7 @@ export default function DrillDownChart({
                   tick={{ fontSize: 11 }}
                   width={160}
                 />
-                <Tooltip formatter={(value: unknown) => `${fmt(Number(value))} Md€`} />
+                <Tooltip formatter={(value: unknown) => `${fmt(Number(value))} Md€ ${abbreviateSource(source ?? "")}`} />
                 <Bar dataKey="montant" radius={[0, 4, 4, 0]}>
                   {sectorBreakdown
                     .filter((s) => s.secteur !== "S13")
