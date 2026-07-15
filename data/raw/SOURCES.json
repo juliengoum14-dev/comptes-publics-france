@@ -1,0 +1,93 @@
+{
+  "sources": [
+    {
+      "id": "insee-apu-2025",
+      "nom": "INSEE - Administrations publiques 2025",
+      "url": "https://www.insee.fr/fr/statistiques/8988833",
+      "date_telechargement": "2026-07-15",
+      "format": "XLSX",
+      "fichiers": [
+        "insee/T_7301_fr.xlsx",
+        "insee/T_7302_fr.xlsx",
+        "insee/T_7303_fr.xlsx",
+        "insee/T_7304_fr.xlsx",
+        "insee/T_7305_fr.xlsx",
+        "insee/T_7306_fr.xlsx"
+      ],
+      "description": "Comptes des administrations publiques par sous-secteur (base 2020)",
+      "licence": "ouverte",
+      "mise_a_jour": "29/05/2026"
+    },
+    {
+      "id": "insee-depenses-recettes-2025",
+      "nom": "INSEE - Dépenses et recettes des APU 2025",
+      "url": "https://www.insee.fr/fr/statistiques/8988845",
+      "date_telechargement": "2026-07-15",
+      "format": "XLSX",
+      "fichiers": [
+        "insee/t_3201_fr.xlsx",
+        "insee/t_3202_fr.xlsx",
+        "insee/t_3203_fr.xlsx",
+        "insee/t_3204_fr.xlsx",
+        "insee/t_3205_fr.xlsx",
+        "insee/t_3206_fr.xlsx",
+        "insee/t_3207_fr.xlsx",
+        "insee/t_3208_fr.xlsx",
+        "insee/t_3209_fr.xlsx",
+        "insee/t_3210_fr.xlsx",
+        "insee/t_3211_fr.xlsx",
+        "insee/t_3212_fr.xlsx",
+        "insee/t_3213_fr.xlsx",
+        "insee/t_3214_fr.xlsx",
+        "insee/t_3215_fr.xlsx",
+        "insee/t_3216_fr.xlsx",
+        "insee/t_3217_fr.xlsx"
+      ],
+      "description": "Dépenses et recettes des APU simplifiées (flux monétaires)",
+      "licence": "ouverte",
+      "mise_a_jour": "29/05/2026"
+    },
+    {
+      "id": "eurostat-gov-10a-main",
+      "nom": "Eurostat - Principaux agrégats des APU",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main",
+      "date_telechargement": "2026-07-15",
+      "format": "JSON (SDMX)",
+      "fichiers": ["eurostat/gov_10a_main.json"],
+      "description": "119 indicateurs SEC2010, 7 secteurs, France, 1975-2025",
+      "licence": "CC BY",
+      "mise_a_jour": "22/04/2026"
+    },
+    {
+      "id": "eurostat-gov-10dd-edpt1",
+      "nom": "Eurostat - Procédure déficit excessif",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1",
+      "date_telechargement": "2026-07-15",
+      "format": "JSON (SDMX)",
+      "fichiers": ["eurostat/gov_10dd_edpt1.json"],
+      "description": "Dette et déficit Maastricht, France",
+      "licence": "CC BY",
+      "mise_a_jour": "22/04/2026"
+    },
+    {
+      "id": "datagouv-recherche",
+      "nom": "data.gouv.fr - Recherche finances publiques",
+      "url": "https://www.data.gouv.fr/api/1/datasets/?q=finances+publiques",
+      "date_telechargement": "2026-07-15",
+      "format": "JSON",
+      "fichiers": ["datagouv/search.json"],
+      "description": "22 datasets finances publiques référencés",
+      "licence": "ouverte"
+    },
+    {
+      "id": "budget-catalogue-plf",
+      "nom": "data.economie.gouv.fr - Catalogue PLF",
+      "url": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets",
+      "date_telechargement": "2026-07-15",
+      "format": "JSON",
+      "fichiers": ["budget/catalog.json", "budget/catalog_full.json"],
+      "description": "Catalogue des datasets PLF recettes/dépenses",
+      "licence": "ouverte"
+    }
+  ]
+}

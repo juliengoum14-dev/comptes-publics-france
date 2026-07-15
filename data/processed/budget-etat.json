@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "source": "Communiqué de presse economie.gouv.fr (30 janv. 2026), Direction du Budget, INSEE S13111",
+    "mise_a_jour": "2026-01-30",
+    "perimetre": "Budget de l'État (comptabilité budgétaire, hors APU)",
+    "unite": "Md€",
+    "notes": [
+      "Le solde budgétaire de l'État (-124,7 Md€) diffère du solde APU (-152,5 Md€) car ce dernier inclut Sécurité sociale et Collectivités locales",
+      "Recettes nettes du budget général = 311,35 Md€ (hors recettes fiscales brutales, prélèvements sur recettes, remboursements)",
+      "PDE (Périmètre des Dépenses de l'État) = agrégat des dépenses les plus pilotables"
+    ]
+  },
+  "annees_disponibles": [2020, 2021, 2022, 2023, 2024, 2025],
+  "synthese_etat": {
+    "2025": {
+      "recettes_nettes_bg_meur": 311.35,
+      "depenses_pde_meur": null,
+      "solde_budgetaire_meur": -124.7,
+      "solde_apuc_meur": -128.0,
+      "solde_apu_meur": -152.5,
+      "amélioration_vs_lfg_meur": 7.4,
+      "amélioration_vs_lfi_meur": 14.3,
+      "amélioration_vs_2024_meur": 31.6
+    },
+    "2024": {
+      "recettes_nettes_bg_meur": null,
+      "depenses_pde_meur": null,
+      "solde_budgetaire_meur": -156.3,
+      "solde_apu_meur": -169.1
+    },
+    "2023": {
+      "solde_budgetaire_meur": null,
+      "solde_apu_meur": -151.9
+    }
+  },
+  "recettes_fiscales_etat": [
+    {
+      "categorie": "TVA (nette revenant à l'État)",
+      "montant_meur_2025": null,
+      "variation_vs_lfg_meur": 1.6,
+      "note": "+1,6 Md€ vs prévision LFG : rendement supérieur et moindres remboursements"
+    },
+    {
+      "categorie": "Impôt sur les sociétés (IS)",
+      "montant_meur_2025": null,
+      "variation_vs_lfg_meur": 1.7,
+      "note": "+1,7 Md€ vs prévision : 5e acompte supérieur, remboursements moins élevés"
+    },
+    {
+      "categorie": "Impôt sur le revenu (IR)",
+      "montant_meur_2025": null,
+      "variation_vs_lfg_meur": 0,
+      "note": "En ligne avec la prévision LFG"
+    },
+    {
+      "categorie": "Contribution exceptionnelle grandes entreprises",
+      "montant_meur_2025": 7.5,
+      "variation_vs_lfg_meur": 0,
+      "note": "En ligne avec prévision LFI 2025"
+    },
+    {
+      "categorie": "CDHR (très hauts revenus)",
+      "montant_meur_2025": null,
+      "variation_vs_lfg_meur": -1.0,
+      "note": "-1 Md€ vs prévision : optimisation fiscale fin 2024 liée à l'adoption tardive du PLF"
+    }
+  ],
+  "depenses_par_mission": [
+    {
+      "mission": "Enseignement scolaire",
+      "programmes": [
+        "Enseignement public du 1er degré",
+        "Enseignement public du 2nd degré",
+        "Vie scolaire"
+      ],
+      "note": "Données PLF incomplètes dans le catalogue data.economie.gouv.fr"
+    },
+    {
+      "mission": "Défense",
+      "programmes": [
+        "Préparation et conduite des opérations",
+        "Soutien des forces"
+      ]
+    },
+    {
+      "mission": "Sécurité",
+      "programmes": [
+        "Police nationale",
+        "Gendarmerie nationale",
+        "Sécurité civile"
+      ]
+    },
+    {
+      "mission": "Justice",
+      "programmes": [
+        "Justice judiciaire",
+        "Administration pénitentiaire"
+      ]
+    }
+  ],
+  "comptes_speciaux": {
+    "amélioration_solde_2025_meur": 2.5,
+    "note": "L'amélioration du solde des comptes spéciaux contribue à la diminution du déficit budgétaire"
+  }
+}

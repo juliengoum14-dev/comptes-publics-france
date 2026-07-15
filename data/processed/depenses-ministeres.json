@@ -1,0 +1,2172 @@
+{
+  "meta": {
+    "source": "Eurostat (gov_10a_main), INSEE",
+    "mise_a_jour": "2025/2026",
+    "perimetre": "APU (S13) - Comptes nationaux base 2020",
+    "unite": "Md€",
+    "note": "La somme des catégories inclut un écart statistique (DISC) pour égaler exactement le total TE.",
+    "ecart_statistique_2025_meur": 11.15,
+    "ecart_statistique_explication": "Chaque catégorie de dépense est estimée indépendamment dans le cadre du SEC 2010 : enquêtes, remontées comptables, modèles. Le total TE provient du bouclage du Tableau Économique d'Ensemble (TEE) qui consolide l'ensemble des sources. Un écart de ±0,5% à 1,5% est normal et récurrent chaque année."
+  },
+  "depenses_par_categorie": [
+    {
+      "code": "D1PAY",
+      "categorie": "Rémunération des salariés",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "Partie des dépenses de consommation finale (P3)",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 164.95620000000002
+        },
+        {
+          "annee": 1996,
+          "montant": 172.17479999999998
+        },
+        {
+          "annee": 1997,
+          "montant": 173.18470000000002
+        },
+        {
+          "annee": 1998,
+          "montant": 178.20170000000002
+        },
+        {
+          "annee": 1999,
+          "montant": 186.1449
+        },
+        {
+          "annee": 2000,
+          "montant": 194.0228
+        },
+        {
+          "annee": 2001,
+          "montant": 200.0522
+        },
+        {
+          "annee": 2002,
+          "montant": 209.1696
+        },
+        {
+          "annee": 2003,
+          "montant": 216.534
+        },
+        {
+          "annee": 2004,
+          "montant": 221.35389999999998
+        },
+        {
+          "annee": 2005,
+          "montant": 229.82410000000002
+        },
+        {
+          "annee": 2006,
+          "montant": 235.4418
+        },
+        {
+          "annee": 2007,
+          "montant": 242.88379999999998
+        },
+        {
+          "annee": 2008,
+          "montant": 249.274
+        },
+        {
+          "annee": 2009,
+          "montant": 257.8171
+        },
+        {
+          "annee": 2010,
+          "montant": 262.5355
+        },
+        {
+          "annee": 2011,
+          "montant": 268.4784
+        },
+        {
+          "annee": 2012,
+          "montant": 272.609
+        },
+        {
+          "annee": 2013,
+          "montant": 278.0794
+        },
+        {
+          "annee": 2014,
+          "montant": 282.94370000000004
+        },
+        {
+          "annee": 2015,
+          "montant": 285.1155
+        },
+        {
+          "annee": 2016,
+          "montant": 287.6601
+        },
+        {
+          "annee": 2017,
+          "montant": 294.836
+        },
+        {
+          "annee": 2018,
+          "montant": 296.6851
+        },
+        {
+          "annee": 2019,
+          "montant": 300.632
+        },
+        {
+          "annee": 2020,
+          "montant": 307.596
+        },
+        {
+          "annee": 2021,
+          "montant": 317.14
+        },
+        {
+          "annee": 2022,
+          "montant": 331.171
+        },
+        {
+          "annee": 2023,
+          "montant": 346.343
+        },
+        {
+          "annee": 2024,
+          "montant": 363.038
+        },
+        {
+          "annee": 2025,
+          "montant": 370.016
+        }
+      ]
+    },
+    {
+      "code": "P2",
+      "categorie": "Consommation intermédiaire",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "Partie des dépenses de consommation finale (P3)",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 66.662
+        },
+        {
+          "annee": 1996,
+          "montant": 71.689
+        },
+        {
+          "annee": 1997,
+          "montant": 73.3401
+        },
+        {
+          "annee": 1998,
+          "montant": 68.7147
+        },
+        {
+          "annee": 1999,
+          "montant": 70.9501
+        },
+        {
+          "annee": 2000,
+          "montant": 75.8425
+        },
+        {
+          "annee": 2001,
+          "montant": 75.89160000000001
+        },
+        {
+          "annee": 2002,
+          "montant": 81.4267
+        },
+        {
+          "annee": 2003,
+          "montant": 82.1438
+        },
+        {
+          "annee": 2004,
+          "montant": 86.7766
+        },
+        {
+          "annee": 2005,
+          "montant": 90.454
+        },
+        {
+          "annee": 2006,
+          "montant": 92.8571
+        },
+        {
+          "annee": 2007,
+          "montant": 95.00739999999999
+        },
+        {
+          "annee": 2008,
+          "montant": 97.7834
+        },
+        {
+          "annee": 2009,
+          "montant": 103.8695
+        },
+        {
+          "annee": 2010,
+          "montant": 107.4063
+        },
+        {
+          "annee": 2011,
+          "montant": 108.819
+        },
+        {
+          "annee": 2012,
+          "montant": 111.8162
+        },
+        {
+          "annee": 2013,
+          "montant": 114.1109
+        },
+        {
+          "annee": 2014,
+          "montant": 113.8635
+        },
+        {
+          "annee": 2015,
+          "montant": 115.5828
+        },
+        {
+          "annee": 2016,
+          "montant": 116.204
+        },
+        {
+          "annee": 2017,
+          "montant": 120.636
+        },
+        {
+          "annee": 2018,
+          "montant": 122.878
+        },
+        {
+          "annee": 2019,
+          "montant": 126.7116
+        },
+        {
+          "annee": 2020,
+          "montant": 126.40889999999999
+        },
+        {
+          "annee": 2021,
+          "montant": 136.0813
+        },
+        {
+          "annee": 2022,
+          "montant": 145.8789
+        },
+        {
+          "annee": 2023,
+          "montant": 157.548
+        },
+        {
+          "annee": 2024,
+          "montant": 162.4085
+        },
+        {
+          "annee": 2025,
+          "montant": 162.9945
+        }
+      ]
+    },
+    {
+      "code": "P51C",
+      "categorie": "Amortissements (consommation de capital fixe)",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "Partie des dépenses de consommation finale (P3)",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 44.8976
+        },
+        {
+          "annee": 1996,
+          "montant": 46.4192
+        },
+        {
+          "annee": 1997,
+          "montant": 46.7843
+        },
+        {
+          "annee": 1998,
+          "montant": 47.695
+        },
+        {
+          "annee": 1999,
+          "montant": 49.2443
+        },
+        {
+          "annee": 2000,
+          "montant": 50.3777
+        },
+        {
+          "annee": 2001,
+          "montant": 52.100699999999996
+        },
+        {
+          "annee": 2002,
+          "montant": 53.4627
+        },
+        {
+          "annee": 2003,
+          "montant": 55.5434
+        },
+        {
+          "annee": 2004,
+          "montant": 57.8875
+        },
+        {
+          "annee": 2005,
+          "montant": 60.7596
+        },
+        {
+          "annee": 2006,
+          "montant": 63.7452
+        },
+        {
+          "annee": 2007,
+          "montant": 66.8208
+        },
+        {
+          "annee": 2008,
+          "montant": 70.2404
+        },
+        {
+          "annee": 2009,
+          "montant": 72.106
+        },
+        {
+          "annee": 2010,
+          "montant": 75.1263
+        },
+        {
+          "annee": 2011,
+          "montant": 78.5227
+        },
+        {
+          "annee": 2012,
+          "montant": 81.02380000000001
+        },
+        {
+          "annee": 2013,
+          "montant": 82.53
+        },
+        {
+          "annee": 2014,
+          "montant": 83.23310000000001
+        },
+        {
+          "annee": 2015,
+          "montant": 82.8765
+        },
+        {
+          "annee": 2016,
+          "montant": 83.7087
+        },
+        {
+          "annee": 2017,
+          "montant": 85.782
+        },
+        {
+          "annee": 2018,
+          "montant": 87.99810000000001
+        },
+        {
+          "annee": 2019,
+          "montant": 90.425
+        },
+        {
+          "annee": 2020,
+          "montant": 91.815
+        },
+        {
+          "annee": 2021,
+          "montant": 95.52
+        },
+        {
+          "annee": 2022,
+          "montant": 103.7621
+        },
+        {
+          "annee": 2023,
+          "montant": 107.93939999999999
+        },
+        {
+          "annee": 2024,
+          "montant": 110.43430000000001
+        },
+        {
+          "annee": 2025,
+          "montant": 110.43430000000001
+        }
+      ]
+    },
+    {
+      "code": "P3_AUTRES",
+      "categorie": "Autres dépenses de consommation finale",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "P3 - D1PAY - P2 - P51C (autres charges de production)",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 9.793799999999962
+        },
+        {
+          "annee": 1996,
+          "montant": 8.803200000000054
+        },
+        {
+          "annee": 1997,
+          "montant": 9.883299999999991
+        },
+        {
+          "annee": 1998,
+          "montant": 11.51019999999999
+        },
+        {
+          "annee": 1999,
+          "montant": 12.802799999999955
+        },
+        {
+          "annee": 2000,
+          "montant": 12.288200000000025
+        },
+        {
+          "annee": 2001,
+          "montant": 14.2442
+        },
+        {
+          "annee": 2002,
+          "montant": 17.79600000000002
+        },
+        {
+          "annee": 2003,
+          "montant": 25.309800000000017
+        },
+        {
+          "annee": 2004,
+          "montant": 28.30300000000004
+        },
+        {
+          "annee": 2005,
+          "montant": 28.94879999999997
+        },
+        {
+          "annee": 2006,
+          "montant": 31.1434
+        },
+        {
+          "annee": 2007,
+          "montant": 33.308200000000014
+        },
+        {
+          "annee": 2008,
+          "montant": 34.475900000000024
+        },
+        {
+          "annee": 2009,
+          "montant": 36.620999999999995
+        },
+        {
+          "annee": 2010,
+          "montant": 37.34480000000002
+        },
+        {
+          "annee": 2011,
+          "montant": 38.425599999999974
+        },
+        {
+          "annee": 2012,
+          "montant": 40.368900000000025
+        },
+        {
+          "annee": 2013,
+          "montant": 42.115299999999976
+        },
+        {
+          "annee": 2014,
+          "montant": 44.71850000000002
+        },
+        {
+          "annee": 2015,
+          "montant": 46.301899999999904
+        },
+        {
+          "annee": 2016,
+          "montant": 50.741199999999964
+        },
+        {
+          "annee": 2017,
+          "montant": 53.14890000000004
+        },
+        {
+          "annee": 2018,
+          "montant": 54.06660000000012
+        },
+        {
+          "annee": 2019,
+          "montant": 54.24670000000002
+        },
+        {
+          "annee": 2020,
+          "montant": 61.627500000000026
+        },
+        {
+          "annee": 2021,
+          "montant": 76.57500000000009
+        },
+        {
+          "annee": 2022,
+          "montant": 72.73280000000003
+        },
+        {
+          "annee": 2023,
+          "montant": 70.33840000000002
+        },
+        {
+          "annee": 2024,
+          "montant": 69.69819999999993
+        },
+        {
+          "annee": 2025,
+          "montant": 69.99919999999995
+        }
+      ]
+    },
+    {
+      "code": "P51G",
+      "categorie": "Formation brute de capital fixe (FBCF)",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 56.574400000000004
+        },
+        {
+          "annee": 1996,
+          "montant": 57.6016
+        },
+        {
+          "annee": 1997,
+          "montant": 53.6788
+        },
+        {
+          "annee": 1998,
+          "montant": 54.3052
+        },
+        {
+          "annee": 1999,
+          "montant": 57.5672
+        },
+        {
+          "annee": 2000,
+          "montant": 63.078300000000006
+        },
+        {
+          "annee": 2001,
+          "montant": 64.2162
+        },
+        {
+          "annee": 2002,
+          "montant": 64.688
+        },
+        {
+          "annee": 2003,
+          "montant": 69.1623
+        },
+        {
+          "annee": 2004,
+          "montant": 73.6161
+        },
+        {
+          "annee": 2005,
+          "montant": 78.385
+        },
+        {
+          "annee": 2006,
+          "montant": 80.8774
+        },
+        {
+          "annee": 2007,
+          "montant": 84.81989999999999
+        },
+        {
+          "annee": 2008,
+          "montant": 88.4092
+        },
+        {
+          "annee": 2009,
+          "montant": 93.4302
+        },
+        {
+          "annee": 2010,
+          "montant": 95.75739999999999
+        },
+        {
+          "annee": 2011,
+          "montant": 92.6437
+        },
+        {
+          "annee": 2012,
+          "montant": 95.10289999999999
+        },
+        {
+          "annee": 2013,
+          "montant": 96.99510000000001
+        },
+        {
+          "annee": 2014,
+          "montant": 91.7732
+        },
+        {
+          "annee": 2015,
+          "montant": 86.7676
+        },
+        {
+          "annee": 2016,
+          "montant": 87.5243
+        },
+        {
+          "annee": 2017,
+          "montant": 88.1581
+        },
+        {
+          "annee": 2018,
+          "montant": 92.1821
+        },
+        {
+          "annee": 2019,
+          "montant": 101.0693
+        },
+        {
+          "annee": 2020,
+          "montant": 96.265
+        },
+        {
+          "annee": 2021,
+          "montant": 102.1592
+        },
+        {
+          "annee": 2022,
+          "montant": 110.2155
+        },
+        {
+          "annee": 2023,
+          "montant": 119.799
+        },
+        {
+          "annee": 2024,
+          "montant": 127.52980000000001
+        },
+        {
+          "annee": 2025,
+          "montant": 131.6488
+        }
+      ]
+    },
+    {
+      "code": "P52_P53",
+      "categorie": "Variation des stocks",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 1.3685
+        },
+        {
+          "annee": 1996,
+          "montant": 0.8134
+        },
+        {
+          "annee": 1997,
+          "montant": -1.8305
+        },
+        {
+          "annee": 1998,
+          "montant": 1.4044
+        },
+        {
+          "annee": 1999,
+          "montant": 1.0586
+        },
+        {
+          "annee": 2000,
+          "montant": -0.07379999999999999
+        },
+        {
+          "annee": 2001,
+          "montant": 0.9769
+        },
+        {
+          "annee": 2002,
+          "montant": 2.0445
+        },
+        {
+          "annee": 2003,
+          "montant": 0.5477000000000001
+        },
+        {
+          "annee": 2004,
+          "montant": 0.25939999999999996
+        },
+        {
+          "annee": 2005,
+          "montant": 0.6165
+        },
+        {
+          "annee": 2006,
+          "montant": 0.1832
+        },
+        {
+          "annee": 2007,
+          "montant": 0.2097
+        },
+        {
+          "annee": 2008,
+          "montant": 0.3956
+        },
+        {
+          "annee": 2009,
+          "montant": 0.43360000000000004
+        },
+        {
+          "annee": 2010,
+          "montant": 0.2486
+        },
+        {
+          "annee": 2011,
+          "montant": -0.4278
+        },
+        {
+          "annee": 2012,
+          "montant": 0.9037999999999999
+        },
+        {
+          "annee": 2013,
+          "montant": 0.4476
+        },
+        {
+          "annee": 2014,
+          "montant": 0.3378
+        },
+        {
+          "annee": 2015,
+          "montant": 0.09770000000000001
+        },
+        {
+          "annee": 2016,
+          "montant": 0.4259
+        },
+        {
+          "annee": 2017,
+          "montant": 0.4161
+        },
+        {
+          "annee": 2018,
+          "montant": 0.5761000000000001
+        },
+        {
+          "annee": 2019,
+          "montant": 0.5618
+        },
+        {
+          "annee": 2020,
+          "montant": 3.1263
+        },
+        {
+          "annee": 2021,
+          "montant": 1.3505999999999998
+        },
+        {
+          "annee": 2022,
+          "montant": 2.4586
+        },
+        {
+          "annee": 2023,
+          "montant": 0.4586
+        },
+        {
+          "annee": 2024,
+          "montant": 1.9581
+        },
+        {
+          "annee": 2025,
+          "montant": 2.5901
+        }
+      ]
+    },
+    {
+      "code": "NP",
+      "categorie": "Acquisitions nettes d'actifs non financiers",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 0.82
+        },
+        {
+          "annee": 1996,
+          "montant": 0.8247000000000001
+        },
+        {
+          "annee": 1997,
+          "montant": 1.6012
+        },
+        {
+          "annee": 1998,
+          "montant": 1.5687
+        },
+        {
+          "annee": 1999,
+          "montant": 1.4992
+        },
+        {
+          "annee": 2000,
+          "montant": 1.7619
+        },
+        {
+          "annee": 2001,
+          "montant": 1.5605
+        },
+        {
+          "annee": 2002,
+          "montant": 1.6679000000000002
+        },
+        {
+          "annee": 2003,
+          "montant": 1.7791
+        },
+        {
+          "annee": 2004,
+          "montant": 2.0569
+        },
+        {
+          "annee": 2005,
+          "montant": 2.1019
+        },
+        {
+          "annee": 2006,
+          "montant": 2.1999
+        },
+        {
+          "annee": 2007,
+          "montant": 2.6239
+        },
+        {
+          "annee": 2008,
+          "montant": 2.5781
+        },
+        {
+          "annee": 2009,
+          "montant": 3.246
+        },
+        {
+          "annee": 2010,
+          "montant": 2.792
+        },
+        {
+          "annee": 2011,
+          "montant": 3.085
+        },
+        {
+          "annee": 2012,
+          "montant": 3.203
+        },
+        {
+          "annee": 2013,
+          "montant": 3.046
+        },
+        {
+          "annee": 2014,
+          "montant": 2.58
+        },
+        {
+          "annee": 2015,
+          "montant": 2.456
+        },
+        {
+          "annee": 2016,
+          "montant": 2.302
+        },
+        {
+          "annee": 2017,
+          "montant": 2.382
+        },
+        {
+          "annee": 2018,
+          "montant": 2.382
+        },
+        {
+          "annee": 2019,
+          "montant": 3.026
+        },
+        {
+          "annee": 2020,
+          "montant": 2.14
+        },
+        {
+          "annee": 2021,
+          "montant": 2.1479
+        },
+        {
+          "annee": 2022,
+          "montant": 2.411
+        },
+        {
+          "annee": 2023,
+          "montant": 2.336
+        },
+        {
+          "annee": 2024,
+          "montant": 3.089
+        },
+        {
+          "annee": 2025,
+          "montant": 2.949
+        }
+      ]
+    },
+    {
+      "code": "D29PAY",
+      "categorie": "Autres impôts sur la production",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 5.486
+        },
+        {
+          "annee": 1996,
+          "montant": 5.7641
+        },
+        {
+          "annee": 1997,
+          "montant": 5.782100000000001
+        },
+        {
+          "annee": 1998,
+          "montant": 5.8743
+        },
+        {
+          "annee": 1999,
+          "montant": 6.0971
+        },
+        {
+          "annee": 2000,
+          "montant": 5.784
+        },
+        {
+          "annee": 2001,
+          "montant": 6.0498
+        },
+        {
+          "annee": 2002,
+          "montant": 6.2746
+        },
+        {
+          "annee": 2003,
+          "montant": 6.7646999999999995
+        },
+        {
+          "annee": 2004,
+          "montant": 6.991
+        },
+        {
+          "annee": 2005,
+          "montant": 6.8433
+        },
+        {
+          "annee": 2006,
+          "montant": 7.353899999999999
+        },
+        {
+          "annee": 2007,
+          "montant": 7.9891000000000005
+        },
+        {
+          "annee": 2008,
+          "montant": 8.3237
+        },
+        {
+          "annee": 2009,
+          "montant": 8.5281
+        },
+        {
+          "annee": 2010,
+          "montant": 8.8278
+        },
+        {
+          "annee": 2011,
+          "montant": 9.070799999999998
+        },
+        {
+          "annee": 2012,
+          "montant": 9.2593
+        },
+        {
+          "annee": 2013,
+          "montant": 9.667200000000001
+        },
+        {
+          "annee": 2014,
+          "montant": 10.0715
+        },
+        {
+          "annee": 2015,
+          "montant": 10.2246
+        },
+        {
+          "annee": 2016,
+          "montant": 10.291799999999999
+        },
+        {
+          "annee": 2017,
+          "montant": 10.3116
+        },
+        {
+          "annee": 2018,
+          "montant": 10.55
+        },
+        {
+          "annee": 2019,
+          "montant": 10.768
+        },
+        {
+          "annee": 2020,
+          "montant": 11.115
+        },
+        {
+          "annee": 2021,
+          "montant": 11.734
+        },
+        {
+          "annee": 2022,
+          "montant": 12.362
+        },
+        {
+          "annee": 2023,
+          "montant": 13.009
+        },
+        {
+          "annee": 2024,
+          "montant": 13.702
+        },
+        {
+          "annee": 2025,
+          "montant": 13.936
+        }
+      ]
+    },
+    {
+      "code": "D3PAY",
+      "categorie": "Subventions",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 18.468700000000002
+        },
+        {
+          "annee": 1996,
+          "montant": 19.3113
+        },
+        {
+          "annee": 1997,
+          "montant": 18.463
+        },
+        {
+          "annee": 1998,
+          "montant": 18.9776
+        },
+        {
+          "annee": 1999,
+          "montant": 19.9372
+        },
+        {
+          "annee": 2000,
+          "montant": 19.7648
+        },
+        {
+          "annee": 2001,
+          "montant": 21.9844
+        },
+        {
+          "annee": 2002,
+          "montant": 25.182299999999998
+        },
+        {
+          "annee": 2003,
+          "montant": 25.0005
+        },
+        {
+          "annee": 2004,
+          "montant": 24.295900000000003
+        },
+        {
+          "annee": 2005,
+          "montant": 24.1178
+        },
+        {
+          "annee": 2006,
+          "montant": 25.2943
+        },
+        {
+          "annee": 2007,
+          "montant": 28.471799999999998
+        },
+        {
+          "annee": 2008,
+          "montant": 29.7027
+        },
+        {
+          "annee": 2009,
+          "montant": 33.047599999999996
+        },
+        {
+          "annee": 2010,
+          "montant": 34.832
+        },
+        {
+          "annee": 2011,
+          "montant": 33.3529
+        },
+        {
+          "annee": 2012,
+          "montant": 34.805800000000005
+        },
+        {
+          "annee": 2013,
+          "montant": 46.5792
+        },
+        {
+          "annee": 2014,
+          "montant": 53.555699999999995
+        },
+        {
+          "annee": 2015,
+          "montant": 55.2955
+        },
+        {
+          "annee": 2016,
+          "montant": 54.603
+        },
+        {
+          "annee": 2017,
+          "montant": 59.5869
+        },
+        {
+          "annee": 2018,
+          "montant": 55.7601
+        },
+        {
+          "annee": 2019,
+          "montant": 40.616
+        },
+        {
+          "annee": 2020,
+          "montant": 70.065
+        },
+        {
+          "annee": 2021,
+          "montant": 77.268
+        },
+        {
+          "annee": 2022,
+          "montant": 74.016
+        },
+        {
+          "annee": 2023,
+          "montant": 70.504
+        },
+        {
+          "annee": 2024,
+          "montant": 57.467
+        },
+        {
+          "annee": 2025,
+          "montant": 56.516
+        }
+      ]
+    },
+    {
+      "code": "D41PAY",
+      "categorie": "Intérêts",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 42.204699999999995
+        },
+        {
+          "annee": 1996,
+          "montant": 45.5355
+        },
+        {
+          "annee": 1997,
+          "montant": 45.429
+        },
+        {
+          "annee": 1998,
+          "montant": 45.2969
+        },
+        {
+          "annee": 1999,
+          "montant": 42.9433
+        },
+        {
+          "annee": 2000,
+          "montant": 43.6059
+        },
+        {
+          "annee": 2001,
+          "montant": 46.7064
+        },
+        {
+          "annee": 2002,
+          "montant": 47.7935
+        },
+        {
+          "annee": 2003,
+          "montant": 46.6581
+        },
+        {
+          "annee": 2004,
+          "montant": 47.5106
+        },
+        {
+          "annee": 2005,
+          "montant": 47.845099999999995
+        },
+        {
+          "annee": 2006,
+          "montant": 48.0601
+        },
+        {
+          "annee": 2007,
+          "montant": 52.0952
+        },
+        {
+          "annee": 2008,
+          "montant": 57.1693
+        },
+        {
+          "annee": 2009,
+          "montant": 49.2815
+        },
+        {
+          "annee": 2010,
+          "montant": 50.7079
+        },
+        {
+          "annee": 2011,
+          "montant": 55.9957
+        },
+        {
+          "annee": 2012,
+          "montant": 54.9408
+        },
+        {
+          "annee": 2013,
+          "montant": 49.426
+        },
+        {
+          "annee": 2014,
+          "montant": 47.3158
+        },
+        {
+          "annee": 2015,
+          "montant": 44.7074
+        },
+        {
+          "annee": 2016,
+          "montant": 42.430699999999995
+        },
+        {
+          "annee": 2017,
+          "montant": 41.0201
+        },
+        {
+          "annee": 2018,
+          "montant": 41.660599999999995
+        },
+        {
+          "annee": 2019,
+          "montant": 36.868199999999995
+        },
+        {
+          "annee": 2020,
+          "montant": 29.7241
+        },
+        {
+          "annee": 2021,
+          "montant": 34.7999
+        },
+        {
+          "annee": 2022,
+          "montant": 50.934
+        },
+        {
+          "annee": 2023,
+          "montant": 53.4099
+        },
+        {
+          "annee": 2024,
+          "montant": 60.130900000000004
+        },
+        {
+          "annee": 2025,
+          "montant": 66.63589999999999
+        }
+      ]
+    },
+    {
+      "code": "D5PAY",
+      "categorie": "Impôts courants sur le revenu",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 0.2519
+        },
+        {
+          "annee": 1996,
+          "montant": 0.201
+        },
+        {
+          "annee": 1997,
+          "montant": 0.2655
+        },
+        {
+          "annee": 1998,
+          "montant": 0.32339999999999997
+        },
+        {
+          "annee": 1999,
+          "montant": 0.2379
+        },
+        {
+          "annee": 2000,
+          "montant": 0.2728
+        },
+        {
+          "annee": 2001,
+          "montant": 0.4833
+        },
+        {
+          "annee": 2002,
+          "montant": 0.21459999999999999
+        },
+        {
+          "annee": 2003,
+          "montant": 0.1062
+        },
+        {
+          "annee": 2004,
+          "montant": 0.11170000000000001
+        },
+        {
+          "annee": 2005,
+          "montant": 0.1663
+        },
+        {
+          "annee": 2006,
+          "montant": 0.2632
+        },
+        {
+          "annee": 2007,
+          "montant": 0.29410000000000003
+        },
+        {
+          "annee": 2008,
+          "montant": 0.2652
+        },
+        {
+          "annee": 2009,
+          "montant": 0.1125
+        },
+        {
+          "annee": 2010,
+          "montant": 0.09029999999999999
+        },
+        {
+          "annee": 2011,
+          "montant": 0.1017
+        },
+        {
+          "annee": 2012,
+          "montant": 0.1052
+        },
+        {
+          "annee": 2013,
+          "montant": 0.1288
+        },
+        {
+          "annee": 2014,
+          "montant": 0.08170000000000001
+        },
+        {
+          "annee": 2015,
+          "montant": 0.0984
+        },
+        {
+          "annee": 2016,
+          "montant": 0.08109999999999999
+        },
+        {
+          "annee": 2017,
+          "montant": 0.08929999999999999
+        },
+        {
+          "annee": 2018,
+          "montant": 0.0943
+        },
+        {
+          "annee": 2019,
+          "montant": 0.082
+        },
+        {
+          "annee": 2020,
+          "montant": 0.073
+        },
+        {
+          "annee": 2021,
+          "montant": 0.099
+        },
+        {
+          "annee": 2022,
+          "montant": 0.088
+        },
+        {
+          "annee": 2023,
+          "montant": 0.152
+        },
+        {
+          "annee": 2024,
+          "montant": 0.172
+        },
+        {
+          "annee": 2025,
+          "montant": 0.159
+        }
+      ]
+    },
+    {
+      "code": "D62PAY",
+      "categorie": "Prestations sociales",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 216.216
+        },
+        {
+          "annee": 1996,
+          "montant": 224.3496
+        },
+        {
+          "annee": 1997,
+          "montant": 228.4508
+        },
+        {
+          "annee": 1998,
+          "montant": 234.1129
+        },
+        {
+          "annee": 1999,
+          "montant": 242.0661
+        },
+        {
+          "annee": 2000,
+          "montant": 247.65179999999998
+        },
+        {
+          "annee": 2001,
+          "montant": 258.9207
+        },
+        {
+          "annee": 2002,
+          "montant": 271.75809999999996
+        },
+        {
+          "annee": 2003,
+          "montant": 282.7998
+        },
+        {
+          "annee": 2004,
+          "montant": 295.514
+        },
+        {
+          "annee": 2005,
+          "montant": 308.72429999999997
+        },
+        {
+          "annee": 2006,
+          "montant": 323.9554
+        },
+        {
+          "annee": 2007,
+          "montant": 338.12809999999996
+        },
+        {
+          "annee": 2008,
+          "montant": 349.7192
+        },
+        {
+          "annee": 2009,
+          "montant": 369.6343
+        },
+        {
+          "annee": 2010,
+          "montant": 381.0668
+        },
+        {
+          "annee": 2011,
+          "montant": 392.50640000000004
+        },
+        {
+          "annee": 2012,
+          "montant": 406.4885
+        },
+        {
+          "annee": 2013,
+          "montant": 418.6055
+        },
+        {
+          "annee": 2014,
+          "montant": 427.0274
+        },
+        {
+          "annee": 2015,
+          "montant": 433.8749
+        },
+        {
+          "annee": 2016,
+          "montant": 440.51709999999997
+        },
+        {
+          "annee": 2017,
+          "montant": 447.70709999999997
+        },
+        {
+          "annee": 2018,
+          "montant": 457.1553
+        },
+        {
+          "annee": 2019,
+          "montant": 470.5604
+        },
+        {
+          "annee": 2020,
+          "montant": 517.8375
+        },
+        {
+          "annee": 2021,
+          "montant": 505.9251
+        },
+        {
+          "annee": 2022,
+          "montant": 510.034
+        },
+        {
+          "annee": 2023,
+          "montant": 530.9076
+        },
+        {
+          "annee": 2024,
+          "montant": 563.6853000000001
+        },
+        {
+          "annee": 2025,
+          "montant": 579.5423000000001
+        }
+      ]
+    },
+    {
+      "code": "D7PAY",
+      "categorie": "Autres transferts courants",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 32.8885
+        },
+        {
+          "annee": 1996,
+          "montant": 33.4201
+        },
+        {
+          "annee": 1997,
+          "montant": 33.5257
+        },
+        {
+          "annee": 1998,
+          "montant": 35.2256
+        },
+        {
+          "annee": 1999,
+          "montant": 35.8795
+        },
+        {
+          "annee": 2000,
+          "montant": 38.4987
+        },
+        {
+          "annee": 2001,
+          "montant": 41.0056
+        },
+        {
+          "annee": 2002,
+          "montant": 43.6554
+        },
+        {
+          "annee": 2003,
+          "montant": 46.8056
+        },
+        {
+          "annee": 2004,
+          "montant": 46.8002
+        },
+        {
+          "annee": 2005,
+          "montant": 50.8068
+        },
+        {
+          "annee": 2006,
+          "montant": 53.3841
+        },
+        {
+          "annee": 2007,
+          "montant": 55.348800000000004
+        },
+        {
+          "annee": 2008,
+          "montant": 58.497800000000005
+        },
+        {
+          "annee": 2009,
+          "montant": 62.2639
+        },
+        {
+          "annee": 2010,
+          "montant": 64.3889
+        },
+        {
+          "annee": 2011,
+          "montant": 64.9597
+        },
+        {
+          "annee": 2012,
+          "montant": 67.3922
+        },
+        {
+          "annee": 2013,
+          "montant": 70.7997
+        },
+        {
+          "annee": 2014,
+          "montant": 68.173
+        },
+        {
+          "annee": 2015,
+          "montant": 68.7637
+        },
+        {
+          "annee": 2016,
+          "montant": 71.06939999999999
+        },
+        {
+          "annee": 2017,
+          "montant": 69.9076
+        },
+        {
+          "annee": 2018,
+          "montant": 74.6617
+        },
+        {
+          "annee": 2019,
+          "montant": 76.9278
+        },
+        {
+          "annee": 2020,
+          "montant": 83.8087
+        },
+        {
+          "annee": 2021,
+          "montant": 89.08919999999999
+        },
+        {
+          "annee": 2022,
+          "montant": 91.9694
+        },
+        {
+          "annee": 2023,
+          "montant": 94.1333
+        },
+        {
+          "annee": 2024,
+          "montant": 93.4799
+        },
+        {
+          "annee": 2025,
+          "montant": 94.00089999999999
+        }
+      ]
+    },
+    {
+      "code": "D9PAY",
+      "categorie": "Transferts en capital",
+      "unite": "Md€",
+      "type": "atomique",
+      "note": "",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 20.777
+        },
+        {
+          "annee": 1996,
+          "montant": 13.499600000000001
+        },
+        {
+          "annee": 1997,
+          "montant": 17.0944
+        },
+        {
+          "annee": 1998,
+          "montant": 13.455200000000001
+        },
+        {
+          "annee": 1999,
+          "montant": 16.0145
+        },
+        {
+          "annee": 2000,
+          "montant": 13.5539
+        },
+        {
+          "annee": 2001,
+          "montant": 14.354700000000001
+        },
+        {
+          "annee": 2002,
+          "montant": 15.120700000000001
+        },
+        {
+          "annee": 2003,
+          "montant": 14.409600000000001
+        },
+        {
+          "annee": 2004,
+          "montant": 15.982899999999999
+        },
+        {
+          "annee": 2005,
+          "montant": 17.7967
+        },
+        {
+          "annee": 2006,
+          "montant": 19.292900000000003
+        },
+        {
+          "annee": 2007,
+          "montant": 22.6827
+        },
+        {
+          "annee": 2008,
+          "montant": 25.415599999999998
+        },
+        {
+          "annee": 2009,
+          "montant": 23.769599999999997
+        },
+        {
+          "annee": 2010,
+          "montant": 22.318099999999998
+        },
+        {
+          "annee": 2011,
+          "montant": 23.2212
+        },
+        {
+          "annee": 2012,
+          "montant": 24.9135
+        },
+        {
+          "annee": 2013,
+          "montant": 24.112099999999998
+        },
+        {
+          "annee": 2014,
+          "montant": 25.684
+        },
+        {
+          "annee": 2015,
+          "montant": 28.7115
+        },
+        {
+          "annee": 2016,
+          "montant": 27.6846
+        },
+        {
+          "annee": 2017,
+          "montant": 40.732099999999996
+        },
+        {
+          "annee": 2018,
+          "montant": 25.909200000000002
+        },
+        {
+          "annee": 2019,
+          "montant": 28.571
+        },
+        {
+          "annee": 2020,
+          "montant": 31.429
+        },
+        {
+          "annee": 2021,
+          "montant": 40.131
+        },
+        {
+          "annee": 2022,
+          "montant": 42.72
+        },
+        {
+          "annee": 2023,
+          "montant": 41.372
+        },
+        {
+          "annee": 2024,
+          "montant": 42.23
+        },
+        {
+          "annee": 2025,
+          "montant": 41.563
+        }
+      ]
+    },
+    {
+      "code": "DISC",
+      "categorie": "Écart statistique (non ventilé par nature)",
+      "unite": "Md€",
+      "type": "disc",
+      "note": "Écart entre la somme des catégories et le total TE. Normal en comptabilité nationale SEC 2010 (±0,5% à 1,5%).",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 2.6
+        },
+        {
+          "annee": 1996,
+          "montant": 5.28
+        },
+        {
+          "annee": 1997,
+          "montant": 5.25
+        },
+        {
+          "annee": 1998,
+          "montant": 5.44
+        },
+        {
+          "annee": 1999,
+          "montant": 6.15
+        },
+        {
+          "annee": 2000,
+          "montant": 8.92
+        },
+        {
+          "annee": 2001,
+          "montant": 9.68
+        },
+        {
+          "annee": 2002,
+          "montant": 10.85
+        },
+        {
+          "annee": 2003,
+          "montant": 8.22
+        },
+        {
+          "annee": 2004,
+          "montant": 8.45
+        },
+        {
+          "annee": 2005,
+          "montant": 8.75
+        },
+        {
+          "annee": 2006,
+          "montant": 8.19
+        },
+        {
+          "annee": 2007,
+          "montant": 8.6
+        },
+        {
+          "annee": 2008,
+          "montant": 7.97
+        },
+        {
+          "annee": 2009,
+          "montant": 8.45
+        },
+        {
+          "annee": 2010,
+          "montant": 8.52
+        },
+        {
+          "annee": 2011,
+          "montant": 6.95
+        },
+        {
+          "annee": 2012,
+          "montant": 6.02
+        },
+        {
+          "annee": 2013,
+          "montant": 5.72
+        },
+        {
+          "annee": 2014,
+          "montant": 6.29
+        },
+        {
+          "annee": 2015,
+          "montant": 7.13
+        },
+        {
+          "annee": 2016,
+          "montant": 5.4
+        },
+        {
+          "annee": 2017,
+          "montant": 6.73
+        },
+        {
+          "annee": 2018,
+          "montant": 5.07
+        },
+        {
+          "annee": 2019,
+          "montant": 5.09
+        },
+        {
+          "annee": 2020,
+          "montant": -2.67
+        },
+        {
+          "annee": 2021,
+          "montant": 1.36
+        },
+        {
+          "annee": 2022,
+          "montant": -0.42
+        },
+        {
+          "annee": 2023,
+          "montant": 0.02
+        },
+        {
+          "annee": 2024,
+          "montant": 3.69
+        },
+        {
+          "annee": 2025,
+          "montant": 11.15
+        }
+      ]
+    }
+  ],
+  "total_depenses": {
+    "source": "TE (Total Expenditure - Eurostat)",
+    "unite": "Md€",
+    "donnees": [
+      {
+        "annee": 1995,
+        "montant": 683.9693000000001
+      },
+      {
+        "annee": 1996,
+        "montant": 705.6854000000001
+      },
+      {
+        "annee": 1997,
+        "montant": 710.8996999999999
+      },
+      {
+        "annee": 1998,
+        "montant": 722.1098000000001
+      },
+      {
+        "annee": 1999,
+        "montant": 748.589
+      },
+      {
+        "annee": 2000,
+        "montant": 775.3487
+      },
+      {
+        "annee": 2001,
+        "montant": 808.2256
+      },
+      {
+        "annee": 2002,
+        "montant": 851.1074
+      },
+      {
+        "annee": 2003,
+        "montant": 881.7855999999999
+      },
+      {
+        "annee": 2004,
+        "montant": 915.9064000000001
+      },
+      {
+        "annee": 2005,
+        "montant": 956.1425
+      },
+      {
+        "annee": 2006,
+        "montant": 992.2408
+      },
+      {
+        "annee": 2007,
+        "montant": 1039.2875999999999
+      },
+      {
+        "annee": 2008,
+        "montant": 1080.2205
+      },
+      {
+        "annee": 2009,
+        "montant": 1122.6073000000001
+      },
+      {
+        "annee": 2010,
+        "montant": 1151.9618
+      },
+      {
+        "annee": 2011,
+        "montant": 1175.7047
+      },
+      {
+        "annee": 2012,
+        "montant": 1208.9531000000002
+      },
+      {
+        "annee": 2013,
+        "montant": 1242.358
+      },
+      {
+        "annee": 2014,
+        "montant": 1257.6491
+      },
+      {
+        "annee": 2015,
+        "montant": 1268.0078
+      },
+      {
+        "annee": 2016,
+        "montant": 1280.6481
+      },
+      {
+        "annee": 2017,
+        "montant": 1321.4446
+      },
+      {
+        "annee": 2018,
+        "montant": 1327.6323
+      },
+      {
+        "annee": 2019,
+        "montant": 1346.1547
+      },
+      {
+        "annee": 2020,
+        "montant": 1430.357
+      },
+      {
+        "annee": 2021,
+        "montant": 1491.3811
+      },
+      {
+        "annee": 2022,
+        "montant": 1550.3313999999998
+      },
+      {
+        "annee": 2023,
+        "montant": 1608.2708
+      },
+      {
+        "annee": 2024,
+        "montant": 1672.7082
+      },
+      {
+        "annee": 2025,
+        "montant": 1714.1372
+      }
+    ]
+  },
+  "missions_budgetaires": [],
+  "annees_couvertes": [
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}

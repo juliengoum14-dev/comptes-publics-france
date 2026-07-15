@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "source": "Synthèse Eurostat + INSEE",
+    "mise_a_jour": "2025/2026",
+    "perimetre": "APU (S13) - Comptes nationaux base 2020",
+    "unite_principale": "Md€",
+    "indicateurs": [
+      "recettes",
+      "depenses",
+      "solde",
+      "dette",
+      "pib",
+      "recettes_pct_pib",
+      "depenses_pct_pib",
+      "dette_pct_pib"
+    ]
+  },
+  "synthese_annuelle": {
+    "1995": {
+      "recettes": 621.6,
+      "depenses": 683.97,
+      "solde": -62.37,
+      "dette": 714.69,
+      "pib": 1219.2,
+      "recettes_pct_pib": 51.0,
+      "depenses_pct_pib": 56.1,
+      "dette_pct_pib": 58.6
+    },
+    "1996": {
+      "recettes": 656.6,
+      "depenses": 705.69,
+      "solde": -49.08,
+      "dette": 755.31,
+      "pib": 1260.16,
+      "recettes_pct_pib": 52.1,
+      "depenses_pct_pib": 56.0,
+      "dette_pct_pib": 59.9
+    },
+    "1997": {
+      "recettes": 663.42,
+      "depenses": 710.9,
+      "solde": -47.48,
+      "dette": 793.02,
+      "pib": 1278.6,
+      "recettes_pct_pib": 51.9,
+      "depenses_pct_pib": 55.6,
+      "dette_pct_pib": 62.0
+    },
+    "1998": {
+      "recettes": 690.12,
+      "depenses": 722.11,
+      "solde": -31.99,
+      "dette": 836.06,
+      "pib": 1337.24,
+      "recettes_pct_pib": 51.6,
+      "depenses_pct_pib": 54.0,
+      "dette_pct_pib": 62.5
+    },
+    "1999": {
+      "recettes": 727.04,
+      "depenses": 748.59,
+      "solde": -21.54,
+      "dette": 856.94,
+      "pib": 1394.02,
+      "recettes_pct_pib": 52.2,
+      "depenses_pct_pib": 53.7,
+      "dette_pct_pib": 61.5
+    },
+    "2000": {
+      "recettes": 756.01,
+      "depenses": 775.35,
+      "solde": -19.34,
+      "dette": 880.0,
+      "pib": 1474.05,
+      "recettes_pct_pib": 51.3,
+      "depenses_pct_pib": 52.6,
+      "dette_pct_pib": 59.7
+    },
+    "2001": {
+      "recettes": 786.54,
+      "depenses": 808.23,
+      "solde": -21.69,
+      "dette": 907.67,
+      "pib": 1530.74,
+      "recettes_pct_pib": 51.4,
+      "depenses_pct_pib": 52.8,
+      "dette_pct_pib": 59.3
+    },
+    "2002": {
+      "recettes": 800.99,
+      "depenses": 851.11,
+      "solde": -50.12,
+      "dette": 966.82,
+      "pib": 1579.05,
+      "recettes_pct_pib": 50.7,
+      "depenses_pct_pib": 53.9,
+      "dette_pct_pib": 61.2
+    },
+    "2003": {
+      "recettes": 815.47,
+      "depenses": 881.79,
+      "solde": -66.32,
+      "dette": 1060.41,
+      "pib": 1620.94,
+      "recettes_pct_pib": 50.3,
+      "depenses_pct_pib": 54.4,
+      "dette_pct_pib": 65.4
+    },
+    "2004": {
+      "recettes": 855.61,
+      "depenses": 915.91,
+      "solde": -60.3,
+      "dette": 1134.35,
+      "pib": 1696.13,
+      "recettes_pct_pib": 50.4,
+      "depenses_pct_pib": 54.0,
+      "dette_pct_pib": 66.9
+    },
+    "2005": {
+      "recettes": 894.34,
+      "depenses": 956.14,
+      "solde": -61.8,
+      "dette": 1201.47,
+      "pib": 1760.85,
+      "recettes_pct_pib": 50.8,
+      "depenses_pct_pib": 54.3,
+      "dette_pct_pib": 68.2
+    },
+    "2006": {
+      "recettes": 943.18,
+      "depenses": 992.24,
+      "solde": -49.06,
+      "dette": 1207.31,
+      "pib": 1844.31,
+      "recettes_pct_pib": 51.1,
+      "depenses_pct_pib": 53.8,
+      "dette_pct_pib": 65.5
+    },
+    "2007": {
+      "recettes": 981.35,
+      "depenses": 1039.29,
+      "solde": -57.94,
+      "dette": 1268.86,
+      "pib": 1938.97,
+      "recettes_pct_pib": 50.6,
+      "depenses_pct_pib": 53.6,
+      "dette_pct_pib": 65.4
+    },
+    "2008": {
+      "recettes": 1010.53,
+      "depenses": 1080.22,
+      "solde": -69.69,
+      "dette": 1389.4,
+      "pib": 1989.36,
+      "recettes_pct_pib": 50.8,
+      "depenses_pct_pib": 54.3,
+      "dette_pct_pib": 69.8
+    },
+    "2009": {
+      "recettes": 979.77,
+      "depenses": 1122.61,
+      "solde": -142.83,
+      "dette": 1627.18,
+      "pib": 1935.53,
+      "recettes_pct_pib": 50.6,
+      "depenses_pct_pib": 58.0,
+      "dette_pct_pib": 84.1
+    },
+    "2010": {
+      "recettes": 1009.2,
+      "depenses": 1151.96,
+      "solde": -142.76,
+      "dette": 1722.17,
+      "pib": 1996.46,
+      "recettes_pct_pib": 50.5,
+      "depenses_pct_pib": 57.7,
+      "dette_pct_pib": 86.3
+    },
+    "2011": {
+      "recettes": 1066.32,
+      "depenses": 1175.7,
+      "solde": -109.39,
+      "dette": 1830.14,
+      "pib": 2062.63,
+      "recettes_pct_pib": 51.7,
+      "depenses_pct_pib": 57.0,
+      "dette_pct_pib": 88.7
+    },
+    "2012": {
+      "recettes": 1100.97,
+      "depenses": 1208.95,
+      "solde": -107.99,
+      "dette": 1915.84,
+      "pib": 2088.0,
+      "recettes_pct_pib": 52.7,
+      "depenses_pct_pib": 57.9,
+      "dette_pct_pib": 91.8
+    },
+    "2013": {
+      "recettes": 1137.65,
+      "depenses": 1242.36,
+      "solde": -104.71,
+      "dette": 2004.96,
+      "pib": 2120.07,
+      "recettes_pct_pib": 53.7,
+      "depenses_pct_pib": 58.6,
+      "dette_pct_pib": 94.6
+    },
+    "2014": {
+      "recettes": 1159.15,
+      "depenses": 1257.65,
+      "solde": -98.5,
+      "dette": 2071.12,
+      "pib": 2153.51,
+      "recettes_pct_pib": 53.8,
+      "depenses_pct_pib": 58.4,
+      "dette_pct_pib": 96.2
+    },
+    "2015": {
+      "recettes": 1182.33,
+      "depenses": 1268.01,
+      "solde": -85.68,
+      "dette": 2134.87,
+      "pib": 2201.41,
+      "recettes_pct_pib": 53.7,
+      "depenses_pct_pib": 57.6,
+      "dette_pct_pib": 97.0
+    },
+    "2016": {
+      "recettes": 1196.62,
+      "depenses": 1280.65,
+      "solde": -84.03,
+      "dette": 2190.52,
+      "pib": 2231.1,
+      "recettes_pct_pib": 53.6,
+      "depenses_pct_pib": 57.4,
+      "dette_pct_pib": 98.2
+    },
+    "2017": {
+      "recettes": 1244.39,
+      "depenses": 1321.44,
+      "solde": -77.06,
+      "dette": 2263.29,
+      "pib": 2290.19,
+      "recettes_pct_pib": 54.3,
+      "depenses_pct_pib": 57.7,
+      "dette_pct_pib": 98.8
+    },
+    "2018": {
+      "recettes": 1273.02,
+      "depenses": 1327.63,
+      "solde": -54.62,
+      "dette": 2320.74,
+      "pib": 2353.95,
+      "recettes_pct_pib": 54.1,
+      "depenses_pct_pib": 56.4,
+      "dette_pct_pib": 98.6
+    },
+    "2019": {
+      "recettes": 1287.93,
+      "depenses": 1346.15,
+      "solde": -58.23,
+      "dette": 2387.4,
+      "pib": 2434.27,
+      "recettes_pct_pib": 52.9,
+      "depenses_pct_pib": 55.3,
+      "dette_pct_pib": 98.1
+    },
+    "2020": {
+      "recettes": 1223.27,
+      "depenses": 1430.36,
+      "solde": -207.08,
+      "dette": 2663.85,
+      "pib": 2318.25,
+      "recettes_pct_pib": 52.8,
+      "depenses_pct_pib": 61.7,
+      "dette_pct_pib": 114.9
+    },
+    "2021": {
+      "recettes": 1326.23,
+      "depenses": 1491.38,
+      "solde": -165.15,
+      "dette": 2828.78,
+      "pib": 2506.52,
+      "recettes_pct_pib": 52.9,
+      "depenses_pct_pib": 59.5,
+      "dette_pct_pib": 112.9
+    },
+    "2022": {
+      "recettes": 1424.44,
+      "depenses": 1550.33,
+      "solde": -125.9,
+      "dette": 2955.64,
+      "pib": 2654.67,
+      "recettes_pct_pib": 53.7,
+      "depenses_pct_pib": 58.4,
+      "dette_pct_pib": 111.3
+    },
+    "2023": {
+      "recettes": 1456.35,
+      "depenses": 1608.27,
+      "solde": -151.92,
+      "dette": 3103.25,
+      "pib": 2831.46,
+      "recettes_pct_pib": 51.4,
+      "depenses_pct_pib": 56.8,
+      "dette_pct_pib": 109.6
+    },
+    "2024": {
+      "recettes": 1503.59,
+      "depenses": 1672.71,
+      "solde": -169.12,
+      "dette": 3306.1,
+      "pib": 2934.58,
+      "recettes_pct_pib": 51.2,
+      "depenses_pct_pib": 57.0,
+      "dette_pct_pib": 112.7
+    },
+    "2025": {
+      "recettes": 1561.63,
+      "depenses": 1714.14,
+      "solde": -152.51,
+      "dette": 3460.47,
+      "pib": 2996.75,
+      "recettes_pct_pib": 52.1,
+      "depenses_pct_pib": 57.2,
+      "dette_pct_pib": 115.5
+    }
+  },
+  "derniere_annee": 2025,
+  "donnees_cles_2025": {
+    "recettes": 1561.63,
+    "depenses": 1714.14,
+    "solde": -152.51,
+    "dette": 3460.47,
+    "pib": 2996.75,
+    "recettes_pct_pib": 52.1,
+    "depenses_pct_pib": 57.2,
+    "dette_pct_pib": 115.5
+  }
+}

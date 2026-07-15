@@ -1,0 +1,961 @@
+{
+  "meta": {
+    "source": "INSEE, Eurostat",
+    "mise_a_jour": "2025/2026",
+    "perimetre": "APU (S13) et État (S13111)",
+    "unite": "Md€",
+    "note": "D5REC (Impôts courants sur le revenu) retiré : agrégat incluant D51A_C1REC et D51B_C2REC"
+  },
+  "recettes_par_categorie": [
+    {
+      "categorie": "TVA",
+      "code_sec2010": "D211REC",
+      "unite": "Md€",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 90.0572
+        },
+        {
+          "annee": 1996,
+          "montant": 97.3297
+        },
+        {
+          "annee": 1997,
+          "montant": 98.3635
+        },
+        {
+          "annee": 1998,
+          "montant": 101.3989
+        },
+        {
+          "annee": 1999,
+          "montant": 106.1451
+        },
+        {
+          "annee": 2000,
+          "montant": 107.3327
+        },
+        {
+          "annee": 2001,
+          "montant": 108.75139999999999
+        },
+        {
+          "annee": 2002,
+          "montant": 110.5804
+        },
+        {
+          "annee": 2003,
+          "montant": 113.7493
+        },
+        {
+          "annee": 2004,
+          "montant": 120.323
+        },
+        {
+          "annee": 2005,
+          "montant": 126.7224
+        },
+        {
+          "annee": 2006,
+          "montant": 131.781
+        },
+        {
+          "annee": 2007,
+          "montant": 136.674
+        },
+        {
+          "annee": 2008,
+          "montant": 137.8055
+        },
+        {
+          "annee": 2009,
+          "montant": 130.58010000000002
+        },
+        {
+          "annee": 2010,
+          "montant": 135.8331
+        },
+        {
+          "annee": 2011,
+          "montant": 140.84810000000002
+        },
+        {
+          "annee": 2012,
+          "montant": 142.8391
+        },
+        {
+          "annee": 2013,
+          "montant": 144.918
+        },
+        {
+          "annee": 2014,
+          "montant": 148.922
+        },
+        {
+          "annee": 2015,
+          "montant": 152.167
+        },
+        {
+          "annee": 2016,
+          "montant": 154.967
+        },
+        {
+          "annee": 2017,
+          "montant": 162.452
+        },
+        {
+          "annee": 2018,
+          "montant": 168.177
+        },
+        {
+          "annee": 2019,
+          "montant": 174.424
+        },
+        {
+          "annee": 2020,
+          "montant": 162.09
+        },
+        {
+          "annee": 2021,
+          "montant": 185.35
+        },
+        {
+          "annee": 2022,
+          "montant": 199.272
+        },
+        {
+          "annee": 2023,
+          "montant": 206.312
+        },
+        {
+          "annee": 2024,
+          "montant": 207.753
+        },
+        {
+          "annee": 2025,
+          "montant": 208.821
+        }
+      ]
+    },
+    {
+      "categorie": "Impôt sur le revenu",
+      "code_sec2010": "D51A_C1REC",
+      "unite": "Md€",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 63.1443
+        },
+        {
+          "annee": 1996,
+          "montant": 67.9173
+        },
+        {
+          "annee": 1997,
+          "montant": 73.111
+        },
+        {
+          "annee": 1998,
+          "montant": 104.5054
+        },
+        {
+          "annee": 1999,
+          "montant": 112.154
+        },
+        {
+          "annee": 2000,
+          "montant": 120.155
+        },
+        {
+          "annee": 2001,
+          "montant": 125.342
+        },
+        {
+          "annee": 2002,
+          "montant": 124.034
+        },
+        {
+          "annee": 2003,
+          "montant": 128.429
+        },
+        {
+          "annee": 2004,
+          "montant": 132.025
+        },
+        {
+          "annee": 2005,
+          "montant": 138.859
+        },
+        {
+          "annee": 2006,
+          "montant": 143.687
+        },
+        {
+          "annee": 2007,
+          "montant": 148.168
+        },
+        {
+          "annee": 2008,
+          "montant": 156.668
+        },
+        {
+          "annee": 2009,
+          "montant": 150.581
+        },
+        {
+          "annee": 2010,
+          "montant": 153.269
+        },
+        {
+          "annee": 2011,
+          "montant": 162.085
+        },
+        {
+          "annee": 2012,
+          "montant": 176.993
+        },
+        {
+          "annee": 2013,
+          "montant": 186.745
+        },
+        {
+          "annee": 2014,
+          "montant": 189.431
+        },
+        {
+          "annee": 2015,
+          "montant": 192.54
+        },
+        {
+          "annee": 2016,
+          "montant": 194.345
+        },
+        {
+          "annee": 2017,
+          "montant": 198.857
+        },
+        {
+          "annee": 2018,
+          "montant": 226.13
+        },
+        {
+          "annee": 2019,
+          "montant": 230.189
+        },
+        {
+          "annee": 2020,
+          "montant": 224.741
+        },
+        {
+          "annee": 2021,
+          "montant": 236.189
+        },
+        {
+          "annee": 2022,
+          "montant": 260.028
+        },
+        {
+          "annee": 2023,
+          "montant": 268.757
+        },
+        {
+          "annee": 2024,
+          "montant": 274.981
+        },
+        {
+          "annee": 2025,
+          "montant": 294.27
+        }
+      ]
+    },
+    {
+      "categorie": "Impôt sur les sociétés",
+      "code_sec2010": "D51B_C2REC",
+      "unite": "Md€",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 21.672
+        },
+        {
+          "annee": 1996,
+          "montant": 25.7584
+        },
+        {
+          "annee": 1997,
+          "montant": 29.0085
+        },
+        {
+          "annee": 1998,
+          "montant": 31.0708
+        },
+        {
+          "annee": 1999,
+          "montant": 36.726
+        },
+        {
+          "annee": 2000,
+          "montant": 40.577
+        },
+        {
+          "annee": 2001,
+          "montant": 46.083
+        },
+        {
+          "annee": 2002,
+          "montant": 39.776
+        },
+        {
+          "annee": 2003,
+          "montant": 34.369
+        },
+        {
+          "annee": 2004,
+          "montant": 40.328
+        },
+        {
+          "annee": 2005,
+          "montant": 43.14
+        },
+        {
+          "annee": 2006,
+          "montant": 55.159
+        },
+        {
+          "annee": 2007,
+          "montant": 58.137
+        },
+        {
+          "annee": 2008,
+          "montant": 58.756
+        },
+        {
+          "annee": 2009,
+          "montant": 33.769
+        },
+        {
+          "annee": 2010,
+          "montant": 46.09
+        },
+        {
+          "annee": 2011,
+          "montant": 53.795
+        },
+        {
+          "annee": 2012,
+          "montant": 55.61
+        },
+        {
+          "annee": 2013,
+          "montant": 57.667
+        },
+        {
+          "annee": 2014,
+          "montant": 55.31
+        },
+        {
+          "annee": 2015,
+          "montant": 57.988
+        },
+        {
+          "annee": 2016,
+          "montant": 56.244
+        },
+        {
+          "annee": 2017,
+          "montant": 66.226
+        },
+        {
+          "annee": 2018,
+          "montant": 62.405
+        },
+        {
+          "annee": 2019,
+          "montant": 67.958
+        },
+        {
+          "annee": 2020,
+          "montant": 64.882
+        },
+        {
+          "annee": 2021,
+          "montant": 73.99
+        },
+        {
+          "annee": 2022,
+          "montant": 90.235
+        },
+        {
+          "annee": 2023,
+          "montant": 82.393
+        },
+        {
+          "annee": 2024,
+          "montant": 83.699
+        },
+        {
+          "annee": 2025,
+          "montant": 88.928
+        }
+      ]
+    },
+    {
+      "categorie": "Impôts sur les produits (dont TICPE)",
+      "code_sec2010": "D21REC",
+      "unite": "Md€",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 141.6876
+        },
+        {
+          "annee": 1996,
+          "montant": 150.6927
+        },
+        {
+          "annee": 1997,
+          "montant": 152.9395
+        },
+        {
+          "annee": 1998,
+          "montant": 158.8717
+        },
+        {
+          "annee": 1999,
+          "montant": 165.4661
+        },
+        {
+          "annee": 2000,
+          "montant": 167.8897
+        },
+        {
+          "annee": 2001,
+          "montant": 169.60389999999998
+        },
+        {
+          "annee": 2002,
+          "montant": 175.5573
+        },
+        {
+          "annee": 2003,
+          "montant": 179.2328
+        },
+        {
+          "annee": 2004,
+          "montant": 188.9225
+        },
+        {
+          "annee": 2005,
+          "montant": 196.76139999999998
+        },
+        {
+          "annee": 2006,
+          "montant": 205.0239
+        },
+        {
+          "annee": 2007,
+          "montant": 210.557
+        },
+        {
+          "annee": 2008,
+          "montant": 211.563
+        },
+        {
+          "annee": 2009,
+          "montant": 202.8491
+        },
+        {
+          "annee": 2010,
+          "montant": 212.3811
+        },
+        {
+          "annee": 2011,
+          "montant": 224.43110000000001
+        },
+        {
+          "annee": 2012,
+          "montant": 229.5291
+        },
+        {
+          "annee": 2013,
+          "montant": 234.108
+        },
+        {
+          "annee": 2014,
+          "montant": 240.011
+        },
+        {
+          "annee": 2015,
+          "montant": 249.665
+        },
+        {
+          "annee": 2016,
+          "montant": 256.977
+        },
+        {
+          "annee": 2017,
+          "montant": 270.988
+        },
+        {
+          "annee": 2018,
+          "montant": 282.833
+        },
+        {
+          "annee": 2019,
+          "montant": 292.049
+        },
+        {
+          "annee": 2020,
+          "montant": 273.606
+        },
+        {
+          "annee": 2021,
+          "montant": 307.943
+        },
+        {
+          "annee": 2022,
+          "montant": 319.039
+        },
+        {
+          "annee": 2023,
+          "montant": 318.82
+        },
+        {
+          "annee": 2024,
+          "montant": 326.186
+        },
+        {
+          "annee": 2025,
+          "montant": 337.591
+        }
+      ]
+    },
+    {
+      "categorie": "Autres impôts sur la production",
+      "code_sec2010": "D29REC",
+      "unite": "Md€",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 50.496199999999995
+        },
+        {
+          "annee": 1996,
+          "montant": 54.5545
+        },
+        {
+          "annee": 1997,
+          "montant": 55.432
+        },
+        {
+          "annee": 1998,
+          "montant": 57.7225
+        },
+        {
+          "annee": 1999,
+          "montant": 59.687
+        },
+        {
+          "annee": 2000,
+          "montant": 60.8024
+        },
+        {
+          "annee": 2001,
+          "montant": 61.8019
+        },
+        {
+          "annee": 2002,
+          "montant": 63.7738
+        },
+        {
+          "annee": 2003,
+          "montant": 65.6503
+        },
+        {
+          "annee": 2004,
+          "montant": 69.9694
+        },
+        {
+          "annee": 2005,
+          "montant": 74.1791
+        },
+        {
+          "annee": 2006,
+          "montant": 76.5051
+        },
+        {
+          "annee": 2007,
+          "montant": 81.3129
+        },
+        {
+          "annee": 2008,
+          "montant": 83.637
+        },
+        {
+          "annee": 2009,
+          "montant": 88.018
+        },
+        {
+          "annee": 2010,
+          "montant": 82.404
+        },
+        {
+          "annee": 2011,
+          "montant": 87.69
+        },
+        {
+          "annee": 2012,
+          "montant": 91.734
+        },
+        {
+          "annee": 2013,
+          "montant": 96.553
+        },
+        {
+          "annee": 2014,
+          "montant": 98.969
+        },
+        {
+          "annee": 2015,
+          "montant": 100.092
+        },
+        {
+          "annee": 2016,
+          "montant": 101.271
+        },
+        {
+          "annee": 2017,
+          "montant": 103.598
+        },
+        {
+          "annee": 2018,
+          "montant": 106.704
+        },
+        {
+          "annee": 2019,
+          "montant": 116.972
+        },
+        {
+          "annee": 2020,
+          "montant": 116.699
+        },
+        {
+          "annee": 2021,
+          "montant": 108.453
+        },
+        {
+          "annee": 2022,
+          "montant": 122.875
+        },
+        {
+          "annee": 2023,
+          "montant": 128.087
+        },
+        {
+          "annee": 2024,
+          "montant": 129.947
+        },
+        {
+          "annee": 2025,
+          "montant": 132.801
+        }
+      ]
+    },
+    {
+      "categorie": "Cotisations sociales",
+      "code_sec2010": "D61REC",
+      "unite": "Md€",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 243.7609
+        },
+        {
+          "annee": 1996,
+          "montant": 253.5355
+        },
+        {
+          "annee": 1997,
+          "montant": 251.2029
+        },
+        {
+          "annee": 1998,
+          "montant": 235.27110000000002
+        },
+        {
+          "annee": 1999,
+          "montant": 247.8099
+        },
+        {
+          "annee": 2000,
+          "montant": 257.7484
+        },
+        {
+          "annee": 2001,
+          "montant": 267.826
+        },
+        {
+          "annee": 2002,
+          "montant": 278.1127
+        },
+        {
+          "annee": 2003,
+          "montant": 290.1855
+        },
+        {
+          "annee": 2004,
+          "montant": 299.102
+        },
+        {
+          "annee": 2005,
+          "montant": 310.6986
+        },
+        {
+          "annee": 2006,
+          "montant": 327.2044
+        },
+        {
+          "annee": 2007,
+          "montant": 339.5622
+        },
+        {
+          "annee": 2008,
+          "montant": 349.0107
+        },
+        {
+          "annee": 2009,
+          "montant": 352.6067
+        },
+        {
+          "annee": 2010,
+          "montant": 360.249
+        },
+        {
+          "annee": 2011,
+          "montant": 374.6411
+        },
+        {
+          "annee": 2012,
+          "montant": 385.60159999999996
+        },
+        {
+          "annee": 2013,
+          "montant": 397.3552
+        },
+        {
+          "annee": 2014,
+          "montant": 407.2368
+        },
+        {
+          "annee": 2015,
+          "montant": 411.4915
+        },
+        {
+          "annee": 2016,
+          "montant": 416.52279999999996
+        },
+        {
+          "annee": 2017,
+          "montant": 429.07509999999996
+        },
+        {
+          "annee": 2018,
+          "montant": 422.9873
+        },
+        {
+          "annee": 2019,
+          "montant": 406.074
+        },
+        {
+          "annee": 2020,
+          "montant": 390.712
+        },
+        {
+          "annee": 2021,
+          "montant": 417.675
+        },
+        {
+          "annee": 2022,
+          "montant": 442.269
+        },
+        {
+          "annee": 2023,
+          "montant": 462.828
+        },
+        {
+          "annee": 2024,
+          "montant": 483.631
+        },
+        {
+          "annee": 2025,
+          "montant": 498.736
+        }
+      ]
+    }
+  ],
+  "total_recettes": {
+    "categorie": "Total recettes APU",
+    "code_sec2010": "TR",
+    "unite": "Md€",
+    "donnees": [
+      {
+        "annee": 1995,
+        "montant": 621.6024
+      },
+      {
+        "annee": 1996,
+        "montant": 656.6033
+      },
+      {
+        "annee": 1997,
+        "montant": 663.4183
+      },
+      {
+        "annee": 1998,
+        "montant": 690.1191
+      },
+      {
+        "annee": 1999,
+        "montant": 727.0446999999999
+      },
+      {
+        "annee": 2000,
+        "montant": 756.0065
+      },
+      {
+        "annee": 2001,
+        "montant": 786.539
+      },
+      {
+        "annee": 2002,
+        "montant": 800.9865
+      },
+      {
+        "annee": 2003,
+        "montant": 815.4685999999999
+      },
+      {
+        "annee": 2004,
+        "montant": 855.6066
+      },
+      {
+        "annee": 2005,
+        "montant": 894.3411
+      },
+      {
+        "annee": 2006,
+        "montant": 943.1782
+      },
+      {
+        "annee": 2007,
+        "montant": 981.3519
+      },
+      {
+        "annee": 2008,
+        "montant": 1010.5304
+      },
+      {
+        "annee": 2009,
+        "montant": 979.7734
+      },
+      {
+        "annee": 2010,
+        "montant": 1009.2013000000001
+      },
+      {
+        "annee": 2011,
+        "montant": 1066.3192
+      },
+      {
+        "annee": 2012,
+        "montant": 1100.9659
+      },
+      {
+        "annee": 2013,
+        "montant": 1137.6462
+      },
+      {
+        "annee": 2014,
+        "montant": 1159.1451000000002
+      },
+      {
+        "annee": 2015,
+        "montant": 1182.3268
+      },
+      {
+        "annee": 2016,
+        "montant": 1196.6228999999998
+      },
+      {
+        "annee": 2017,
+        "montant": 1244.3869
+      },
+      {
+        "annee": 2018,
+        "montant": 1273.0161
+      },
+      {
+        "annee": 2019,
+        "montant": 1287.9292
+      },
+      {
+        "annee": 2020,
+        "montant": 1223.2726
+      },
+      {
+        "annee": 2021,
+        "montant": 1326.2318
+      },
+      {
+        "annee": 2022,
+        "montant": 1424.4356
+      },
+      {
+        "annee": 2023,
+        "montant": 1456.3505
+      },
+      {
+        "annee": 2024,
+        "montant": 1503.5901000000001
+      },
+      {
+        "annee": 2025,
+        "montant": 1561.6261000000002
+      }
+    ]
+  },
+  "annees_couvertes": [
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}

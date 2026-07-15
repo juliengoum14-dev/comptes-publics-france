@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "date_validation": "2026-07-15",
+    "outil": "data-agent validation-consolidation"
+  },
+  "fichiers": {
+    "recettes-etat.json": {
+      "taille_kb": 19.9,
+      "source": "INSEE, Eurostat",
+      "nb_series": 7,
+      "annees": [
+        1995,
+        2025
+      ]
+    },
+    "depenses-ministeres.json": {
+      "taille_kb": 23.4,
+      "source": "Eurostat, PLF",
+      "nb_series": 8,
+      "annees": [
+        1995,
+        2025
+      ]
+    },
+    "apu-depenses.json": {
+      "taille_kb": 67.6,
+      "source": "INSEE (T_7301-7306), Eurostat",
+      "nb_series": 6,
+      "annees": [
+        1949,
+        2025
+      ]
+    },
+    "series-longues.json": {
+      "taille_kb": 8.7,
+      "source": "Eurostat (gov_10a_main, gov_10dd_edpt1)",
+      "nb_series": 10,
+      "annees": [
+        1995,
+        2025
+      ]
+    },
+    "synthese.json": {
+      "taille_kb": 7.8,
+      "source": "Synthèse Eurostat + INSEE",
+      "nb_series": 31,
+      "annees": [
+        1995,
+        2025
+      ]
+    }
+  },
+  "verifications": {
+    "coherence_synthese": {
+      "2020": {
+        "solde": -207.08,
+        "calcule": -207.09,
+        "ecart": 0.01,
+        "recettes": 1223.27,
+        "depenses": 1430.36,
+        "dette": 2663.85,
+        "pib": 2318.25,
+        "dette_pct": 114.9
+      },
+      "2021": {
+        "solde": -165.15,
+        "calcule": -165.15,
+        "ecart": 0.0,
+        "recettes": 1326.23,
+        "depenses": 1491.38,
+        "dette": 2828.78,
+        "pib": 2506.52,
+        "dette_pct": 112.9
+      },
+      "2022": {
+        "solde": -125.9,
+        "calcule": -125.89,
+        "ecart": 0.01,
+        "recettes": 1424.44,
+        "depenses": 1550.33,
+        "dette": 2955.64,
+        "pib": 2654.67,
+        "dette_pct": 111.3
+      },
+      "2023": {
+        "solde": -151.92,
+        "calcule": -151.92,
+        "ecart": 0.0,
+        "recettes": 1456.35,
+        "depenses": 1608.27,
+        "dette": 3103.25,
+        "pib": 2831.46,
+        "dette_pct": 109.6
+      },
+      "2024": {
+        "solde": -169.12,
+        "calcule": -169.12,
+        "ecart": 0.0,
+        "recettes": 1503.59,
+        "depenses": 1672.71,
+        "dette": 3306.1,
+        "pib": 2934.58,
+        "dette_pct": 112.7
+      },
+      "2025": {
+        "solde": -152.51,
+        "calcule": -152.51,
+        "ecart": 0.0,
+        "recettes": 1561.63,
+        "depenses": 1714.14,
+        "dette": 3460.47,
+        "pib": 2996.75,
+        "dette_pct": 115.5
+      }
+    },
+    "indicateurs_series": {
+      "trouves": [
+        "Dépenses APU",
+        "Recettes APU",
+        "Déficit public",
+        "Dette publique (Maastricht)",
+        "PIB (B1GQ)",
+        "PIB",
+        "Dépenses APU (% PIB)",
+        "Recettes APU (% PIB)",
+        "Déficit (% PIB)",
+        "Dette publique (% PIB)"
+      ],
+      "manquants": []
+    }
+  },
+  "anomalies": [],
+  "avertissements": [],
+  "bilan": {
+    "statut": "success",
+    "fichiers_produits": 5,
+    "anomalies": 0,
+    "avertissements": 0
+  }
+}

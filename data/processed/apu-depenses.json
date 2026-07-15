@@ -1,0 +1,3579 @@
+{
+  "meta": {
+    "source": "INSEE (T_7301-7306), Eurostat",
+    "mise_a_jour": "2025/2026",
+    "perimetre": "APU par sous-secteur (S13, S1311, S1313, S1314)",
+    "unite": "Md€"
+  },
+  "sous_secteurs": {
+    "7.01": {
+      "nom": "7.01",
+      "donnees": [
+        {
+          "annee": 1949,
+          "poste": "P1",
+          "montant": 2.01
+        },
+        {
+          "annee": 1950,
+          "poste": "P1",
+          "montant": 2.46
+        },
+        {
+          "annee": 1951,
+          "poste": "P1",
+          "montant": 3.15
+        },
+        {
+          "annee": 1952,
+          "poste": "P1",
+          "montant": 4.28
+        },
+        {
+          "annee": 1953,
+          "poste": "P1",
+          "montant": 4.63
+        },
+        {
+          "annee": 1954,
+          "poste": "P1",
+          "montant": 4.63
+        },
+        {
+          "annee": 1955,
+          "poste": "P1",
+          "montant": 4.75
+        },
+        {
+          "annee": 1956,
+          "poste": "P1",
+          "montant": 5.37
+        },
+        {
+          "annee": 1957,
+          "poste": "P1",
+          "montant": 5.94
+        },
+        {
+          "annee": 1958,
+          "poste": "P1",
+          "montant": 6.63
+        },
+        {
+          "annee": 1959,
+          "poste": "P1",
+          "montant": 7.37
+        },
+        {
+          "annee": 1960,
+          "poste": "P1",
+          "montant": 7.82
+        },
+        {
+          "annee": 1961,
+          "poste": "P1",
+          "montant": 8.67
+        },
+        {
+          "annee": 1962,
+          "poste": "P1",
+          "montant": 9.88
+        },
+        {
+          "annee": 1963,
+          "poste": "P1",
+          "montant": 11.3
+        },
+        {
+          "annee": 1964,
+          "poste": "P1",
+          "montant": 12.48
+        },
+        {
+          "annee": 1965,
+          "poste": "P1",
+          "montant": 13.45
+        },
+        {
+          "annee": 1966,
+          "poste": "P1",
+          "montant": 14.52
+        },
+        {
+          "annee": 1967,
+          "poste": "P1",
+          "montant": 15.8
+        },
+        {
+          "annee": 1968,
+          "poste": "P1",
+          "montant": 18.01
+        },
+        {
+          "annee": 1969,
+          "poste": "P1",
+          "montant": 20.33
+        },
+        {
+          "annee": 1970,
+          "poste": "P1",
+          "montant": 22.77
+        },
+        {
+          "annee": 1971,
+          "poste": "P1",
+          "montant": 26.03
+        },
+        {
+          "annee": 1972,
+          "poste": "P1",
+          "montant": 29.19
+        },
+        {
+          "annee": 1973,
+          "poste": "P1",
+          "montant": 32.85
+        },
+        {
+          "annee": 1974,
+          "poste": "P1",
+          "montant": 39.33
+        },
+        {
+          "annee": 1975,
+          "poste": "P1",
+          "montant": 48.1
+        },
+        {
+          "annee": 1976,
+          "poste": "P1",
+          "montant": 56.62
+        },
+        {
+          "annee": 1977,
+          "poste": "P1",
+          "montant": 64.48
+        },
+        {
+          "annee": 1978,
+          "poste": "P1",
+          "montant": 75.15
+        },
+        {
+          "annee": 1979,
+          "poste": "P1",
+          "montant": 85.41
+        },
+        {
+          "annee": 1980,
+          "poste": "P1",
+          "montant": 100.23
+        },
+        {
+          "annee": 1981,
+          "poste": "P1",
+          "montant": 116.07
+        },
+        {
+          "annee": 1982,
+          "poste": "P1",
+          "montant": 136.04
+        },
+        {
+          "annee": 1983,
+          "poste": "P1",
+          "montant": 152.49
+        },
+        {
+          "annee": 1984,
+          "poste": "P1",
+          "montant": 166.75
+        },
+        {
+          "annee": 1985,
+          "poste": "P1",
+          "montant": 178.41
+        },
+        {
+          "annee": 1986,
+          "poste": "P1",
+          "montant": 186.36
+        },
+        {
+          "annee": 1987,
+          "poste": "P1",
+          "montant": 194.39
+        },
+        {
+          "annee": 1988,
+          "poste": "P1",
+          "montant": 205.54
+        },
+        {
+          "annee": 1989,
+          "poste": "P1",
+          "montant": 213.72
+        },
+        {
+          "annee": 1990,
+          "poste": "P1",
+          "montant": 224.31
+        },
+        {
+          "annee": 1991,
+          "poste": "P1",
+          "montant": 237.37
+        },
+        {
+          "annee": 1992,
+          "poste": "P1",
+          "montant": 251.28
+        },
+        {
+          "annee": 1993,
+          "poste": "P1",
+          "montant": 265.02
+        },
+        {
+          "annee": 1994,
+          "poste": "P1",
+          "montant": 269.7
+        },
+        {
+          "annee": 1995,
+          "poste": "P1",
+          "montant": 279.2
+        },
+        {
+          "annee": 1996,
+          "poste": "P1",
+          "montant": 291.63
+        },
+        {
+          "annee": 1997,
+          "poste": "P1",
+          "montant": 300.42
+        },
+        {
+          "annee": 1998,
+          "poste": "P1",
+          "montant": 301.12
+        },
+        {
+          "annee": 1999,
+          "poste": "P1",
+          "montant": 310.82
+        },
+        {
+          "annee": 2000,
+          "poste": "P1",
+          "montant": 323.37
+        },
+        {
+          "annee": 2001,
+          "poste": "P1",
+          "montant": 331.49
+        },
+        {
+          "annee": 2002,
+          "poste": "P1",
+          "montant": 347.64
+        },
+        {
+          "annee": 2003,
+          "poste": "P1",
+          "montant": 358.56
+        },
+        {
+          "annee": 2004,
+          "poste": "P1",
+          "montant": 371.11
+        },
+        {
+          "annee": 2005,
+          "poste": "P1",
+          "montant": 386.36
+        },
+        {
+          "annee": 2006,
+          "poste": "P1",
+          "montant": 397.47
+        },
+        {
+          "annee": 2007,
+          "poste": "P1",
+          "montant": 410.6
+        },
+        {
+          "annee": 2008,
+          "poste": "P1",
+          "montant": 424.01
+        },
+        {
+          "annee": 2009,
+          "poste": "P1",
+          "montant": 440.95
+        },
+        {
+          "annee": 2010,
+          "poste": "P1",
+          "montant": 452.06
+        },
+        {
+          "annee": 2011,
+          "poste": "P1",
+          "montant": 463.17
+        },
+        {
+          "annee": 2012,
+          "poste": "P1",
+          "montant": 472.55
+        },
+        {
+          "annee": 2013,
+          "poste": "P1",
+          "montant": 482.87
+        },
+        {
+          "annee": 2014,
+          "poste": "P1",
+          "montant": 488.26
+        },
+        {
+          "annee": 2015,
+          "poste": "P1",
+          "montant": 492.15
+        },
+        {
+          "annee": 2016,
+          "poste": "P1",
+          "montant": 496.04
+        },
+        {
+          "annee": 2017,
+          "poste": "P1",
+          "montant": 510.38
+        },
+        {
+          "annee": 2018,
+          "poste": "P1",
+          "montant": 517.27
+        },
+        {
+          "annee": 2019,
+          "poste": "P1",
+          "montant": 527.76
+        },
+        {
+          "annee": 2020,
+          "poste": "P1",
+          "montant": 535.17
+        },
+        {
+          "annee": 2021,
+          "poste": "P1",
+          "montant": 558.64
+        },
+        {
+          "annee": 2022,
+          "poste": "P1",
+          "montant": 591.64
+        },
+        {
+          "annee": 2023,
+          "poste": "P1",
+          "montant": 623.46
+        },
+        {
+          "annee": 2024,
+          "poste": "P1",
+          "montant": 647.98
+        },
+        {
+          "annee": 2025,
+          "poste": "P1",
+          "montant": 659.55
+        },
+        {
+          "annee": 1959,
+          "poste": "P11",
+          "montant": 1.08
+        },
+        {
+          "annee": 1960,
+          "poste": "P11",
+          "montant": 1.16
+        },
+        {
+          "annee": 1961,
+          "poste": "P11",
+          "montant": 1.3
+        },
+        {
+          "annee": 1962,
+          "poste": "P11",
+          "montant": 1.49
+        },
+        {
+          "annee": 1963,
+          "poste": "P11",
+          "montant": 1.69
+        },
+        {
+          "annee": 1964,
+          "poste": "P11",
+          "montant": 1.9
+        },
+        {
+          "annee": 1965,
+          "poste": "P11",
+          "montant": 2.11
+        },
+        {
+          "annee": 1966,
+          "poste": "P11",
+          "montant": 2.28
+        },
+        {
+          "annee": 1967,
+          "poste": "P11",
+          "montant": 2.49
+        },
+        {
+          "annee": 1968,
+          "poste": "P11",
+          "montant": 3.01
+        },
+        {
+          "annee": 1969,
+          "poste": "P11",
+          "montant": 3.01
+        },
+        {
+          "annee": 1970,
+          "poste": "P11",
+          "montant": 3.17
+        },
+        {
+          "annee": 1971,
+          "poste": "P11",
+          "montant": 3.72
+        },
+        {
+          "annee": 1972,
+          "poste": "P11",
+          "montant": 4.28
+        },
+        {
+          "annee": 1973,
+          "poste": "P11",
+          "montant": 4.39
+        },
+        {
+          "annee": 1974,
+          "poste": "P11",
+          "montant": 5.23
+        },
+        {
+          "annee": 1975,
+          "poste": "P11",
+          "montant": 6.4
+        },
+        {
+          "annee": 1976,
+          "poste": "P11",
+          "montant": 7.36
+        },
+        {
+          "annee": 1977,
+          "poste": "P11",
+          "montant": 7.86
+        },
+        {
+          "annee": 1978,
+          "poste": "P11",
+          "montant": 9.71
+        },
+        {
+          "annee": 1979,
+          "poste": "P11",
+          "montant": 10.73
+        },
+        {
+          "annee": 1980,
+          "poste": "P11",
+          "montant": 13.17
+        },
+        {
+          "annee": 1981,
+          "poste": "P11",
+          "montant": 14.63
+        }
+      ],
+      "nb_lignes": 116,
+      "annees": [
+        1949,
+        2025
+      ]
+    },
+    "7.02": {
+      "nom": "7.02",
+      "donnees": [
+        {
+          "annee": 1949,
+          "poste": "P1",
+          "montant": 1.5
+        },
+        {
+          "annee": 1950,
+          "poste": "P1",
+          "montant": 1.86
+        },
+        {
+          "annee": 1951,
+          "poste": "P1",
+          "montant": 2.41
+        },
+        {
+          "annee": 1952,
+          "poste": "P1",
+          "montant": 3.41
+        },
+        {
+          "annee": 1953,
+          "poste": "P1",
+          "montant": 3.69
+        },
+        {
+          "annee": 1954,
+          "poste": "P1",
+          "montant": 3.62
+        },
+        {
+          "annee": 1955,
+          "poste": "P1",
+          "montant": 3.63
+        },
+        {
+          "annee": 1956,
+          "poste": "P1",
+          "montant": 4.07
+        },
+        {
+          "annee": 1957,
+          "poste": "P1",
+          "montant": 4.5
+        },
+        {
+          "annee": 1958,
+          "poste": "P1",
+          "montant": 4.94
+        },
+        {
+          "annee": 1959,
+          "poste": "P1",
+          "montant": 5.51
+        },
+        {
+          "annee": 1960,
+          "poste": "P1",
+          "montant": 5.8
+        },
+        {
+          "annee": 1961,
+          "poste": "P1",
+          "montant": 6.38
+        },
+        {
+          "annee": 1962,
+          "poste": "P1",
+          "montant": 7.28
+        },
+        {
+          "annee": 1963,
+          "poste": "P1",
+          "montant": 8.28
+        },
+        {
+          "annee": 1964,
+          "poste": "P1",
+          "montant": 9.04
+        },
+        {
+          "annee": 1965,
+          "poste": "P1",
+          "montant": 9.66
+        },
+        {
+          "annee": 1966,
+          "poste": "P1",
+          "montant": 10.38
+        },
+        {
+          "annee": 1967,
+          "poste": "P1",
+          "montant": 11.27
+        },
+        {
+          "annee": 1968,
+          "poste": "P1",
+          "montant": 12.96
+        },
+        {
+          "annee": 1969,
+          "poste": "P1",
+          "montant": 14.34
+        },
+        {
+          "annee": 1970,
+          "poste": "P1",
+          "montant": 15.9
+        },
+        {
+          "annee": 1971,
+          "poste": "P1",
+          "montant": 17.82
+        },
+        {
+          "annee": 1972,
+          "poste": "P1",
+          "montant": 19.73
+        },
+        {
+          "annee": 1973,
+          "poste": "P1",
+          "montant": 21.81
+        },
+        {
+          "annee": 1974,
+          "poste": "P1",
+          "montant": 25.8
+        },
+        {
+          "annee": 1975,
+          "poste": "P1",
+          "montant": 31.02
+        },
+        {
+          "annee": 1976,
+          "poste": "P1",
+          "montant": 36.12
+        },
+        {
+          "annee": 1977,
+          "poste": "P1",
+          "montant": 40.27
+        },
+        {
+          "annee": 1978,
+          "poste": "P1",
+          "montant": 46.34
+        },
+        {
+          "annee": 1979,
+          "poste": "P1",
+          "montant": 51.68
+        },
+        {
+          "annee": 1980,
+          "poste": "P1",
+          "montant": 60.68
+        },
+        {
+          "annee": 1981,
+          "poste": "P1",
+          "montant": 69.55
+        },
+        {
+          "annee": 1982,
+          "poste": "P1",
+          "montant": 81.48
+        },
+        {
+          "annee": 1983,
+          "poste": "P1",
+          "montant": 90.53
+        },
+        {
+          "annee": 1984,
+          "poste": "P1",
+          "montant": 98.92
+        },
+        {
+          "annee": 1985,
+          "poste": "P1",
+          "montant": 105.03
+        },
+        {
+          "annee": 1986,
+          "poste": "P1",
+          "montant": 105.51
+        },
+        {
+          "annee": 1987,
+          "poste": "P1",
+          "montant": 109.57
+        },
+        {
+          "annee": 1988,
+          "poste": "P1",
+          "montant": 115.58
+        },
+        {
+          "annee": 1989,
+          "poste": "P1",
+          "montant": 120.3
+        },
+        {
+          "annee": 1990,
+          "poste": "P1",
+          "montant": 125.23
+        },
+        {
+          "annee": 1991,
+          "poste": "P1",
+          "montant": 132.49
+        },
+        {
+          "annee": 1992,
+          "poste": "P1",
+          "montant": 139.8
+        },
+        {
+          "annee": 1993,
+          "poste": "P1",
+          "montant": 149.95
+        },
+        {
+          "annee": 1994,
+          "poste": "P1",
+          "montant": 148.95
+        },
+        {
+          "annee": 1995,
+          "poste": "P1",
+          "montant": 150.46
+        },
+        {
+          "annee": 1996,
+          "poste": "P1",
+          "montant": 156.8
+        },
+        {
+          "annee": 1997,
+          "poste": "P1",
+          "montant": 161.6
+        },
+        {
+          "annee": 1998,
+          "poste": "P1",
+          "montant": 158.14
+        },
+        {
+          "annee": 1999,
+          "poste": "P1",
+          "montant": 161.61
+        },
+        {
+          "annee": 2000,
+          "poste": "P1",
+          "montant": 167.24
+        },
+        {
+          "annee": 2001,
+          "poste": "P1",
+          "montant": 171.84
+        },
+        {
+          "annee": 2002,
+          "poste": "P1",
+          "montant": 177.7
+        },
+        {
+          "annee": 2003,
+          "poste": "P1",
+          "montant": 180.21
+        },
+        {
+          "annee": 2004,
+          "poste": "P1",
+          "montant": 184.19
+        },
+        {
+          "annee": 2005,
+          "poste": "P1",
+          "montant": 190.48
+        },
+        {
+          "annee": 2006,
+          "poste": "P1",
+          "montant": 193.67
+        },
+        {
+          "annee": 2007,
+          "poste": "P1",
+          "montant": 198.06
+        },
+        {
+          "annee": 2008,
+          "poste": "P1",
+          "montant": 201.65
+        },
+        {
+          "annee": 2009,
+          "poste": "P1",
+          "montant": 207.12
+        },
+        {
+          "annee": 2010,
+          "poste": "P1",
+          "montant": 209.67
+        },
+        {
+          "annee": 2011,
+          "poste": "P1",
+          "montant": 214.56
+        },
+        {
+          "annee": 2012,
+          "poste": "P1",
+          "montant": 216.11
+        },
+        {
+          "annee": 2013,
+          "poste": "P1",
+          "montant": 219.55
+        },
+        {
+          "annee": 2014,
+          "poste": "P1",
+          "montant": 219.59
+        },
+        {
+          "annee": 2015,
+          "poste": "P1",
+          "montant": 222.5
+        },
+        {
+          "annee": 2016,
+          "poste": "P1",
+          "montant": 224.99
+        },
+        {
+          "annee": 2017,
+          "poste": "P1",
+          "montant": 231.84
+        },
+        {
+          "annee": 2018,
+          "poste": "P1",
+          "montant": 235.34
+        },
+        {
+          "annee": 2019,
+          "poste": "P1",
+          "montant": 240.34
+        },
+        {
+          "annee": 2020,
+          "poste": "P1",
+          "montant": 242.31
+        },
+        {
+          "annee": 2021,
+          "poste": "P1",
+          "montant": 250.6
+        },
+        {
+          "annee": 2022,
+          "poste": "P1",
+          "montant": 264.08
+        },
+        {
+          "annee": 2023,
+          "poste": "P1",
+          "montant": 279.56
+        },
+        {
+          "annee": 2024,
+          "poste": "P1",
+          "montant": 292.89
+        },
+        {
+          "annee": 2025,
+          "poste": "P1",
+          "montant": 296.81
+        },
+        {
+          "annee": 1978,
+          "poste": "P11",
+          "montant": 5.34
+        },
+        {
+          "annee": 1979,
+          "poste": "P11",
+          "montant": 5.72
+        },
+        {
+          "annee": 1980,
+          "poste": "P11",
+          "montant": 7.29
+        },
+        {
+          "annee": 1981,
+          "poste": "P11",
+          "montant": 7.91
+        },
+        {
+          "annee": 1982,
+          "poste": "P11",
+          "montant": 9.31
+        },
+        {
+          "annee": 1983,
+          "poste": "P11",
+          "montant": 10.22
+        },
+        {
+          "annee": 1984,
+          "poste": "P11",
+          "montant": 11.35
+        },
+        {
+          "annee": 1985,
+          "poste": "P11",
+          "montant": 12.2
+        },
+        {
+          "annee": 1986,
+          "poste": "P11",
+          "montant": 9.64
+        },
+        {
+          "annee": 1987,
+          "poste": "P11",
+          "montant": 10.27
+        },
+        {
+          "annee": 1988,
+          "poste": "P11",
+          "montant": 10.95
+        },
+        {
+          "annee": 1989,
+          "poste": "P11",
+          "montant": 11.41
+        },
+        {
+          "annee": 1990,
+          "poste": "P11",
+          "montant": 11.76
+        },
+        {
+          "annee": 1991,
+          "poste": "P11",
+          "montant": 13.21
+        },
+        {
+          "annee": 1992,
+          "poste": "P11",
+          "montant": 13.3
+        },
+        {
+          "annee": 1993,
+          "poste": "P11",
+          "montant": 13.29
+        },
+        {
+          "annee": 1994,
+          "poste": "P11",
+          "montant": 11.67
+        },
+        {
+          "annee": 1995,
+          "poste": "P11",
+          "montant": 11.96
+        },
+        {
+          "annee": 1996,
+          "poste": "P11",
+          "montant": 12.61
+        },
+        {
+          "annee": 1997,
+          "poste": "P11",
+          "montant": 12.75
+        },
+        {
+          "annee": 1998,
+          "poste": "P11",
+          "montant": 11.96
+        },
+        {
+          "annee": 1999,
+          "poste": "P11",
+          "montant": 11.7
+        },
+        {
+          "annee": 2000,
+          "poste": "P11",
+          "montant": 11.35
+        }
+      ],
+      "nb_lignes": 118,
+      "annees": [
+        1949,
+        2025
+      ]
+    },
+    "7.03": {
+      "nom": "7.03",
+      "donnees": [
+        {
+          "annee": 1978,
+          "poste": "P1",
+          "montant": 35.77
+        },
+        {
+          "annee": 1979,
+          "poste": "P1",
+          "montant": 39.65
+        },
+        {
+          "annee": 1980,
+          "poste": "P1",
+          "montant": 46.59
+        },
+        {
+          "annee": 1981,
+          "poste": "P1",
+          "montant": 52.88
+        },
+        {
+          "annee": 1982,
+          "poste": "P1",
+          "montant": 61.73
+        },
+        {
+          "annee": 1983,
+          "poste": "P1",
+          "montant": 68.17
+        },
+        {
+          "annee": 1984,
+          "poste": "P1",
+          "montant": 73.97
+        },
+        {
+          "annee": 1985,
+          "poste": "P1",
+          "montant": 78.25
+        },
+        {
+          "annee": 1986,
+          "poste": "P1",
+          "montant": 84.67
+        },
+        {
+          "annee": 1987,
+          "poste": "P1",
+          "montant": 87.74
+        },
+        {
+          "annee": 1988,
+          "poste": "P1",
+          "montant": 92.7
+        },
+        {
+          "annee": 1989,
+          "poste": "P1",
+          "montant": 95.58
+        },
+        {
+          "annee": 1990,
+          "poste": "P1",
+          "montant": 99.5
+        },
+        {
+          "annee": 1991,
+          "poste": "P1",
+          "montant": 105.54
+        },
+        {
+          "annee": 1992,
+          "poste": "P1",
+          "montant": 111.43
+        },
+        {
+          "annee": 1993,
+          "poste": "P1",
+          "montant": 120.02
+        },
+        {
+          "annee": 1994,
+          "poste": "P1",
+          "montant": 118.08
+        },
+        {
+          "annee": 1995,
+          "poste": "P1",
+          "montant": 118.18
+        },
+        {
+          "annee": 1996,
+          "poste": "P1",
+          "montant": 123.3
+        },
+        {
+          "annee": 1997,
+          "poste": "P1",
+          "montant": 127.44
+        },
+        {
+          "annee": 1998,
+          "poste": "P1",
+          "montant": 123.47
+        },
+        {
+          "annee": 1999,
+          "poste": "P1",
+          "montant": 125.8
+        },
+        {
+          "annee": 2000,
+          "poste": "P1",
+          "montant": 129.84
+        },
+        {
+          "annee": 2001,
+          "poste": "P1",
+          "montant": 132.56
+        },
+        {
+          "annee": 2002,
+          "poste": "P1",
+          "montant": 137.53
+        },
+        {
+          "annee": 2003,
+          "poste": "P1",
+          "montant": 138.41
+        },
+        {
+          "annee": 2004,
+          "poste": "P1",
+          "montant": 140.81
+        },
+        {
+          "annee": 2005,
+          "poste": "P1",
+          "montant": 144.85
+        },
+        {
+          "annee": 2006,
+          "poste": "P1",
+          "montant": 146.83
+        },
+        {
+          "annee": 2007,
+          "poste": "P1",
+          "montant": 149.46
+        },
+        {
+          "annee": 2008,
+          "poste": "P1",
+          "montant": 150.9
+        },
+        {
+          "annee": 2009,
+          "poste": "P1",
+          "montant": 151.9
+        },
+        {
+          "annee": 2010,
+          "poste": "P1",
+          "montant": 149.95
+        },
+        {
+          "annee": 2011,
+          "poste": "P1",
+          "montant": 151.64
+        },
+        {
+          "annee": 2012,
+          "poste": "P1",
+          "montant": 152.9
+        },
+        {
+          "annee": 2013,
+          "poste": "P1",
+          "montant": 153.92
+        },
+        {
+          "annee": 2014,
+          "poste": "P1",
+          "montant": 153.86
+        },
+        {
+          "annee": 2015,
+          "poste": "P1",
+          "montant": 155.59
+        },
+        {
+          "annee": 2016,
+          "poste": "P1",
+          "montant": 158.37
+        },
+        {
+          "annee": 2017,
+          "poste": "P1",
+          "montant": 162.37
+        },
+        {
+          "annee": 2018,
+          "poste": "P1",
+          "montant": 164.7
+        },
+        {
+          "annee": 2019,
+          "poste": "P1",
+          "montant": 167.99
+        },
+        {
+          "annee": 2020,
+          "poste": "P1",
+          "montant": 168.4
+        },
+        {
+          "annee": 2021,
+          "poste": "P1",
+          "montant": 173.86
+        },
+        {
+          "annee": 2022,
+          "poste": "P1",
+          "montant": 183.62
+        },
+        {
+          "annee": 2023,
+          "poste": "P1",
+          "montant": 194.43
+        },
+        {
+          "annee": 2024,
+          "poste": "P1",
+          "montant": 205.21
+        },
+        {
+          "annee": 2025,
+          "poste": "P1",
+          "montant": 208.46
+        },
+        {
+          "annee": 1978,
+          "poste": "P11",
+          "montant": 3.13
+        },
+        {
+          "annee": 1979,
+          "poste": "P11",
+          "montant": 3.29
+        },
+        {
+          "annee": 1980,
+          "poste": "P11",
+          "montant": 4.36
+        },
+        {
+          "annee": 1981,
+          "poste": "P11",
+          "montant": 4.47
+        },
+        {
+          "annee": 1982,
+          "poste": "P11",
+          "montant": 5.4
+        },
+        {
+          "annee": 1983,
+          "poste": "P11",
+          "montant": 5.97
+        },
+        {
+          "annee": 1984,
+          "poste": "P11",
+          "montant": 6.75
+        },
+        {
+          "annee": 1985,
+          "poste": "P11",
+          "montant": 7.33
+        },
+        {
+          "annee": 1986,
+          "poste": "P11",
+          "montant": 7.56
+        },
+        {
+          "annee": 1987,
+          "poste": "P11",
+          "montant": 7.99
+        },
+        {
+          "annee": 1988,
+          "poste": "P11",
+          "montant": 8.58
+        },
+        {
+          "annee": 1989,
+          "poste": "P11",
+          "montant": 8.66
+        },
+        {
+          "annee": 1990,
+          "poste": "P11",
+          "montant": 8.8
+        },
+        {
+          "annee": 1991,
+          "poste": "P11",
+          "montant": 10.22
+        },
+        {
+          "annee": 1992,
+          "poste": "P11",
+          "montant": 10.34
+        },
+        {
+          "annee": 1993,
+          "poste": "P11",
+          "montant": 10.18
+        },
+        {
+          "annee": 1994,
+          "poste": "P11",
+          "montant": 8.21
+        },
+        {
+          "annee": 1995,
+          "poste": "P11",
+          "montant": 8.18
+        },
+        {
+          "annee": 1996,
+          "poste": "P11",
+          "montant": 8.35
+        },
+        {
+          "annee": 1997,
+          "poste": "P11",
+          "montant": 8.3
+        },
+        {
+          "annee": 1998,
+          "poste": "P11",
+          "montant": 7.48
+        },
+        {
+          "annee": 1999,
+          "poste": "P11",
+          "montant": 7.37
+        },
+        {
+          "annee": 2000,
+          "poste": "P11",
+          "montant": 6.69
+        },
+        {
+          "annee": 2001,
+          "poste": "P11",
+          "montant": 8.35
+        },
+        {
+          "annee": 2002,
+          "poste": "P11",
+          "montant": 7.99
+        },
+        {
+          "annee": 2003,
+          "poste": "P11",
+          "montant": 6.43
+        },
+        {
+          "annee": 2004,
+          "poste": "P11",
+          "montant": 6.62
+        },
+        {
+          "annee": 2005,
+          "poste": "P11",
+          "montant": 7.02
+        },
+        {
+          "annee": 2006,
+          "poste": "P11",
+          "montant": 6.68
+        },
+        {
+          "annee": 2007,
+          "poste": "P11",
+          "montant": 7.08
+        },
+        {
+          "annee": 2008,
+          "poste": "P11",
+          "montant": 7.31
+        },
+        {
+          "annee": 2009,
+          "poste": "P11",
+          "montant": 7.31
+        },
+        {
+          "annee": 2010,
+          "poste": "P11",
+          "montant": 6.75
+        },
+        {
+          "annee": 2011,
+          "poste": "P11",
+          "montant": 6.66
+        },
+        {
+          "annee": 2012,
+          "poste": "P11",
+          "montant": 6.57
+        },
+        {
+          "annee": 2013,
+          "poste": "P11",
+          "montant": 6.22
+        },
+        {
+          "annee": 2014,
+          "poste": "P11",
+          "montant": 6.28
+        },
+        {
+          "annee": 2015,
+          "poste": "P11",
+          "montant": 6.56
+        },
+        {
+          "annee": 2016,
+          "poste": "P11",
+          "montant": 6.47
+        },
+        {
+          "annee": 2017,
+          "poste": "P11",
+          "montant": 5.7
+        },
+        {
+          "annee": 2018,
+          "poste": "P11",
+          "montant": 5.79
+        },
+        {
+          "annee": 2019,
+          "poste": "P11",
+          "montant": 6.46
+        },
+        {
+          "annee": 2020,
+          "poste": "P11",
+          "montant": 4.42
+        },
+        {
+          "annee": 2021,
+          "poste": "P11",
+          "montant": 5.09
+        },
+        {
+          "annee": 2022,
+          "poste": "P11",
+          "montant": 6.03
+        },
+        {
+          "annee": 2023,
+          "poste": "P11",
+          "montant": 6.15
+        },
+        {
+          "annee": 2024,
+          "poste": "P11",
+          "montant": 6.72
+        },
+        {
+          "annee": 2025,
+          "poste": "P11",
+          "montant": 7.17
+        },
+        {
+          "annee": 1978,
+          "poste": "P12",
+          "montant": 0.09
+        },
+        {
+          "annee": 1979,
+          "poste": "P12",
+          "montant": 0.11
+        },
+        {
+          "annee": 1980,
+          "poste": "P12",
+          "montant": 0.13
+        },
+        {
+          "annee": 1981,
+          "poste": "P12",
+          "montant": 0.16
+        }
+      ],
+      "nb_lignes": 112,
+      "annees": [
+        1978,
+        2025
+      ]
+    },
+    "7.04": {
+      "nom": "7.04",
+      "donnees": [
+        {
+          "annee": 1978,
+          "poste": "P1",
+          "montant": 10.57
+        },
+        {
+          "annee": 1979,
+          "poste": "P1",
+          "montant": 12.03
+        },
+        {
+          "annee": 1980,
+          "poste": "P1",
+          "montant": 14.09
+        },
+        {
+          "annee": 1981,
+          "poste": "P1",
+          "montant": 16.67
+        },
+        {
+          "annee": 1982,
+          "poste": "P1",
+          "montant": 19.75
+        },
+        {
+          "annee": 1983,
+          "poste": "P1",
+          "montant": 22.36
+        },
+        {
+          "annee": 1984,
+          "poste": "P1",
+          "montant": 24.95
+        },
+        {
+          "annee": 1985,
+          "poste": "P1",
+          "montant": 26.78
+        },
+        {
+          "annee": 1986,
+          "poste": "P1",
+          "montant": 20.84
+        },
+        {
+          "annee": 1987,
+          "poste": "P1",
+          "montant": 21.83
+        },
+        {
+          "annee": 1988,
+          "poste": "P1",
+          "montant": 22.88
+        },
+        {
+          "annee": 1989,
+          "poste": "P1",
+          "montant": 24.71
+        },
+        {
+          "annee": 1990,
+          "poste": "P1",
+          "montant": 25.73
+        },
+        {
+          "annee": 1991,
+          "poste": "P1",
+          "montant": 26.94
+        },
+        {
+          "annee": 1992,
+          "poste": "P1",
+          "montant": 28.37
+        },
+        {
+          "annee": 1993,
+          "poste": "P1",
+          "montant": 29.93
+        },
+        {
+          "annee": 1994,
+          "poste": "P1",
+          "montant": 30.87
+        },
+        {
+          "annee": 1995,
+          "poste": "P1",
+          "montant": 32.28
+        },
+        {
+          "annee": 1996,
+          "poste": "P1",
+          "montant": 33.49
+        },
+        {
+          "annee": 1997,
+          "poste": "P1",
+          "montant": 34.16
+        },
+        {
+          "annee": 1998,
+          "poste": "P1",
+          "montant": 34.67
+        },
+        {
+          "annee": 1999,
+          "poste": "P1",
+          "montant": 35.81
+        },
+        {
+          "annee": 2000,
+          "poste": "P1",
+          "montant": 37.39
+        },
+        {
+          "annee": 2001,
+          "poste": "P1",
+          "montant": 39.27
+        },
+        {
+          "annee": 2002,
+          "poste": "P1",
+          "montant": 40.18
+        },
+        {
+          "annee": 2003,
+          "poste": "P1",
+          "montant": 41.8
+        },
+        {
+          "annee": 2004,
+          "poste": "P1",
+          "montant": 43.38
+        },
+        {
+          "annee": 2005,
+          "poste": "P1",
+          "montant": 45.63
+        },
+        {
+          "annee": 2006,
+          "poste": "P1",
+          "montant": 46.84
+        },
+        {
+          "annee": 2007,
+          "poste": "P1",
+          "montant": 48.61
+        },
+        {
+          "annee": 2008,
+          "poste": "P1",
+          "montant": 50.75
+        },
+        {
+          "annee": 2009,
+          "poste": "P1",
+          "montant": 55.22
+        },
+        {
+          "annee": 2010,
+          "poste": "P1",
+          "montant": 59.72
+        },
+        {
+          "annee": 2011,
+          "poste": "P1",
+          "montant": 62.93
+        },
+        {
+          "annee": 2012,
+          "poste": "P1",
+          "montant": 63.21
+        },
+        {
+          "annee": 2013,
+          "poste": "P1",
+          "montant": 65.62
+        },
+        {
+          "annee": 2014,
+          "poste": "P1",
+          "montant": 65.73
+        },
+        {
+          "annee": 2015,
+          "poste": "P1",
+          "montant": 66.9
+        },
+        {
+          "annee": 2016,
+          "poste": "P1",
+          "montant": 66.63
+        },
+        {
+          "annee": 2017,
+          "poste": "P1",
+          "montant": 69.47
+        },
+        {
+          "annee": 2018,
+          "poste": "P1",
+          "montant": 70.64
+        },
+        {
+          "annee": 2019,
+          "poste": "P1",
+          "montant": 72.35
+        },
+        {
+          "annee": 2020,
+          "poste": "P1",
+          "montant": 73.91
+        },
+        {
+          "annee": 2021,
+          "poste": "P1",
+          "montant": 76.74
+        },
+        {
+          "annee": 2022,
+          "poste": "P1",
+          "montant": 80.46
+        },
+        {
+          "annee": 2023,
+          "poste": "P1",
+          "montant": 85.13
+        },
+        {
+          "annee": 2024,
+          "poste": "P1",
+          "montant": 87.68
+        },
+        {
+          "annee": 2025,
+          "poste": "P1",
+          "montant": 88.34
+        },
+        {
+          "annee": 1978,
+          "poste": "P11",
+          "montant": 2.21
+        },
+        {
+          "annee": 1979,
+          "poste": "P11",
+          "montant": 2.44
+        },
+        {
+          "annee": 1980,
+          "poste": "P11",
+          "montant": 2.93
+        },
+        {
+          "annee": 1981,
+          "poste": "P11",
+          "montant": 3.45
+        },
+        {
+          "annee": 1982,
+          "poste": "P11",
+          "montant": 3.91
+        },
+        {
+          "annee": 1983,
+          "poste": "P11",
+          "montant": 4.25
+        },
+        {
+          "annee": 1984,
+          "poste": "P11",
+          "montant": 4.6
+        },
+        {
+          "annee": 1985,
+          "poste": "P11",
+          "montant": 4.88
+        },
+        {
+          "annee": 1986,
+          "poste": "P11",
+          "montant": 2.08
+        },
+        {
+          "annee": 1987,
+          "poste": "P11",
+          "montant": 2.27
+        },
+        {
+          "annee": 1988,
+          "poste": "P11",
+          "montant": 2.37
+        },
+        {
+          "annee": 1989,
+          "poste": "P11",
+          "montant": 2.75
+        },
+        {
+          "annee": 1990,
+          "poste": "P11",
+          "montant": 2.96
+        },
+        {
+          "annee": 1991,
+          "poste": "P11",
+          "montant": 2.99
+        },
+        {
+          "annee": 1992,
+          "poste": "P11",
+          "montant": 2.97
+        },
+        {
+          "annee": 1993,
+          "poste": "P11",
+          "montant": 3.11
+        },
+        {
+          "annee": 1994,
+          "poste": "P11",
+          "montant": 3.46
+        },
+        {
+          "annee": 1995,
+          "poste": "P11",
+          "montant": 3.78
+        },
+        {
+          "annee": 1996,
+          "poste": "P11",
+          "montant": 4.26
+        },
+        {
+          "annee": 1997,
+          "poste": "P11",
+          "montant": 4.45
+        },
+        {
+          "annee": 1998,
+          "poste": "P11",
+          "montant": 4.47
+        },
+        {
+          "annee": 1999,
+          "poste": "P11",
+          "montant": 4.33
+        },
+        {
+          "annee": 2000,
+          "poste": "P11",
+          "montant": 4.66
+        },
+        {
+          "annee": 2001,
+          "poste": "P11",
+          "montant": 5.31
+        },
+        {
+          "annee": 2002,
+          "poste": "P11",
+          "montant": 5.48
+        },
+        {
+          "annee": 2003,
+          "poste": "P11",
+          "montant": 5.77
+        },
+        {
+          "annee": 2004,
+          "poste": "P11",
+          "montant": 5.76
+        },
+        {
+          "annee": 2005,
+          "poste": "P11",
+          "montant": 5.52
+        },
+        {
+          "annee": 2006,
+          "poste": "P11",
+          "montant": 5.56
+        },
+        {
+          "annee": 2007,
+          "poste": "P11",
+          "montant": 5.82
+        },
+        {
+          "annee": 2008,
+          "poste": "P11",
+          "montant": 6.41
+        },
+        {
+          "annee": 2009,
+          "poste": "P11",
+          "montant": 7.09
+        },
+        {
+          "annee": 2010,
+          "poste": "P11",
+          "montant": 7.72
+        },
+        {
+          "annee": 2011,
+          "poste": "P11",
+          "montant": 6.42
+        },
+        {
+          "annee": 2012,
+          "poste": "P11",
+          "montant": 6.91
+        },
+        {
+          "annee": 2013,
+          "poste": "P11",
+          "montant": 6.78
+        },
+        {
+          "annee": 2014,
+          "poste": "P11",
+          "montant": 7.21
+        },
+        {
+          "annee": 2015,
+          "poste": "P11",
+          "montant": 7.11
+        },
+        {
+          "annee": 2016,
+          "poste": "P11",
+          "montant": 6.48
+        },
+        {
+          "annee": 2017,
+          "poste": "P11",
+          "montant": 7.06
+        },
+        {
+          "annee": 2018,
+          "poste": "P11",
+          "montant": 7.15
+        },
+        {
+          "annee": 2019,
+          "poste": "P11",
+          "montant": 6.73
+        },
+        {
+          "annee": 2020,
+          "poste": "P11",
+          "montant": 6.59
+        },
+        {
+          "annee": 2021,
+          "poste": "P11",
+          "montant": 7.87
+        },
+        {
+          "annee": 2022,
+          "poste": "P11",
+          "montant": 8.78
+        },
+        {
+          "annee": 2023,
+          "poste": "P11",
+          "montant": 8.89
+        },
+        {
+          "annee": 2024,
+          "poste": "P11",
+          "montant": 9.85
+        },
+        {
+          "annee": 2025,
+          "poste": "P11",
+          "montant": 10.76
+        },
+        {
+          "annee": 1978,
+          "poste": "P12",
+          "montant": 2.74
+        },
+        {
+          "annee": 1979,
+          "poste": "P12",
+          "montant": 3.23
+        },
+        {
+          "annee": 1980,
+          "poste": "P12",
+          "montant": 3.65
+        },
+        {
+          "annee": 1981,
+          "poste": "P12",
+          "montant": 4.62
+        }
+      ],
+      "nb_lignes": 102,
+      "annees": [
+        1978,
+        2025
+      ]
+    },
+    "7.05": {
+      "nom": "7.05",
+      "donnees": [
+        {
+          "annee": 1949,
+          "poste": "P1",
+          "montant": 0.33
+        },
+        {
+          "annee": 1950,
+          "poste": "P1",
+          "montant": 0.38
+        },
+        {
+          "annee": 1951,
+          "poste": "P1",
+          "montant": 0.46
+        },
+        {
+          "annee": 1952,
+          "poste": "P1",
+          "montant": 0.54
+        },
+        {
+          "annee": 1953,
+          "poste": "P1",
+          "montant": 0.58
+        },
+        {
+          "annee": 1954,
+          "poste": "P1",
+          "montant": 0.62
+        },
+        {
+          "annee": 1955,
+          "poste": "P1",
+          "montant": 0.7
+        },
+        {
+          "annee": 1956,
+          "poste": "P1",
+          "montant": 0.79
+        },
+        {
+          "annee": 1957,
+          "poste": "P1",
+          "montant": 0.9
+        },
+        {
+          "annee": 1958,
+          "poste": "P1",
+          "montant": 1.04
+        },
+        {
+          "annee": 1959,
+          "poste": "P1",
+          "montant": 1.12
+        },
+        {
+          "annee": 1960,
+          "poste": "P1",
+          "montant": 1.2
+        },
+        {
+          "annee": 1961,
+          "poste": "P1",
+          "montant": 1.33
+        },
+        {
+          "annee": 1962,
+          "poste": "P1",
+          "montant": 1.5
+        },
+        {
+          "annee": 1963,
+          "poste": "P1",
+          "montant": 1.69
+        },
+        {
+          "annee": 1964,
+          "poste": "P1",
+          "montant": 1.9
+        },
+        {
+          "annee": 1965,
+          "poste": "P1",
+          "montant": 2.05
+        },
+        {
+          "annee": 1966,
+          "poste": "P1",
+          "montant": 2.21
+        },
+        {
+          "annee": 1967,
+          "poste": "P1",
+          "montant": 2.38
+        },
+        {
+          "annee": 1968,
+          "poste": "P1",
+          "montant": 2.57
+        },
+        {
+          "annee": 1969,
+          "poste": "P1",
+          "montant": 3.0
+        },
+        {
+          "annee": 1970,
+          "poste": "P1",
+          "montant": 3.4
+        },
+        {
+          "annee": 1971,
+          "poste": "P1",
+          "montant": 4.01
+        },
+        {
+          "annee": 1972,
+          "poste": "P1",
+          "montant": 4.65
+        },
+        {
+          "annee": 1973,
+          "poste": "P1",
+          "montant": 5.45
+        },
+        {
+          "annee": 1974,
+          "poste": "P1",
+          "montant": 6.66
+        },
+        {
+          "annee": 1975,
+          "poste": "P1",
+          "montant": 8.22
+        },
+        {
+          "annee": 1976,
+          "poste": "P1",
+          "montant": 9.82
+        },
+        {
+          "annee": 1977,
+          "poste": "P1",
+          "montant": 11.63
+        },
+        {
+          "annee": 1978,
+          "poste": "P1",
+          "montant": 13.74
+        },
+        {
+          "annee": 1979,
+          "poste": "P1",
+          "montant": 16.05
+        },
+        {
+          "annee": 1980,
+          "poste": "P1",
+          "montant": 18.96
+        },
+        {
+          "annee": 1981,
+          "poste": "P1",
+          "montant": 22.57
+        },
+        {
+          "annee": 1982,
+          "poste": "P1",
+          "montant": 26.66
+        },
+        {
+          "annee": 1983,
+          "poste": "P1",
+          "montant": 30.64
+        },
+        {
+          "annee": 1984,
+          "poste": "P1",
+          "montant": 34.01
+        },
+        {
+          "annee": 1985,
+          "poste": "P1",
+          "montant": 37.42
+        },
+        {
+          "annee": 1986,
+          "poste": "P1",
+          "montant": 43.25
+        },
+        {
+          "annee": 1987,
+          "poste": "P1",
+          "montant": 45.41
+        },
+        {
+          "annee": 1988,
+          "poste": "P1",
+          "montant": 48.66
+        },
+        {
+          "annee": 1989,
+          "poste": "P1",
+          "montant": 50.29
+        },
+        {
+          "annee": 1990,
+          "poste": "P1",
+          "montant": 53.55
+        },
+        {
+          "annee": 1991,
+          "poste": "P1",
+          "montant": 57.15
+        },
+        {
+          "annee": 1992,
+          "poste": "P1",
+          "montant": 60.97
+        },
+        {
+          "annee": 1993,
+          "poste": "P1",
+          "montant": 62.11
+        },
+        {
+          "annee": 1994,
+          "poste": "P1",
+          "montant": 65.72
+        },
+        {
+          "annee": 1995,
+          "poste": "P1",
+          "montant": 70.4
+        },
+        {
+          "annee": 1996,
+          "poste": "P1",
+          "montant": 75.04
+        },
+        {
+          "annee": 1997,
+          "poste": "P1",
+          "montant": 79.07
+        },
+        {
+          "annee": 1998,
+          "poste": "P1",
+          "montant": 81.72
+        },
+        {
+          "annee": 1999,
+          "poste": "P1",
+          "montant": 85.97
+        },
+        {
+          "annee": 2000,
+          "poste": "P1",
+          "montant": 91.1
+        },
+        {
+          "annee": 2001,
+          "poste": "P1",
+          "montant": 92.35
+        },
+        {
+          "annee": 2002,
+          "poste": "P1",
+          "montant": 99.36
+        },
+        {
+          "annee": 2003,
+          "poste": "P1",
+          "montant": 104.91
+        },
+        {
+          "annee": 2004,
+          "poste": "P1",
+          "montant": 110.16
+        },
+        {
+          "annee": 2005,
+          "poste": "P1",
+          "montant": 115.4
+        },
+        {
+          "annee": 2006,
+          "poste": "P1",
+          "montant": 121.35
+        },
+        {
+          "annee": 2007,
+          "poste": "P1",
+          "montant": 127.45
+        },
+        {
+          "annee": 2008,
+          "poste": "P1",
+          "montant": 135.44
+        },
+        {
+          "annee": 2009,
+          "poste": "P1",
+          "montant": 141.69
+        },
+        {
+          "annee": 2010,
+          "poste": "P1",
+          "montant": 146.84
+        },
+        {
+          "annee": 2011,
+          "poste": "P1",
+          "montant": 151.37
+        },
+        {
+          "annee": 2012,
+          "poste": "P1",
+          "montant": 156.52
+        },
+        {
+          "annee": 2013,
+          "poste": "P1",
+          "montant": 161.3
+        },
+        {
+          "annee": 2014,
+          "poste": "P1",
+          "montant": 164.61
+        },
+        {
+          "annee": 2015,
+          "poste": "P1",
+          "montant": 164.41
+        },
+        {
+          "annee": 2016,
+          "poste": "P1",
+          "montant": 165.13
+        },
+        {
+          "annee": 2017,
+          "poste": "P1",
+          "montant": 169.6
+        },
+        {
+          "annee": 2018,
+          "poste": "P1",
+          "montant": 172.03
+        },
+        {
+          "annee": 2019,
+          "poste": "P1",
+          "montant": 176.06
+        },
+        {
+          "annee": 2020,
+          "poste": "P1",
+          "montant": 176.13
+        },
+        {
+          "annee": 2021,
+          "poste": "P1",
+          "montant": 183.59
+        },
+        {
+          "annee": 2022,
+          "poste": "P1",
+          "montant": 197.33
+        },
+        {
+          "annee": 2023,
+          "poste": "P1",
+          "montant": 206.05
+        },
+        {
+          "annee": 2024,
+          "poste": "P1",
+          "montant": 212.91
+        },
+        {
+          "annee": 2025,
+          "poste": "P1",
+          "montant": 216.28
+        },
+        {
+          "annee": 1978,
+          "poste": "P11",
+          "montant": 2.36
+        },
+        {
+          "annee": 1979,
+          "poste": "P11",
+          "montant": 2.78
+        },
+        {
+          "annee": 1980,
+          "poste": "P11",
+          "montant": 3.23
+        },
+        {
+          "annee": 1981,
+          "poste": "P11",
+          "montant": 3.68
+        },
+        {
+          "annee": 1982,
+          "poste": "P11",
+          "montant": 4.3
+        },
+        {
+          "annee": 1983,
+          "poste": "P11",
+          "montant": 4.92
+        },
+        {
+          "annee": 1984,
+          "poste": "P11",
+          "montant": 5.5
+        },
+        {
+          "annee": 1985,
+          "poste": "P11",
+          "montant": 6.0
+        },
+        {
+          "annee": 1986,
+          "poste": "P11",
+          "montant": 8.16
+        },
+        {
+          "annee": 1987,
+          "poste": "P11",
+          "montant": 8.54
+        },
+        {
+          "annee": 1988,
+          "poste": "P11",
+          "montant": 9.25
+        },
+        {
+          "annee": 1989,
+          "poste": "P11",
+          "montant": 9.33
+        },
+        {
+          "annee": 1990,
+          "poste": "P11",
+          "montant": 9.78
+        },
+        {
+          "annee": 1991,
+          "poste": "P11",
+          "montant": 10.36
+        },
+        {
+          "annee": 1992,
+          "poste": "P11",
+          "montant": 11.06
+        },
+        {
+          "annee": 1993,
+          "poste": "P11",
+          "montant": 11.42
+        },
+        {
+          "annee": 1994,
+          "poste": "P11",
+          "montant": 11.99
+        },
+        {
+          "annee": 1995,
+          "poste": "P11",
+          "montant": 13.07
+        },
+        {
+          "annee": 1996,
+          "poste": "P11",
+          "montant": 15.27
+        },
+        {
+          "annee": 1997,
+          "poste": "P11",
+          "montant": 16.51
+        },
+        {
+          "annee": 1998,
+          "poste": "P11",
+          "montant": 17.27
+        },
+        {
+          "annee": 1999,
+          "poste": "P11",
+          "montant": 18.22
+        },
+        {
+          "annee": 2000,
+          "poste": "P11",
+          "montant": 19.06
+        }
+      ],
+      "nb_lignes": 111,
+      "annees": [
+        1949,
+        2025
+      ]
+    },
+    "7.06": {
+      "nom": "7.06",
+      "donnees": [
+        {
+          "annee": 1949,
+          "poste": "P1",
+          "montant": 0.18
+        },
+        {
+          "annee": 1950,
+          "poste": "P1",
+          "montant": 0.22
+        },
+        {
+          "annee": 1951,
+          "poste": "P1",
+          "montant": 0.28
+        },
+        {
+          "annee": 1952,
+          "poste": "P1",
+          "montant": 0.33
+        },
+        {
+          "annee": 1953,
+          "poste": "P1",
+          "montant": 0.36
+        },
+        {
+          "annee": 1954,
+          "poste": "P1",
+          "montant": 0.39
+        },
+        {
+          "annee": 1955,
+          "poste": "P1",
+          "montant": 0.43
+        },
+        {
+          "annee": 1956,
+          "poste": "P1",
+          "montant": 0.51
+        },
+        {
+          "annee": 1957,
+          "poste": "P1",
+          "montant": 0.55
+        },
+        {
+          "annee": 1958,
+          "poste": "P1",
+          "montant": 0.66
+        },
+        {
+          "annee": 1959,
+          "poste": "P1",
+          "montant": 0.73
+        },
+        {
+          "annee": 1960,
+          "poste": "P1",
+          "montant": 0.83
+        },
+        {
+          "annee": 1961,
+          "poste": "P1",
+          "montant": 0.96
+        },
+        {
+          "annee": 1962,
+          "poste": "P1",
+          "montant": 1.1
+        },
+        {
+          "annee": 1963,
+          "poste": "P1",
+          "montant": 1.33
+        },
+        {
+          "annee": 1964,
+          "poste": "P1",
+          "montant": 1.53
+        },
+        {
+          "annee": 1965,
+          "poste": "P1",
+          "montant": 1.73
+        },
+        {
+          "annee": 1966,
+          "poste": "P1",
+          "montant": 1.93
+        },
+        {
+          "annee": 1967,
+          "poste": "P1",
+          "montant": 2.15
+        },
+        {
+          "annee": 1968,
+          "poste": "P1",
+          "montant": 2.49
+        },
+        {
+          "annee": 1969,
+          "poste": "P1",
+          "montant": 2.99
+        },
+        {
+          "annee": 1970,
+          "poste": "P1",
+          "montant": 3.47
+        },
+        {
+          "annee": 1971,
+          "poste": "P1",
+          "montant": 4.2
+        },
+        {
+          "annee": 1972,
+          "poste": "P1",
+          "montant": 4.8
+        },
+        {
+          "annee": 1973,
+          "poste": "P1",
+          "montant": 5.59
+        },
+        {
+          "annee": 1974,
+          "poste": "P1",
+          "montant": 6.88
+        },
+        {
+          "annee": 1975,
+          "poste": "P1",
+          "montant": 8.86
+        },
+        {
+          "annee": 1976,
+          "poste": "P1",
+          "montant": 10.68
+        },
+        {
+          "annee": 1977,
+          "poste": "P1",
+          "montant": 12.57
+        },
+        {
+          "annee": 1978,
+          "poste": "P1",
+          "montant": 15.07
+        },
+        {
+          "annee": 1979,
+          "poste": "P1",
+          "montant": 17.69
+        },
+        {
+          "annee": 1980,
+          "poste": "P1",
+          "montant": 20.6
+        },
+        {
+          "annee": 1981,
+          "poste": "P1",
+          "montant": 23.96
+        },
+        {
+          "annee": 1982,
+          "poste": "P1",
+          "montant": 27.89
+        },
+        {
+          "annee": 1983,
+          "poste": "P1",
+          "montant": 31.32
+        },
+        {
+          "annee": 1984,
+          "poste": "P1",
+          "montant": 33.82
+        },
+        {
+          "annee": 1985,
+          "poste": "P1",
+          "montant": 35.95
+        },
+        {
+          "annee": 1986,
+          "poste": "P1",
+          "montant": 37.6
+        },
+        {
+          "annee": 1987,
+          "poste": "P1",
+          "montant": 39.41
+        },
+        {
+          "annee": 1988,
+          "poste": "P1",
+          "montant": 41.31
+        },
+        {
+          "annee": 1989,
+          "poste": "P1",
+          "montant": 43.14
+        },
+        {
+          "annee": 1990,
+          "poste": "P1",
+          "montant": 45.53
+        },
+        {
+          "annee": 1991,
+          "poste": "P1",
+          "montant": 47.73
+        },
+        {
+          "annee": 1992,
+          "poste": "P1",
+          "montant": 50.51
+        },
+        {
+          "annee": 1993,
+          "poste": "P1",
+          "montant": 52.96
+        },
+        {
+          "annee": 1994,
+          "poste": "P1",
+          "montant": 55.04
+        },
+        {
+          "annee": 1995,
+          "poste": "P1",
+          "montant": 58.34
+        },
+        {
+          "annee": 1996,
+          "poste": "P1",
+          "montant": 59.79
+        },
+        {
+          "annee": 1997,
+          "poste": "P1",
+          "montant": 59.75
+        },
+        {
+          "annee": 1998,
+          "poste": "P1",
+          "montant": 61.26
+        },
+        {
+          "annee": 1999,
+          "poste": "P1",
+          "montant": 63.25
+        },
+        {
+          "annee": 2000,
+          "poste": "P1",
+          "montant": 65.04
+        },
+        {
+          "annee": 2001,
+          "poste": "P1",
+          "montant": 67.3
+        },
+        {
+          "annee": 2002,
+          "poste": "P1",
+          "montant": 70.58
+        },
+        {
+          "annee": 2003,
+          "poste": "P1",
+          "montant": 73.44
+        },
+        {
+          "annee": 2004,
+          "poste": "P1",
+          "montant": 76.77
+        },
+        {
+          "annee": 2005,
+          "poste": "P1",
+          "montant": 80.48
+        },
+        {
+          "annee": 2006,
+          "poste": "P1",
+          "montant": 82.45
+        },
+        {
+          "annee": 2007,
+          "poste": "P1",
+          "montant": 85.08
+        },
+        {
+          "annee": 2008,
+          "poste": "P1",
+          "montant": 86.93
+        },
+        {
+          "annee": 2009,
+          "poste": "P1",
+          "montant": 92.15
+        },
+        {
+          "annee": 2010,
+          "poste": "P1",
+          "montant": 95.56
+        },
+        {
+          "annee": 2011,
+          "poste": "P1",
+          "montant": 97.23
+        },
+        {
+          "annee": 2012,
+          "poste": "P1",
+          "montant": 99.92
+        },
+        {
+          "annee": 2013,
+          "poste": "P1",
+          "montant": 102.02
+        },
+        {
+          "annee": 2014,
+          "poste": "P1",
+          "montant": 104.06
+        },
+        {
+          "annee": 2015,
+          "poste": "P1",
+          "montant": 105.24
+        },
+        {
+          "annee": 2016,
+          "poste": "P1",
+          "montant": 105.91
+        },
+        {
+          "annee": 2017,
+          "poste": "P1",
+          "montant": 108.94
+        },
+        {
+          "annee": 2018,
+          "poste": "P1",
+          "montant": 109.9
+        },
+        {
+          "annee": 2019,
+          "poste": "P1",
+          "montant": 111.36
+        },
+        {
+          "annee": 2020,
+          "poste": "P1",
+          "montant": 116.73
+        },
+        {
+          "annee": 2021,
+          "poste": "P1",
+          "montant": 124.45
+        },
+        {
+          "annee": 2022,
+          "poste": "P1",
+          "montant": 130.23
+        },
+        {
+          "annee": 2023,
+          "poste": "P1",
+          "montant": 137.84
+        },
+        {
+          "annee": 2024,
+          "poste": "P1",
+          "montant": 142.17
+        },
+        {
+          "annee": 2025,
+          "poste": "P1",
+          "montant": 146.46
+        },
+        {
+          "annee": 1978,
+          "poste": "P11",
+          "montant": 2.01
+        },
+        {
+          "annee": 1979,
+          "poste": "P11",
+          "montant": 2.23
+        },
+        {
+          "annee": 1980,
+          "poste": "P11",
+          "montant": 2.65
+        },
+        {
+          "annee": 1981,
+          "poste": "P11",
+          "montant": 3.03
+        },
+        {
+          "annee": 1982,
+          "poste": "P11",
+          "montant": 3.49
+        },
+        {
+          "annee": 1983,
+          "poste": "P11",
+          "montant": 3.79
+        },
+        {
+          "annee": 1984,
+          "poste": "P11",
+          "montant": 4.13
+        },
+        {
+          "annee": 1985,
+          "poste": "P11",
+          "montant": 4.32
+        },
+        {
+          "annee": 1986,
+          "poste": "P11",
+          "montant": 4.62
+        },
+        {
+          "annee": 1987,
+          "poste": "P11",
+          "montant": 4.64
+        },
+        {
+          "annee": 1988,
+          "poste": "P11",
+          "montant": 4.61
+        },
+        {
+          "annee": 1989,
+          "poste": "P11",
+          "montant": 4.94
+        },
+        {
+          "annee": 1990,
+          "poste": "P11",
+          "montant": 5.47
+        },
+        {
+          "annee": 1991,
+          "poste": "P11",
+          "montant": 5.94
+        },
+        {
+          "annee": 1992,
+          "poste": "P11",
+          "montant": 6.67
+        },
+        {
+          "annee": 1993,
+          "poste": "P11",
+          "montant": 7.23
+        },
+        {
+          "annee": 1994,
+          "poste": "P11",
+          "montant": 7.53
+        },
+        {
+          "annee": 1995,
+          "poste": "P11",
+          "montant": 8.07
+        },
+        {
+          "annee": 1996,
+          "poste": "P11",
+          "montant": 8.53
+        },
+        {
+          "annee": 1997,
+          "poste": "P11",
+          "montant": 8.47
+        },
+        {
+          "annee": 1998,
+          "poste": "P11",
+          "montant": 8.66
+        },
+        {
+          "annee": 1999,
+          "poste": "P11",
+          "montant": 9.15
+        },
+        {
+          "annee": 2000,
+          "poste": "P11",
+          "montant": 9.61
+        }
+      ],
+      "nb_lignes": 111,
+      "annees": [
+        1949,
+        2025
+      ]
+    }
+  },
+  "depenses_par_sous_secteur_eurostat": {
+    "S13": [
+      {
+        "annee": 1995,
+        "total_depenses": 683.97
+      },
+      {
+        "annee": 1996,
+        "total_depenses": 705.69
+      },
+      {
+        "annee": 1997,
+        "total_depenses": 710.9
+      },
+      {
+        "annee": 1998,
+        "total_depenses": 722.11
+      },
+      {
+        "annee": 1999,
+        "total_depenses": 748.59
+      },
+      {
+        "annee": 2000,
+        "total_depenses": 775.35
+      },
+      {
+        "annee": 2001,
+        "total_depenses": 808.23
+      },
+      {
+        "annee": 2002,
+        "total_depenses": 851.11
+      },
+      {
+        "annee": 2003,
+        "total_depenses": 881.79
+      },
+      {
+        "annee": 2004,
+        "total_depenses": 915.91
+      },
+      {
+        "annee": 2005,
+        "total_depenses": 956.14
+      },
+      {
+        "annee": 2006,
+        "total_depenses": 992.24
+      },
+      {
+        "annee": 2007,
+        "total_depenses": 1039.29
+      },
+      {
+        "annee": 2008,
+        "total_depenses": 1080.22
+      },
+      {
+        "annee": 2009,
+        "total_depenses": 1122.61
+      },
+      {
+        "annee": 2010,
+        "total_depenses": 1151.96
+      },
+      {
+        "annee": 2011,
+        "total_depenses": 1175.7
+      },
+      {
+        "annee": 2012,
+        "total_depenses": 1208.95
+      },
+      {
+        "annee": 2013,
+        "total_depenses": 1242.36
+      },
+      {
+        "annee": 2014,
+        "total_depenses": 1257.65
+      },
+      {
+        "annee": 2015,
+        "total_depenses": 1268.01
+      },
+      {
+        "annee": 2016,
+        "total_depenses": 1280.65
+      },
+      {
+        "annee": 2017,
+        "total_depenses": 1321.44
+      },
+      {
+        "annee": 2018,
+        "total_depenses": 1327.63
+      },
+      {
+        "annee": 2019,
+        "total_depenses": 1346.15
+      },
+      {
+        "annee": 2020,
+        "total_depenses": 1430.36
+      },
+      {
+        "annee": 2021,
+        "total_depenses": 1491.38
+      },
+      {
+        "annee": 2022,
+        "total_depenses": 1550.33
+      },
+      {
+        "annee": 2023,
+        "total_depenses": 1608.27
+      },
+      {
+        "annee": 2024,
+        "total_depenses": 1672.71
+      },
+      {
+        "annee": 2025,
+        "total_depenses": 1714.14
+      }
+    ],
+    "S1311": [
+      {
+        "annee": 1995,
+        "total_depenses": 331.14
+      },
+      {
+        "annee": 1996,
+        "total_depenses": 340.32
+      },
+      {
+        "annee": 1997,
+        "total_depenses": 345.36
+      },
+      {
+        "annee": 1998,
+        "total_depenses": 343.43
+      },
+      {
+        "annee": 1999,
+        "total_depenses": 359.04
+      },
+      {
+        "annee": 2000,
+        "total_depenses": 364.06
+      },
+      {
+        "annee": 2001,
+        "total_depenses": 383.24
+      },
+      {
+        "annee": 2002,
+        "total_depenses": 404.13
+      },
+      {
+        "annee": 2003,
+        "total_depenses": 407.36
+      },
+      {
+        "annee": 2004,
+        "total_depenses": 426.34
+      },
+      {
+        "annee": 2005,
+        "total_depenses": 436.87
+      },
+      {
+        "annee": 2006,
+        "total_depenses": 435.54
+      },
+      {
+        "annee": 2007,
+        "total_depenses": 458.31
+      },
+      {
+        "annee": 2008,
+        "total_depenses": 476.84
+      },
+      {
+        "annee": 2009,
+        "total_depenses": 489.45
+      },
+      {
+        "annee": 2010,
+        "total_depenses": 532.27
+      },
+      {
+        "annee": 2011,
+        "total_depenses": 505.59
+      },
+      {
+        "annee": 2012,
+        "total_depenses": 513.18
+      },
+      {
+        "annee": 2013,
+        "total_depenses": 527.62
+      },
+      {
+        "annee": 2014,
+        "total_depenses": 530.96
+      },
+      {
+        "annee": 2015,
+        "total_depenses": 532.35
+      },
+      {
+        "annee": 2016,
+        "total_depenses": 541.06
+      },
+      {
+        "annee": 2017,
+        "total_depenses": 565.06
+      },
+      {
+        "annee": 2018,
+        "total_depenses": 551.39
+      },
+      {
+        "annee": 2019,
+        "total_depenses": 546.66
+      },
+      {
+        "annee": 2020,
+        "total_depenses": 603.31
+      },
+      {
+        "annee": 2021,
+        "total_depenses": 630.12
+      },
+      {
+        "annee": 2022,
+        "total_depenses": 657.33
+      },
+      {
+        "annee": 2023,
+        "total_depenses": 664.61
+      },
+      {
+        "annee": 2024,
+        "total_depenses": 671.25
+      },
+      {
+        "annee": 2025,
+        "total_depenses": 680.75
+      }
+    ],
+    "S1313": [
+      {
+        "annee": 1995,
+        "total_depenses": 120.26
+      },
+      {
+        "annee": 1996,
+        "total_depenses": 126.16
+      },
+      {
+        "annee": 1997,
+        "total_depenses": 123.17
+      },
+      {
+        "annee": 1998,
+        "total_depenses": 126.38
+      },
+      {
+        "annee": 1999,
+        "total_depenses": 132.51
+      },
+      {
+        "annee": 2000,
+        "total_depenses": 141.9
+      },
+      {
+        "annee": 2001,
+        "total_depenses": 145.28
+      },
+      {
+        "annee": 2002,
+        "total_depenses": 154.74
+      },
+      {
+        "annee": 2003,
+        "total_depenses": 163.62
+      },
+      {
+        "annee": 2004,
+        "total_depenses": 178.0
+      },
+      {
+        "annee": 2005,
+        "total_depenses": 186.64
+      },
+      {
+        "annee": 2006,
+        "total_depenses": 197.5
+      },
+      {
+        "annee": 2007,
+        "total_depenses": 211.89
+      },
+      {
+        "annee": 2008,
+        "total_depenses": 221.74
+      },
+      {
+        "annee": 2009,
+        "total_depenses": 229.19
+      },
+      {
+        "annee": 2010,
+        "total_depenses": 229.12
+      },
+      {
+        "annee": 2011,
+        "total_depenses": 234.0
+      },
+      {
+        "annee": 2012,
+        "total_depenses": 241.55
+      },
+      {
+        "annee": 2013,
+        "total_depenses": 249.58
+      },
+      {
+        "annee": 2014,
+        "total_depenses": 249.87
+      },
+      {
+        "annee": 2015,
+        "total_depenses": 246.16
+      },
+      {
+        "annee": 2016,
+        "total_depenses": 245.3
+      },
+      {
+        "annee": 2017,
+        "total_depenses": 250.77
+      },
+      {
+        "annee": 2018,
+        "total_depenses": 256.03
+      },
+      {
+        "annee": 2019,
+        "total_depenses": 268.69
+      },
+      {
+        "annee": 2020,
+        "total_depenses": 266.3
+      },
+      {
+        "annee": 2021,
+        "total_depenses": 279.45
+      },
+      {
+        "annee": 2022,
+        "total_depenses": 294.96
+      },
+      {
+        "annee": 2023,
+        "total_depenses": 315.72
+      },
+      {
+        "annee": 2024,
+        "total_depenses": 330.48
+      },
+      {
+        "annee": 2025,
+        "total_depenses": 335.48
+      }
+    ],
+    "S1314": [
+      {
+        "annee": 1995,
+        "total_depenses": 285.74
+      },
+      {
+        "annee": 1996,
+        "total_depenses": 297.89
+      },
+      {
+        "annee": 1997,
+        "total_depenses": 300.2
+      },
+      {
+        "annee": 1998,
+        "total_depenses": 309.94
+      },
+      {
+        "annee": 1999,
+        "total_depenses": 320.8
+      },
+      {
+        "annee": 2000,
+        "total_depenses": 331.75
+      },
+      {
+        "annee": 2001,
+        "total_depenses": 348.52
+      },
+      {
+        "annee": 2002,
+        "total_depenses": 367.79
+      },
+      {
+        "annee": 2003,
+        "total_depenses": 387.28
+      },
+      {
+        "annee": 2004,
+        "total_depenses": 407.09
+      },
+      {
+        "annee": 2005,
+        "total_depenses": 427.69
+      },
+      {
+        "annee": 2006,
+        "total_depenses": 441.3
+      },
+      {
+        "annee": 2007,
+        "total_depenses": 463.72
+      },
+      {
+        "annee": 2008,
+        "total_depenses": 476.85
+      },
+      {
+        "annee": 2009,
+        "total_depenses": 498.61
+      },
+      {
+        "annee": 2010,
+        "total_depenses": 517.32
+      },
+      {
+        "annee": 2011,
+        "total_depenses": 533.87
+      },
+      {
+        "annee": 2012,
+        "total_depenses": 551.45
+      },
+      {
+        "annee": 2013,
+        "total_depenses": 563.74
+      },
+      {
+        "annee": 2014,
+        "total_depenses": 575.85
+      },
+      {
+        "annee": 2015,
+        "total_depenses": 578.12
+      },
+      {
+        "annee": 2016,
+        "total_depenses": 585.99
+      },
+      {
+        "annee": 2017,
+        "total_depenses": 598.14
+      },
+      {
+        "annee": 2018,
+        "total_depenses": 610.32
+      },
+      {
+        "annee": 2019,
+        "total_depenses": 623.49
+      },
+      {
+        "annee": 2020,
+        "total_depenses": 661.83
+      },
+      {
+        "annee": 2021,
+        "total_depenses": 685.88
+      },
+      {
+        "annee": 2022,
+        "total_depenses": 706.67
+      },
+      {
+        "annee": 2023,
+        "total_depenses": 737.02
+      },
+      {
+        "annee": 2024,
+        "total_depenses": 777.29
+      },
+      {
+        "annee": 2025,
+        "total_depenses": 803.53
+      }
+    ]
+  },
+  "notes": [
+    "Les APU comprennent 3 sous-secteurs: centrale (État+ODAC), locale (collectivités+ODAL), sécurité sociale (régimes+ODASS)"
+  ]
+}
