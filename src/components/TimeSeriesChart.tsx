@@ -13,7 +13,7 @@ import {
 import { useMemo } from "react";
 import { formatTooltip } from "@/lib/format";
 import SourceBadge from "./SourceBadge";
-import { getSourceInfo } from "@/lib/sourceMeta";
+import SourceTooltip from "./SourceTooltip";
 
 interface SeriesMap {
   [name: string]: { code: string; unite: string; donnees: Record<string, number> };
@@ -67,11 +67,11 @@ export default function TimeSeriesChart({
           />
           <YAxis tick={{ fontSize: 12 }} width={70} />
           <Tooltip
-            formatter={(value, name) => {
-              const s = series[String(name)];
-              const info = getSourceInfo(source ?? "");
-              return `${formatTooltip(Number(value), s?.unite)}\nSource: ${info.source}\n${info.url ? `📎 ${info.url}` : ""}\n${info.methodology ? `📐 ${info.methodology}` : ""}`;
-            }}
+            content={<SourceTooltip source={source ?? ""} formatValue={(v: number, _name?: string, dataKey?: string) => {
+              const s = dataKey ? series[dataKey] : undefined;
+              return formatTooltip(v, s?.unite);
+            }} />}
+            wrapperStyle={{ pointerEvents: "auto" }}
           />
           <Legend />
           {selected.map((name, i) => {

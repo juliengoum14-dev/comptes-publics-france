@@ -42,7 +42,7 @@ const SECTOR_COLORS: Record<string, string> = {
 
 import { formatNumber as fmt } from "@/lib/format";
 import SourceBadge from "./SourceBadge";
-import { getSourceInfo } from "@/lib/sourceMeta";
+import SourceTooltip from "./SourceTooltip";
 
 interface DrillDownChartProps {
   tree: TreeNode;
@@ -190,14 +190,11 @@ export default function DrillDownChart({
               width={220}
             />
             <Tooltip
-              formatter={(value: unknown, _name: unknown, entry: unknown) => {
-                const v = Number(value);
-                const payload = (entry as { payload?: { montant?: number } })?.payload;
-                const pct = total > 0 && payload?.montant != null
-                  ? ((payload.montant / total) * 100).toFixed(1) : "0";
-                const info = getSourceInfo(source ?? "");
-                return `${fmt(v)} Md€ (${pct}%)\nSource: ${info.source}\n${info.url ? `📎 ${info.url}` : ""}\n${info.methodology ? `📐 ${info.methodology}` : ""}`;
-              }}
+              content={<SourceTooltip source={source ?? ""} formatValue={(v: number) => {
+                const pct = total > 0 ? ((v / total) * 100).toFixed(1) : "0";
+                return `${fmt(v)} Md€ (${pct}%)`;
+              }} />}
+              wrapperStyle={{ pointerEvents: "auto" }}
             />
             <Bar
               dataKey="montant"
@@ -284,10 +281,10 @@ export default function DrillDownChart({
                   tick={{ fontSize: 11 }}
                   width={160}
                 />
-                <Tooltip formatter={(value: unknown) => {
-  const info = getSourceInfo(source ?? "");
-  return `${fmt(Number(value))} Md€\nSource: ${info.source}\n${info.url ? `📎 ${info.url}` : ""}\n${info.methodology ? `📐 ${info.methodology}` : ""}`;
-}} />
+                <Tooltip
+  content={<SourceTooltip source={source ?? ""} formatValue={(v: number) => `${fmt(v)} Md€`} />}
+  wrapperStyle={{ pointerEvents: "auto" }}
+/>
                 <Bar dataKey="montant" radius={[0, 4, 4, 0]}>
                   {sectorBreakdown
                     .filter((s) => s.secteur !== "S13")
