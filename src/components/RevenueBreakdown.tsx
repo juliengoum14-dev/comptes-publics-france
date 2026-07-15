@@ -29,7 +29,8 @@ export default function RevenueBreakdown({
         const point = c.donnees.find((d) => d.annee === annee);
         return { name: c.categorie, montant: point?.montant ?? 0 };
       })
-      .filter((d) => d.montant > 0);
+      .filter((d) => d.montant > 0)
+      .sort((a, b) => b.montant - a.montant);
   }, [categories, annee]);
 
   const fmt = formatValue ?? ((v: number) =>

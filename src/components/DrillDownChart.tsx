@@ -80,7 +80,8 @@ export default function DrillDownChart({
         montant: c.values?.[yearStr] ?? 0,
         hasChildren: (c.children?.length ?? 0) > 0,
       }))
-      .filter((c) => c.montant > 0 || c.code === "DISC");
+      .filter((c) => c.montant > 0 || c.code === "DISC")
+      .sort((a, b) => b.montant - a.montant);
   }, [currentNode, annee]);
 
   const handleClick = (code: string) => {
