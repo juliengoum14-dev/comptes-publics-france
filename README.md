@@ -2,6 +2,8 @@
 
 **Rendre les comptes publics compréhensibles pour les citoyens.**
 
+👉 [**Visualiser le dashboard**](https://juliengoum14-dev.github.io/comptes-publics-france/)
+
 À l'approche des élections de 2027, ce projet a pour ambition de mettre les finances publiques françaises à la portée de toutes et tous. Recettes de l'État, dépenses par ministère, comptes des administrations publiques, dette, déficit — chaque donnée est sourcée, documentée et présentée de manière visuelle et interactive.
 
 ## Pourquoi ?
