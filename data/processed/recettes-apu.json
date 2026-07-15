@@ -4,7 +4,7 @@
     "mise_a_jour": "2025/2026",
     "perimetre": "APU (S13) et État (S13111)",
     "unite": "Md€",
-    "note": "D5REC (Impôts courants sur le revenu) retiré : agrégat incluant D51A_C1REC et D51B_C2REC"
+    "note": "D5REC (Impôts courants sur le revenu) retiré : agrégat incluant D51A_C1REC et D51B_C2REC. D21REC_EXCL_TVA = D21REC − D211REC pour éviter le double comptage TVA. La catégorie résiduelle 'Autres recettes' couvre les postes non détaillés (D4REC, D7REC, D9REC, etc.)."
   },
   "recettes_par_categorie": [
     {
@@ -401,133 +401,133 @@
       ]
     },
     {
-      "categorie": "Impôts sur les produits (dont TICPE)",
-      "code_sec2010": "D21REC",
+      "categorie": "Impôts sur les produits (hors TVA)",
+      "code_sec2010": "D21REC_EXCL_TVA",
       "unite": "Md€",
       "donnees": [
         {
           "annee": 1995,
-          "montant": 141.6876
+          "montant": 51.6304
         },
         {
           "annee": 1996,
-          "montant": 150.6927
+          "montant": 53.363
         },
         {
           "annee": 1997,
-          "montant": 152.9395
+          "montant": 54.576
         },
         {
           "annee": 1998,
-          "montant": 158.8717
+          "montant": 57.4728
         },
         {
           "annee": 1999,
-          "montant": 165.4661
+          "montant": 59.321
         },
         {
           "annee": 2000,
-          "montant": 167.8897
+          "montant": 60.557
         },
         {
           "annee": 2001,
-          "montant": 169.60389999999998
+          "montant": 60.8525
         },
         {
           "annee": 2002,
-          "montant": 175.5573
+          "montant": 64.9769
         },
         {
           "annee": 2003,
-          "montant": 179.2328
+          "montant": 65.4835
         },
         {
           "annee": 2004,
-          "montant": 188.9225
+          "montant": 68.5995
         },
         {
           "annee": 2005,
-          "montant": 196.76139999999998
+          "montant": 70.039
         },
         {
           "annee": 2006,
-          "montant": 205.0239
+          "montant": 73.2429
         },
         {
           "annee": 2007,
-          "montant": 210.557
+          "montant": 73.883
         },
         {
           "annee": 2008,
-          "montant": 211.563
+          "montant": 73.7575
         },
         {
           "annee": 2009,
-          "montant": 202.8491
+          "montant": 72.269
         },
         {
           "annee": 2010,
-          "montant": 212.3811
+          "montant": 76.548
         },
         {
           "annee": 2011,
-          "montant": 224.43110000000001
+          "montant": 83.583
         },
         {
           "annee": 2012,
-          "montant": 229.5291
+          "montant": 86.69
         },
         {
           "annee": 2013,
-          "montant": 234.108
+          "montant": 89.19
         },
         {
           "annee": 2014,
-          "montant": 240.011
+          "montant": 91.089
         },
         {
           "annee": 2015,
-          "montant": 249.665
+          "montant": 97.498
         },
         {
           "annee": 2016,
-          "montant": 256.977
+          "montant": 102.01
         },
         {
           "annee": 2017,
-          "montant": 270.988
+          "montant": 108.536
         },
         {
           "annee": 2018,
-          "montant": 282.833
+          "montant": 114.656
         },
         {
           "annee": 2019,
-          "montant": 292.049
+          "montant": 117.625
         },
         {
           "annee": 2020,
-          "montant": 273.606
+          "montant": 111.516
         },
         {
           "annee": 2021,
-          "montant": 307.943
+          "montant": 122.593
         },
         {
           "annee": 2022,
-          "montant": 319.039
+          "montant": 119.767
         },
         {
           "annee": 2023,
-          "montant": 318.82
+          "montant": 112.508
         },
         {
           "annee": 2024,
-          "montant": 326.186
+          "montant": 118.433
         },
         {
           "annee": 2025,
-          "montant": 337.591
+          "montant": 128.77
         }
       ]
     },
@@ -790,6 +790,139 @@
         {
           "annee": 2025,
           "montant": 498.736
+        }
+      ]
+    },
+    {
+      "categorie": "Autres recettes (non ventilé)",
+      "code_sec2010": "AUTRE_REC",
+      "unite": "Md€",
+      "type": "residuel",
+      "note": "Écart entre le total TR et la somme des catégories ventilées. Inclut D4REC, D5REC_other, D7REC, D9REC et autres recettes APU non détaillées.",
+      "donnees": [
+        {
+          "annee": 1995,
+          "montant": 100.841
+        },
+        {
+          "annee": 1996,
+          "montant": 104.145
+        },
+        {
+          "annee": 1997,
+          "montant": 101.724
+        },
+        {
+          "annee": 1998,
+          "montant": 102.678
+        },
+        {
+          "annee": 1999,
+          "montant": 105.202
+        },
+        {
+          "annee": 2000,
+          "montant": 108.834
+        },
+        {
+          "annee": 2001,
+          "montant": 115.882
+        },
+        {
+          "annee": 2002,
+          "montant": 119.733
+        },
+        {
+          "annee": 2003,
+          "montant": 117.602
+        },
+        {
+          "annee": 2004,
+          "montant": 125.26
+        },
+        {
+          "annee": 2005,
+          "montant": 130.703
+        },
+        {
+          "annee": 2006,
+          "montant": 135.599
+        },
+        {
+          "annee": 2007,
+          "montant": 143.615
+        },
+        {
+          "annee": 2008,
+          "montant": 150.896
+        },
+        {
+          "annee": 2009,
+          "montant": 151.95
+        },
+        {
+          "annee": 2010,
+          "montant": 154.808
+        },
+        {
+          "annee": 2011,
+          "montant": 163.677
+        },
+        {
+          "annee": 2012,
+          "montant": 161.498
+        },
+        {
+          "annee": 2013,
+          "montant": 165.218
+        },
+        {
+          "annee": 2014,
+          "montant": 168.187
+        },
+        {
+          "annee": 2015,
+          "montant": 170.55
+        },
+        {
+          "annee": 2016,
+          "montant": 171.263
+        },
+        {
+          "annee": 2017,
+          "montant": 175.643
+        },
+        {
+          "annee": 2018,
+          "montant": 171.957
+        },
+        {
+          "annee": 2019,
+          "montant": 174.687
+        },
+        {
+          "annee": 2020,
+          "montant": 152.633
+        },
+        {
+          "annee": 2021,
+          "montant": 181.982
+        },
+        {
+          "annee": 2022,
+          "montant": 189.99
+        },
+        {
+          "annee": 2023,
+          "montant": 195.466
+        },
+        {
+          "annee": 2024,
+          "montant": 205.146
+        },
+        {
+          "annee": 2025,
+          "montant": 209.3
         }
       ]
     }
