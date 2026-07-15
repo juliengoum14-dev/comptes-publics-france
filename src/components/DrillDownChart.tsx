@@ -41,12 +41,14 @@ const SECTOR_COLORS: Record<string, string> = {
 };
 
 import { formatNumber as fmt } from "@/lib/format";
+import SourceBadge from "./SourceBadge";
 
 interface DrillDownChartProps {
   tree: TreeNode;
   secteurData: Record<string, Record<string, Record<string, number>>>;
   title: string;
   annee?: number;
+  source?: string;
 }
 
 function flattenLookup(node: TreeNode): Record<string, TreeNode> {
@@ -64,6 +66,7 @@ export default function DrillDownChart({
   secteurData,
   title,
   annee = 2025,
+  source,
 }: DrillDownChartProps) {
   const [nodeStack, setNodeStack] = useState<TreeNode[]>([tree]);
   const currentNode = nodeStack[nodeStack.length - 1] ?? tree;
@@ -127,7 +130,9 @@ export default function DrillDownChart({
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-5">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+        <h3 className="text-lg font-semibold text-gray-800">
+          {title} <SourceBadge source={source ?? ""} />
+        </h3>
         {nodeStack.length > 1 && (
           <button
             onClick={handleBack}

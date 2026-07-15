@@ -5,6 +5,7 @@ import TimeSeriesChart from "@/components/TimeSeriesChart";
 import ApuBreakdown from "@/components/ApuBreakdown";
 import DrillDownChart from "@/components/DrillDownChart";
 import RevenueBreakdown from "@/components/RevenueBreakdown";
+import SourceBadge from "@/components/SourceBadge";
 
 export default function Home() {
   const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur } = getAllData();
@@ -25,13 +26,14 @@ export default function Home() {
         <h2 className="text-xl font-semibold text-gray-700 mb-4 mt-8">
           Vue d&apos;ensemble APU
         </h2>
-        <SummaryCards data={synthese.donnees_cles_2025} />
+        <SummaryCards data={synthese.donnees_cles_2025} source={synthese.meta.source as string} />
 
         <div className="mt-8">
           <TimeSeriesChart
             series={series.series}
             selected={["Recettes APU", "Dépenses APU"]}
             title="Évolution des recettes et dépenses APU (Md€)"
+            source={series.meta.source as string}
           />
         </div>
 
@@ -41,12 +43,14 @@ export default function Home() {
             secteurData={natureParSecteur.data}
             title="Recettes APU"
             annee={2025}
+            source={arbreNature.meta.source as string}
           />
           <DrillDownChart
             tree={arbreNature.depenses}
             secteurData={natureParSecteur.data}
             title="Dépenses APU"
             annee={2025}
+            source={arbreNature.meta.source as string}
           />
         </div>
 
@@ -54,6 +58,7 @@ export default function Home() {
           <ApuBreakdown
             data={apu.depenses_par_sous_secteur_eurostat}
             title="Dépenses APU par sous-secteur (Md€ empilés)"
+            source={apu.meta.source as string}
           />
         </div>
 
@@ -62,11 +67,13 @@ export default function Home() {
             series={series.series}
             selected={["Dette publique (Maastricht)", "PIB"]}
             title="Dette publique et PIB (Md€)"
+            source={series.meta.source as string}
           />
           <TimeSeriesChart
             series={series.series}
             selected={["Dépenses APU (% PIB)", "Recettes APU (% PIB)"]}
             title="Taux de prélèvement et dépense publique (% PIB)"
+            source={series.meta.source as string}
           />
         </div>
 
@@ -81,18 +88,15 @@ export default function Home() {
                 Budget de l&apos;État (comptabilité budgétaire)
               </p>
               <p className="text-lg font-bold text-blue-800 mt-2">
-                Solde : {formatMd(etat2025.solde_budgetaire_meur)}
+                Solde : {formatMd(etat2025.solde_budgetaire_meur)} <SourceBadge source={budgetEtat.meta.source as string} />
               </p>
               <p className="text-sm text-blue-600 mt-1">
-                Recettes nettes BG : {formatMd(etat2025.recettes_nettes_bg_meur)}
-              </p>
-              <p className="text-xs text-blue-500 mt-3">
-                Source : economie.gouv.fr (30 janv. 2026) — Communiqué de presse solde budgétaire
+                Recettes nettes BG : {formatMd(etat2025.recettes_nettes_bg_meur)} <SourceBadge source={budgetEtat.meta.source as string} />
               </p>
               <div className="mt-2 text-xs text-blue-500 space-y-1">
-                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_2024_meur)} vs 2024</p>
-                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_lfg_meur)} vs prévision LFG</p>
-                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_lfi_meur)} vs LFI 2025</p>
+                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_2024_meur)} <SourceBadge source={budgetEtat.meta.source as string} /> vs 2024</p>
+                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_lfg_meur)} <SourceBadge source={budgetEtat.meta.source as string} /> vs prévision LFG</p>
+                <p>✓ Amélioration de {formatMd(etat2025.amélioration_vs_lfi_meur)} <SourceBadge source={budgetEtat.meta.source as string} /> vs LFI 2025</p>
               </div>
             </div>
 
@@ -101,13 +105,10 @@ export default function Home() {
                 APU (Administrations Publiques — comptabilité nationale)
               </p>
               <p className="text-lg font-bold text-purple-800 mt-2">
-                Solde : {formatMd(synthese.donnees_cles_2025.solde)}
+                Solde : {formatMd(synthese.donnees_cles_2025.solde)} <SourceBadge source={synthese.meta.source as string} />
               </p>
               <p className="text-sm text-purple-600 mt-1">
-                Recettes APU : {formatMd(synthese.donnees_cles_2025.recettes)} | Dépenses : {formatMd(synthese.donnees_cles_2025.depenses)}
-              </p>
-              <p className="text-xs text-purple-500 mt-3">
-                Source : INSEE (comptes nationaux base 2020) + Eurostat
+                Recettes APU : {formatMd(synthese.donnees_cles_2025.recettes)} <SourceBadge source={synthese.meta.source as string} /> | Dépenses : {formatMd(synthese.donnees_cles_2025.depenses)} <SourceBadge source={synthese.meta.source as string} />
               </p>
               <div className="mt-2 text-xs text-purple-500 space-y-1">
                 <p>Périmètre : État (APUC) + Sécurité sociale (ASSO) + Collectivités (APUL)</p>
@@ -126,6 +127,7 @@ export default function Home() {
             categories={recettes.recettes_par_categorie}
             annee={2025}
             title="Recettes fiscales et sociales"
+            source={recettes.meta.source as string}
           />
         </section>
 

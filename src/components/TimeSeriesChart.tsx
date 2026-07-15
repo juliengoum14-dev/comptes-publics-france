@@ -12,6 +12,7 @@ import {
 } from "recharts";
 import { useMemo } from "react";
 import { formatTooltip } from "@/lib/format";
+import SourceBadge from "./SourceBadge";
 
 interface SeriesMap {
   [name: string]: { code: string; unite: string; donnees: Record<string, number> };
@@ -21,10 +22,12 @@ export default function TimeSeriesChart({
   series,
   selected,
   title,
+  source,
 }: {
   series: SeriesMap;
   selected: string[];
   title: string;
+  source?: string;
 }) {
   const chartData = useMemo(() => {
     const years = new Set<number>();
@@ -50,7 +53,9 @@ export default function TimeSeriesChart({
 
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-5">
-      <h3 className="text-lg font-semibold text-gray-800 mb-4">{title}</h3>
+      <h3 className="text-lg font-semibold text-gray-800 mb-4">
+        {title} <SourceBadge source={source ?? ""} />
+      </h3>
       <ResponsiveContainer width="100%" height={350}>
         <LineChart data={chartData}>
           <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />

@@ -1,7 +1,8 @@
 import type { DonneesCles } from "@/types";
 import { formatMd, formatPct } from "@/lib/format";
+import SourceBadge from "./SourceBadge";
 
-export default function SummaryCards({ data }: { data: DonneesCles }) {
+export default function SummaryCards({ data, source }: { data: DonneesCles; source?: string }) {
   const cards = [
     {
       label: "Recettes",
@@ -42,7 +43,9 @@ export default function SummaryCards({ data }: { data: DonneesCles }) {
       {cards.map((c) => (
         <div key={c.label} className={`rounded-xl border ${c.border} ${c.bg} p-5`}>
           <p className="text-sm text-gray-500 font-medium uppercase tracking-wide">{c.label}</p>
-          <p className={`text-2xl font-bold mt-1 ${c.color}`}>{c.value}</p>
+          <p className={`text-2xl font-bold mt-1 ${c.color}`}>
+            {c.value} <SourceBadge source={source ?? ""} />
+          </p>
           <p className="text-xs text-gray-400 mt-1">{c.sub}</p>
         </div>
       ))}

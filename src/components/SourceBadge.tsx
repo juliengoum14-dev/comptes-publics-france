@@ -1,0 +1,26 @@
+export function abbreviateSource(s: string): string {
+  const hasInsee = s.includes("INSEE");
+  const hasEurostat = s.includes("Eurostat");
+  const hasEco = s.includes("economie.gouv.fr");
+  const hasDirBudget = s.includes("Direction du Budget");
+  const hasDatagouv = s.includes("data.gouv.fr");
+
+  if (hasInsee && hasEurostat) return "(INSEE+Eurostat)";
+  if (hasEco && hasDirBudget) return "(éco.gouv.fr)";
+  if (hasInsee) return "(INSEE)";
+  if (hasEurostat) return "(Eurostat)";
+  if (hasEco) return "(éco.gouv.fr)";
+  if (hasDatagouv) return "(data.gouv.fr)";
+
+  const short = s.split(/[,;]/)[0].trim();
+  return short.length > 25 ? `(${short.slice(0, 22)}…)` : `(${short})`;
+}
+
+export default function SourceBadge({ source }: { source: string }) {
+  if (!source) return null;
+  return (
+    <span className="text-[10px] text-gray-300" title={source}>
+      {abbreviateSource(source)}
+    </span>
+  );
+}

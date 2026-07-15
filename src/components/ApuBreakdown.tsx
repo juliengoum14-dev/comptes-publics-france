@@ -11,6 +11,7 @@ import {
   Legend,
 } from "recharts";
 import { useMemo } from "react";
+import SourceBadge from "./SourceBadge";
 
 interface SousSecteurData {
   [secteur: string]: { annee: number; total_depenses: number }[];
@@ -28,9 +29,11 @@ const COLORS = ["#6366f1", "#8b5cf6", "#a78bfa", "#c4b5fd"];
 export default function ApuBreakdown({
   data,
   title,
+  source,
 }: {
   data: SousSecteurData;
   title: string;
+  source?: string;
 }) {
   const chartData = useMemo(() => {
     const years = new Set<number>();
@@ -56,7 +59,9 @@ export default function ApuBreakdown({
 
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-5">
-      <h3 className="text-lg font-semibold text-gray-800 mb-4">{title}</h3>
+      <h3 className="text-lg font-semibold text-gray-800 mb-4">
+        {title} <SourceBadge source={source ?? ""} />
+      </h3>
       <ResponsiveContainer width="100%" height={400}>
         <BarChart data={chartData}>
           <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />

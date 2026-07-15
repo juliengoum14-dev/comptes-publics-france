@@ -11,17 +11,20 @@ import {
 } from "recharts";
 import { useMemo } from "react";
 import type { SerieRecette } from "@/types";
+import SourceBadge from "./SourceBadge";
 
 export default function RevenueBreakdown({
   categories,
   annee,
   title,
   formatValue,
+  source,
 }: {
   categories: SerieRecette[];
   annee: number;
   title: string;
   formatValue?: (v: number) => string;
+  source?: string;
 }) {
   const chartData = useMemo(() => {
     return categories
@@ -44,7 +47,7 @@ export default function RevenueBreakdown({
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-5">
       <h3 className="text-lg font-semibold text-gray-800 mb-1">
-        {title} ({annee})
+        {title} ({annee}) <SourceBadge source={source ?? ""} />
       </h3>
       <p className="text-xs text-gray-400 mb-4">
         Total : {new Intl.NumberFormat("fr-FR", { style: "decimal", maximumFractionDigits: 1 }).format(total)} Md€
