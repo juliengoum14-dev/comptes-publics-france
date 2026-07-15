@@ -108,11 +108,20 @@ DEPENSES_HIERARCHY = OrderedDict([
     ("D5PAY", { "label": "Impôts courants sur le revenu" }),
     ("D62PAY", {
         "label": "Prestations sociales (espèces)",
-        "children": ["D621PAY", "D622PAY", "D623PAY"]
+        "children": ["D621PAY", "D622PAY", "D623PAY", "GF_BREAKDOWN"]
     }),
     ("D621PAY", { "label": "Prestations de sécurité sociale" }),
     ("D622PAY", { "label": "Prestations d'assurance sociale" }),
     ("D623PAY", { "label": "Prestations d'assistance sociale" }),
+    # COFOG functional breakdown of D62PAY
+    ("GF_BREAKDOWN", {
+        "label": "Par fonction (COFOG)",
+        "children": ["D62PAY_GF1002", "D62PAY_GF1003", "D62PAY_GF1005", "GF_AUTRES"]
+    }),
+    ("D62PAY_GF1002", { "label": "Vieillesse (pensions retraite)" }),
+    ("D62PAY_GF1003", { "label": "Survivants (pensions réversion)" }),
+    ("D62PAY_GF1005", { "label": "Chômage" }),
+    ("GF_AUTRES", { "label": "Autres prestations sociales (maladie, famille, logement…)" }),
     ("D632PAY", { "label": "Transferts sociaux en nature (santé)" }),
     ("D7PAY", {
         "label": "Autres transferts courants",
@@ -239,6 +248,45 @@ def build_node(code, hierarchy, data, old_tree=None):
             return None
         return {"code": "P3_AUTRES", "label": label, "values": values}
 
+    # Special handling for GF_BREAKDOWN — values = D62PAY (même total, ventilé différemment)
+    if code == "GF_BREAKDOWN":
+        d62pay_vals = extract_code_values(data, "D62PAY")
+        if not d62pay_vals:
+            return None
+        node = {"code": "GF_BREAKDOWN", "label": label, "values": dict(d62pay_vals)}
+        if children_codes:
+            children = []
+            for child_code in children_codes:
+                child = build_node(child_code, hierarchy, data, old_tree)
+                if child is not None:
+                    children.append(child)
+            if children:
+                node["children"] = children
+        return node
+
+    # Special handling for GF codes — estimate missing years (Eurostat COFOG lags by 1 year)
+    if code in ("D62PAY_GF1002", "D62PAY_GF1003", "D62PAY_GF1005"):
+        d62pay_vals = extract_code_values(data, "D62PAY")
+        values = extract_code_values(data, code)
+        if values and d62pay_vals:
+            values = estimate_missing_years(values, d62pay_vals)
+        return {"code": code, "label": label, "values": values or {}}
+
+    # Special handling for GF_AUTRES — reste = D62PAY - (GF1002 + GF1003 + GF1005)
+    if code == "GF_AUTRES":
+        d62pay_vals = extract_code_values(data, "D62PAY")
+        if not d62pay_vals:
+            return None
+        values = {}
+        gf1002 = estimate_missing_years(extract_code_values(data, "D62PAY_GF1002") or {}, d62pay_vals)
+        gf1003 = estimate_missing_years(extract_code_values(data, "D62PAY_GF1003") or {}, d62pay_vals)
+        gf1005 = estimate_missing_years(extract_code_values(data, "D62PAY_GF1005") or {}, d62pay_vals)
+        for y in d62pay_vals:
+            values[y] = round(d62pay_vals[y] - gf1002.get(y, 0) - gf1003.get(y, 0) - gf1005.get(y, 0), 3)
+        if not values:
+            return None
+        return {"code": "GF_AUTRES", "label": label, "values": values}
+
     values = extract_code_values(data, code)
     if values is None and not children_codes:
         return None
@@ -276,6 +324,23 @@ def max_depth(node, d=1):
     if not node.get("children"):
         return d
     return max(max_depth(c, d+1) for c in node["children"])
+
+
+def estimate_missing_years(values, ref_values):
+    """Estimate missing years in values using growth rate from ref_values."""
+    if not values or not ref_values:
+        return values or {}
+    result = dict(values)
+    for y in sorted(ref_values, key=int):
+        if y not in result and y in ref_values:
+            available = sorted(result, key=int)
+            if not available:
+                continue
+            last_avail = available[-1]
+            if last_avail in ref_values and ref_values[last_avail] > 0:
+                growth = ref_values[y] / ref_values[last_avail]
+                result[y] = round(result[last_avail] * growth, 3)
+    return result
 
 
 def find_old_node(node, code):
