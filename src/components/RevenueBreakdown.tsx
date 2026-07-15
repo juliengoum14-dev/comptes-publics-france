@@ -50,7 +50,7 @@ export default function RevenueBreakdown({
         {title} ({annee}) <SourceBadge source={source ?? ""} />
       </h3>
       <p className="text-xs text-gray-400 mb-4">
-        Total : {new Intl.NumberFormat("fr-FR", { style: "decimal", maximumFractionDigits: 1 }).format(total)} Md€
+        Total : {new Intl.NumberFormat("fr-FR", { style: "decimal", maximumFractionDigits: 1 }).format(total)} Md€ <SourceBadge source={source ?? ""} />
       </p>
       <ResponsiveContainer width="100%" height={400}>
         <BarChart data={chartData} layout="vertical" margin={{ left: 20, right: 20 }}>

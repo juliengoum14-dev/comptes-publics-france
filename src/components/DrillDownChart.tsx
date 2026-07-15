@@ -167,7 +167,7 @@ export default function DrillDownChart({
       {/* Total */}
       <p className="text-xs text-gray-400 mb-3">
         {currentNode.values?.[String(annee)] != null && (
-          <span>Total : {fmt(currentNode.values[String(annee)])} Md€</span>
+          <span>Total : {fmt(currentNode.values[String(annee)])} Md€ <SourceBadge source={source ?? ""} /></span>
         )}
         {parentVal != null && (
           <span className="ml-2 text-gray-300">
@@ -259,7 +259,7 @@ export default function DrillDownChart({
                     className="text-lg font-bold mt-1"
                     style={{ color: SECTOR_COLORS[s.secteur] ?? "#6366f1" }}
                   >
-                    {fmt(s.montant)} Md€
+                    {fmt(s.montant)} Md€ <SourceBadge source={source ?? ""} />
                   </p>
                   {s.secteur !== "S13" && (
                     <p className="text-xs text-gray-400">{pct}% du total</p>

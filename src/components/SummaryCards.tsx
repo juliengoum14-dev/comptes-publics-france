@@ -46,7 +46,7 @@ export default function SummaryCards({ data, source }: { data: DonneesCles; sour
           <p className={`text-2xl font-bold mt-1 ${c.color}`}>
             {c.value} <SourceBadge source={source ?? ""} />
           </p>
-          <p className="text-xs text-gray-400 mt-1">{c.sub}</p>
+          <p className="text-xs text-gray-400 mt-1">{c.sub} <SourceBadge source={source ?? ""} /></p>
         </div>
       ))}
     </div>
