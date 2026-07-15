@@ -11,7 +11,7 @@ import {
 } from "recharts";
 import { useMemo } from "react";
 import type { SerieRecette } from "@/types";
-import SourceBadge, { abbreviateSource } from "./SourceBadge";
+import SourceBadge from "./SourceBadge";
 
 export default function RevenueBreakdown({
   categories,
@@ -63,7 +63,7 @@ export default function RevenueBreakdown({
             width={180}
           />
           <Tooltip
-            formatter={(value) => `${fmt(Number(value))} ${abbreviateSource(source ?? "")}`}
+            formatter={(value) => `${fmt(Number(value))} ${source ?? ""}`}
           />
           <Bar dataKey="montant" fill="#2563eb" radius={[0, 4, 4, 0]} />
         </BarChart>

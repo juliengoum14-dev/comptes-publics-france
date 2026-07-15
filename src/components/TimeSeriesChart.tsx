@@ -12,7 +12,7 @@ import {
 } from "recharts";
 import { useMemo } from "react";
 import { formatTooltip } from "@/lib/format";
-import SourceBadge, { abbreviateSource } from "./SourceBadge";
+import SourceBadge from "./SourceBadge";
 
 interface SeriesMap {
   [name: string]: { code: string; unite: string; donnees: Record<string, number> };
@@ -68,7 +68,7 @@ export default function TimeSeriesChart({
           <Tooltip
             formatter={(value, name) => {
               const s = series[String(name)];
-              return `${formatTooltip(Number(value), s?.unite)} ${abbreviateSource(source ?? "")}`;
+              return `${formatTooltip(Number(value), s?.unite)} — ${source ?? ""}`;
             }}
           />
           <Legend />

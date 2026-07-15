@@ -11,7 +11,7 @@ import {
   Legend,
 } from "recharts";
 import { useMemo } from "react";
-import SourceBadge, { abbreviateSource } from "./SourceBadge";
+import SourceBadge from "./SourceBadge";
 
 interface SousSecteurData {
   [secteur: string]: { annee: number; total_depenses: number }[];
@@ -76,7 +76,7 @@ export default function ApuBreakdown({
               new Intl.NumberFormat("fr-FR", {
                 style: "decimal",
                 maximumFractionDigits: 1,
-              }).format(Number(value)) + " Md€ " + abbreviateSource(source ?? "")
+              }).format(Number(value)) + " Md€ — " + (source ?? "")
             }
           />
           <Legend />
