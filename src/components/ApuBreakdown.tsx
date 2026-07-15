@@ -12,6 +12,7 @@ import {
 } from "recharts";
 import { useMemo } from "react";
 import SourceBadge from "./SourceBadge";
+import { getSourceInfo } from "@/lib/sourceMeta";
 
 interface SousSecteurData {
   [secteur: string]: { annee: number; total_depenses: number }[];
@@ -72,12 +73,13 @@ export default function ApuBreakdown({
           />
           <YAxis tick={{ fontSize: 12 }} width={70} />
           <Tooltip
-            formatter={(value) =>
-              new Intl.NumberFormat("fr-FR", {
+            formatter={(value) => {
+              const info = getSourceInfo(source ?? "");
+              return new Intl.NumberFormat("fr-FR", {
                 style: "decimal",
                 maximumFractionDigits: 1,
-              }).format(Number(value)) + " Md€ — " + (source ?? "")
-            }
+              }).format(Number(value)) + " Md€\nSource: " + info.source + "\n" + (info.url ? `📎 ${info.url}` : "") + "\n" + (info.methodology ? `📐 ${info.methodology}` : "");
+            }}
           />
           <Legend />
           {sectors.map((key, i) => (

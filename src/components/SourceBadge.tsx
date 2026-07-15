@@ -1,3 +1,5 @@
+import { getSourceInfo } from "@/lib/sourceMeta";
+
 export function abbreviateSource(s: string): string {
   const hasInsee = s.includes("INSEE");
   const hasEurostat = s.includes("Eurostat");
@@ -18,8 +20,12 @@ export function abbreviateSource(s: string): string {
 
 export default function SourceBadge({ source }: { source: string }) {
   if (!source) return null;
+  const info = getSourceInfo(source);
+  const tooltip = [info.source, info.url && `📎 ${info.url}`, info.methodology && `📐 ${info.methodology}`]
+    .filter(Boolean)
+    .join("\n");
   return (
-    <span className="text-[11px] text-gray-400 italic" title={source}>
+    <span className="text-[11px] text-gray-400 italic" title={tooltip}>
       {abbreviateSource(source)}
     </span>
   );
