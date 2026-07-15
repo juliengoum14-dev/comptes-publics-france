@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from collections import OrderedDict
 
 RAW_PATH = "data/raw/eurostat/gov_10a_main.json"
+COFOG_PATH = "data/raw/eurostat/gov_10a_exp_gf10_subfunctions_fr.json"
 OUT_PATH = "data/processed/arbre-nature.json"
 
 RECETTES_HIERARCHY = OrderedDict([
@@ -121,7 +122,15 @@ DEPENSES_HIERARCHY = OrderedDict([
     ("D62PAY_GF1002", { "label": "Vieillesse (pensions retraite)" }),
     ("D62PAY_GF1003", { "label": "Survivants (pensions réversion)" }),
     ("D62PAY_GF1005", { "label": "Chômage" }),
-    ("GF_AUTRES", { "label": "Autres prestations sociales (maladie, famille, logement…)" }),
+    ("GF_AUTRES", {
+        "label": "Autres prestations sociales",
+        "children": ["GF_AUTRES_FAMILLE", "GF_AUTRES_SANTE", "GF_AUTRES_LOGEMENT", "GF_AUTRES_EXCLUSION", "GF_AUTRES_NEC"]
+    }),
+    ("GF_AUTRES_FAMILLE", { "label": "Famille et enfants" }),
+    ("GF_AUTRES_SANTE", { "label": "Maladie et invalidité" }),
+    ("GF_AUTRES_LOGEMENT", { "label": "Logement" }),
+    ("GF_AUTRES_EXCLUSION", { "label": "Exclusion sociale" }),
+    ("GF_AUTRES_NEC", { "label": "Divers" }),
     ("D632PAY", { "label": "Transferts sociaux en nature (santé)" }),
     ("D7PAY", {
         "label": "Autres transferts courants",
@@ -285,7 +294,56 @@ def build_node(code, hierarchy, data, old_tree=None):
             values[y] = round(d62pay_vals[y] - gf1002.get(y, 0) - gf1003.get(y, 0) - gf1005.get(y, 0), 3)
         if not values:
             return None
-        return {"code": "GF_AUTRES", "label": label, "values": values}
+        node = {"code": "GF_AUTRES", "label": label, "values": values}
+        if children_codes:
+            children = []
+            for child_code in children_codes:
+                child = build_node(child_code, hierarchy, data, old_tree)
+                if child is not None:
+                    children.append(child)
+            if children:
+                node["children"] = children
+        return node
+
+    # Special handling for GF_AUTRES_* — proportion COFOG du résidu
+    if code in GF_AUTRES_SOURCES:
+        d62pay_vals = extract_code_values(data, "D62PAY")
+        if not d62pay_vals:
+            return None
+        gf1002 = estimate_missing_years(extract_code_values(data, "D62PAY_GF1002") or {}, d62pay_vals)
+        gf1003 = estimate_missing_years(extract_code_values(data, "D62PAY_GF1003") or {}, d62pay_vals)
+        gf1005 = estimate_missing_years(extract_code_values(data, "D62PAY_GF1005") or {}, d62pay_vals)
+        cofog_data = load_cofog_values(COFOG_PATH)
+        if not cofog_data:
+            return {"code": code, "label": label, "values": {}}
+        source_code = GF_AUTRES_SOURCES[code]
+        source_raw = cofog_data.get(source_code, {})
+        if not source_raw:
+            return {"code": code, "label": label, "values": {}}
+        # Compute proportions from the last available COFOG year
+        autres_cofog_total = {}
+        for sc in GF_AUTRES_SOURCES.values():
+            sv = cofog_data.get(sc, {})
+            for y, v in sv.items():
+                autres_cofog_total[y] = autres_cofog_total.get(y, 0) + v
+        last_cofog_year = max(autres_cofog_total.keys(), key=int) if autres_cofog_total else None
+        proportions = {}
+        for y, v in autres_cofog_total.items():
+            for sc, source_sc in GF_AUTRES_SOURCES.items():
+                sv = cofog_data.get(source_sc, {})
+                svi = sv.get(y, 0)
+                if sc == code and v > 0:
+                    proportions[y] = svi / v
+        # Use latest proportion as default, fallback to average
+        latest_proportion = proportions.get(last_cofog_year, 0) if last_cofog_year else 0
+        values = {}
+        for y in d62pay_vals:
+            autres_d62pay = round(d62pay_vals[y] - gf1002.get(y, 0) - gf1003.get(y, 0) - gf1005.get(y, 0), 3)
+            ratio = proportions.get(y, latest_proportion)
+            values[y] = round(autres_d62pay * ratio, 3)
+        if not values:
+            return None
+        return {"code": code, "label": label, "values": values}
 
     values = extract_code_values(data, code)
     if values is None and not children_codes:
@@ -341,6 +399,65 @@ def estimate_missing_years(values, ref_values):
                 growth = ref_values[y] / ref_values[last_avail]
                 result[y] = round(result[last_avail] * growth, 3)
     return result
+
+
+def load_cofog_values(path):
+    """Extract GF10 sub-function values from COFOG gov_10a_exp data."""
+    try:
+        with open(path) as f:
+            cofog_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+
+    def decode_index(k, sizes):
+        indices = []
+        for s in reversed(sizes):
+            indices.append(k % s)
+            k //= s
+        return list(reversed(indices))
+
+    dim = cofog_data["dimension"]
+    s13_idx = dim["sector"]["category"]["index"]["S13"]
+    te_idx = dim["na_item"]["category"]["index"]["TE"]
+    mio_eur_idx = dim["unit"]["category"]["index"]["MIO_EUR"]
+    fr_idx = dim["geo"]["category"]["index"]["FR"]
+    sizes = cofog_data["size"]
+
+    results = {}
+    for gf_code in ["GF1001", "GF1004", "GF1006", "GF1007", "GF1009"]:
+        cof_idx = dim["cofog99"]["category"]["index"].get(gf_code)
+        if cof_idx is None:
+            continue
+        years = {}
+        for key_str, raw_val in cofog_data["value"].items():
+            k = int(key_str)
+            indices = decode_index(k, sizes)
+            f_idx, u_idx, s_idx, cof_idx2, na_idx, geo_idx, t_idx = indices
+            if (s_idx == s13_idx and cof_idx2 == cof_idx and
+                na_idx == te_idx and geo_idx == fr_idx and u_idx == mio_eur_idx):
+                year = list(dim["time"]["category"]["index"].keys())[t_idx]
+                years[year] = raw_val / 1000
+        if years:
+            results[gf_code] = years
+    return results
+
+
+COFOG_LABELS = {
+    "GF_AUTRES_FAMILLE": "Famille et enfants",
+    "GF_AUTRES_SANTE": "Maladie et invalidité",
+    "GF_AUTRES_LOGEMENT": "Logement",
+    "GF_AUTRES_EXCLUSION": "Exclusion sociale",
+    "GF_AUTRES_NEC": "Divers",
+}
+
+# Mapping: GF_AUTRES code → COFOG source code
+GF_AUTRES_SOURCES = {
+    "GF_AUTRES_FAMILLE": "GF1004",
+    "GF_AUTRES_SANTE": "GF1001",
+    "GF_AUTRES_LOGEMENT": "GF1006",
+    "GF_AUTRES_EXCLUSION": "GF1007",
+    "GF_AUTRES_NEC": "GF1009",
+}
 
 
 def find_old_node(node, code):
