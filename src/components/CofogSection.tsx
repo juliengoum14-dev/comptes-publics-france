@@ -11,9 +11,10 @@ interface CofogSectionProps {
   source: string;
   anneesDisponibles: string[];
   financeurs?: Record<string, FinanceurEntry[]>;
+  effectifs?: Record<string, Record<string, number>>;
 }
 
-export default function CofogSection({ tree, source, anneesDisponibles, financeurs }: CofogSectionProps) {
+export default function CofogSection({ tree, source, anneesDisponibles, financeurs, effectifs }: CofogSectionProps) {
   const [annee, setAnnee] = useState(2025);
   const [selectedCode, setSelectedCode] = useState("TOTAL");
   const [selectedLabel, setSelectedLabel] = useState("Total");
@@ -67,6 +68,7 @@ export default function CofogSection({ tree, source, anneesDisponibles, financeu
           source={source}
           collapsible={false}
           onSelectedChange={handleSelectedChange}
+          effectifs={effectifs}
         />
         {selectedCode && Object.keys(selectedValues).length > 0 ? (
           <TimeSeriesChart

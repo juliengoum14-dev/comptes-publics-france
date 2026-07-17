@@ -12,7 +12,7 @@ import MissionsHistoriqueChart from "@/components/MissionsHistoriqueChart";
 import CofogSection from "@/components/CofogSection";
 
 export default function Home() {
-  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections, cofogArbre, smb, missionsHistorique, financeurs } = getAllData();
+  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections, cofogArbre, smb, missionsHistorique, financeurs, effectifs } = getAllData();
 
   const etat2025 = budgetEtat.synthese_etat["2025"];
 
@@ -88,6 +88,7 @@ export default function Home() {
               source={cofogArbre.meta.source as string}
               anneesDisponibles={cofogArbre.meta.annees_disponibles as string[]}
               financeurs={financeurs.financeurs}
+              effectifs={effectifs.effectifs}
             />
           </div>
 

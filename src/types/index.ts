@@ -207,6 +207,11 @@ export interface MissionsHistoriqueData {
   missions_par_annee: Record<string, MissionAnnuelle[]>
 }
 
+export interface EffectifsData {
+  meta: Record<string, unknown>
+  effectifs: Record<string, Record<string, number>>
+}
+
 export interface FinanceurEntry {
   financeur: string
   label: string

@@ -14,6 +14,7 @@ import type {
   CofogArbreData,
   MissionsHistoriqueData,
   FinanceursData,
+  EffectifsData,
 } from "@/types";
 
 const DATA_DIR = join(process.cwd(), "data", "processed");
@@ -74,6 +75,10 @@ export function loadFinanceurs(): FinanceursData {
   return loadJson<FinanceursData>("financeurs.json");
 }
 
+export function loadEffectifs(): EffectifsData {
+  return loadJson<EffectifsData>("effectifs-retraites.json");
+}
+
 export function getAllData() {
   return {
     synthese: loadSynthese(),
@@ -89,5 +94,6 @@ export function getAllData() {
     smb: loadSmbMensuel(),
     cofogArbre: loadCofogArbre(),
     financeurs: loadFinanceurs(),
+    effectifs: loadEffectifs(),
   };
 }

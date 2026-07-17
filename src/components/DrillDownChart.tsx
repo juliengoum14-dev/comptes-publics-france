@@ -52,6 +52,7 @@ interface DrillDownChartProps {
   source?: string;
   collapsible?: boolean;
   onSelectedChange?: (code: string, label: string, values: Record<string, number>) => void;
+  effectifs?: Record<string, Record<string, number>>;
 }
 
 function flattenLookup(node: TreeNode): Record<string, TreeNode> {
@@ -64,6 +65,12 @@ function flattenLookup(node: TreeNode): Record<string, TreeNode> {
   return map;
 }
 
+function closestYear(year: number, available: Record<string, number>): string | undefined {
+  const years = Object.keys(available).map(Number).sort((a, b) => a - b);
+  if (years.length === 0) return undefined;
+  return String(years.reduce((best, y) => Math.abs(y - year) < Math.abs(best - year) ? y : best));
+}
+
 export default function DrillDownChart({
   tree,
   secteurData,
@@ -72,6 +79,7 @@ export default function DrillDownChart({
   source,
   collapsible,
   onSelectedChange,
+  effectifs,
 }: DrillDownChartProps) {
   const [nodeStack, setNodeStack] = useState<TreeNode[]>([tree]);
   const currentNode = nodeStack[nodeStack.length - 1] ?? tree;
@@ -89,15 +97,26 @@ export default function DrillDownChart({
     if (!currentNode.children) return [];
     const yearStr = String(annee);
     return currentNode.children
-      .map((c) => ({
-        code: c.code,
-        label: c.label,
-        montant: c.values?.[yearStr] ?? 0,
-        hasChildren: (c.children?.length ?? 0) > 0,
-      }))
+      .map((c) => {
+        const effMap = effectifs?.[c.code];
+        const effYear = effMap ? closestYear(annee, effMap) : undefined;
+        const effectif = effYear && effMap ? effMap[effYear] : 0;
+        const montant = c.values?.[yearStr] ?? 0;
+        const pensionMoy = effectif > 0 && montant > 0
+          ? Math.round((montant * 1e9) / 12 / effectif)
+          : 0;
+        return {
+          code: c.code,
+          label: c.label,
+          montant,
+          effectif,
+          pensionMoy,
+          hasChildren: (c.children?.length ?? 0) > 0,
+        };
+      })
       .filter((c) => c.montant > 0 || c.code === "DISC")
       .sort((a, b) => b.montant - a.montant);
-  }, [currentNode, annee]);
+  }, [currentNode, annee, effectifs]);
 
   const handleClick = (code: string) => {
     const child = currentNode.children?.find((c) => c.code === code);
@@ -117,6 +136,8 @@ export default function DrillDownChart({
   };
 
   const total = items.reduce((s, c) => s + c.montant, 0);
+  const totalEffectifs = items.reduce((s, c) => s + (c.effectif ?? 0), 0);
+  const _showEffectifs = totalEffectifs > 0 && Object.keys(effectifs ?? {}).length > 0;
 
   const sectorBreakdown = useMemo(() => {
     const code = currentNode.code;
@@ -187,7 +208,7 @@ export default function DrillDownChart({
           )}
 
           {/* Total */}
-          <p className="text-xs text-gray-400 mb-3">
+          <p className="text-xs text-gray-400 mb-1">
             {currentNode.values?.[String(annee)] != null && (
               <span>Total : {fmt(currentNode.values[String(annee)])} Md€ <SourceBadge source={source ?? ""} /></span>
             )}
@@ -197,6 +218,11 @@ export default function DrillDownChart({
               </span>
             )}
           </p>
+          {_showEffectifs && (
+            <p className="text-xs text-gray-400 mb-3">
+              {fmt(totalEffectifs)} retraités
+            </p>
+          )}
 
           {/* Chart */}
           {items.length > 0 ? (
@@ -211,10 +237,30 @@ export default function DrillDownChart({
                   width={220}
                 />
                 <Tooltip
-                  content={<SourceTooltip source={source ?? ""} formatValue={(v: number) => {
-                    const pct = total > 0 ? ((v / total) * 100).toFixed(1) : "0";
-                    return `${fmt(v)} Md€ (${pct}%)`;
-                  }} />}
+                  content={({ active, payload, label }) => {
+                    if (!active || !payload?.length) return null;
+                    const eff = payload[0]?.payload?.effectif as number | undefined;
+                    const pMoy = payload[0]?.payload?.pensionMoy as number | undefined;
+                    const val = payload[0]?.value as number;
+                    return (
+                      <SourceTooltip
+                        active={active}
+                        payload={payload}
+                        label={label}
+                        source={source ?? ""}
+                        formatValue={(v: number) => {
+                          const pct = total > 0 ? ((v / total) * 100).toFixed(1) : "0";
+                          return `${fmt(v)} Md€ (${pct}%)`;
+                        }}
+                        extraContent={eff && eff > 0 ? (
+                          <div className="mt-1.5 pt-1.5 border-t border-gray-100 text-xs text-gray-500 space-y-0.5">
+                            <p>{fmt(eff)} retraités</p>
+                            <p className="font-semibold text-gray-700">{fmt(pMoy ?? 0)} €/mois en moyenne</p>
+                          </div>
+                        ) : undefined}
+                      />
+                    );
+                  }}
                   wrapperStyle={{ pointerEvents: "none" }}
                 />
                 <Bar

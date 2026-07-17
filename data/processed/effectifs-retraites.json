@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "source": "DREES — Enquête annuelle auprès des caisses de retraite (EACR) 2023 / Jaune budgétaire PLF2025 — Régimes spéciaux",
+    "description": "Effectifs de retraités de droit direct par régime de retraite (pension vieillesse). Les montants sont en nombre de personnes, pas en euros.",
+    "annee_reference": 2023,
+    "notes": {
+      "CNAV": "Régime général, y compris SSI depuis 2018",
+      "AGIRC_ARRCO": "Régime complémentaire unifié depuis 2019",
+      "MSA_EXPLOITANTS": "MSA non-salariés (exploitants + co-exploitants)",
+      "RAFP": "Régime additionnel de la fonction publique",
+      "CNRACL": "Données 2024 (rapport annuel CNRACL)",
+      "AUTRES_SPECIAUX": "Estimation : CRPCEN ~30k, Banque de France ~5k, Cavimac ~10k, Opéra/Comédie ~5k, divers ~6k"
+    }
+  },
+  "effectifs": {
+    "CNAV": { "2023": 14595000, "2022": 14389593 },
+    "AGIRC_ARRCO": { "2023": 12609000, "2022": 12387642 },
+    "FONC_PUB": { "2023": 1638000, "2022": 1627634 },
+    "CNRACL": { "2024": 1625169, "2023": 1314000 },
+    "SNCF": { "2023": 165097, "2022": 165000 },
+    "CNIEG": { "2023": 139320, "2022": 138775 },
+    "FSPOEIE": { "2023": 90000, "2022": 90000 },
+    "RATP": { "2023": 40927, "2022": 39956 },
+    "CANSSM": { "2023": 94961, "2022": 95000 },
+    "ENIM": { "2023": 63395, "2022": 63700 },
+    "AUTRES_SPECIAUX": { "2023": 56000, "2022": 55000 },
+    "MSA_EXPLOITANTS": { "2023": 1055000, "2022": 1088000 },
+    "CNAVPL": { "2023": 433000, "2022": 425000 },
+    "MSA_SALARIES": { "2023": 1711000, "2022": 1741000 },
+    "IRCANTEC": { "2023": 2066000, "2022": 2012000 },
+    "RAFP": { "2023": 474000, "2022": 429000 }
+  }
+}
