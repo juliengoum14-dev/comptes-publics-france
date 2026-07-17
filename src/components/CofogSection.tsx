@@ -36,6 +36,11 @@ export default function CofogSection({ tree, source, anneesDisponibles }: CofogS
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-800">
           Dépenses par fonction (COFOG)
+          {annee === 2025 && (
+            <span className="ml-2 inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-700">
+              Estimé
+            </span>
+          )}
         </h3>
         <div className="flex items-center gap-2 text-sm">
           <label htmlFor="cofog-year" className="text-gray-500">Année :</label>
@@ -58,6 +63,7 @@ export default function CofogSection({ tree, source, anneesDisponibles }: CofogS
           title=""
           annee={annee}
           source={source}
+          collapsible={false}
           onSelectedChange={handleSelectedChange}
         />
         {selectedCode && Object.keys(selectedValues).length > 0 ? (
