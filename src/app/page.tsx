@@ -7,9 +7,12 @@ import DrillDownChart from "@/components/DrillDownChart";
 import RevenueBreakdown from "@/components/RevenueBreakdown";
 import SourceBadge from "@/components/SourceBadge";
 import SectionNav from "@/components/SectionNav";
+import CofogBarChart from "@/components/CofogBarChart";
+import SmbLineChart from "@/components/SmbLineChart";
+import MissionsHistoriqueChart from "@/components/MissionsHistoriqueChart";
 
 export default function Home() {
-  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections } = getAllData();
+  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections, cofog, smb, missionsHistorique } = getAllData();
 
   const etat2025 = budgetEtat.synthese_etat["2025"];
 
@@ -118,6 +121,15 @@ export default function Home() {
               source={series.meta.source as string}
             />
           </div>
+
+          <div className="mt-8">
+            <CofogBarChart
+              fonctions={cofog.fonctions}
+              totalTcofog={cofog.total_tcofog}
+              annee={2024}
+              source={cofog.meta.source as string}
+            />
+          </div>
         </section>
 
         <section id="etat" className="mb-12 mt-8 scroll-mt-20">
@@ -129,6 +141,22 @@ export default function Home() {
             title="Recettes fiscales et sociales"
             source={recettes.meta.source as string}
           />
+
+          <div className="mt-8">
+            <SmbLineChart
+              cumul={smb.cumul}
+              totalLfiAe={smb.total_lfi_ae_meur}
+              totalLfiCp={smb.total_lfi_cp_meur}
+              source={smb.meta.source as string}
+            />
+          </div>
+
+          <div className="mt-8">
+            <MissionsHistoriqueChart
+              missionsParAnnee={missionsHistorique.missions_par_annee}
+              source={missionsHistorique.meta.source as string}
+            />
+          </div>
         </section>
 
         <section id="projections" className="mb-12 mt-8 scroll-mt-20">
