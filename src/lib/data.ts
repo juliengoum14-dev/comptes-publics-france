@@ -13,6 +13,7 @@ import type {
   SmbMensuelData,
   CofogArbreData,
   MissionsHistoriqueData,
+  FinanceursData,
 } from "@/types";
 
 const DATA_DIR = join(process.cwd(), "data", "processed");
@@ -69,6 +70,10 @@ export function loadCofogArbre(): CofogArbreData {
   return loadJson<CofogArbreData>("cofog-arbre.json");
 }
 
+export function loadFinanceurs(): FinanceursData {
+  return loadJson<FinanceursData>("financeurs.json");
+}
+
 export function getAllData() {
   return {
     synthese: loadSynthese(),
@@ -83,5 +88,6 @@ export function getAllData() {
     missionsHistorique: loadMissionsHistorique(),
     smb: loadSmbMensuel(),
     cofogArbre: loadCofogArbre(),
+    financeurs: loadFinanceurs(),
   };
 }

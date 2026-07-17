@@ -3,15 +3,17 @@
 import { useState, useMemo } from "react";
 import DrillDownChart from "./DrillDownChart";
 import TimeSeriesChart from "./TimeSeriesChart";
-import type { TreeNode } from "@/types";
+import FinanceurBreakdown from "./FinanceurBreakdown";
+import type { TreeNode, FinanceurEntry } from "@/types";
 
 interface CofogSectionProps {
   tree: TreeNode;
   source: string;
   anneesDisponibles: string[];
+  financeurs?: Record<string, FinanceurEntry[]>;
 }
 
-export default function CofogSection({ tree, source, anneesDisponibles }: CofogSectionProps) {
+export default function CofogSection({ tree, source, anneesDisponibles, financeurs }: CofogSectionProps) {
   const [annee, setAnnee] = useState(2025);
   const [selectedCode, setSelectedCode] = useState("TOTAL");
   const [selectedLabel, setSelectedLabel] = useState("Total");
@@ -81,6 +83,11 @@ export default function CofogSection({ tree, source, anneesDisponibles }: CofogS
           </div>
         )}
       </div>
+      {financeurs && Object.keys(financeurs).length > 0 && (
+        <div className="mt-8">
+          <FinanceurBreakdown data={financeurs} />
+        </div>
+      )}
     </div>
   );
 }
