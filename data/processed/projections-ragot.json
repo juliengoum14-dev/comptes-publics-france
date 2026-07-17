@@ -19,11 +19,11 @@
       { "annee": 2030, "valeur": 130.5 }
     ],
     "Déficit (% PIB)": [
-      { "annee": 2026, "valeur": 5.0 },
-      { "annee": 2027, "valeur": 5.9 },
-      { "annee": 2028, "valeur": 6.2 },
-      { "annee": 2029, "valeur": 6.5 },
-      { "annee": 2030, "valeur": 6.8 }
+      { "annee": 2026, "valeur": -5.0 },
+      { "annee": 2027, "valeur": -5.9 },
+      { "annee": 2028, "valeur": -6.2 },
+      { "annee": 2029, "valeur": -6.5 },
+      { "annee": 2030, "valeur": -6.8 }
     ]
   }
 }
