@@ -54,7 +54,7 @@ export default function SmbLineChart({
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-5">
       <h3 className="text-lg font-semibold text-gray-800 mb-4">
-        Exécution budgétaire mensuelle 2025 — cumul AE/CP{" "}
+        Exécution budgétaire mensuelle 2025 — cumul (engagements/paiements){" "}
         <SourceBadge source={source ?? ""} />
       </h3>
       <ResponsiveContainer width="100%" height={350}>
@@ -78,7 +78,7 @@ export default function SmbLineChart({
             strokeDasharray="6 4"
             strokeWidth={1.5}
             label={{
-              value: `LFI AE ${totalLfiAe} Md€`,
+              value: `LFI engagements ${totalLfiAe} Md€`,
               position: "right",
               fill: "#2563eb",
               fontSize: 11,
@@ -91,7 +91,7 @@ export default function SmbLineChart({
             strokeDasharray="6 4"
             strokeWidth={1.5}
             label={{
-              value: `LFI CP ${totalLfiCp} Md€`,
+              value: `LFI paiements ${totalLfiCp} Md€`,
               position: "right",
               fill: "#d97706",
               fontSize: 11,
@@ -101,7 +101,7 @@ export default function SmbLineChart({
           <Line
             type="monotone"
             dataKey="ae"
-            name="AE cumulé"
+            name="Engagements (AE)"
             stroke="#2563eb"
             strokeWidth={2}
             dot={false}
@@ -110,7 +110,7 @@ export default function SmbLineChart({
           <Line
             type="monotone"
             dataKey="cp"
-            name="CP cumulé"
+            name="Paiements (CP)"
             stroke="#d97706"
             strokeWidth={2}
             dot={false}

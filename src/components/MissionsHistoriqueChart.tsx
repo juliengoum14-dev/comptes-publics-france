@@ -111,7 +111,7 @@ export default function MissionsHistoriqueChart({
           <Line
             type="monotone"
             dataKey="ae"
-            name="AE"
+            name="Engagements (AE)"
             stroke="#2563eb"
             strokeWidth={2}
             dot
@@ -120,7 +120,7 @@ export default function MissionsHistoriqueChart({
           <Line
             type="monotone"
             dataKey="cp"
-            name="CP"
+            name="Paiements (CP)"
             stroke="#d97706"
             strokeWidth={2}
             dot
