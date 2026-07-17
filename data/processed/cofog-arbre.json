@@ -544,7 +544,7 @@
           },
           {
             "code": "BUDGET_ETAT",
-            "label": "Budget de l'État",
+            "label": "Par financeur — Budget de l'État",
             "values": {
               "2024": 45.0
             },
@@ -588,7 +588,7 @@
           },
           {
             "code": "COLLECTIVITES",
-            "label": "Collectivités locales",
+            "label": "Par financeur — Collectivités locales",
             "values": {
               "2024": 121.1
             }
@@ -681,7 +681,7 @@
           },
           {
             "code": "BUDGET_ETAT",
-            "label": "Budget de l'État",
+            "label": "Par financeur — Budget de l'État",
             "values": {
               "2024": 4.9
             },
@@ -778,7 +778,7 @@
           },
           {
             "code": "BUDGET_ETAT",
-            "label": "Budget de l'État",
+            "label": "Par financeur — Budget de l'État",
             "values": {
               "2024": 21.0
             },
@@ -1041,7 +1041,7 @@
           },
           {
             "code": "BUDGET_ETAT",
-            "label": "Budget de l'État",
+            "label": "Par financeur — Budget de l'État",
             "values": {
               "2024": 10.2
             },
@@ -1176,7 +1176,7 @@
           },
           {
             "code": "ETAT",
-            "label": "Budget de l'État (Éducation nationale, enseignement supérieur, recherche)",
+            "label": "Par financeur — État",
             "values": {
               "2020": 108.1,
               "2021": 110.8,
@@ -1188,7 +1188,7 @@
           },
           {
             "code": "COLLECTIVITES",
-            "label": "Collectivités territoriales (communes, départements, régions)",
+            "label": "Par financeur — Collectivités",
             "values": {
               "2020": 10.3,
               "2021": 14.0,
@@ -1200,7 +1200,7 @@
           },
           {
             "code": "ODAC",
-            "label": "Autres administrations publiques (ODAC, organismes divers)",
+            "label": "Par financeur — Autres APU",
             "values": {
               "2020": 1.7,
               "2021": 2.3,
