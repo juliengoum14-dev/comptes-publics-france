@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "source": "data.economie.gouv.fr - SMB",
+    "date_generation": "2026-07-17",
+    "annee": 2025,
+    "description": "Exécution budgétaire mensuelle 2025"
+  },
+  "mensuel": [
+    { "mois": 1, "total_ae_meur": 68.5, "total_cp_meur": 65.2, "taux_execution_ae_pct": 8.1, "taux_execution_cp_pct": 7.9 },
+    { "mois": 2, "total_ae_meur": 45.2, "total_cp_meur": 42.8, "taux_execution_ae_pct": 5.3, "taux_execution_cp_pct": 5.2 },
+    { "mois": 3, "total_ae_meur": 72.1, "total_cp_meur": 68.9, "taux_execution_ae_pct": 8.5, "taux_execution_cp_pct": 8.4 },
+    { "mois": 4, "total_ae_meur": 51.3, "total_cp_meur": 48.7, "taux_execution_ae_pct": 6.1, "taux_execution_cp_pct": 5.9 },
+    { "mois": 5, "total_ae_meur": 48.9, "total_cp_meur": 46.2, "taux_execution_ae_pct": 5.8, "taux_execution_cp_pct": 5.6 },
+    { "mois": 6, "total_ae_meur": 76.4, "total_cp_meur": 72.1, "taux_execution_ae_pct": 9.0, "taux_execution_cp_pct": 8.8 },
+    { "mois": 7, "total_ae_meur": 55.6, "total_cp_meur": 52.3, "taux_execution_ae_pct": 6.6, "taux_execution_cp_pct": 6.4 },
+    { "mois": 8, "total_ae_meur": 38.2, "total_cp_meur": 35.9, "taux_execution_ae_pct": 4.5, "taux_execution_cp_pct": 4.4 },
+    { "mois": 9, "total_ae_meur": 63.8, "total_cp_meur": 60.1, "taux_execution_ae_pct": 7.5, "taux_execution_cp_pct": 7.3 },
+    { "mois": 10, "total_ae_meur": 58.4, "total_cp_meur": 55.2, "taux_execution_ae_pct": 6.9, "taux_execution_cp_pct": 6.7 },
+    { "mois": 11, "total_ae_meur": 52.7, "total_cp_meur": 49.8, "taux_execution_ae_pct": 6.2, "taux_execution_cp_pct": 6.1 },
+    { "mois": 12, "total_ae_meur": 180.2, "total_cp_meur": 175.8, "taux_execution_ae_pct": 21.3, "taux_execution_cp_pct": 21.4 }
+  ],
+  "cumul": [
+    { "mois": 1, "ae_cumul_meur": 68.5, "cp_cumul_meur": 65.2 },
+    { "mois": 2, "ae_cumul_meur": 113.7, "cp_cumul_meur": 108.0 },
+    { "mois": 3, "ae_cumul_meur": 185.8, "cp_cumul_meur": 176.9 },
+    { "mois": 4, "ae_cumul_meur": 237.1, "cp_cumul_meur": 225.6 },
+    { "mois": 5, "ae_cumul_meur": 286.0, "cp_cumul_meur": 271.8 },
+    { "mois": 6, "ae_cumul_meur": 362.4, "cp_cumul_meur": 343.9 },
+    { "mois": 7, "ae_cumul_meur": 418.0, "cp_cumul_meur": 396.2 },
+    { "mois": 8, "ae_cumul_meur": 456.2, "cp_cumul_meur": 432.1 },
+    { "mois": 9, "ae_cumul_meur": 520.0, "cp_cumul_meur": 492.2 },
+    { "mois": 10, "ae_cumul_meur": 578.4, "cp_cumul_meur": 547.4 },
+    { "mois": 11, "ae_cumul_meur": 631.1, "cp_cumul_meur": 597.2 },
+    { "mois": 12, "ae_cumul_meur": 811.3, "cp_cumul_meur": 773.0 }
+  ],
+  "total_lfi_ae_meur": 847.57,
+  "total_lfi_cp_meur": 823.05
+}

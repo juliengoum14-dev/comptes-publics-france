@@ -162,7 +162,54 @@ export interface ProjectionEntry {
   valeur: number
 }
 
+export interface CofogFonction {
+  code: string
+  label: string
+  donnees: Record<string, number>
+}
+
+export interface CofogDepensesData {
+  meta: Record<string, unknown>
+  fonctions: CofogFonction[]
+  total_tcofog: { label: string; donnees: Record<string, number> }
+}
+
+export interface SmbMensuelEntry {
+  mois: number
+  total_ae_meur: number
+  total_cp_meur: number
+  taux_execution_ae_pct: number
+  taux_execution_cp_pct: number
+}
+
+export interface SmbCumulEntry {
+  mois: number
+  ae_cumul_meur: number
+  cp_cumul_meur: number
+}
+
+export interface SmbMensuelData {
+  meta: Record<string, unknown>
+  mensuel: SmbMensuelEntry[]
+  cumul: SmbCumulEntry[]
+  total_lfi_ae_meur: number
+  total_lfi_cp_meur: number
+}
+
 export interface ProjectionsData {
   meta: Record<string, unknown>
   projections: Record<string, ProjectionEntry[]>
+}
+
+export interface MissionAnnuelle {
+  mission: string
+  code_mission: string
+  type_mission: string
+  ae_meur: number
+  cp_meur: number
+}
+
+export interface MissionsHistoriqueData {
+  meta: Record<string, unknown>
+  missions_par_annee: Record<string, MissionAnnuelle[]>
 }

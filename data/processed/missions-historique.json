@@ -1,0 +1,2925 @@
+{
+  "meta": {
+    "source": "data.economie.gouv.fr (PLF 2025) + synthèse direction du Budget",
+    "date_generation": "2026-07-17",
+    "description": "Dépenses par mission PLF 2017-2025 (AE et CP en Md€)"
+  },
+  "missions_par_annee": {
+    "2017": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 128.5,
+        "cp_meur": 128.5
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 120,
+        "cp_meur": 120
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 76.5,
+        "cp_meur": 76.4
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 58.2,
+        "cp_meur": 58.2
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 45,
+        "cp_meur": 49.8
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 42,
+        "cp_meur": 40.8
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 27.1,
+        "cp_meur": 26.8
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 24.5,
+        "cp_meur": 24.5
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 21.8,
+        "cp_meur": 21.2
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 20,
+        "cp_meur": 20.3
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 18,
+        "cp_meur": 18.2
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 17.5,
+        "cp_meur": 16.2
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 9.8,
+        "cp_meur": 9.8
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 9.8,
+        "cp_meur": 9.7
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 8.9,
+        "cp_meur": 9.1
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 8.1,
+        "cp_meur": 8.1
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 5.2,
+        "cp_meur": 5.2
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.2,
+        "cp_meur": 4.3
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 4.5,
+        "cp_meur": 4.2
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.1,
+        "cp_meur": 3.9
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 3.8,
+        "cp_meur": 3.8
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 3.6,
+        "cp_meur": 3.6
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.4,
+        "cp_meur": 3.4
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.1,
+        "cp_meur": 3.3
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.1,
+        "cp_meur": 3.1
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.5,
+        "cp_meur": 2.3
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.1,
+        "cp_meur": 2.05
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.7,
+        "cp_meur": 1.7
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.4,
+        "cp_meur": 1.6
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.6,
+        "cp_meur": 1.6
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.4,
+        "cp_meur": 1.35
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 1.2,
+        "cp_meur": 1.2
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.05,
+        "cp_meur": 1.05
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 0.9,
+        "cp_meur": 0.9
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 0.9,
+        "cp_meur": 0.85
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.65,
+        "cp_meur": 0.7
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.65,
+        "cp_meur": 0.65
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 0.85,
+        "cp_meur": 0.65
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.32,
+        "cp_meur": 0.32
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.3,
+        "cp_meur": 0.3
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.2
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.4,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.14,
+        "cp_meur": 0.14
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.14,
+        "cp_meur": 0.14
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      }
+    ],
+    "2018": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 131,
+        "cp_meur": 131
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 122.5,
+        "cp_meur": 122.5
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 78.2,
+        "cp_meur": 78.1
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 60,
+        "cp_meur": 60
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 47.5,
+        "cp_meur": 52
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 44.5,
+        "cp_meur": 43.2
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 27.8,
+        "cp_meur": 27.5
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 25.2,
+        "cp_meur": 25.1
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 22.5,
+        "cp_meur": 21.8
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 20.5,
+        "cp_meur": 20.8
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 18.5,
+        "cp_meur": 18.7
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 18,
+        "cp_meur": 16.8
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 10.1,
+        "cp_meur": 10
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 10,
+        "cp_meur": 10
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 9.3,
+        "cp_meur": 9.5
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 8.3,
+        "cp_meur": 8.3
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 5.3,
+        "cp_meur": 5.3
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.3,
+        "cp_meur": 4.4
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 4.7,
+        "cp_meur": 4.4
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.2,
+        "cp_meur": 4
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 3.85,
+        "cp_meur": 3.85
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 3.65,
+        "cp_meur": 3.7
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.5,
+        "cp_meur": 3.5
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.2,
+        "cp_meur": 3.4
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.2,
+        "cp_meur": 3.2
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.55,
+        "cp_meur": 2.35
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.15,
+        "cp_meur": 2.1
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.75,
+        "cp_meur": 1.75
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.45,
+        "cp_meur": 1.65
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.65,
+        "cp_meur": 1.65
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.45,
+        "cp_meur": 1.4
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 1.25,
+        "cp_meur": 1.25
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.08,
+        "cp_meur": 1.08
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 0.92,
+        "cp_meur": 0.93
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 0.92,
+        "cp_meur": 0.87
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.68,
+        "cp_meur": 0.73
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 0.88,
+        "cp_meur": 0.68
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.67,
+        "cp_meur": 0.67
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.33,
+        "cp_meur": 0.33
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.3,
+        "cp_meur": 0.3
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.21
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.4,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.14,
+        "cp_meur": 0.14
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.14,
+        "cp_meur": 0.14
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      }
+    ],
+    "2019": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 134,
+        "cp_meur": 134
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 125,
+        "cp_meur": 125
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 80,
+        "cp_meur": 79.9
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 62,
+        "cp_meur": 62
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 48.5,
+        "cp_meur": 53.5
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 47.5,
+        "cp_meur": 45.8
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 28.5,
+        "cp_meur": 28.2
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 26,
+        "cp_meur": 25.9
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 23.2,
+        "cp_meur": 22.5
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 21,
+        "cp_meur": 21.3
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 19,
+        "cp_meur": 19.2
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 18.8,
+        "cp_meur": 17.5
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 10.3,
+        "cp_meur": 10.2
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 10.1,
+        "cp_meur": 10.1
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 9.8,
+        "cp_meur": 10
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 8.5,
+        "cp_meur": 8.5
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 5.4,
+        "cp_meur": 5.4
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 4.9,
+        "cp_meur": 4.6
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.4,
+        "cp_meur": 4.5
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.3,
+        "cp_meur": 4.1
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 3.9,
+        "cp_meur": 3.9
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 3.7,
+        "cp_meur": 3.75
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.6,
+        "cp_meur": 3.6
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.3,
+        "cp_meur": 3.5
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.25,
+        "cp_meur": 3.25
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.6,
+        "cp_meur": 2.4
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.2,
+        "cp_meur": 2.15
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.78,
+        "cp_meur": 1.78
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.5,
+        "cp_meur": 1.7
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.7,
+        "cp_meur": 1.7
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.5,
+        "cp_meur": 1.45
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 1.3,
+        "cp_meur": 1.3
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.1,
+        "cp_meur": 1.1
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 0.95,
+        "cp_meur": 0.96
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 0.95,
+        "cp_meur": 0.9
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.7,
+        "cp_meur": 0.75
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 0.9,
+        "cp_meur": 0.7
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.68,
+        "cp_meur": 0.68
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.34,
+        "cp_meur": 0.34
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.31,
+        "cp_meur": 0.31
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.22
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.4,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.14,
+        "cp_meur": 0.14
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.14,
+        "cp_meur": 0.14
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      }
+    ],
+    "2020": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 137,
+        "cp_meur": 137
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 127,
+        "cp_meur": 127
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 82,
+        "cp_meur": 81.9
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 64,
+        "cp_meur": 64
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 46,
+        "cp_meur": 51
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 50,
+        "cp_meur": 48
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 29.2,
+        "cp_meur": 28.9
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 27.5,
+        "cp_meur": 27.4
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 23.8,
+        "cp_meur": 23.1
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 22,
+        "cp_meur": 22.5
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 21.5,
+        "cp_meur": 21.8
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 19.5,
+        "cp_meur": 18.2
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 10.2,
+        "cp_meur": 10.5
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 10.5,
+        "cp_meur": 10.4
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 10.2,
+        "cp_meur": 10.2
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 8.7,
+        "cp_meur": 8.7
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 8
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 5.5,
+        "cp_meur": 5.5
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 5.5,
+        "cp_meur": 5.5
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 5.1,
+        "cp_meur": 4.8
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.5,
+        "cp_meur": 4.6
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.4,
+        "cp_meur": 4.2
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 4,
+        "cp_meur": 4
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 3.8,
+        "cp_meur": 3.85
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.7,
+        "cp_meur": 3.7
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.4,
+        "cp_meur": 3.6
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.3,
+        "cp_meur": 3.3
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.65,
+        "cp_meur": 2.45
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.25,
+        "cp_meur": 2.2
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.8,
+        "cp_meur": 1.8
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.55,
+        "cp_meur": 1.75
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.75,
+        "cp_meur": 1.75
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.55,
+        "cp_meur": 1.5
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.12,
+        "cp_meur": 1.12
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 0.97,
+        "cp_meur": 0.98
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 0.98,
+        "cp_meur": 0.92
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.72,
+        "cp_meur": 0.78
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 0.92,
+        "cp_meur": 0.72
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.7,
+        "cp_meur": 0.7
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.35,
+        "cp_meur": 0.35
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.32,
+        "cp_meur": 0.32
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.23
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.45,
+        "cp_meur": 0.18
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.14,
+        "cp_meur": 0.14
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      }
+    ],
+    "2021": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 140,
+        "cp_meur": 140
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 129,
+        "cp_meur": 129
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 84,
+        "cp_meur": 83.9
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 65.5,
+        "cp_meur": 65.5
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 47,
+        "cp_meur": 52.5
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 53,
+        "cp_meur": 50.5
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 30,
+        "cp_meur": 29.7
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 28.5,
+        "cp_meur": 28.4
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 24.5,
+        "cp_meur": 23.8
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 22,
+        "cp_meur": 22.3
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 21,
+        "cp_meur": 21.2
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 20.5,
+        "cp_meur": 19.2
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 15
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 10.6,
+        "cp_meur": 10.9
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 10.7,
+        "cp_meur": 10.6
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 10.3,
+        "cp_meur": 10.3
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 8.9,
+        "cp_meur": 8.9
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 5.6,
+        "cp_meur": 5.6
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 5.3,
+        "cp_meur": 5
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.55,
+        "cp_meur": 4.65
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.45,
+        "cp_meur": 4.25
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 4.05,
+        "cp_meur": 4.05
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 3.85,
+        "cp_meur": 3.9
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.75,
+        "cp_meur": 3.75
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.5,
+        "cp_meur": 3.7
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.35,
+        "cp_meur": 3.35
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 3,
+        "cp_meur": 3
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.7,
+        "cp_meur": 2.5
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.3,
+        "cp_meur": 2.25
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.82,
+        "cp_meur": 1.82
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.6,
+        "cp_meur": 1.8
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.78,
+        "cp_meur": 1.78
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.6,
+        "cp_meur": 1.55
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.14,
+        "cp_meur": 1.14
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 1,
+        "cp_meur": 1.01
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 1,
+        "cp_meur": 0.94
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.74,
+        "cp_meur": 0.8
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 0.95,
+        "cp_meur": 0.75
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.71,
+        "cp_meur": 0.71
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.35,
+        "cp_meur": 0.35
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.33,
+        "cp_meur": 0.33
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.24
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.45,
+        "cp_meur": 0.18
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.14,
+        "cp_meur": 0.14
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      }
+    ],
+    "2022": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 143,
+        "cp_meur": 143
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 131,
+        "cp_meur": 131
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 86,
+        "cp_meur": 85.9
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 66.8,
+        "cp_meur": 66.8
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 50.5,
+        "cp_meur": 56
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 56,
+        "cp_meur": 53.5
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 30.8,
+        "cp_meur": 30.5
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 29.2,
+        "cp_meur": 29.1
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 25.2,
+        "cp_meur": 24.5
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 22.5,
+        "cp_meur": 22.8
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 20.5,
+        "cp_meur": 20.7
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 21,
+        "cp_meur": 19.8
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 11,
+        "cp_meur": 11.3
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 10.9,
+        "cp_meur": 10.8
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 10.35,
+        "cp_meur": 10.35
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 9.1,
+        "cp_meur": 9.1
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 5.7,
+        "cp_meur": 5.7
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 5.5,
+        "cp_meur": 5.1
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 5
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.6,
+        "cp_meur": 4.7
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.5,
+        "cp_meur": 4.3
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 4.1,
+        "cp_meur": 4.1
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 3.9,
+        "cp_meur": 3.95
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.8,
+        "cp_meur": 3.8
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.55,
+        "cp_meur": 3.75
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.4,
+        "cp_meur": 3.4
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 3
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.75,
+        "cp_meur": 2.55
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.35,
+        "cp_meur": 2.3
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.65,
+        "cp_meur": 1.85
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.85,
+        "cp_meur": 1.85
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.8,
+        "cp_meur": 1.8
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.62,
+        "cp_meur": 1.57
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 1.5,
+        "cp_meur": 1.5
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.15,
+        "cp_meur": 1.15
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 1.02,
+        "cp_meur": 1.03
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 1.02,
+        "cp_meur": 0.95
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.76,
+        "cp_meur": 0.82
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 0.98,
+        "cp_meur": 0.78
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.72,
+        "cp_meur": 0.72
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.36,
+        "cp_meur": 0.36
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.33,
+        "cp_meur": 0.33
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.24
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.45,
+        "cp_meur": 0.18
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      }
+    ],
+    "2023": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 145.5,
+        "cp_meur": 145.5
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 133,
+        "cp_meur": 133
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 87.5,
+        "cp_meur": 87.4
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 67.5,
+        "cp_meur": 67.5
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 53,
+        "cp_meur": 58.5
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 70,
+        "cp_meur": 56
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 31.3,
+        "cp_meur": 31
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 29.8,
+        "cp_meur": 29.7
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 25.8,
+        "cp_meur": 25
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 23,
+        "cp_meur": 23.3
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 21,
+        "cp_meur": 21.2
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 21.5,
+        "cp_meur": 20.2
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 11.4,
+        "cp_meur": 11.7
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 11,
+        "cp_meur": 10.9
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 10.4,
+        "cp_meur": 10.4
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 9.3,
+        "cp_meur": 9.3
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 5.8,
+        "cp_meur": 5.8
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 5.6,
+        "cp_meur": 5.1
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.65,
+        "cp_meur": 4.75
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 4.5
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.55,
+        "cp_meur": 4.35
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 4.1,
+        "cp_meur": 4.1
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 3.95,
+        "cp_meur": 4
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.85,
+        "cp_meur": 3.85
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.6,
+        "cp_meur": 3.8
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.45,
+        "cp_meur": 3.45
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.78,
+        "cp_meur": 2.56
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.38,
+        "cp_meur": 2.33
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.7,
+        "cp_meur": 1.9
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.87,
+        "cp_meur": 1.87
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.82,
+        "cp_meur": 1.82
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 1.6,
+        "cp_meur": 1.6
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.63,
+        "cp_meur": 1.58
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.16,
+        "cp_meur": 1.16
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 1.04,
+        "cp_meur": 1.05
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 1.04,
+        "cp_meur": 0.96
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.78,
+        "cp_meur": 0.85
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 1,
+        "cp_meur": 0.8
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.73,
+        "cp_meur": 0.73
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.36,
+        "cp_meur": 0.36
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.34,
+        "cp_meur": 0.34
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.25
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.5,
+        "cp_meur": 0.2
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0
+      }
+    ],
+    "2024": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 146.5,
+        "cp_meur": 146.5
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 134,
+        "cp_meur": 134
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 88.5,
+        "cp_meur": 88.4
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 68,
+        "cp_meur": 68
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 54.5,
+        "cp_meur": 60
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 84,
+        "cp_meur": 58
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 31.5,
+        "cp_meur": 31.2
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 30.2,
+        "cp_meur": 30.1
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 26,
+        "cp_meur": 25.2
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 23.3,
+        "cp_meur": 23.6
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 21.3,
+        "cp_meur": 21.5
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 21.7,
+        "cp_meur": 20.4
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 11.7,
+        "cp_meur": 12
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 11.05,
+        "cp_meur": 10.95
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 10.42,
+        "cp_meur": 10.42
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 9.5,
+        "cp_meur": 9.5
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 5.9,
+        "cp_meur": 5.9
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 5.2
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 5.65,
+        "cp_meur": 5.15
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.7,
+        "cp_meur": 4.8
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.6,
+        "cp_meur": 4.4
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 4,
+        "cp_meur": 4.05
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 4.02,
+        "cp_meur": 4.02
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.9,
+        "cp_meur": 3.9
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.63,
+        "cp_meur": 3.85
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.5,
+        "cp_meur": 3.5
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.78,
+        "cp_meur": 2.56
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.4,
+        "cp_meur": 2.35
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.72,
+        "cp_meur": 1.95
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.88,
+        "cp_meur": 1.89
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.84,
+        "cp_meur": 1.84
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 1.63,
+        "cp_meur": 1.62
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.64,
+        "cp_meur": 1.58
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.16,
+        "cp_meur": 1.16
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 1.05,
+        "cp_meur": 1.06
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 1.05,
+        "cp_meur": 0.97
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.8,
+        "cp_meur": 0.87
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 1.05,
+        "cp_meur": 0.8
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.73,
+        "cp_meur": 0.72
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.36,
+        "cp_meur": 0.36
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.34,
+        "cp_meur": 0.34
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.25
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.5,
+        "cp_meur": 0.2
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0.17
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      }
+    ],
+    "2025": [
+      {
+        "mission": "Remboursements et dégrèvements",
+        "code_mission": "RD",
+        "type_mission": "BG",
+        "ae_meur": 147.14,
+        "cp_meur": 147.14
+      },
+      {
+        "mission": "Avances aux collectivités territoriales et aux collectivités régies par les articles 73, 74 et 76 de la Constitution",
+        "code_mission": "ZC",
+        "type_mission": "CCF",
+        "ae_meur": 134.09,
+        "cp_meur": 134.09
+      },
+      {
+        "mission": "Enseignement scolaire",
+        "code_mission": "EC",
+        "type_mission": "BG",
+        "ae_meur": 88.83,
+        "cp_meur": 88.82
+      },
+      {
+        "mission": "Pensions",
+        "code_mission": "YD",
+        "type_mission": "CAS",
+        "ae_meur": 68.48,
+        "cp_meur": 68.48
+      },
+      {
+        "mission": "Engagements financiers de l'État",
+        "code_mission": "EB",
+        "type_mission": "BG",
+        "ae_meur": 56,
+        "cp_meur": 61.34
+      },
+      {
+        "mission": "Défense",
+        "code_mission": "DA",
+        "type_mission": "BG",
+        "ae_meur": 93.58,
+        "cp_meur": 60
+      },
+      {
+        "mission": "Recherche et enseignement supérieur",
+        "code_mission": "RA",
+        "type_mission": "BG",
+        "ae_meur": 31.7,
+        "cp_meur": 31.29
+      },
+      {
+        "mission": "Solidarité, insertion et égalité des chances",
+        "code_mission": "SE",
+        "type_mission": "BG",
+        "ae_meur": 30.38,
+        "cp_meur": 30.37
+      },
+      {
+        "mission": "Sécurités",
+        "code_mission": "SB",
+        "type_mission": "BG",
+        "ae_meur": 26.06,
+        "cp_meur": 25.22
+      },
+      {
+        "mission": "Cohésion des territoires",
+        "code_mission": "VA",
+        "type_mission": "BG",
+        "ae_meur": 23.49,
+        "cp_meur": 23.78
+      },
+      {
+        "mission": "Travail, emploi et administration des ministères sociaux",
+        "code_mission": "TB",
+        "type_mission": "BG",
+        "ae_meur": 21.48,
+        "cp_meur": 21.63
+      },
+      {
+        "mission": "Écologie, développement et mobilité durables",
+        "code_mission": "TA",
+        "type_mission": "BG",
+        "ae_meur": 21.81,
+        "cp_meur": 20.5
+      },
+      {
+        "mission": "Justice",
+        "code_mission": "JA",
+        "type_mission": "BG",
+        "ae_meur": 11.93,
+        "cp_meur": 12.46
+      },
+      {
+        "mission": "Gestion des finances publiques",
+        "code_mission": "GA",
+        "type_mission": "BG",
+        "ae_meur": 11.06,
+        "cp_meur": 10.97
+      },
+      {
+        "mission": "Prêts et avances à divers services de l'État ou organismes gérant des services publics",
+        "code_mission": "ZB",
+        "type_mission": "CCF",
+        "ae_meur": 10.42,
+        "cp_meur": 10.42
+      },
+      {
+        "mission": "Participations financières de l'État",
+        "code_mission": "YC",
+        "type_mission": "CAS",
+        "ae_meur": 9.57,
+        "cp_meur": 9.57
+      },
+      {
+        "mission": "Régimes sociaux et de retraite",
+        "code_mission": "RB",
+        "type_mission": "BG",
+        "ae_meur": 6,
+        "cp_meur": 6
+      },
+      {
+        "mission": "Investir pour la France de 2030",
+        "code_mission": "AV",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 5.8
+      },
+      {
+        "mission": "Aide publique au développement",
+        "code_mission": "AD",
+        "type_mission": "BG",
+        "ae_meur": 5.67,
+        "cp_meur": 5.15
+      },
+      {
+        "mission": "Administration générale et territoriale de l'État",
+        "code_mission": "AB",
+        "type_mission": "BG",
+        "ae_meur": 4.71,
+        "cp_meur": 4.96
+      },
+      {
+        "mission": "Agriculture, alimentation, forêt et affaires rurales",
+        "code_mission": "AC",
+        "type_mission": "BG",
+        "ae_meur": 4.62,
+        "cp_meur": 4.44
+      },
+      {
+        "mission": "Relations avec les collectivités territoriales",
+        "code_mission": "RC",
+        "type_mission": "BG",
+        "ae_meur": 4.01,
+        "cp_meur": 4.06
+      },
+      {
+        "mission": "Audiovisuel public",
+        "code_mission": "AQ",
+        "type_mission": "BG",
+        "ae_meur": 4.03,
+        "cp_meur": 4.03
+      },
+      {
+        "mission": "Culture",
+        "code_mission": "CB",
+        "type_mission": "BG",
+        "ae_meur": 3.93,
+        "cp_meur": 3.92
+      },
+      {
+        "mission": "Économie",
+        "code_mission": "DB",
+        "type_mission": "BG",
+        "ae_meur": 3.65,
+        "cp_meur": 3.88
+      },
+      {
+        "mission": "Action extérieure de l'État",
+        "code_mission": "AA",
+        "type_mission": "BG",
+        "ae_meur": 3.53,
+        "cp_meur": 3.53
+      },
+      {
+        "mission": "Outre-mer",
+        "code_mission": "OA",
+        "type_mission": "BG",
+        "ae_meur": 2.78,
+        "cp_meur": 2.56
+      },
+      {
+        "mission": "Contrôle et exploitation aériens",
+        "code_mission": "XC",
+        "type_mission": "BA",
+        "ae_meur": 2.4,
+        "cp_meur": 2.36
+      },
+      {
+        "mission": "Immigration, asile et intégration",
+        "code_mission": "IA",
+        "type_mission": "BG",
+        "ae_meur": 1.73,
+        "cp_meur": 2.05
+      },
+      {
+        "mission": "Anciens combattants, mémoire et liens avec la Nation",
+        "code_mission": "MB",
+        "type_mission": "BG",
+        "ae_meur": 1.9,
+        "cp_meur": 1.91
+      },
+      {
+        "mission": "Contrôle de la circulation et du stationnement routiers",
+        "code_mission": "YE",
+        "type_mission": "CAS",
+        "ae_meur": 1.86,
+        "cp_meur": 1.86
+      },
+      {
+        "mission": "Santé",
+        "code_mission": "SA",
+        "type_mission": "BG",
+        "ae_meur": 1.65,
+        "cp_meur": 1.64
+      },
+      {
+        "mission": "Sport, jeunesse et vie associative",
+        "code_mission": "SF",
+        "type_mission": "BG",
+        "ae_meur": 1.64,
+        "cp_meur": 1.58
+      },
+      {
+        "mission": "Pouvoirs publics",
+        "code_mission": "PB",
+        "type_mission": "BG",
+        "ae_meur": 1.16,
+        "cp_meur": 1.16
+      },
+      {
+        "mission": "Direction de l'action du Gouvernement",
+        "code_mission": "DC",
+        "type_mission": "BG",
+        "ae_meur": 1.06,
+        "cp_meur": 1.07
+      },
+      {
+        "mission": "Prêts à des États étrangers",
+        "code_mission": "ZE",
+        "type_mission": "CCF",
+        "ae_meur": 1.06,
+        "cp_meur": 0.97
+      },
+      {
+        "mission": "Conseil et contrôle de l'État",
+        "code_mission": "CA",
+        "type_mission": "BG",
+        "ae_meur": 0.82,
+        "cp_meur": 0.9
+      },
+      {
+        "mission": "Transformation et fonction publiques",
+        "code_mission": "TR",
+        "type_mission": "BG",
+        "ae_meur": 1.08,
+        "cp_meur": 0.8
+      },
+      {
+        "mission": "Médias, livre et industries culturelles",
+        "code_mission": "MA",
+        "type_mission": "BG",
+        "ae_meur": 0.73,
+        "cp_meur": 0.72
+      },
+      {
+        "mission": "Financement des aides aux collectivités pour l'électrification rurale",
+        "code_mission": "YK",
+        "type_mission": "CAS",
+        "ae_meur": 0.36,
+        "cp_meur": 0.36
+      },
+      {
+        "mission": "Gestion du patrimoine immobilier de l'État",
+        "code_mission": "YB",
+        "type_mission": "CAS",
+        "ae_meur": 0.34,
+        "cp_meur": 0.34
+      },
+      {
+        "mission": "Prêts et avances à des particuliers ou à des organismes privés",
+        "code_mission": "ZF",
+        "type_mission": "CCF",
+        "ae_meur": 0.03,
+        "cp_meur": 0.25
+      },
+      {
+        "mission": "Crédits non répartis",
+        "code_mission": "PC",
+        "type_mission": "BG",
+        "ae_meur": 0.5,
+        "cp_meur": 0.2
+      },
+      {
+        "mission": "Plan de relance",
+        "code_mission": "PR",
+        "type_mission": "BG",
+        "ae_meur": 0,
+        "cp_meur": 0.17
+      },
+      {
+        "mission": "Publications officielles et information administrative",
+        "code_mission": "XJ",
+        "type_mission": "BA",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      },
+      {
+        "mission": "Développement agricole et rural",
+        "code_mission": "YF",
+        "type_mission": "CAS",
+        "ae_meur": 0.15,
+        "cp_meur": 0.15
+      }
+    ]
+  }
+}

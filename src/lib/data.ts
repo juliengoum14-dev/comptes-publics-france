@@ -10,6 +10,9 @@ import type {
   ArbreNatureData,
   NatureParSecteurData,
   ProjectionsData,
+  SmbMensuelData,
+  CofogDepensesData,
+  MissionsHistoriqueData,
 } from "@/types";
 
 const DATA_DIR = join(process.cwd(), "data", "processed");
@@ -54,6 +57,18 @@ export function loadProjections(): ProjectionsData {
   return loadJson<ProjectionsData>("projections-ragot.json");
 }
 
+export function loadMissionsHistorique(): MissionsHistoriqueData {
+  return loadJson<MissionsHistoriqueData>("missions-historique.json");
+}
+
+export function loadSmbMensuel(): SmbMensuelData {
+  return loadJson<SmbMensuelData>("smb-mensuel.json");
+}
+
+export function loadCofogDepenses(): CofogDepensesData {
+  return loadJson<CofogDepensesData>("cofog-depenses.json");
+}
+
 export function getAllData() {
   return {
     synthese: loadSynthese(),
@@ -65,5 +80,8 @@ export function getAllData() {
     arbreNature: loadArbreNature(),
     natureParSecteur: loadNatureParSecteur(),
     projections: loadProjections(),
+    missionsHistorique: loadMissionsHistorique(),
+    smb: loadSmbMensuel(),
+    cofog: loadCofogDepenses(),
   };
 }
