@@ -162,16 +162,9 @@ export interface ProjectionEntry {
   valeur: number
 }
 
-export interface CofogFonction {
-  code: string
-  label: string
-  donnees: Record<string, number>
-}
-
-export interface CofogDepensesData {
+export interface CofogArbreData {
   meta: Record<string, unknown>
-  fonctions: CofogFonction[]
-  total_tcofog: { label: string; donnees: Record<string, number> }
+  depenses: TreeNode
 }
 
 export interface SmbMensuelEntry {

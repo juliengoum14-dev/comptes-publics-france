@@ -11,7 +11,7 @@ import type {
   NatureParSecteurData,
   ProjectionsData,
   SmbMensuelData,
-  CofogDepensesData,
+  CofogArbreData,
   MissionsHistoriqueData,
 } from "@/types";
 
@@ -65,8 +65,8 @@ export function loadSmbMensuel(): SmbMensuelData {
   return loadJson<SmbMensuelData>("smb-mensuel.json");
 }
 
-export function loadCofogDepenses(): CofogDepensesData {
-  return loadJson<CofogDepensesData>("cofog-depenses.json");
+export function loadCofogArbre(): CofogArbreData {
+  return loadJson<CofogArbreData>("cofog-arbre.json");
 }
 
 export function getAllData() {
@@ -82,6 +82,6 @@ export function getAllData() {
     projections: loadProjections(),
     missionsHistorique: loadMissionsHistorique(),
     smb: loadSmbMensuel(),
-    cofog: loadCofogDepenses(),
+    cofogArbre: loadCofogArbre(),
   };
 }

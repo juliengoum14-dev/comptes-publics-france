@@ -7,12 +7,11 @@ import DrillDownChart from "@/components/DrillDownChart";
 import RevenueBreakdown from "@/components/RevenueBreakdown";
 import SourceBadge from "@/components/SourceBadge";
 import SectionNav from "@/components/SectionNav";
-import CofogBarChart from "@/components/CofogBarChart";
 import SmbLineChart from "@/components/SmbLineChart";
 import MissionsHistoriqueChart from "@/components/MissionsHistoriqueChart";
 
 export default function Home() {
-  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections, cofog, smb, missionsHistorique } = getAllData();
+  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections, cofogArbre, smb, missionsHistorique } = getAllData();
 
   const etat2025 = budgetEtat.synthese_etat["2025"];
 
@@ -122,13 +121,17 @@ export default function Home() {
             />
           </div>
 
-          <div className="mt-8">
-            <CofogBarChart
-              fonctions={cofog.fonctions}
-              totalTcofog={cofog.total_tcofog}
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <DrillDownChart
+              tree={cofogArbre.depenses}
+              secteurData={{}}
+              title="Dépenses par fonction (COFOG)"
               annee={2024}
-              source={cofog.meta.source as string}
+              source={cofogArbre.meta.source as string}
             />
+            <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-center justify-center">
+              <p className="text-sm text-gray-400">Sélectionnez une fonction dans le graphique pour explorer les sous-fonctions</p>
+            </div>
           </div>
         </section>
 
