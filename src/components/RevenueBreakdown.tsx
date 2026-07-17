@@ -65,7 +65,7 @@ export default function RevenueBreakdown({
           />
           <Tooltip
             content={<SourceTooltip source={source ?? ""} formatValue={(v) => fmt(v)} />}
-            wrapperStyle={{ pointerEvents: "auto" }}
+            wrapperStyle={{ pointerEvents: "none" }}
           />
           <Bar dataKey="montant" fill="#2563eb" radius={[0, 4, 4, 0]} />
         </BarChart>

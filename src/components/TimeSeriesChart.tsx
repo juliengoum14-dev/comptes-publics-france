@@ -96,7 +96,7 @@ export default function TimeSeriesChart({
               const label = dataKey?.includes("__projection") ? "Projection" : undefined;
               return formatTooltip(v, s?.unite, label);
             }} />}
-            wrapperStyle={{ pointerEvents: "auto" }}
+            wrapperStyle={{ pointerEvents: "none" }}
           />
           <Legend />
           {premiereAnneeProjection !== null && (

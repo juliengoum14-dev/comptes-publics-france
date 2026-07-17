@@ -69,7 +69,7 @@ export default function SmbLineChart({
                 formatValue={(v: number) => `${v} Md€`}
               />
             }
-            wrapperStyle={{ pointerEvents: "auto" }}
+            wrapperStyle={{ pointerEvents: "none" }}
           />
           <Legend />
           <ReferenceLine

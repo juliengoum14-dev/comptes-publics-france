@@ -215,7 +215,7 @@ export default function DrillDownChart({
                     const pct = total > 0 ? ((v / total) * 100).toFixed(1) : "0";
                     return `${fmt(v)} Md€ (${pct}%)`;
                   }} />}
-                  wrapperStyle={{ pointerEvents: "auto" }}
+                  wrapperStyle={{ pointerEvents: "none" }}
                 />
                 <Bar
                   dataKey="montant"
@@ -304,7 +304,7 @@ export default function DrillDownChart({
                     />
                     <Tooltip
         content={<SourceTooltip source={source ?? ""} formatValue={(v: number) => `${fmt(v)} Md€`} />}
-        wrapperStyle={{ pointerEvents: "auto" }}
+        wrapperStyle={{ pointerEvents: "none" }}
     />
                     <Bar dataKey="montant" radius={[0, 4, 4, 0]}>
                       {sectorBreakdown

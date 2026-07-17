@@ -105,7 +105,7 @@ export default function MissionsHistoriqueChart({
           />
           <Tooltip
             content={<SourceTooltip source={source} formatValue={(v: number) => `${v.toFixed(1)} Md€`} />}
-            wrapperStyle={{ pointerEvents: "auto" }}
+            wrapperStyle={{ pointerEvents: "none" }}
           />
           <Legend />
           <Line

@@ -76,7 +76,7 @@ export default function ApuBreakdown({
             content={<SourceTooltip source={source ?? ""} formatValue={(v: number) =>
               new Intl.NumberFormat("fr-FR", { style: "decimal", maximumFractionDigits: 1 }).format(v) + " Md€"
             } />}
-            wrapperStyle={{ pointerEvents: "auto" }}
+            wrapperStyle={{ pointerEvents: "none" }}
           />
           <Legend />
           {sectors.map((key, i) => (
