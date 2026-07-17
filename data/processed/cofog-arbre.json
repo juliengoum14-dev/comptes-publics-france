@@ -14,7 +14,7 @@
     ],
     "note_2025": "Données 2025 estimées par prolongation des tendances 2020-2024, calées sur le total des dépenses APU 2025 (Eurostat gov_10a_main)",
     "enrichissement_drees": "Données enrichies par les comptes de la protection sociale (DREES) — ventilation par régime : 2020-2024",
-    "enrichissement_gf09": "GF09 ventilé par financeur : budget État (missions EC+RA), collectivités (APUL), autres APU (ODAC) — source DEPP Compte de l'éducation 2024, PLF 2025",
+    "enrichissement_gf09": "GF09 ventilé par financeur : budget de l'État, collectivités territoriales, autres APU — source DEPP Compte de l'éducation 2024, PLF 2025",
     "sources_detail": {
       "GF07_GF10": "DREES — Comptes de la protection sociale 2020-2024 (data.drees.solidarites-sante.gouv.fr)",
       "base": "Eurostat gov_10a_exp (COFOG 1999)"
@@ -544,7 +544,7 @@
           },
           {
             "code": "BUDGET_ETAT",
-            "label": "Dont budget État",
+            "label": "Budget de l'État",
             "values": {
               "2024": 45.0
             },
@@ -588,7 +588,7 @@
           },
           {
             "code": "COLLECTIVITES",
-            "label": "Dont collectivités locales",
+            "label": "Collectivités locales",
             "values": {
               "2024": 121.1
             }
@@ -681,7 +681,7 @@
           },
           {
             "code": "BUDGET_ETAT",
-            "label": "Dont budget État",
+            "label": "Budget de l'État",
             "values": {
               "2024": 4.9
             },
@@ -778,7 +778,7 @@
           },
           {
             "code": "BUDGET_ETAT",
-            "label": "Dont budget État",
+            "label": "Budget de l'État",
             "values": {
               "2024": 21.0
             },
@@ -1041,7 +1041,7 @@
           },
           {
             "code": "BUDGET_ETAT",
-            "label": "Dont budget État",
+            "label": "Budget de l'État",
             "values": {
               "2024": 10.2
             },
@@ -1176,7 +1176,7 @@
           },
           {
             "code": "ETAT",
-            "label": "Dont budget État (missions EC + RA)",
+            "label": "Budget de l'État (Éducation nationale, enseignement supérieur, recherche)",
             "values": {
               "2020": 108.1,
               "2021": 110.8,
@@ -1188,7 +1188,7 @@
           },
           {
             "code": "COLLECTIVITES",
-            "label": "Dont collectivités territoriales (APUL)",
+            "label": "Collectivités territoriales (communes, départements, régions)",
             "values": {
               "2020": 10.3,
               "2021": 14.0,
@@ -1200,7 +1200,7 @@
           },
           {
             "code": "ODAC",
-            "label": "Dont autres APU (ODAC, organismes divers)",
+            "label": "Autres administrations publiques (ODAC, organismes divers)",
             "values": {
               "2020": 1.7,
               "2021": 2.3,
