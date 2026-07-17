@@ -13,7 +13,12 @@
       "2025"
     ],
     "note_2025": "Données 2025 estimées par prolongation des tendances 2020-2024, calées sur le total des dépenses APU 2025 (Eurostat gov_10a_main)",
-    "enrichissement_drees": "Donnees 2024 enrichies par les comptes de la protection sociale (DREES) - ventilation par regime"
+    "enrichissement_drees": "2024 : données enrichies par les comptes de la protection sociale (DREES) — ventilation par régime",
+    "enrichissement_gf09": "GF09 ventilé par financeur : budget État (missions EC+RA), collectivités (APUL), autres APU (ODAC) — source DEPP Compte de l'éducation 2024, PLF 2025",
+    "sources_detail": {
+      "GF07_GF10": "DREES — Comptes de la protection sociale 2024 (data.drees.solidarites-sante.gouv.fr)",
+      "base": "Eurostat gov_10a_exp (COFOG 1999)"
+    }
   },
   "depenses": {
     "code": "TOTAL",
@@ -49,7 +54,24 @@
               "2023": 45.3,
               "2024": 42.8,
               "2025": 41.8
-            }
+            },
+            "children": [
+              {
+                "code": "PB",
+                "label": "Pouvoirs publics",
+                "values": { "2024": 1.2 }
+              },
+              {
+                "code": "DC",
+                "label": "Direction de l'action du Gouvernement",
+                "values": { "2024": 1.1 }
+              },
+              {
+                "code": "CA",
+                "label": "Conseil et contrôle de l'État",
+                "values": { "2024": 0.9 }
+              }
+            ]
           },
           {
             "code": "GF0102",
@@ -80,7 +102,7 @@
             "label": "Recherche fondamentale",
             "values": {
               "2020": 16.2,
-              "2021": 17.0,
+              "2021": 17,
               "2022": 18.1,
               "2023": 19.5,
               "2024": 19.9,
@@ -93,10 +115,10 @@
             "values": {
               "2020": 0.6,
               "2021": 0.8,
-              "2022": 1.0,
+              "2022": 1,
               "2023": 0.7,
               "2024": 0.9,
-              "2025": 1.0
+              "2025": 1
             }
           },
           {
@@ -105,11 +127,47 @@
             "values": {
               "2020": 32.9,
               "2021": 37.7,
-              "2022": 53.0,
+              "2022": 53,
               "2023": 51.7,
               "2024": 58.9,
               "2025": 66.8
             }
+          },
+          {
+            "code": "VENTILATION",
+            "label": "Ventilation par grand poste",
+            "children": [
+              {
+                "code": "GF0107",
+                "label": "Dette publique",
+                "values": { "2024": 58.9 }
+              },
+              {
+                "code": "GF0101",
+                "label": "Fonctionnement des institutions",
+                "values": { "2024": 42.8 }
+              },
+              {
+                "code": "GF0103",
+                "label": "Services généraux",
+                "values": { "2024": 53.8 }
+              },
+              {
+                "code": "GF0104",
+                "label": "Recherche fondamentale",
+                "values": { "2024": 19.9 }
+              },
+              {
+                "code": "GF0102",
+                "label": "Aide extérieure",
+                "values": { "2024": 4.9 }
+              },
+              {
+                "code": "GF0108",
+                "label": "Transferts",
+                "values": { "2024": 0.0 }
+              }
+            ]
           }
         ]
       },
@@ -135,7 +193,37 @@
               "2023": 45.1,
               "2024": 47.7,
               "2025": 49.6
-            }
+            },
+            "children": [
+              {
+                "code": "PROG146",
+                "label": "Équipement des forces",
+                "values": {
+                  "2024": 14.86
+                }
+              },
+              {
+                "code": "PROG212",
+                "label": "Soutien de la politique de la défense",
+                "values": {
+                  "2024": 19.81
+                }
+              },
+              {
+                "code": "PROG178",
+                "label": "Préparation et emploi des forces",
+                "values": {
+                  "2024": 11.38
+                }
+              },
+              {
+                "code": "PROG144",
+                "label": "Environnement et prospective de la politique de défense",
+                "values": {
+                  "2024": 1.65
+                }
+              }
+            ]
           },
           {
             "code": "GF0202",
@@ -153,12 +241,12 @@
             "code": "GF0203",
             "label": "Aide militaire extérieure",
             "values": {
-              "2020": 2.0,
-              "2021": 2.0,
+              "2020": 2,
+              "2021": 2,
               "2022": 1.9,
               "2023": 1.9,
-              "2024": 2.0,
-              "2025": 2.0
+              "2024": 2,
+              "2025": 2
             }
           },
           {
@@ -208,8 +296,38 @@
               "2022": 24.6,
               "2023": 26.3,
               "2024": 28.9,
-              "2025": 30.0
-            }
+              "2025": 30
+            },
+            "children": [
+              {
+                "code": "PROG176",
+                "label": "Police nationale",
+                "values": {
+                  "2024": 15.33
+                }
+              },
+              {
+                "code": "PROG152",
+                "label": "Gendarmerie nationale",
+                "values": {
+                  "2024": 12.53
+                }
+              },
+              {
+                "code": "PROG161",
+                "label": "Sécurité civile",
+                "values": {
+                  "2024": 0.95
+                }
+              },
+              {
+                "code": "PROG207",
+                "label": "Sécurité et éducation routières",
+                "values": {
+                  "2024": 0.09
+                }
+              }
+            ]
           },
           {
             "code": "GF0302",
@@ -233,7 +351,23 @@
               "2023": 8.1,
               "2024": 8.3,
               "2025": 8.7
-            }
+            },
+            "children": [
+              {
+                "code": "PROG166",
+                "label": "Justice judiciaire",
+                "values": {
+                  "2024": 7.06
+                }
+              },
+              {
+                "code": "PROG101",
+                "label": "Accès au droit et à la justice",
+                "values": {
+                  "2024": 1.24
+                }
+              }
+            ]
           },
           {
             "code": "GF0304",
@@ -245,7 +379,16 @@
               "2023": 4.9,
               "2024": 5.1,
               "2025": 5.4
-            }
+            },
+            "children": [
+              {
+                "code": "PROG107",
+                "label": "Administration pénitentiaire",
+                "values": {
+                  "2024": 5.1
+                }
+              }
+            ]
           },
           {
             "code": "GF0306",
@@ -256,7 +399,7 @@
               "2022": 1.7,
               "2023": 1.9,
               "2024": 1.9,
-              "2025": 2.0
+              "2025": 2
             }
           }
         ]
@@ -280,7 +423,7 @@
               "2020": 55.8,
               "2021": 66.7,
               "2022": 43.8,
-              "2023": 44.0,
+              "2023": 44,
               "2024": 45.3,
               "2025": 42.2
             }
@@ -291,7 +434,7 @@
             "values": {
               "2020": 5.1,
               "2021": 5.9,
-              "2022": 7.0,
+              "2022": 7,
               "2023": 6.8,
               "2024": 6.2,
               "2025": 6.4
@@ -338,11 +481,11 @@
             "label": "Communications",
             "values": {
               "2020": 0.7,
-              "2021": 1.0,
+              "2021": 1,
               "2022": 1.7,
               "2023": 1.6,
               "2024": 1.6,
-              "2025": 2.0
+              "2025": 2
             }
           },
           {
@@ -380,6 +523,43 @@
               "2024": 2.6,
               "2025": 2.6
             }
+          },
+          {
+            "code": "BUDGET_ETAT",
+            "label": "Dont budget État",
+            "values": { "2024": 45.0 },
+            "children": [
+              {
+                "code": "TA",
+                "label": "Écologie, développement et mobilité durables",
+                "values": { "2024": 20.5 }
+              },
+              {
+                "code": "AC",
+                "label": "Agriculture, alimentation, forêt et affaires rurales",
+                "values": { "2024": 4.4 }
+              },
+              {
+                "code": "DB",
+                "label": "Économie",
+                "values": { "2024": 3.9 }
+              },
+              {
+                "code": "AV",
+                "label": "Investir pour la France de 2030",
+                "values": { "2024": 5.8 }
+              },
+              {
+                "code": "ZB",
+                "label": "Prêts et avances à divers services de l'État",
+                "values": { "2024": 10.4 }
+              }
+            ]
+          },
+          {
+            "code": "COLLECTIVITES",
+            "label": "Dont collectivités locales",
+            "values": { "2024": 121.1 }
           }
         ]
       },
@@ -399,9 +579,9 @@
             "code": "GF0501",
             "label": "Gestion des déchets",
             "values": {
-              "2020": 12.0,
+              "2020": 12,
               "2021": 12.9,
-              "2022": 14.0,
+              "2022": 14,
               "2023": 15.1,
               "2024": 15.9,
               "2025": 16.8
@@ -424,9 +604,9 @@
             "label": "Lutte contre la pollution",
             "values": {
               "2020": 2.6,
-              "2021": 3.0,
+              "2021": 3,
               "2022": 3.5,
-              "2023": 4.0,
+              "2023": 4,
               "2024": 4.3,
               "2025": 4.8
             }
@@ -437,8 +617,8 @@
             "values": {
               "2020": 1.8,
               "2021": 1.9,
-              "2022": 2.0,
-              "2023": 2.0,
+              "2022": 2,
+              "2023": 2,
               "2024": 1.7,
               "2025": 1.7
             }
@@ -466,6 +646,23 @@
               "2024": 1.5,
               "2025": 1.5
             }
+          },
+          {
+            "code": "BUDGET_ETAT",
+            "label": "Dont budget État",
+            "values": { "2024": 4.9 },
+            "children": [
+              {
+                "code": "TA_ENV",
+                "label": "Part environnement de la mission Écologie (TA)",
+                "values": { "2024": 4.5 }
+              },
+              {
+                "code": "YK",
+                "label": "Financement des aides aux collectivités pour l'électrification rurale",
+                "values": { "2024": 0.4 }
+              }
+            ]
           }
         ]
       },
@@ -474,7 +671,7 @@
         "label": "Logement et équipements collectifs",
         "values": {
           "2020": 26.6,
-          "2021": 30.0,
+          "2021": 30,
           "2022": 31.7,
           "2023": 35.6,
           "2024": 42.1,
@@ -486,7 +683,7 @@
             "label": "Développement du logement",
             "values": {
               "2020": 8.1,
-              "2021": 10.0,
+              "2021": 10,
               "2022": 8.7,
               "2023": 8.5,
               "2024": 8.4,
@@ -512,7 +709,7 @@
               "2020": 2.5,
               "2021": 2.7,
               "2022": 2.8,
-              "2023": 3.0,
+              "2023": 3,
               "2024": 2.8,
               "2025": 2.8
             }
@@ -540,6 +737,18 @@
               "2024": 1.8,
               "2025": 2.5
             }
+          },
+          {
+            "code": "BUDGET_ETAT",
+            "label": "Dont budget État",
+            "values": { "2024": 21.0 },
+            "children": [
+              {
+                "code": "VA_LOGEMENT",
+                "label": "Part logement de Cohésion des territoires (VA)",
+                "values": { "2024": 21.0 }
+              }
+            ]
           }
         ]
       },
@@ -547,7 +756,7 @@
         "code": "GF07",
         "label": "Santé",
         "values": {
-          "2020": 208.0,
+          "2020": 208,
           "2021": 234.7,
           "2022": 240.8,
           "2023": 249.7,
@@ -574,7 +783,7 @@
               "2020": 70.8,
               "2021": 82.6,
               "2022": 83.8,
-              "2023": 88.0,
+              "2023": 88,
               "2024": 91.8,
               "2025": 96.1
             }
@@ -584,7 +793,7 @@
             "label": "Services hospitaliers",
             "values": {
               "2020": 83.7,
-              "2021": 91.0,
+              "2021": 91,
               "2022": 96.1,
               "2023": 103.5,
               "2024": 109.3,
@@ -597,9 +806,9 @@
             "values": {
               "2020": 12.3,
               "2021": 16.6,
-              "2022": 14.0,
+              "2022": 14,
               "2023": 8.6,
-              "2024": 8.0,
+              "2024": 8,
               "2025": 7.1
             }
           },
@@ -609,10 +818,10 @@
             "values": {
               "2020": 5.3,
               "2021": 5.8,
-              "2022": 6.0,
+              "2022": 6,
               "2023": 6.5,
               "2024": 6.7,
-              "2025": 7.0
+              "2025": 7
             }
           },
           {
@@ -715,9 +924,9 @@
             "values": {
               "2020": 14.8,
               "2021": 16.3,
-              "2022": 17.0,
+              "2022": 17,
               "2023": 18.2,
-              "2024": 19.0,
+              "2024": 19,
               "2025": 19.8
             }
           },
@@ -726,7 +935,7 @@
             "label": "Services de radiodiffusion et d'édition",
             "values": {
               "2020": 5.9,
-              "2021": 6.0,
+              "2021": 6,
               "2022": 6.1,
               "2023": 6.8,
               "2024": 7.6,
@@ -756,6 +965,33 @@
               "2024": 0.2,
               "2025": 0.2
             }
+          },
+          {
+            "code": "BUDGET_ETAT",
+            "label": "Dont budget État",
+            "values": { "2024": 10.2 },
+            "children": [
+              {
+                "code": "CB",
+                "label": "Culture",
+                "values": { "2024": 3.9 }
+              },
+              {
+                "code": "AQ",
+                "label": "Audiovisuel public",
+                "values": { "2024": 4.0 }
+              },
+              {
+                "code": "SF",
+                "label": "Sport, jeunesse et vie associative",
+                "values": { "2024": 1.6 }
+              },
+              {
+                "code": "MA",
+                "label": "Médias, livre et industries culturelles",
+                "values": { "2024": 0.7 }
+              }
+            ]
           }
         ]
       },
@@ -765,10 +1001,10 @@
         "values": {
           "2020": 120.1,
           "2021": 127.1,
-          "2022": 134.0,
+          "2022": 134,
           "2023": 141.6,
           "2024": 148.6,
-          "2025": 154.0
+          "2025": 154
         },
         "children": [
           {
@@ -777,7 +1013,7 @@
             "values": {
               "2020": 33.7,
               "2021": 35.1,
-              "2022": 37.0,
+              "2022": 37,
               "2023": 39.3,
               "2024": 42.2,
               "2025": 43.7
@@ -801,7 +1037,7 @@
             "values": {
               "2020": 0.8,
               "2021": 0.9,
-              "2022": 1.0,
+              "2022": 1,
               "2023": 1.1,
               "2024": 1.2,
               "2025": 1.3
@@ -824,7 +1060,7 @@
             "label": "Enseignement non défini par niveau",
             "values": {
               "2020": 6.4,
-              "2021": 8.0,
+              "2021": 8,
               "2022": 8.6,
               "2023": 8.4,
               "2024": 8.6,
@@ -839,7 +1075,7 @@
               "2021": 15.6,
               "2022": 16.1,
               "2023": 17.6,
-              "2024": 20.0,
+              "2024": 20,
               "2025": 21.3
             }
           },
@@ -854,6 +1090,42 @@
               "2024": 0.6,
               "2025": 0.6
             }
+          },
+          {
+            "code": "ETAT",
+            "label": "Dont budget État (missions EC + RA)",
+            "values": {
+              "2020": 108.1,
+              "2021": 110.8,
+              "2022": 116.4,
+              "2023": 118.4,
+              "2024": 119.6,
+              "2025": 120.11
+            }
+          },
+          {
+            "code": "COLLECTIVITES",
+            "label": "Dont collectivités territoriales (APUL)",
+            "values": {
+              "2020": 10.3,
+              "2021": 14.0,
+              "2022": 15.1,
+              "2023": 19.9,
+              "2024": 24.9,
+              "2025": 29.1
+            }
+          },
+          {
+            "code": "ODAC",
+            "label": "Dont autres APU (ODAC, organismes divers)",
+            "values": {
+              "2020": 1.7,
+              "2021": 2.3,
+              "2022": 2.5,
+              "2023": 3.3,
+              "2024": 4.1,
+              "2025": 4.8
+            }
           }
         ]
       },
@@ -863,9 +1135,9 @@
         "values": {
           "2020": 631.4,
           "2021": 622.6,
-          "2022": 632.0,
+          "2022": 632,
           "2023": 657.9,
-          "2024": 693.0,
+          "2024": 693,
           "2025": 698.4
         },
         "children": [
@@ -899,7 +1171,7 @@
                 "code": "CPAM",
                 "label": "CPAM (assurance maladie)",
                 "values": {
-                  "2024": 8.0
+                  "2024": 8
                 }
               },
               {
@@ -955,7 +1227,7 @@
                 "code": "AGIRC_ARRCO",
                 "label": "AGIRC-ARRCO (complementaire)",
                 "values": {
-                  "2024": 85.0
+                  "2024": 85
                 }
               },
               {
@@ -1137,7 +1409,7 @@
                 "code": "AUTRES",
                 "label": "Autres regimes",
                 "values": {
-                  "2024": 5.0
+                  "2024": 5
                 }
               }
             ]
@@ -1158,7 +1430,7 @@
                 "code": "UNEDIC",
                 "label": "UNEDIC (assurance chomage)",
                 "values": {
-                  "2024": 37.0
+                  "2024": 37
                 }
               },
               {
@@ -1202,7 +1474,7 @@
             "code": "GF1006",
             "label": "Logement",
             "values": {
-              "2020": 21.0,
+              "2020": 21,
               "2021": 20.5,
               "2022": 20.4,
               "2023": 20.5,
@@ -1214,7 +1486,7 @@
                 "code": "ETAT",
                 "label": "Etat (intervention sociale)",
                 "values": {
-                  "2024": 16.0
+                  "2024": 16
                 }
               },
               {
@@ -1242,7 +1514,7 @@
             "code": "GF1009",
             "label": "Protection sociale n.c.a.",
             "values": {
-              "2020": 4.0,
+              "2020": 4,
               "2021": 4.1,
               "2022": 4.2,
               "2023": 4.1,
