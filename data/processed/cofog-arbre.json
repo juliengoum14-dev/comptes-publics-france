@@ -12,7 +12,8 @@
       "2024",
       "2025"
     ],
-    "note_2025": "Données 2025 estimées par prolongation des tendances 2020-2024, calées sur le total des dépenses APU 2025 (Eurostat gov_10a_main)"
+    "note_2025": "Données 2025 estimées par prolongation des tendances 2020-2024, calées sur le total des dépenses APU 2025 (Eurostat gov_10a_main)",
+    "enrichissement_drees": "Donnees 2024 enrichies par les comptes de la protection sociale (DREES) - ventilation par regime"
   },
   "depenses": {
     "code": "TOTAL",
@@ -625,6 +626,62 @@
               "2024": 1.6,
               "2025": 1.7
             }
+          },
+          {
+            "code": "CPAM",
+            "label": "CPAM (assurance maladie)",
+            "values": {
+              "2024": 135.6
+            }
+          },
+          {
+            "code": "HOPITAUX",
+            "label": "Hopitaux publics",
+            "values": {
+              "2024": 92.2
+            }
+          },
+          {
+            "code": "ISBL",
+            "label": "ISBL (associations)",
+            "values": {
+              "2024": 21.1
+            }
+          },
+          {
+            "code": "CNSA",
+            "label": "CNSA (dependance)",
+            "values": {
+              "2024": 17.9
+            }
+          },
+          {
+            "code": "ETAT",
+            "label": "Etat (intervention sociale)",
+            "values": {
+              "2024": 16.1
+            }
+          },
+          {
+            "code": "ASSURANCES",
+            "label": "Assureurs prives (contrats collectifs)",
+            "values": {
+              "2024": 12.3
+            }
+          },
+          {
+            "code": "PREVOYANCE",
+            "label": "Institutions de prevoyance",
+            "values": {
+              "2024": 9.9
+            }
+          },
+          {
+            "code": "AUTRES",
+            "label": "Autres regimes",
+            "values": {
+              "2024": 32.8
+            }
           }
         ]
       },
@@ -820,9 +877,60 @@
               "2021": 72.6,
               "2022": 78.4,
               "2023": 78.4,
-              "2024": 83.9,
+              "2024": 53.2,
               "2025": 85.5
-            }
+            },
+            "children": [
+              {
+                "code": "ISBL",
+                "label": "ISBL (associations)",
+                "values": {
+                  "2024": 21.1
+                }
+              },
+              {
+                "code": "ETAT",
+                "label": "Etat (intervention sociale)",
+                "values": {
+                  "2024": 15.4
+                }
+              },
+              {
+                "code": "CPAM",
+                "label": "CPAM (assurance maladie)",
+                "values": {
+                  "2024": 8.0
+                }
+              },
+              {
+                "code": "DEPARTEMENTS",
+                "label": "Departements",
+                "values": {
+                  "2024": 2.4
+                }
+              },
+              {
+                "code": "CNSA",
+                "label": "CNSA (dependance)",
+                "values": {
+                  "2024": 1.7
+                }
+              },
+              {
+                "code": "PREVOYANCE",
+                "label": "Institutions de prevoyance",
+                "values": {
+                  "2024": 1.6
+                }
+              },
+              {
+                "code": "AUTRES",
+                "label": "Autres regimes",
+                "values": {
+                  "2024": 3.1
+                }
+              }
+            ]
           },
           {
             "code": "GF1002",
@@ -832,9 +940,67 @@
               "2021": 336.6,
               "2022": 350.7,
               "2023": 369.1,
-              "2024": 392.0,
+              "2024": 381.6,
               "2025": 400.6
-            }
+            },
+            "children": [
+              {
+                "code": "CNAV",
+                "label": "CNAV (regime general)",
+                "values": {
+                  "2024": 149.3
+                }
+              },
+              {
+                "code": "AGIRC_ARRCO",
+                "label": "AGIRC-ARRCO (complementaire)",
+                "values": {
+                  "2024": 85.0
+                }
+              },
+              {
+                "code": "FONC_PUB",
+                "label": "Regimes fonction publique Etat",
+                "values": {
+                  "2024": 58.5
+                }
+              },
+              {
+                "code": "REGIMES_SPECIAUX",
+                "label": "Autres regimes speciaux",
+                "values": {
+                  "2024": 35.4
+                }
+              },
+              {
+                "code": "DEPARTEMENTS",
+                "label": "Departements",
+                "values": {
+                  "2024": 10.5
+                }
+              },
+              {
+                "code": "MSA_EXPLOITANTS",
+                "label": "MSA (exploitants agricoles)",
+                "values": {
+                  "2024": 9.3
+                }
+              },
+              {
+                "code": "CNAVPL",
+                "label": "CNAVPL (professions liberales)",
+                "values": {
+                  "2024": 7.8
+                }
+              },
+              {
+                "code": "AUTRES",
+                "label": "Autres regimes",
+                "values": {
+                  "2024": 25.7
+                }
+              }
+            ]
           },
           {
             "code": "GF1003",
@@ -844,9 +1010,67 @@
               "2021": 35.9,
               "2022": 36.9,
               "2023": 38.6,
-              "2024": 40.6,
+              "2024": 45.1,
               "2025": 41.1
-            }
+            },
+            "children": [
+              {
+                "code": "CNAV",
+                "label": "CNAV (regime general)",
+                "values": {
+                  "2024": 14.1
+                }
+              },
+              {
+                "code": "AGIRC_ARRCO",
+                "label": "AGIRC-ARRCO (complementaire)",
+                "values": {
+                  "2024": 13.3
+                }
+              },
+              {
+                "code": "FONC_PUB",
+                "label": "Regimes fonction publique Etat",
+                "values": {
+                  "2024": 6.1
+                }
+              },
+              {
+                "code": "REGIMES_SPECIAUX",
+                "label": "Autres regimes speciaux",
+                "values": {
+                  "2024": 3.5
+                }
+              },
+              {
+                "code": "ASSURANCES",
+                "label": "Assureurs prives (contrats collectifs)",
+                "values": {
+                  "2024": 1.8
+                }
+              },
+              {
+                "code": "PREVOYANCE",
+                "label": "Institutions de prevoyance",
+                "values": {
+                  "2024": 1.6
+                }
+              },
+              {
+                "code": "MSA_EXPLOITANTS",
+                "label": "MSA (exploitants agricoles)",
+                "values": {
+                  "2024": 1.3
+                }
+              },
+              {
+                "code": "AUTRES",
+                "label": "Autres regimes",
+                "values": {
+                  "2024": 3.3
+                }
+              }
+            ]
           },
           {
             "code": "GF1004",
@@ -856,9 +1080,67 @@
               "2021": 57.9,
               "2022": 61.1,
               "2023": 64.2,
-              "2024": 66.7,
+              "2024": 65.8,
               "2025": 68.3
-            }
+            },
+            "children": [
+              {
+                "code": "CAF",
+                "label": "CAF (prestations familiales)",
+                "values": {
+                  "2024": 36.2
+                }
+              },
+              {
+                "code": "ISBL",
+                "label": "ISBL (associations)",
+                "values": {
+                  "2024": 7.6
+                }
+              },
+              {
+                "code": "COMMUNES",
+                "label": "Communes",
+                "values": {
+                  "2024": 5.2
+                }
+              },
+              {
+                "code": "DEPARTEMENTS",
+                "label": "Departements",
+                "values": {
+                  "2024": 3.9
+                }
+              },
+              {
+                "code": "CPAM",
+                "label": "CPAM (assurance maladie)",
+                "values": {
+                  "2024": 3.7
+                }
+              },
+              {
+                "code": "CREDITS_IMPOTS",
+                "label": "Credits d'impot Etat",
+                "values": {
+                  "2024": 2.3
+                }
+              },
+              {
+                "code": "AUTRES_PRIVES",
+                "label": "Autres regimes prives",
+                "values": {
+                  "2024": 1.8
+                }
+              },
+              {
+                "code": "AUTRES",
+                "label": "Autres regimes",
+                "values": {
+                  "2024": 5.0
+                }
+              }
+            ]
           },
           {
             "code": "GF1005",
@@ -868,9 +1150,53 @@
               "2021": 58.4,
               "2022": 44.2,
               "2023": 45.9,
-              "2024": 48.5,
+              "2024": 51.1,
               "2025": 42.7
-            }
+            },
+            "children": [
+              {
+                "code": "UNEDIC",
+                "label": "UNEDIC (assurance chomage)",
+                "values": {
+                  "2024": 37.0
+                }
+              },
+              {
+                "code": "AUTRES_PRIVES",
+                "label": "Autres regimes prives",
+                "values": {
+                  "2024": 7.5
+                }
+              },
+              {
+                "code": "ETAT",
+                "label": "Etat (intervention sociale)",
+                "values": {
+                  "2024": 2.7
+                }
+              },
+              {
+                "code": "POLE_EMPLOI",
+                "label": "Pole emploi",
+                "values": {
+                  "2024": 1.7
+                }
+              },
+              {
+                "code": "REGIONS",
+                "label": "Regions",
+                "values": {
+                  "2024": 1.1
+                }
+              },
+              {
+                "code": "AUTRES",
+                "label": "Autres regimes",
+                "values": {
+                  "2024": 1.1
+                }
+              }
+            ]
           },
           {
             "code": "GF1006",
@@ -880,9 +1206,25 @@
               "2021": 20.5,
               "2022": 20.4,
               "2023": 20.5,
-              "2024": 21.1,
+              "2024": 16.1,
               "2025": 20.7
-            }
+            },
+            "children": [
+              {
+                "code": "ETAT",
+                "label": "Etat (intervention sociale)",
+                "values": {
+                  "2024": 16.0
+                }
+              },
+              {
+                "code": "AUTRES",
+                "label": "Autres regimes",
+                "values": {
+                  "2024": 0.1
+                }
+              }
+            ]
           },
           {
             "code": "GF1007",
