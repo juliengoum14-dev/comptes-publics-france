@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import DrillDownChart from "./DrillDownChart";
+import TimeSeriesChart from "./TimeSeriesChart";
 import type { TreeNode } from "@/types";
 
 interface CofogSectionProps {
@@ -12,6 +13,23 @@ interface CofogSectionProps {
 
 export default function CofogSection({ tree, source, anneesDisponibles }: CofogSectionProps) {
   const [annee, setAnnee] = useState(2024);
+  const [selectedCode, setSelectedCode] = useState("TOTAL");
+  const [selectedLabel, setSelectedLabel] = useState("Total");
+  const [selectedValues, setSelectedValues] = useState<Record<string, number>>({});
+
+  const series = useMemo(() => {
+    const s: Record<string, { code: string; unite: string; donnees: Record<string, number> }> = {};
+    if (selectedCode && Object.keys(selectedValues).length > 0) {
+      s[selectedCode] = { code: selectedCode, unite: "Md€", donnees: selectedValues };
+    }
+    return s;
+  }, [selectedCode, selectedValues]);
+
+  const handleSelectedChange = (code: string, label: string, values: Record<string, number>) => {
+    setSelectedCode(code);
+    setSelectedLabel(label);
+    setSelectedValues(values);
+  };
 
   return (
     <div>
@@ -40,12 +58,22 @@ export default function CofogSection({ tree, source, anneesDisponibles }: CofogS
           title=""
           annee={annee}
           source={source}
+          onSelectedChange={handleSelectedChange}
         />
-        <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-center justify-center">
-          <p className="text-sm text-gray-400">
-            Cliquez sur une fonction colorée dans le graphique pour explorer ses sous-fonctions
-          </p>
-        </div>
+        {selectedCode && Object.keys(selectedValues).length > 0 ? (
+          <TimeSeriesChart
+            series={series}
+            selected={[selectedCode]}
+            title={`Évolution — ${selectedLabel}`}
+            source={source}
+          />
+        ) : (
+          <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-center justify-center">
+            <p className="text-sm text-gray-400">
+              Cliquez sur une fonction colorée dans le graphique pour explorer ses sous-fonctions
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

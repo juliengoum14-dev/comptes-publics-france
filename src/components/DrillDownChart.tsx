@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -51,6 +51,7 @@ interface DrillDownChartProps {
   annee?: number;
   source?: string;
   collapsible?: boolean;
+  onSelectedChange?: (code: string, label: string, values: Record<string, number>) => void;
 }
 
 function flattenLookup(node: TreeNode): Record<string, TreeNode> {
@@ -70,9 +71,16 @@ export default function DrillDownChart({
   annee = 2025,
   source,
   collapsible,
+  onSelectedChange,
 }: DrillDownChartProps) {
   const [nodeStack, setNodeStack] = useState<TreeNode[]>([tree]);
   const currentNode = nodeStack[nodeStack.length - 1] ?? tree;
+
+  useEffect(() => {
+    if (onSelectedChange && currentNode) {
+      onSelectedChange(currentNode.code, currentNode.label, currentNode.values ?? {});
+    }
+  }, [currentNode, onSelectedChange]);
 
   const [collapsed, setCollapsed] = useState(collapsible !== false);
   const lookup = useMemo(() => flattenLookup(tree), [tree]);
