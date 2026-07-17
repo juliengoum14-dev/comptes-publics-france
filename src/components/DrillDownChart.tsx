@@ -100,7 +100,7 @@ export default function DrillDownChart({
   }, [currentNode, annee]);
 
   const handleClick = (code: string) => {
-    const child = lookup[code];
+    const child = currentNode.children?.find((c) => c.code === code);
     if (child?.children && child.children.length > 0) {
       setNodeStack([...nodeStack, child]);
     }
