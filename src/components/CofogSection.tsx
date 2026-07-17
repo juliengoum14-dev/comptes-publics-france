@@ -12,7 +12,7 @@ interface CofogSectionProps {
 }
 
 export default function CofogSection({ tree, source, anneesDisponibles }: CofogSectionProps) {
-  const [annee, setAnnee] = useState(2024);
+  const [annee, setAnnee] = useState(2025);
   const [selectedCode, setSelectedCode] = useState("TOTAL");
   const [selectedLabel, setSelectedLabel] = useState("Total");
   const [selectedValues, setSelectedValues] = useState<Record<string, number>>({});
