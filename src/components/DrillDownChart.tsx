@@ -50,6 +50,7 @@ interface DrillDownChartProps {
   title: string;
   annee?: number;
   source?: string;
+  collapsible?: boolean;
 }
 
 function flattenLookup(node: TreeNode): Record<string, TreeNode> {
@@ -68,10 +69,12 @@ export default function DrillDownChart({
   title,
   annee = 2025,
   source,
+  collapsible,
 }: DrillDownChartProps) {
   const [nodeStack, setNodeStack] = useState<TreeNode[]>([tree]);
   const currentNode = nodeStack[nodeStack.length - 1] ?? tree;
 
+  const [collapsed, setCollapsed] = useState(collapsible !== false);
   const lookup = useMemo(() => flattenLookup(tree), [tree]);
 
   const items = useMemo(() => {
@@ -133,6 +136,14 @@ export default function DrillDownChart({
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-800">
           {title} <SourceBadge source={source ?? ""} />
+          {collapsible !== false && (
+            <button
+              onClick={() => setCollapsed(!collapsed)}
+              className="text-xs text-gray-500 hover:text-gray-700 font-medium ml-2 align-middle"
+            >
+              {collapsed ? "▼ Afficher" : "▲ Masquer"}
+            </button>
+          )}
         </h3>
         {nodeStack.length > 1 && (
           <button
@@ -144,161 +155,169 @@ export default function DrillDownChart({
         )}
       </div>
 
-      {/* Breadcrumb */}
-      {nodeStack.length > 0 && (
-        <div className="flex items-center gap-1 text-sm text-gray-500 mb-3">
-          {nodeStack.map((n, i) => (
-            <span key={n.code} className="flex items-center gap-1">
-              {i > 0 && <span className="text-gray-300 mx-1">/</span>}
-              {i < nodeStack.length - 1 ? (
-                <button
-                  onClick={() => handleCrumbClick(i)}
-                  className="hover:text-blue-600"
-                >
-                  {n.label}
-                </button>
-              ) : (
-                <span className="text-gray-700 font-medium">{n.label}</span>
-              )}
-            </span>
-          ))}
-        </div>
-      )}
-
-      {/* Total */}
-      <p className="text-xs text-gray-400 mb-3">
-        {currentNode.values?.[String(annee)] != null && (
-          <span>Total : {fmt(currentNode.values[String(annee)])} Md€ <SourceBadge source={source ?? ""} /></span>
-        )}
-        {parentVal != null && (
-          <span className="ml-2 text-gray-300">
-            | dont détail ci-dessous ({fmt(total)} Md€)
-          </span>
-        )}
-      </p>
-
-      {/* Chart */}
-      {items.length > 0 ? (
-        <ResponsiveContainer width="100%" height={Math.max(300, items.length * 40)}>
-          <BarChart data={items} layout="vertical" margin={{ left: 20, right: 20 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-            <XAxis type="number" tick={{ fontSize: 12 }} />
-            <YAxis
-              type="category"
-              dataKey="label"
-              tick={{ fontSize: 11 }}
-              width={220}
-            />
-            <Tooltip
-              content={<SourceTooltip source={source ?? ""} formatValue={(v: number) => {
-                const pct = total > 0 ? ((v / total) * 100).toFixed(1) : "0";
-                return `${fmt(v)} Md€ (${pct}%)`;
-              }} />}
-              wrapperStyle={{ pointerEvents: "auto" }}
-            />
-            <Bar
-              dataKey="montant"
-              fill="#2563eb"
-              radius={[0, 4, 4, 0]}
-              cursor="pointer"
-              onClick={(entry: unknown) => {
-                const e = entry as { payload?: { code?: string; hasChildren?: boolean } } | null;
-                const code = e?.payload?.code;
-                if (code && e?.payload?.hasChildren) {
-                  handleClick(code);
-                }
-              }}
-            >
-              {items.map((entry, idx) => (
-                <Cell
-                  key={entry.code}
-                  fill={entry.hasChildren ? COLORS[idx % COLORS.length] : "#94a3b8"}
-                  className={entry.hasChildren ? "cursor-pointer" : ""}
-                />
-              ))}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      ) : (
-        <p className="text-sm text-gray-400 py-8 text-center">
-          Aucune sous-catégorie disponible
-        </p>
-      )}
-
-      {/* Hint */}
-      <p className="text-xs text-gray-400 mt-2">
-        {currentNode.children?.some((c) => (c.children?.length ?? 0) > 0)
-          ? `Cliquez sur une barre colorée pour explorer le détail`
-          : currentNode.code === "TE" || currentNode.code === "TR"
-            ? `Cliquez sur une barre pour explorer le détail`
-            : `Dernier niveau de détail atteint`}
-      </p>
-
-      {/* Sector breakdown panel */}
-      {sectorBreakdown && (
-        <div className="mt-6 border-t border-gray-100 pt-4">
-          <h4 className="text-sm font-semibold text-gray-700 mb-3">
-            Répartition par sous-secteur ({annee})
-          </h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {sectorBreakdown.map((s) => {
-              const totalEntry = sectorBreakdown.find((e) => e.secteur === "S13");
-              const totalMontant = totalEntry?.montant ?? 0;
-              const pct =
-                totalMontant > 0
-                  ? ((s.montant / totalMontant) * 100).toFixed(1)
-                  : "0";
-              return (
-                <div
-                  key={s.secteur}
-                  className="rounded-lg border border-gray-100 bg-gray-50 p-3"
-                >
-                  <p className="text-xs text-gray-500 font-medium">{s.label}</p>
-                  <p
-                    className="text-lg font-bold mt-1"
-                    style={{ color: SECTOR_COLORS[s.secteur] ?? "#6366f1" }}
-                  >
-                    {fmt(s.montant)} Md€ <SourceBadge source={source ?? ""} />
-                  </p>
-                  {s.secteur !== "S13" && (
-                    <p className="text-xs text-gray-400">{pct}% du total</p>
+      {!collapsed ? (
+        <>
+          {/* Breadcrumb */}
+          {nodeStack.length > 0 && (
+            <div className="flex items-center gap-1 text-sm text-gray-500 mb-3">
+              {nodeStack.map((n, i) => (
+                <span key={n.code} className="flex items-center gap-1">
+                  {i > 0 && <span className="text-gray-300 mx-1">/</span>}
+                  {i < nodeStack.length - 1 ? (
+                    <button
+                      onClick={() => handleCrumbClick(i)}
+                      className="hover:text-blue-600"
+                    >
+                      {n.label}
+                    </button>
+                  ) : (
+                    <span className="text-gray-700 font-medium">{n.label}</span>
                   )}
-                </div>
-              );
-            })}
-          </div>
-          {sectorBreakdown.filter((s) => s.secteur !== "S13").length > 1 && (
-            <ResponsiveContainer width="100%" height={200}>
-              <BarChart
-                data={sectorBreakdown.filter((s) => s.secteur !== "S13")}
-                layout="vertical"
-              >
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* Total */}
+          <p className="text-xs text-gray-400 mb-3">
+            {currentNode.values?.[String(annee)] != null && (
+              <span>Total : {fmt(currentNode.values[String(annee)])} Md€ <SourceBadge source={source ?? ""} /></span>
+            )}
+            {parentVal != null && (
+              <span className="ml-2 text-gray-300">
+                | dont détail ci-dessous ({fmt(total)} Md€)
+              </span>
+            )}
+          </p>
+
+          {/* Chart */}
+          {items.length > 0 ? (
+            <ResponsiveContainer width="100%" height={Math.max(300, items.length * 40)}>
+              <BarChart data={items} layout="vertical" margin={{ left: 20, right: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
                 <XAxis type="number" tick={{ fontSize: 12 }} />
                 <YAxis
                   type="category"
                   dataKey="label"
                   tick={{ fontSize: 11 }}
-                  width={160}
+                  width={220}
                 />
                 <Tooltip
-  content={<SourceTooltip source={source ?? ""} formatValue={(v: number) => `${fmt(v)} Md€`} />}
-  wrapperStyle={{ pointerEvents: "auto" }}
-/>
-                <Bar dataKey="montant" radius={[0, 4, 4, 0]}>
-                  {sectorBreakdown
-                    .filter((s) => s.secteur !== "S13")
-                    .map((s) => (
-                      <Cell
-                        key={s.secteur}
-                        fill={SECTOR_COLORS[s.secteur] ?? "#6366f1"}
-                      />
-                    ))}
+                  content={<SourceTooltip source={source ?? ""} formatValue={(v: number) => {
+                    const pct = total > 0 ? ((v / total) * 100).toFixed(1) : "0";
+                    return `${fmt(v)} Md€ (${pct}%)`;
+                  }} />}
+                  wrapperStyle={{ pointerEvents: "auto" }}
+                />
+                <Bar
+                  dataKey="montant"
+                  fill="#2563eb"
+                  radius={[0, 4, 4, 0]}
+                  cursor="pointer"
+                  onClick={(entry: unknown) => {
+                    const e = entry as { payload?: { code?: string; hasChildren?: boolean } } | null;
+                    const code = e?.payload?.code;
+                    if (code && e?.payload?.hasChildren) {
+                      handleClick(code);
+                    }
+                  }}
+                >
+                  {items.map((entry, idx) => (
+                    <Cell
+                      key={entry.code}
+                      fill={entry.hasChildren ? COLORS[idx % COLORS.length] : "#94a3b8"}
+                      className={entry.hasChildren ? "cursor-pointer" : ""}
+                    />
+                  ))}
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
+          ) : (
+            <p className="text-sm text-gray-400 py-8 text-center">
+              Aucune sous-catégorie disponible
+            </p>
           )}
-        </div>
+
+          {/* Hint */}
+          <p className="text-xs text-gray-400 mt-2">
+            {currentNode.children?.some((c) => (c.children?.length ?? 0) > 0)
+              ? `Cliquez sur une barre colorée pour explorer le détail`
+              : currentNode.code === "TE" || currentNode.code === "TR"
+                ? `Cliquez sur une barre pour explorer le détail`
+                : `Dernier niveau de détail atteint`}
+          </p>
+
+          {/* Sector breakdown panel */}
+          {sectorBreakdown && (
+            <div className="mt-6 border-t border-gray-100 pt-4">
+              <h4 className="text-sm font-semibold text-gray-700 mb-3">
+                Répartition par sous-secteur ({annee})
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                {sectorBreakdown.map((s) => {
+                  const totalEntry = sectorBreakdown.find((e) => e.secteur === "S13");
+                  const totalMontant = totalEntry?.montant ?? 0;
+                  const pct =
+                    totalMontant > 0
+                      ? ((s.montant / totalMontant) * 100).toFixed(1)
+                      : "0";
+                  return (
+                    <div
+                      key={s.secteur}
+                      className="rounded-lg border border-gray-100 bg-gray-50 p-3"
+                    >
+                      <p className="text-xs text-gray-500 font-medium">{s.label}</p>
+                      <p
+                        className="text-lg font-bold mt-1"
+                        style={{ color: SECTOR_COLORS[s.secteur] ?? "#6366f1" }}
+                      >
+                        {fmt(s.montant)} Md€ <SourceBadge source={source ?? ""} />
+                      </p>
+                      {s.secteur !== "S13" && (
+                        <p className="text-xs text-gray-400">{pct}% du total</p>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              {sectorBreakdown.filter((s) => s.secteur !== "S13").length > 1 && (
+                <ResponsiveContainer width="100%" height={200}>
+                  <BarChart
+                    data={sectorBreakdown.filter((s) => s.secteur !== "S13")}
+                    layout="vertical"
+                  >
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                    <XAxis type="number" tick={{ fontSize: 12 }} />
+                    <YAxis
+                      type="category"
+                      dataKey="label"
+                      tick={{ fontSize: 11 }}
+                      width={160}
+                    />
+                    <Tooltip
+        content={<SourceTooltip source={source ?? ""} formatValue={(v: number) => `${fmt(v)} Md€`} />}
+        wrapperStyle={{ pointerEvents: "auto" }}
+    />
+                    <Bar dataKey="montant" radius={[0, 4, 4, 0]}>
+                      {sectorBreakdown
+                        .filter((s) => s.secteur !== "S13")
+                        .map((s) => (
+                          <Cell
+                            key={s.secteur}
+                            fill={SECTOR_COLORS[s.secteur] ?? "#6366f1"}
+                          />
+                        ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              )}
+            </div>
+          )}
+        </>
+      ) : (
+        <p className="text-xs text-gray-400 mt-2">
+          Cliquez pour explorer la répartition détaillée
+        </p>
       )}
     </div>
   );

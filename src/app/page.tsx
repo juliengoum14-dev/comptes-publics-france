@@ -6,6 +6,7 @@ import ApuBreakdown from "@/components/ApuBreakdown";
 import DrillDownChart from "@/components/DrillDownChart";
 import RevenueBreakdown from "@/components/RevenueBreakdown";
 import SourceBadge from "@/components/SourceBadge";
+import SectionNav from "@/components/SectionNav";
 
 export default function Home() {
   const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections } = getAllData();
@@ -22,84 +23,17 @@ export default function Home() {
           </p>
         </header>
 
-        {/* APU Summary Cards + Evolution */}
-        <h2 className="text-xl font-semibold text-gray-700 mb-4 mt-8">
-          Vue d&apos;ensemble APU
-        </h2>
-        <SummaryCards data={synthese.donnees_cles_2025} source={synthese.meta.source as string} />
+        <SectionNav sections={[
+          { id: "apercu", label: "Vue d'ensemble" },
+          { id: "apu", label: "APU" },
+          { id: "etat", label: "État" },
+          { id: "projections", label: "Projections" },
+        ]} />
 
-        <div className="mt-8">
-          <TimeSeriesChart
-            series={series.series}
-            selected={["Recettes APU", "Dépenses APU"]}
-            title="Évolution des recettes et dépenses APU (Md€)"
-            source={series.meta.source as string}
-          />
-        </div>
+        <section id="apercu" className="mb-12 mt-8 scroll-mt-20">
+          <SummaryCards data={synthese.donnees_cles_2025} source={synthese.meta.source as string} />
 
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <DrillDownChart
-            tree={arbreNature.recettes}
-            secteurData={natureParSecteur.data}
-            title="Recettes APU"
-            annee={2025}
-            source={arbreNature.meta.source as string}
-          />
-          <DrillDownChart
-            tree={arbreNature.depenses}
-            secteurData={natureParSecteur.data}
-            title="Dépenses APU"
-            annee={2025}
-            source={arbreNature.meta.source as string}
-          />
-        </div>
-
-        <div className="mt-8">
-          <ApuBreakdown
-            data={apu.depenses_par_sous_secteur_eurostat}
-            title="Dépenses APU par sous-secteur (Md€ empilés)"
-            source={apu.meta.source as string}
-          />
-        </div>
-
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <TimeSeriesChart
-            series={series.series}
-            selected={["Dette publique (Maastricht)", "PIB"]}
-            title="Dette publique et PIB (Md€)"
-            source={series.meta.source as string}
-          />
-          <TimeSeriesChart
-            series={series.series}
-            selected={["Dépenses APU (% PIB)", "Recettes APU (% PIB)"]}
-            title="Taux de prélèvement et dépense publique (% PIB)"
-            source={series.meta.source as string}
-          />
-        </div>
-
-        {/* Projections du rapport Ragot */}
-        <section className="mb-8 mt-12">
-          <h2 className="text-xl font-semibold text-gray-700 mb-4">
-            Projections — Rapport Ragot <SourceBadge source="Rapport Ragot/Tavernier/Jaravel/Valla - juillet 2026" />
-          </h2>
-          <p className="text-sm text-gray-500 mb-4">
-            Scénario à politique inchangée — la dette pourrait atteindre 130,5% du PIB en 2030
-          </p>
-          <TimeSeriesChart
-            series={series.series}
-            selected={["Dette publique (% PIB)", "Déficit (% PIB)"]}
-            title="Dette et déficit public (% PIB) — projection 2026-2030"
-            source={series.meta.source as string}
-            projections={projections.projections}
-          />
-        </section>
-
-        {/* Deux périmètres côte à côte */}
-        <section className="mb-8 mt-12">
-          <h2 className="text-xl font-semibold text-gray-700 mb-4">
-            Solde 2025 — Comparaison État vs APU
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="rounded-xl border border-blue-200 bg-blue-50 p-5">
               <p className="text-xs text-blue-600 font-bold uppercase tracking-wide">
                 Budget de l&apos;État (comptabilité budgétaire)
@@ -135,16 +69,81 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Détail des recettes de l'État */}
-        <section className="mb-8 mt-12">
-          <h2 className="text-xl font-semibold text-gray-700 mb-4">
-            Détail des recettes de l&apos;État (2025)
-          </h2>
+        <section id="apu" className="mb-12 mt-8 scroll-mt-20">
+          <h2 className="text-xl font-semibold text-gray-700 mb-6">APU — Administrations Publiques</h2>
+
+          <TimeSeriesChart
+            series={series.series}
+            selected={["Recettes APU", "Dépenses APU"]}
+            title="Évolution des recettes et dépenses APU (Md€)"
+            source={series.meta.source as string}
+          />
+
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <DrillDownChart
+              tree={arbreNature.recettes}
+              secteurData={natureParSecteur.data}
+              title="Recettes APU"
+              annee={2025}
+              source={arbreNature.meta.source as string}
+            />
+            <DrillDownChart
+              tree={arbreNature.depenses}
+              secteurData={natureParSecteur.data}
+              title="Dépenses APU"
+              annee={2025}
+              source={arbreNature.meta.source as string}
+            />
+          </div>
+
+          <div className="mt-8">
+            <ApuBreakdown
+              data={apu.depenses_par_sous_secteur_eurostat}
+              title="Dépenses APU par sous-secteur (Md€ empilés)"
+              source={apu.meta.source as string}
+            />
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <TimeSeriesChart
+              series={series.series}
+              selected={["Dette publique (Maastricht)", "PIB"]}
+              title="Dette publique et PIB (Md€)"
+              source={series.meta.source as string}
+            />
+            <TimeSeriesChart
+              series={series.series}
+              selected={["Dépenses APU (% PIB)", "Recettes APU (% PIB)"]}
+              title="Taux de prélèvement et dépense publique (% PIB)"
+              source={series.meta.source as string}
+            />
+          </div>
+        </section>
+
+        <section id="etat" className="mb-12 mt-8 scroll-mt-20">
+          <h2 className="text-xl font-semibold text-gray-700 mb-6">État — Budget de l&apos;État</h2>
+
           <RevenueBreakdown
             categories={recettes.recettes_par_categorie}
             annee={2025}
             title="Recettes fiscales et sociales"
             source={recettes.meta.source as string}
+          />
+        </section>
+
+        <section id="projections" className="mb-12 mt-8 scroll-mt-20">
+          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+            Projections — Rapport Ragot <SourceBadge source="Rapport Ragot/Tavernier/Jaravel/Valla - juillet 2026" />
+          </h2>
+          <p className="text-sm text-gray-500 mb-4">
+            Scénario à politique inchangée — la dette pourrait atteindre 130,5% du PIB en 2030
+          </p>
+          <TimeSeriesChart
+            series={series.series}
+            selected={["Dette publique (% PIB)", "Déficit (% PIB)"]}
+            title="Dette et déficit public (% PIB) — projection 2026-2030"
+            source={series.meta.source as string}
+            projections={projections.projections}
           />
         </section>
 

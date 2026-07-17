@@ -29,3 +29,11 @@ body {
   transition-duration: 200ms;
   transition-timing-function: ease;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
