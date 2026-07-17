@@ -9,6 +9,7 @@ import SourceBadge from "@/components/SourceBadge";
 import SectionNav from "@/components/SectionNav";
 import SmbLineChart from "@/components/SmbLineChart";
 import MissionsHistoriqueChart from "@/components/MissionsHistoriqueChart";
+import CofogSection from "@/components/CofogSection";
 
 export default function Home() {
   const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections, cofogArbre, smb, missionsHistorique } = getAllData();
@@ -121,17 +122,12 @@ export default function Home() {
             />
           </div>
 
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <DrillDownChart
+          <div className="mt-8">
+            <CofogSection
               tree={cofogArbre.depenses}
-              secteurData={{}}
-              title="Dépenses par fonction (COFOG)"
-              annee={2024}
               source={cofogArbre.meta.source as string}
+              anneesDisponibles={cofogArbre.meta.annees_disponibles as string[]}
             />
-            <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-center justify-center">
-              <p className="text-sm text-gray-400">Sélectionnez une fonction dans le graphique pour explorer les sous-fonctions</p>
-            </div>
           </div>
         </section>
 
