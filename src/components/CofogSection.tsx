@@ -83,7 +83,7 @@ export default function CofogSection({ tree, source, anneesDisponibles, financeu
           </div>
         )}
       </div>
-      {financeurs && Object.keys(financeurs).length > 0 && (
+      {false && financeurs && Object.keys(financeurs).length > 0 && (
         <div className="mt-8">
           <FinanceurBreakdown data={financeurs} selectedCode={selectedCode} annee={annee} />
         </div>
