@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "source": "Rapport Ragot/Tavernier/Jaravel/Valla",
+    "url": "https://presse.economie.gouv.fr/mission-sur-la-transparence-des-finances-publiques/",
+    "date": "2025-07-15",
+    "scenario": "politique_inchangee",
+    "description": "Projections à politique inchangée — Rapport sur la transparence des finances publiques (juillet 2026)",
+    "notes": {
+      "2028": "Interpolé linéairement entre 2027 et 2030",
+      "2029": "Interpolé linéairement entre 2027 et 2030"
+    }
+  },
+  "projections": {
+    "Dette publique (% PIB)": [
+      { "annee": 2026, "valeur": 118.4 },
+      { "annee": 2027, "valeur": 121.4 },
+      { "annee": 2028, "valeur": 124.4 },
+      { "annee": 2029, "valeur": 127.5 },
+      { "annee": 2030, "valeur": 130.5 }
+    ],
+    "Déficit (% PIB)": [
+      { "annee": 2026, "valeur": 5.0 },
+      { "annee": 2027, "valeur": 5.9 },
+      { "annee": 2028, "valeur": 6.2 },
+      { "annee": 2029, "valeur": 6.5 },
+      { "annee": 2030, "valeur": 6.8 }
+    ]
+  }
+}

@@ -9,6 +9,7 @@ import type {
   BudgetEtatData,
   ArbreNatureData,
   NatureParSecteurData,
+  ProjectionsData,
 } from "@/types";
 
 const DATA_DIR = join(process.cwd(), "data", "processed");
@@ -49,6 +50,10 @@ export function loadNatureParSecteur(): NatureParSecteurData {
   return loadJson<NatureParSecteurData>("nature-par-secteur.json");
 }
 
+export function loadProjections(): ProjectionsData {
+  return loadJson<ProjectionsData>("projections-ragot.json");
+}
+
 export function getAllData() {
   return {
     synthese: loadSynthese(),
@@ -59,5 +64,6 @@ export function getAllData() {
     budgetEtat: loadBudgetEtat(),
     arbreNature: loadArbreNature(),
     natureParSecteur: loadNatureParSecteur(),
+    projections: loadProjections(),
   };
 }

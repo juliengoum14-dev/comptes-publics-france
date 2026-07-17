@@ -156,3 +156,13 @@ export interface NatureParSecteurData {
   labels: Record<string, string>
   data: Record<string, Record<string, Record<string, number>>>
 }
+
+export interface ProjectionEntry {
+  annee: number
+  valeur: number
+}
+
+export interface ProjectionsData {
+  meta: Record<string, unknown>
+  projections: Record<string, ProjectionEntry[]>
+}

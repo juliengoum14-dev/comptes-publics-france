@@ -8,7 +8,7 @@ import RevenueBreakdown from "@/components/RevenueBreakdown";
 import SourceBadge from "@/components/SourceBadge";
 
 export default function Home() {
-  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur } = getAllData();
+  const { synthese, recettes, apu, series, budgetEtat, arbreNature, natureParSecteur, projections } = getAllData();
 
   const etat2025 = budgetEtat.synthese_etat["2025"];
 
@@ -76,6 +76,23 @@ export default function Home() {
             source={series.meta.source as string}
           />
         </div>
+
+        {/* Projections du rapport Ragot */}
+        <section className="mb-8 mt-12">
+          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+            Projections — Rapport Ragot <SourceBadge source="Rapport Ragot/Tavernier/Jaravel/Valla - juillet 2026" />
+          </h2>
+          <p className="text-sm text-gray-500 mb-4">
+            Scénario à politique inchangée — la dette pourrait atteindre 130,5% du PIB en 2030
+          </p>
+          <TimeSeriesChart
+            series={series.series}
+            selected={["Dette publique (% PIB)", "Déficit (% PIB)"]}
+            title="Dette et déficit public (% PIB) — projection 2026-2030"
+            source={series.meta.source as string}
+            projections={projections.projections}
+          />
+        </section>
 
         {/* Deux périmètres côte à côte */}
         <section className="mb-8 mt-12">

@@ -18,7 +18,9 @@ export function formatNumber(v: number, decimals = 1): string {
   return nf(v, decimals).format(v);
 }
 
-export function formatTooltip(v: number, unite?: string): string {
-  if (unite === "% PIB") return formatPct(v);
-  return formatNumber(v) + " Md€";
+export function formatTooltip(v: number, unite?: string, label?: string): string {
+  let base: string;
+  if (unite === "% PIB") base = formatPct(v);
+  else base = formatNumber(v) + " Md€";
+  return label ? `${base} (${label})` : base;
 }
