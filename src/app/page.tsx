@@ -82,6 +82,14 @@ export default function Home() {
             source={series.meta.source as string}
           />
 
+          <div className="mt-8">
+            <CofogSection
+              tree={cofogArbre.depenses}
+              source={cofogArbre.meta.source as string}
+              anneesDisponibles={cofogArbre.meta.annees_disponibles as string[]}
+            />
+          </div>
+
           <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
             <DrillDownChart
               tree={arbreNature.recettes}
@@ -119,14 +127,6 @@ export default function Home() {
               selected={["Dépenses APU (% PIB)", "Recettes APU (% PIB)"]}
               title="Taux de prélèvement et dépense publique (% PIB)"
               source={series.meta.source as string}
-            />
-          </div>
-
-          <div className="mt-8">
-            <CofogSection
-              tree={cofogArbre.depenses}
-              source={cofogArbre.meta.source as string}
-              anneesDisponibles={cofogArbre.meta.annees_disponibles as string[]}
             />
           </div>
         </section>
